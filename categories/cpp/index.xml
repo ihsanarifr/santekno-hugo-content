@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cpp on Santekno</title>
+    <link>https://santekno.com/categories/cpp/</link>
+    <description>Recent content in Cpp on Santekno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 May 2019 13:06:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://santekno.com/categories/cpp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Membaut Stack Menggunakan Standar Template Library</title>
+      <link>https://santekno.com/post/cara-membuat-stack-menggunakan-standar-template-library/</link>
+      <pubDate>Thu, 16 May 2019 13:06:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-membuat-stack-menggunakan-standar-template-library/</guid>
+      <description>Stack (tumpukan) adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah LIFO (Last In First Out). Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.
+Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya.</description>
+    </item>
+    
+    <item>
+      <title>Cara Membuat Stack menggunakan Double Linked List</title>
+      <link>https://santekno.com/post/cara-membuat-stack-menggunakan-double-linked-list/</link>
+      <pubDate>Thu, 16 May 2019 13:04:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-membuat-stack-menggunakan-double-linked-list/</guid>
+      <description>Stack (tumpukan) adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah LIFO (Last In First Out). Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.
+Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya.</description>
+    </item>
+    
+    <item>
+      <title>Cara Membuat Stack menggunakan Array C&#43;&#43;</title>
+      <link>https://santekno.com/post/cara-membuat-stack-menggunakan-array/</link>
+      <pubDate>Thu, 16 May 2019 13:02:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-membuat-stack-menggunakan-array/</guid>
+      <description>Stack (tumpukan) adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah LIFO (Last In First Out). Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.
+Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya.</description>
+    </item>
+    
+    <item>
+      <title>Cara Membuat Double Linked List menggunakan C&#43;&#43;</title>
+      <link>https://santekno.com/post/cara-membuat-double-linked-list-menggunakan-cpp/</link>
+      <pubDate>Thu, 16 May 2019 13:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-membuat-double-linked-list-menggunakan-cpp/</guid>
+      <description>Double Linked List adalah ebuah linked list yang menggunakan sebuah variabel pointer saja untuk menyimpan banyak data dengan metode linked list, suatu daftar isi yang saling berhubungan.
+Baiklah, Santekno akan memberikan implementasi dari Double Linked List dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan Double Linked List adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubung tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya.</description>
+    </item>
+    
+    <item>
+      <title>Cara Menggunakan Single Linked List Menggunakan C&#43;&#43;</title>
+      <link>https://santekno.com/post/cara-membuat-single-linked-list-menggunakan-cpp/</link>
+      <pubDate>Thu, 16 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-membuat-single-linked-list-menggunakan-cpp/</guid>
+      <description>Linked List adalah salah satu bentuk struktur data, berisi kumpulan data (node) yang tersusun secara sekuensial, saling sambung menyambung, dinamis dan terbatas. Sedangkan Single Linked List adalah sebuah linked list yang menggunakan sebuah variabel pointer saja untuk menyimpan banyak data dengan metode linked list, suatu daftar isi yang saling berhubungan.
+Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan Single Linked List adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubun tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya.</description>
+    </item>
+    
+  </channel>
+</rss>

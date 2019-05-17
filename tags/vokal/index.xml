@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vokal on Santekno</title>
+    <link>https://santekno.com/tags/vokal/</link>
+    <description>Recent content in Vokal on Santekno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 May 2019 12:00:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://santekno.com/tags/vokal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Menentukan Huruf Vokal dan Konsonan</title>
+      <link>https://santekno.com/post/cara-menentukan-huruf-vokal-dan-konsonan/</link>
+      <pubDate>Sat, 04 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-menentukan-huruf-vokal-dan-konsonan/</guid>
+      <description>&lt;p&gt;Program menentukan huruf vokal dan konsonan dilakukan dengan memilih kondisional, dengan menggunakan if .. else lebih tepatnya karena suatu kondisi huruf vokal yang hanya a, i, u, e, o bisa dikondisikan pada saat kondisi true. Dan pengecekan itu harus semua huruf kecil ataupun huruf besar. Program ini meminta pengguna untuk memasukkan karakter dan memeriksa apakah karakter termasuk vokal atau tidak.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

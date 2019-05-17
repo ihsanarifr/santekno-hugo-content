@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Persamaan Kuadrat on Santekno</title>
+    <link>https://santekno.com/tags/persamaan-kuadrat/</link>
+    <description>Recent content in Persamaan Kuadrat on Santekno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 May 2019 12:00:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://santekno.com/tags/persamaan-kuadrat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Mencari Akar dari Persamaan Kuadrat</title>
+      <link>https://santekno.com/post/cara-mencari-akar-dari-persamaan-kuadrat/</link>
+      <pubDate>Tue, 07 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-mencari-akar-dari-persamaan-kuadrat/</guid>
+      <description>&lt;p&gt;Jika Anda ingin mencari akar dari persamaan kuadrat &lt;code&gt;ax2 + bx + c = 0&lt;/code&gt; dimana &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt; dan &lt;code&gt;c&lt;/code&gt; adalah &lt;code&gt;koefisien&lt;/code&gt;. Program ini akan meminta koefisien: &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt; dan &lt;code&gt;c&lt;/code&gt; dari pengguna dan menampilkan akar.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

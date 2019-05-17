@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Santekno</title>
+    <link>https://santekno.com/categories/</link>
+    <description>Recent content in Categories on Santekno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 May 2019 12:00:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://santekno.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>C Programming</title>
+      <link>https://santekno.com/categories/c-programming/</link>
+      <pubDate>Tue, 07 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/categories/c-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cpp</title>
+      <link>https://santekno.com/categories/cpp/</link>
+      <pubDate>Thu, 16 May 2019 13:06:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/categories/cpp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>https://santekno.com/categories/tutorial/</link>
+      <pubDate>Thu, 16 May 2019 13:06:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/categories/tutorial/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
