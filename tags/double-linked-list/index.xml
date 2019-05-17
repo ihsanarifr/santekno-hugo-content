@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Double Linked List on Santekno</title>
+    <link>https://santekno.com/tags/double-linked-list/</link>
+    <description>Recent content in Double Linked List on Santekno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 May 2019 13:00:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://santekno.com/tags/double-linked-list/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Membuat Double Linked List menggunakan C&#43;&#43;</title>
+      <link>https://santekno.com/post/cara-membuat-double-linked-list-menggunakan-cpp/</link>
+      <pubDate>Thu, 16 May 2019 13:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-membuat-double-linked-list-menggunakan-cpp/</guid>
+      <description>Double Linked List adalah ebuah linked list yang menggunakan sebuah variabel pointer saja untuk menyimpan banyak data dengan metode linked list, suatu daftar isi yang saling berhubungan.
+Baiklah, Santekno akan memberikan implementasi dari Double Linked List dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan Double Linked List adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubung tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya.</description>
+    </item>
+    
+  </channel>
+</rss>

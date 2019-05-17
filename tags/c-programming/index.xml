@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C Programming on Santekno</title>
+    <link>https://santekno.com/tags/c-programming/</link>
+    <description>Recent content in C Programming on Santekno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 May 2019 12:00:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://santekno.com/tags/c-programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Mencari Akar dari Persamaan Kuadrat</title>
+      <link>https://santekno.com/post/cara-mencari-akar-dari-persamaan-kuadrat/</link>
+      <pubDate>Tue, 07 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-mencari-akar-dari-persamaan-kuadrat/</guid>
+      <description>&lt;p&gt;Jika Anda ingin mencari akar dari persamaan kuadrat &lt;code&gt;ax2 + bx + c = 0&lt;/code&gt; dimana &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt; dan &lt;code&gt;c&lt;/code&gt; adalah &lt;code&gt;koefisien&lt;/code&gt;. Program ini akan meminta koefisien: &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt; dan &lt;code&gt;c&lt;/code&gt; dari pengguna dan menampilkan akar.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cara Menentukan Angka Terbesar dari 3 Angka</title>
+      <link>https://santekno.com/post/cara-menentukan-angka-terbesar-dari-3-angka/</link>
+      <pubDate>Mon, 06 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-menentukan-angka-terbesar-dari-3-angka/</guid>
+      <description>&lt;p&gt;Pada program ini pengguna diminta untuk memasukkan tiga angka dan program ini akan menemukan terbesar di antara tiga angka tersebut yang sudah dimasukkan oleh pengguna. Program ini dapat diselesaikan dalam satu cara.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cara Menentukan Bilangan Ganjil Genap</title>
+      <link>https://santekno.com/post/cara-menentukan-bilangan-ganjil-genap/</link>
+      <pubDate>Sun, 05 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-menentukan-bilangan-ganjil-genap/</guid>
+      <description>&lt;p&gt;Bilangan ganjil atau genap pada program C dapat digunakan dengan proses kondisional, atau lebih jelasnya menggunakan sintak &lt;code&gt;if .. else&lt;/code&gt; atau &lt;code&gt;switch case&lt;/code&gt;. Berikut ini menentukan Bilangan Ganjil Genap dengan program yang sederhana.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cara Menentukan Huruf Vokal dan Konsonan</title>
+      <link>https://santekno.com/post/cara-menentukan-huruf-vokal-dan-konsonan/</link>
+      <pubDate>Sat, 04 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-menentukan-huruf-vokal-dan-konsonan/</guid>
+      <description>&lt;p&gt;Program menentukan huruf vokal dan konsonan dilakukan dengan memilih kondisional, dengan menggunakan if .. else lebih tepatnya karena suatu kondisi huruf vokal yang hanya a, i, u, e, o bisa dikondisikan pada saat kondisi true. Dan pengecekan itu harus semua huruf kecil ataupun huruf besar. Program ini meminta pengguna untuk memasukkan karakter dan memeriksa apakah karakter termasuk vokal atau tidak.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cara Menampilkan Code ASCII</title>
+      <link>https://santekno.com/post/cara-menampilkan-code-ascii/</link>
+      <pubDate>Fri, 03 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-menampilkan-code-ascii/</guid>
+      <description>&lt;p&gt;Pada kali ini Santekno akan menjelaskan program C yang menampilkan Kode ASCII jika user sudah melakukan input. Kode ASCII ini digunakan untuk menampilkan karakter dalam suatu tipe char atau string. Pada postingan sebelumnya telah dibahas tentang bagaimana &lt;a href=&#34;http://localhost:1313/posts/tutorial-c/cara-menampilkan-code-ascii/&#34;&gt;pertambahan dua variabel pada program C&lt;/a&gt; dan sekarang bagaimana caranya menampilkan kode ASCII agar bisa dilihat berapa nilainya.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cara Pertambahan dua variabel</title>
+      <link>https://santekno.com/post/cara-pertambahan-dua-variable/</link>
+      <pubDate>Thu, 02 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/post/cara-pertambahan-dua-variable/</guid>
+      <description>&lt;p&gt;Pada kesempatan ini, Santekno akan memberikan tutorial bagaimana cara menghitung pertambahan dua variabel dengan menggunakan program C. Program C ini merupakan dasar logika agar bisa terlatih untuk melakukan pemrograman apapun. Program pertambaha ini sangat berguna karena semua program pasti melakukan aritmatika seperti pertambahan, pengurangan, pembagian, dan perkalian.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
