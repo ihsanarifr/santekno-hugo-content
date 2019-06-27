@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hacking on Santekno</title>
+    <link>https://santekno.com/tags/hacking/</link>
+    <description>Recent content in Hacking on Santekno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Nov 2013 10:22:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://santekno.com/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jenis-jenis Serangan pada Jaringan Komputer</title>
+      <link>https://santekno.com/post/draft/jenis-jenis-serangan-pada-jaringan-komputer/</link>
+      <pubDate>Wed, 27 Nov 2013 10:22:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/jenis-jenis-serangan-pada-jaringan-komputer/</guid>
+      <description>Jenis-jenis Serangan pada Jaringan Komputer - Salam sobat blogger, Santekno akan menjelaskan berbagai macam dan jenis serangan yang ada pada jaringan komputer. Banyak sekali serangan yang dilakukan seorang hacker agar bisa menjebol suatu pertahanan dalam suatu jaringan LAN, MAN atau bahkan WAN.Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jaringan yang sudah kita buat, contohnya untuk sebuah perusahaan mempunyai data yang sangat rahasia dan tidak boleh data tersebut disebarluaskan di jaringan internet.</description>
+    </item>
+    
+  </channel>
+</rss>

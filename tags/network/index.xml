@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on Santekno</title>
+    <link>https://santekno.com/tags/network/</link>
+    <description>Recent content in Network on Santekno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jan 2014 14:16:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://santekno.com/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Konfigurasi VLAN pada Cisco Packet Tracer</title>
+      <link>https://santekno.com/post/draft/cara-konfigurasi-vlan-pada-cisco-packet-tracer/</link>
+      <pubDate>Tue, 14 Jan 2014 14:16:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/cara-konfigurasi-vlan-pada-cisco-packet-tracer/</guid>
+      <description>Cara Konfigurasi VLAN pada Cisco Packet Tracer - Salam sobat blogger, kali ini Santekno akan menjelaskan konfigurasi VLAN (Virtual LAN). VLAN adalah aplikasi yang digunakan pada jaringan komputer khususnya layer 2 dan perangkat yang digunakan adalah Switch. Santekno telah menjelaskan pada postingan sebelumnya yaitu Pengertian VLAN (Virtual LAN) dengan detail dan jelas.
+Konfiguras VLANDan sekarang Santekno akan menjelaskan penerapanya pada Packet Tracer VLAN tersebut. Sesuai dengan topologi yang sudah dibuat dengan sederhana, konfigurasi VLAN ini disertai dengan tutorial yang lengkap diantaranya file Packet Tracer, file Konfigurasi serta Video tutorial yang sudah Santekno Upload di Youtube.</description>
+    </item>
+    
+    <item>
+      <title>Jenis-jenis Serangan pada Jaringan Komputer</title>
+      <link>https://santekno.com/post/draft/jenis-jenis-serangan-pada-jaringan-komputer/</link>
+      <pubDate>Wed, 27 Nov 2013 10:22:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/jenis-jenis-serangan-pada-jaringan-komputer/</guid>
+      <description>Jenis-jenis Serangan pada Jaringan Komputer - Salam sobat blogger, Santekno akan menjelaskan berbagai macam dan jenis serangan yang ada pada jaringan komputer. Banyak sekali serangan yang dilakukan seorang hacker agar bisa menjebol suatu pertahanan dalam suatu jaringan LAN, MAN atau bahkan WAN.Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jaringan yang sudah kita buat, contohnya untuk sebuah perusahaan mempunyai data yang sangat rahasia dan tidak boleh data tersebut disebarluaskan di jaringan internet.</description>
+    </item>
+    
+    <item>
+      <title>Cara konfigurasi OSPF pada Router Cisco</title>
+      <link>https://santekno.com/post/draft/cara-konfigurasi-ospf-pada-router-cisco/</link>
+      <pubDate>Sun, 24 Nov 2013 09:16:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/cara-konfigurasi-ospf-pada-router-cisco/</guid>
+      <description>Cara Konfigurasi OSPF pada Router Cisco - Salam sobat blogger, sudah lama tidak posting kembali di blog tercinta. Hari ini santekno akan memposting tentang cara konfigurasi routing protocol OSPF pada router Cisco dengan menggunakan Packet Tracer 6.Teman-teman pasti sudah tahu routing dinamic OSPF ini, karena terkenal sekali di kalangan jaringan komputer karena routing protokol ini open source dan bisa digunakan pada router apapun dari mulai Router Cisco, Mikrotik, dan Juniper. Karena berbagai keunggulan yang ada pada OSPF maka routing protokol ini sangat mudah digunakan dan banyak sekali orang menggunakan routing protokol ini.</description>
+    </item>
+    
+    <item>
+      <title>Cara Konfigurasi EIGRP pada Router Cisco</title>
+      <link>https://santekno.com/post/draft/cara-konfigurasi-eigrp-pada-router-cisco/</link>
+      <pubDate>Wed, 13 Nov 2013 12:17:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/cara-konfigurasi-eigrp-pada-router-cisco/</guid>
+      <description>Cara Konfigurasi EIGRP pada Router Cisco - Salam sobat blogger, kali ini Santekno akan menjelaskan tentang konfigurasi EIGRP (Enhanced Interior Gateway Routing Protocol) dengan mudah dan secara bertahap. Sobat blogger gampang sekali apabila ingin melakukan konfigurasi routing protokol EIGRP pada router Cisco.Kenapa router Cisco? Karena fasilitas routing protokol EIGRP itu hanya ada di perangkat CISCO saja, dan di perangkat lain tidak digunakan. Karena terbilang sangat baik untuk menghubungkan topologi jaringan dan cepat maka EIGRP ini lebih baik dibandingkan dengan RIP yang mempunyai beberapa kelemahan.</description>
+    </item>
+    
+    <item>
+      <title>Cara Konfigurasi RIP pada Router Cisco</title>
+      <link>https://santekno.com/post/draft/cara-konfigurasi-rip-pada-router-cisco/</link>
+      <pubDate>Thu, 31 Oct 2013 19:54:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/cara-konfigurasi-rip-pada-router-cisco/</guid>
+      <description>Cara Konfigurasi RIP v2 pada Router Cisco dengan Packet Tracer - Salam sobat, Santekno saat ini akan menjelaskan tentang bagaimana cara konfigurasi RIP yaitu dynamic protocol yang biasa kita gunakan pada LAN atau sering dipakai pada topologi yang sangat simple karena protokol RIP ini hanya bisa berjalan pada 15 Router saja selebihnya RIP akan tidak berjalan dan berkerja sangat lambat.
+Topologi RIP v2 
+Pada kali ini Santekno, menyertakan file konfigurasi pada Packet Tracer Cisco sehingga bagi sobat bisa diunduh dan dipelajari sebih detail untuk latihan-latihan dasar Jaringan Komputer khususnya konfigurasi Router Cisco.</description>
+    </item>
+    
+    <item>
+      <title>Cara Konfigurasi Static Route pada Router Cisco</title>
+      <link>https://santekno.com/post/draft/cara-konfigurasi-static-route-pada-router-cisco/</link>
+      <pubDate>Fri, 25 Oct 2013 00:28:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/cara-konfigurasi-static-route-pada-router-cisco/</guid>
+      <description>Cara Konfigurasi Static Route pada Router Cisco - Hai sobat kali ini Santekno akan menjelaskan tentang Static Route. Postingan yang terdahulu memang sudah menjelaskan lebih detail tentang pengenalan, pengertian dari Static Route. Bahkan Santekno telah menjelaskan perbedaan dari Static Route dengan Dynamic Route.Kali ini, Santekno akan menjelaskan konfigurasinya pada router cisco tetapi tidak langsung kedalam router cisco hanya pada simulasi packet tracer yang sudah dipelajari. Sebenarnya sama saja kita simulasi dalam packet tracer atau langsung juga karena sintaknya sama saja dari kedua-duanya.</description>
+    </item>
+    
+    <item>
+      <title>Cara Memberi Password Telnet dan Console pada Router Cisco</title>
+      <link>https://santekno.com/post/draft/cara-memberi-password-telnet-dan-console-pada-router-cisco/</link>
+      <pubDate>Wed, 16 Oct 2013 21:49:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/cara-memberi-password-telnet-dan-console-pada-router-cisco/</guid>
+      <description>Cara Memberi Password Telnet dan Console pada Router Cisco - Salam teman-teman, kali ini Santekno akan menjelaskan mengenai Networking atau Jaringan Komputer. Dan pada saat ini Santekno akan lebih menjelaskan kepada Keamanan dalam suatu jaringan dimulai dari device sendiri sampai pada Firewall yang akan nanti diterapkan.
+Password Telnet dan Console pada Router Cisco
+Secara umum, keamanan dalam suatu jaringan itu sangat perlu sekali karena untuk menyelamatkan data kita yang ada di server dan agar terhindar dari para hacker yang mencoba masuk kedalam suatu private network kita yang biasanya tidak boleh diakses dalam remote dari public.</description>
+    </item>
+    
+    <item>
+      <title>Pengertian VLAN (Virtual LAN)</title>
+      <link>https://santekno.com/post/draft/pengertian-vlan-virtual-lan/</link>
+      <pubDate>Tue, 06 Aug 2013 20:46:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/pengertian-vlan-virtual-lan/</guid>
+      <description>Pengertian VLAN (Virtual LAN)&amp;nbsp;- Pada kesempatan kali ini Santekno akan membahas lagi mengenai pengetahuan Networking yang mendasar seperti VLAN yang sudah biasa para engginer&amp;nbsp;konfigurasikan agar suatu switch bisa digunakan untuk membagi network yang berbeda dalam satu jaringan lokal. Seperti kita ketahui bahwa switch tidak bisa membaca Layer 3 sehingga tidak bisa membaca Network sehingga hanya bisa dihubungkan hanya satu network saja.Dengan dikeluarkannya VLAN maka sangat bermanfaat sekali untuk kemajuan pembagian Network agar lebih efisien.</description>
+    </item>
+    
+    <item>
+      <title>Pengertian dan Konfigurasi DHCP pada Router Cisco</title>
+      <link>https://santekno.com/post/draft/pengertian-dan-konfigurasi-dhcp-pada-router-cisco/</link>
+      <pubDate>Thu, 20 Jun 2013 22:30:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/pengertian-dan-konfigurasi-dhcp-pada-router-cisco/</guid>
+      <description>Network – Pengertian dan Konfigurasi DHCP (Dynamic Host Configuration Protocol) pada Router Cisco adalah protocol yang berbasis arsitektur client/server yang digunakan untuk memudahkan pengalokasian alamat IP dalam satu jaringan. ISP secara otomatis akan memberikan alamat IP baru kepada komputer yang memintanya. Komputer yang meminta alamat IP disebut DHCP&amp;nbsp;Client&amp;nbsp;sedangkan Komputer yang memberikan alamat IP disebut DHCP server. Ketika konfigurasi TCP/IP, administrator tidak perlu memberikan alamat IP secara manual, tapi cukup dengan memberikan referensi kepada DHCP Server.</description>
+    </item>
+    
+    <item>
+      <title>Pengertian NAT dan Cara Konfigurasi pada Router Cisco</title>
+      <link>https://santekno.com/post/draft/pengertian-nat-dan-cara-konfigurasi-pada-router-cisco/</link>
+      <pubDate>Thu, 13 Jun 2013 17:22:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/pengertian-nat-dan-cara-konfigurasi-pada-router-cisco/</guid>
+      <description>Network – Pengertian NAT dan Cara Konfigurasi pada Router Cisco&amp;nbsp;-&amp;nbsp;Saat ini,&amp;nbsp;protokol IP&amp;nbsp;yang banyak digunakan adalah IP versi 4 (IPv4). Dengan panjang alamat 4&amp;nbsp;byte&amp;nbsp;berarti terdapat 2 pangkat 32 = 4.294.967.296&amp;nbsp;alamat IP&amp;nbsp;yang tersedia. Jumlah ini secara teoritis, jumlah&amp;nbsp;komputer&amp;nbsp;yang dapat langsung koneksi ke internet. Karena keterbatasan ini sebagian besar&amp;nbsp;ISP&amp;nbsp;(Internet Service Provider) hanya akan mengalokasikan satu alamat untuk satu pengguna dan alamat ini bersifat&amp;nbsp;dinamik, dalam arti alamat IP yang diberikan akan berbeda setiap kali user melakukan koneksi ke Internet.</description>
+    </item>
+    
+    <item>
+      <title>Pengertian PPP (Point to Point Protocol)</title>
+      <link>https://santekno.com/post/draft/pengertian-ppp-point-to-point-protocol/</link>
+      <pubDate>Mon, 15 Apr 2013 19:14:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/pengertian-ppp-point-to-point-protocol/</guid>
+      <description>Network - Point-to-Point Protocol (sering disingkat menjadi PPP) adalah sebuah protokol enkapsulasi paket jaringan yang banyak digunakan pada wide area network (WAN). Protokol ini merupakan standar industri yang berjalan pada lapisan data-link (layer 2)&amp;nbsp; dan dikembangkan pada awal tahun 1990-an sebagai respons terhadap masalah-masalah yang terjadi pada protokol Serial Line Internet Protocol (SLIP), yang hanya mendukung pengalamatan IP statis kepada para kliennya. Dibandingkan dengan pendahulunya (SLIP), PPP jauh lebih baik, mengingat kerja protokol ini lebih cepat, menawarkan koreksi kesalahan, dan negosiasi sesi secara dinamis tanpa adanya intervensi dari pengguna.</description>
+    </item>
+    
+    <item>
+      <title>Layanan WAN (Wide Area Network)</title>
+      <link>https://santekno.com/post/draft/layanan-wan-wide-area-network/</link>
+      <pubDate>Thu, 11 Apr 2013 22:24:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/layanan-wan-wide-area-network/</guid>
+      <description>Network –Layanan WAN yang ada di dunia sudah banyak dan terbilang semakin canggih dan semakin compatible dengan berbagai perangkat seiring dengan berkembangnya teknologi kabel atau nirkabel. Jaringan WAN sangatlah luas dan membutuhkan teknologi yang cepat dalam mentransmisikan data sehingga banyak layanan yang diberikan dari beberapa ISP (orang ke-3) yang memberikan layanan. Layanan WAN dibagi menjadi 2 bagian yaitu :Private, yaitu dibangun untuk menghubungkan hanya untuk kpentingan perusahaan saja PPP (Point to Point Protocol).</description>
+    </item>
+    
+    <item>
+      <title>BGP (Border Gateway Protocol)</title>
+      <link>https://santekno.com/post/draft/bgp-border-gateway-protocol/</link>
+      <pubDate>Fri, 11 Jan 2013 09:50:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/bgp-border-gateway-protocol/</guid>
+      <description>Network - Pengertian Border Gateway Protocol (BGP) merupakan salah satu jenis routing protokol yang digunakan untuk koneksi antar Autonomous System (AS), dan salah satu jenis routing protokol yang banyak digunakan di ISP besar (Telkomsel) ataupun perbankan. BGP termasuk dalam kategori routing protokol jenis Exterior Gateway Protokol (EGP)./o:pDengan adanya EGP, router dapat melakukan pertukaran rute dari dan ke luar jaringan lokal Auotonomous System (AS). BGP mempunyai skalabilitas yang tinggi karena dapat melayani pertukaran routing pada beberapa organisasi besar.</description>
+    </item>
+    
+    <item>
+      <title>EIGRP (Enhanced Interior Gateway Routing Protocol</title>
+      <link>https://santekno.com/post/draft/eigrp-enhanced-interior-gateway-routing-protocol/</link>
+      <pubDate>Fri, 11 Jan 2013 09:25:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/eigrp-enhanced-interior-gateway-routing-protocol/</guid>
+      <description>Network - Pengertian EIGRP (Enhanced Interior Gateway Routing Protocol)&amp;nbsp;merupakan hasil pengembangan dari routing ptotokol pendahulunya yaitu IGRP yang keduanya adalah routing pengembangan dari CISCO. Pengembangan itu dihasilkan oleh perubahan dan bermacam-macam tuntutan dalam jaringan Skala jaringan yang besar. EIGRP menggabungkan kemampuan dari Link-State Protokoldan Distance Vector Protokol, terlebih lagi EIGRP memuat beberapa protocol penting yang secara baik meningkatkan efisiensi penggunaannya ke routing protocol lain.
+/o:pEIGRP (Enhanced Interior Gateway Routing Protocol) adalah routing protocol yang hanya di adopsi oleh router cisco atau sering disebut sebagai proprietary protocol pada CISCO.</description>
+    </item>
+    
+    <item>
+      <title>OSPF (Open Shortest Path First)</title>
+      <link>https://santekno.com/post/draft/ospf-open-shortest-path-first/</link>
+      <pubDate>Fri, 11 Jan 2013 09:09:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/ospf-open-shortest-path-first/</guid>
+      <description>Network - Pengertian OSPF (Open Shortest Path First) merupakan sebuah routing protokol berjenis IGRP (InteriorGateway Routing Protocol) yang hanya dapat bekerja dalam jaringan internal suatu ogranisasi atau perusahaan. Jaringan internal maksudnya adalah jaringan di mana Anda masih memiliki hak untuk menggunakan, mengatur, dan memodifikasinya. Atau dengan kata lain, Anda masih memiliki hak administrasi terhadap jaringan tersebut. Jika Anda sudah tidak memiliki hak untuk menggunakan dan mengaturnya, maka jaringan tersebut dapat dikategorikan sebagai jaringan eksternal.</description>
+    </item>
+    
+    <item>
+      <title>IGRP (Interior Gateway Routing Protocol)</title>
+      <link>https://santekno.com/post/draft/igrp-interior-gateway-routing-protocol/</link>
+      <pubDate>Fri, 11 Jan 2013 09:02:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/igrp-interior-gateway-routing-protocol/</guid>
+      <description>Network – Pengertian IGRP (Interior Gateway Routing Protocol) adalah protocol distance vector yang diciptakan oleh perusahaan Cisco untuk mengatasi kekurangan RIP. Jumlah hop maksimum menjadi 255 dan sebagai metric, IGRP menggunakan Bandwidth, MTU, Delay Dan Load. IGRP adalah protocol routing yang menggunakan Autonomous System (AS) yang dapat menentukan routing berdasarkan system, interior atau exterior. Administrative distanceuntuk IGRP adalah 100/o:pIGRPmerupakan suatu penjaluran jarak antara vektor protokol, bahwa masing-masing penjaluran bertugas untuk mengirimkan semua atau sebagian dari isi table penjaluran dalam penjaluran pesan untuk memperbaharui pada waktu tertentu untuk masing-masing penjaluran.</description>
+    </item>
+    
+    <item>
+      <title>Pengertian, Perbedaan Routing Static dan Routing Dynamic</title>
+      <link>https://santekno.com/post/draft/pengertian-perbedaan-routing-static-dan-routing-dynamic/</link>
+      <pubDate>Fri, 11 Jan 2013 08:39:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/pengertian-perbedaan-routing-static-dan-routing-dynamic/</guid>
+      <description>Network&amp;nbsp;– Pengertian, Perbedaan Routing Static dan Routing Dynamic yang akan kita bahas pada posting kali ini. Banyak perbedaan dari beberapa routing yang telah ada sekarang dan biasanya routing itu sangat dibutuhkan untuk menghubungkan jaringan antar lokal ataupun antar kota. Routing adalah Konfigurasi yang akan dilakukan pada perangkat keras Router. Jenis-jenis router pun berbeda-beda, konfigurasinya pun berbeda-beda. Contoh CISCO produksi router CISCO banyak digunakan karena konfigurasinya sudah familiar dan banyak instansi pendidikan pun sudah dijadikan matakuliah agar bisa di pelajari lebih lanjut.</description>
+    </item>
+    
+    <item>
+      <title>Cara Membuat Web Server</title>
+      <link>https://santekno.com/post/draft/cara-membuat-web-server/</link>
+      <pubDate>Wed, 21 Nov 2012 06:44:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/cara-membuat-web-server/</guid>
+      <description>Linux – Cara membuat Web Server pada Fedora Core 7 merupakan suatu layanan internet yang bisa di gunakan bagi para ahli networking. Yang sering di jumpai pada Web Server adalah WWW (World Wide Web), dimana www fasilitas yang paling terpopuler di dunia internet. Kalian pernah melihat suatu Web? Pasti bagi pengguna internet dimana mencari suatu artikel pasti menemukan sebuah web entah itu blog, wordpress, joomla, dll. Protokol yang biasa digunakan pada web adalah HTTPsingkatan dari Hypertext Transfer Protocol.</description>
+    </item>
+    
+    <item>
+      <title>Cara Membuat DNS Server</title>
+      <link>https://santekno.com/post/draft/cara-membuat-dns-server/</link>
+      <pubDate>Sat, 17 Nov 2012 13:19:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/cara-membuat-dns-server/</guid>
+      <description>Linux– Cara Membuat DNS Server pada Fedora Core 7 merupakan pengalihan dari suatu ip address menjadi nama sesuai dengan keinginan kita agar gampang di ingat. Baiklah, SanTekno sekarang akan membahas tentang DNS Server. DNS server bertanggung jawab penuh mengelola domain masing-masing client. Tidak ada server tunggal yang akan bertanggung jawab mengelola semua domain. Jika sebuah client memerlukan informasi IP Address yang tidak dapat diberikan oleh server yang ada pada domainnya, maka server tersebut akan “men-delegasikan-nya” kepada server lain mengikuti prinsip top-down.</description>
+    </item>
+    
+    <item>
+      <title>Jenis-jenis Name Server</title>
+      <link>https://santekno.com/post/draft/jenis-jenis-name-server/</link>
+      <pubDate>Sun, 11 Nov 2012 10:33:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/jenis-jenis-name-server/</guid>
+      <description>Linux – Jenis-jenis Name Server memang sudah diklasifikasikan terlebih dahulu sehingga semua pengolahan dan konfigurasi pada DNS Server bisa lebih baik dan bisa juga menggunakan beberapa penggunaan yang lain atau antar server lain bisa terhubung. Baiklah ada jenis-jenis Name server :/o:pPrimary NS atau kadangkala disebut Master NS, Merupakan NS utama yang menyimpan database hostname/ IP Address suatuu zona. Pada saat melakukan setting Primary NS, kita harus menggunakan file zone. Primary NS merupakan authoritative server bagi zona tertentu.</description>
+    </item>
+    
+    <item>
+      <title>Definisi IP Address dan Subnet Mask</title>
+      <link>https://santekno.com/post/draft/definisi-ip-address-dan-subnet-mask/</link>
+      <pubDate>Sun, 28 Oct 2012 13:15:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/definisi-ip-address-dan-subnet-mask/</guid>
+      <description>IP Address dan Subnet Mask
+Network -&amp;nbsp;Definisi IP Address dan Subnet Mask - Jaringan komputer tidak terlepas dari Internet Protokol dan berbagai hal tentang Jaringan komputer lainnya. Pada Kesempatan kali ini Santekno, akan menjelaskan beberapa hal tentang IPv4 dan Subnet Mask. Untuk membuka wawasan lebih luas berikut adalah beberapa penjelasannya.&amp;nbsp; IP AddressAlamat IP (Internet Protocol Address atau sering disingkat IP) adalah deretan angka biner antara 32-bit sampai 128-bit yang dipakai sebagai alamat identifikasi untuk tiap peralatan jaringan yang menggunakan Protocol TCP/IP.</description>
+    </item>
+    
+    <item>
+      <title>Komponen Router dan Fungsinya</title>
+      <link>https://santekno.com/post/draft/komponen-router-dan-fungsinya/</link>
+      <pubDate>Wed, 24 Oct 2012 20:22:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/komponen-router-dan-fungsinya/</guid>
+      <description>Network – Router adalah alat yang sering di jumpai pada instalasi jaringan di berbagai tempat bahkan dunia. Sehingga untuk menjadi seorang ahli jaringan perlu diketahui Komponenrouter dan fungsinya. Untuk saat ini Santekno akan menjelaskan bagian-bagian dari Router dan fungsi dari bagian-bagian tersebut.
+
+1. RAM&amp;nbsp;
+Fungsi utama RAM pada router adalah menyimpan konfigurasi yang sedang berjalan (running configuration) dan sistem operasi IOS yang aktif, menyimpan routing table, menangani cache ARP, menangani fast-swtiching cache, menyediakan memori sementara utk konfigurasi file, menangani paket buffer, mengelola antrian paket.</description>
+    </item>
+    
+    <item>
+      <title>Urutan Kabel UTP Straight dan Cross Over</title>
+      <link>https://santekno.com/post/draft/urutan-kabel-utp-straight-dan-cross-over/</link>
+      <pubDate>Fri, 28 Sep 2012 13:50:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/draft/urutan-kabel-utp-straight-dan-cross-over/</guid>
+      <description>Networking - Share artikel kali adalah&amp;nbsp;tentang kabel UTP&amp;nbsp;(Unshielded Twisted Pair), artikel ini adalah request dari sobat adhie yfs, tanpa bermaksud menggurui berikut adalah bahasan tentang kabel UTP yang penulis ketahui.
+Kabel UTP merupakan salah satu media transmisi yang paling banyak digunakan untuk membuat sebuah jaringan local&amp;nbsp;(Local Area Network), selain karena harganya relative murah, mudah dipasang dan cukup bisa diandalkan. Sesuai namanya&amp;nbsp;Unshielded Twisted Pair&amp;nbsp;berarti kabel pasangan berpilin/terbelit&amp;nbsp;(twisted pair)&amp;nbsp;tanpa pelindung&amp;nbsp;(unshielded). Fungsi lilitan ini adalah sebagai eleminasi terhadap induksi dan kebocoran.</description>
+    </item>
+    
+  </channel>
+</rss>
