@@ -850,7 +850,7 @@ header.header_in ul#top_menu li a {
 }
 @media (max-width: 991px) {
   header.header_in {
-    padding: 0px 0 5px 0;
+    padding: 0 0 0 0;
   }
   header.header_in ul#top_menu {
     position: absolute;
