@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#2980b9"/>
+<meta name="author" content="santekno.com">
+<meta name="title" content="Berbagi Tutorial dan Informasi seputar Teknologi"/>
+<meta name="description" content="Berbagi Tutorial dan Informasi seputar Teknologi"/>
+   
+   <link rel="canonical" href="https://santekno.com/post/cara-menentukan-bilangan-ganjil-genap/">
+
+   <title>Cara Menentukan Bilangan Ganjil Genap -  Santekno</title>
+   
+   
+   <link href="https://d38wyzu9t46zzv.cloudfront.net/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://d38wyzu9t46zzv.cloudfront.net/css/style.css" rel="stylesheet">
+   <link href="https://d38wyzu9t46zzv.cloudfront.net/css/color-orange.css" rel="stylesheet">
+   <link href="https://d38wyzu9t46zzv.cloudfront.net/css/prism.css" rel="stylesheet">
+   
+   <link href="https://d38wyzu9t46zzv.cloudfront.net/css/blog.css" rel="stylesheet">
+   <link href="https://d38wyzu9t46zzv.cloudfront.net/css/custom.css" rel="stylesheet">
+   
+   <link type="textcss" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      
+   <body>
+      <div id="page">
+         <header class="header_in is_sticky menu_fixed justify-content-between"><nav class="navbar navbar-expand-md navbar-dark fixed-column flex-md-row bd-navbar">
+   <a href="https://santekno.com/" title="santekno.com" class="navbar-brand">
+      <img src="/images/logo-santekno.png" class="logo_normal" width="135">
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+            <a class="nav-link" href="https://santekno.com/">Home <span class="sr-only">[content]</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/network">Network</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/hardware">Hardware</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/tutorial">Tutorial</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/linux">Linux</a>
+         </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+   </div>
+</nav></header>
+         <main>
+<div class="container margin_80_55">
+   <div class="row">
+<div class="col-lg-8">
+   <div class="singlepost">
+      <div class="mb-3">
+         <img src="/img/avatar.jpg" class="rounded-circle" width="32" height="32" alt="author" loading="lazy">
+         <a class="align-middle text-dark" href="https://santekno.com/post/cara-menentukan-bilangan-ganjil-genap/" target="_blank" rel="noopener"> Ihsan Arif</a>
+         <small class="align-middle text-muted">
+            ·1 minutes read
+         </small>
+      </div>
+      <h1>Cara Menentukan Bilangan Ganjil Genap</h1>
+      <div class="postmeta">
+         <ul>
+            <li>
+               
+                  <span class="badge badge-success"> <a class="text-white" href="/tags/tutorial">#tutorial</a></span>
+               
+                  <span class="badge badge-success"> <a class="text-white" href="/tags/c-programming">#c-programming</a></span>
+               
+                  <span class="badge badge-success"> <a class="text-white" href="/tags/ascii">#ascii</a></span>
+               
+            </li>
+         </ul>
+      </div>
+      
+      <div class="post-content">
+         
+            
+               <img class="img-fluid" src="https://d38wyzu9t46zzv.cloudfront.net/images/c-programming.png" alt="" style="height:100%;width:100%;">
+            
+         
+         <p></p>
+         <p>Bilangan ganjil atau genap pada program C dapat digunakan dengan proses kondisional, atau lebih jelasnya menggunakan sintak <code>if .. else</code> atau <code>switch case</code>. Berikut ini menentukan Bilangan Ganjil Genap dengan program yang sederhana.</p>
+
+<h2 id="souce-code">Souce Code</h2>
+
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main(){
+   int num;
+   printf(&quot;Masukkan bilangan interger yang ingin dicek: &quot;);
+   scanf(&quot;%d&quot;,&amp;num);
+   if((num%2)==0)      /* Kondisi menggunakan if else*/
+         printf(&quot;%d adalah Genap.&quot;,num);
+   else
+         printf(&quot;%d adalah Ganjil.&quot;,num);
+   return 0;
+}
+</code></pre>
+
+<h2 id="output-1">Output 1</h2>
+
+<pre><code class="language-bash">Masukkan bilangan integer yang ingin dicek :
+25 adalah Ganjil
+</code></pre>
+
+<h2 id="output-2">Output 2</h2>
+
+<pre><code class="language-bash">Masukkan bilangan integer yang ingin dicek :
+16 adalah Genap
+</code></pre>
+
+<h2 id="penjelasan">Penjelasan</h2>
+
+<p>Dalam program ini, pengguna diminta untuk memasukkan bilangan integer yang disimpan dalam variabel <code>num</code>. Kemudian, sisanya ditemukan saat nomor yang dibagi 2 dan diperiksa apakah sisanya adalah 0 atau tidak. Jika sisa adalah 0 maka, bilangan tersebut genap. Program ini menggunakan <code>if..else</code>.</p>
+
+<p>Selain program yang diatas bisa juga menggunakan operator kondisional [?] yang merupakan notasi singkat dari pernyataan <code>if .. else</code>.</p>
+      </div>
+      <div class="post-content">
+         <div class="row">
+            <div class="col-md-6">
+               
+                  <a class="previous" href="https://santekno.com/post/cara-menentukan-huruf-vokal-dan-konsonan/">&lt;- Cara Menentukan Huruf Vokal dan Konsonan</a>
+               
+            </div>
+            <div class="col-md-6">
+               
+                  <a class="next" href="https://santekno.com/post/cara-menentukan-angka-terbesar-dari-3-angka/"> Cara Menentukan Angka Terbesar dari 3 Angka -></a>
+               
+            </div>
+         </div>
+      </div>
+      
+   </div>
+   <div class="singlepost">
+         <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Ihsanarif" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+   </div>
+</div>
+
+<aside class="col-lg-4">
+   <div class="widget">
+      <div class="list-group">
+         <div class="list-group-item"><h4>Artikel Terbaru</h4></div>
+         <ul>
+            
+            <a
+            href="/post/cara-membuat-stack-menggunakan-standar-template-library/"
+            class="list-group-item list-group-item-action"
+            >
+            <div class="row">
+               <div class="col-12">
+                  
+                     
+                     <img 
+                     class="rounded float-left mr-3" 
+                     src="https://d38wyzu9t46zzv.cloudfront.net/images/cpp-programming-logo.png" 
+                     data-sizes="auto"
+                     width="70"
+                     height="70"
+                     loading="lazy">
+                     
+                  
+                  <h6 class="mb-1">Cara Membaut Stack Menggunakan Standar Template Library</h6>
+                  <small class="text-secondary">2019-05-16 · 1 minutes read</small>
+               </div>
+            </div></a
+            >
+            
+            <a
+            href="/post/cara-membuat-stack-menggunakan-double-linked-list/"
+            class="list-group-item list-group-item-action"
+            >
+            <div class="row">
+               <div class="col-12">
+                  
+                     
+                     <img 
+                     class="rounded float-left mr-3" 
+                     src="https://d38wyzu9t46zzv.cloudfront.net/images/cpp-programming-logo.png" 
+                     data-sizes="auto"
+                     width="70"
+                     height="70"
+                     loading="lazy">
+                     
+                  
+                  <h6 class="mb-1">Cara Membuat Stack menggunakan Double Linked List</h6>
+                  <small class="text-secondary">2019-05-16 · 2 minutes read</small>
+               </div>
+            </div></a
+            >
+            
+            <a
+            href="/post/cara-membuat-stack-menggunakan-array/"
+            class="list-group-item list-group-item-action"
+            >
+            <div class="row">
+               <div class="col-12">
+                  
+                     
+                     <img 
+                     class="rounded float-left mr-3" 
+                     src="https://d38wyzu9t46zzv.cloudfront.net/images/cpp-programming-logo.png" 
+                     data-sizes="auto"
+                     width="70"
+                     height="70"
+                     loading="lazy">
+                     
+                  
+                  <h6 class="mb-1">Cara Membuat Stack menggunakan Array C&#43;&#43;</h6>
+                  <small class="text-secondary">2019-05-16 · 2 minutes read</small>
+               </div>
+            </div></a
+            >
+            
+            <a
+            href="/post/cara-membuat-double-linked-list-menggunakan-cpp/"
+            class="list-group-item list-group-item-action"
+            >
+            <div class="row">
+               <div class="col-12">
+                  
+                     
+                     <img 
+                     class="rounded float-left mr-3" 
+                     src="https://d38wyzu9t46zzv.cloudfront.net/images/cpp-programming-logo.png" 
+                     data-sizes="auto"
+                     width="70"
+                     height="70"
+                     loading="lazy">
+                     
+                  
+                  <h6 class="mb-1">Cara Membuat Double Linked List menggunakan C&#43;&#43;</h6>
+                  <small class="text-secondary">2019-05-16 · 2 minutes read</small>
+               </div>
+            </div></a
+            >
+            
+            <a
+            href="/post/cara-membuat-single-linked-list-menggunakan-cpp/"
+            class="list-group-item list-group-item-action"
+            >
+            <div class="row">
+               <div class="col-12">
+                  
+                     
+                     <img 
+                     class="rounded float-left mr-3" 
+                     src="https://d38wyzu9t46zzv.cloudfront.net/images/cpp-programming-logo.png" 
+                     data-sizes="auto"
+                     width="70"
+                     height="70"
+                     loading="lazy">
+                     
+                  
+                  <h6 class="mb-1">Cara Menggunakan Single Linked List Menggunakan C&#43;&#43;</h6>
+                  <small class="text-secondary">2019-05-16 · 2 minutes read</small>
+               </div>
+            </div></a
+            >
+            
+         </ul>
+      </div>
+   </div>
+   <div class="widget">
+      <ul class="list-group">
+         
+         <a
+         href="/tags/network"
+         class="list-group-item list-group-item-action"
+         >
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">network (23)</h6>
+            </div>
+         </div></a
+         >
+         
+         <a
+         href="/tags/hardware"
+         class="list-group-item list-group-item-action"
+         >
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">hardware (11)</h6>
+            </div>
+         </div></a
+         >
+         
+         <a
+         href="/tags/tutorial"
+         class="list-group-item list-group-item-action"
+         >
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">tutorial (11)</h6>
+            </div>
+         </div></a
+         >
+         
+         <a
+         href="/tags/linux"
+         class="list-group-item list-group-item-action"
+         >
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">linux (10)</h6>
+            </div>
+         </div></a
+         >
+         
+         <a
+         href="/tags/networking"
+         class="list-group-item list-group-item-action"
+         >
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">networking (10)</h6>
+            </div>
+         </div></a
+         >
+         
+         <a
+         href="/tags/sistem-operasi"
+         class="list-group-item list-group-item-action"
+         >
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">sistem-operasi (10)</h6>
+            </div>
+         </div></a
+         >
+         
+         <a
+         href="/tags/c-programming"
+         class="list-group-item list-group-item-action"
+         >
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">c-programming (6)</h6>
+            </div>
+         </div></a
+         >
+         
+         <a
+         href="/tags/cpp-programming"
+         class="list-group-item list-group-item-action"
+         >
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">cpp-programming (5)</h6>
+            </div>
+         </div></a
+         >
+         
+         <a
+         href="/tags/mouse"
+         class="list-group-item list-group-item-action"
+         >
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">mouse (3)</h6>
+            </div>
+         </div></a
+         >
+         
+         <a
+         href="/tags/stack"
+         class="list-group-item list-group-item-action"
+         >
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">stack (3)</h6>
+            </div>
+         </div></a
+         >
+         
+      </ul>
+   </div>
+</aside>
+</div>
+</div>
+
+         </main>
+         <footer><div class="container margin_60_35">
+   <div class="row">
+      <div class="col-lg-6">
+         <ul id="footer-selector">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Arsip</a></li>
+         </ul>
+      </div>
+      <div class="col-lg-6">
+         <ul id="additional_links">
+            <li><span>© 2019 <a href="https://santekno.com/">santekno.com</a> | Made with ❤️ using <a href="https://gohugo.io/">Hugo 0.55.4</a></span></li>
+         </ul>
+      </div>
+   </div>
+</div></footer>
+      </div>
+   </body>
+   <div id="toTop"></div>
+   
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/common_scripts.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/validate.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/prism.js"></script>
+   
+</html>
