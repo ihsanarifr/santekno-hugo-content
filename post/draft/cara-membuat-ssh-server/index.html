@@ -25,41 +25,38 @@
       
    <body>
       <div id="page">
-         <header class="header_in is_sticky menu_fixed justify-content-between"><div class="container">
-   <div class="row">
-         <div class="col-lg-3 col-12">
-            <div id="logo">
-               <a href="https://santekno.com/" title="santekno.com">
-                     <img src="/images/logo-santekno.png" class="logo_normal" width="135">
-               </a>
-            </div>
-         </div>
-         <div class="col-lg-9 col-12">
-            <a href="#menu" class="btn_mobile">
-               <div class="hamburger hamburger--spin" id="hamburger">
-                     <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                     </div>
-               </div>
-            </a>
-            <nav id="menu" class="main-menu menu-title" >
-               <ul>
-                  <li><span><a href="#" title="#">Golang</a></span></li>
-                  <li><span><a href="#" title="#">PHP</a></span></li>
-                  <li><span><a href="#0">Java</a></span>
-                     <ul>
-                        <li><a href="checkout.html">Apache Camel</a></li>
-                        <li><a href="confirm.html">Spring Boot</a></li>
-                        <li><a href="confirm.html">RedHat JBoss Fuse</a></li>
-                        <li><a href="confirm.html">RedHat JBoss EAP</a></li>
-                     </ul>
-                  </li>
-                  <li><span><a href="#" title="C++">C++</a></span></li>
-               </ul>
-            </nav>
-         </div>
+         <header class="header_in is_sticky menu_fixed justify-content-between"><nav class="navbar navbar-expand-md navbar-dark fixed-column flex-md-row bd-navbar">
+   <a href="https://santekno.com/" title="santekno.com" class="navbar-brand">
+      <img src="/images/logo-santekno.png" class="logo_normal" width="135">
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+            <a class="nav-link" href="https://santekno.com/">Home <span class="sr-only">[content]</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/network">Network</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/hardware">Hardware</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/tutorial">Tutorial</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/linux">Linux</a>
+         </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
    </div>
-</div></header>
+</nav></header>
          <main>
 <div class="container margin_80_55">
    <div class="row">
@@ -87,7 +84,7 @@
       
       <div class="post-content">
          
-            <img class="img-fluid" src="/img/blog-single.jpg" alt="" width="100%">
+            <img class="img-fluid" src="/img/blog-single.jpg" alt="" style="height:100%;width:100%;">
          
          <p></p>
          <div class="MsoNormal" style="text-align: justify;"><span style="color: black;"><a href="http://santekno.blogspot.com/search/label/Linux" target="_blank"><b>Linux </b></a>– <b><a href="http://santekno.blogspot.com/2012/11/cara-membuat-ssh-server.html" target="_blank">Cara Membuat SSH Server</a>pada Fedora Core 7</b> itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau <b style="mso-bidi-font-weight: normal;">Secure Shell </b>menyediakan service untuk keperluan remote <i style="mso-bidi-font-style: normal;">login</i>. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : <b style="mso-bidi-font-weight: normal;">ssh, putty</b> dan sebagainya.</span><br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-ljiXQJDIquU/ULGyGCZsExI/AAAAAAAAB5c/VXPC3ebfFds/s1600/Linux-Server.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="149" src="http://2.bp.blogspot.com/-ljiXQJDIquU/ULGyGCZsExI/AAAAAAAAB5c/VXPC3ebfFds/s320/Linux-Server.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Gambar SSH Server</td></tr></tbody></table><div class="separator" style="clear: both; text-align: center;"><span style="color: black;"></span></div></div><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">SSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang <i style="mso-bidi-font-style: normal;">secure</i>. Kedua service tersebut sudah sangat populer, namun informasi yang lalu lalang antara client dan Server tidak “terlindungi” karena tidak di enkripsi. Maka informasi mudah di sadap dan di baca oleh orang yang tidak berhak. Dan ada juga enkripsi pada SSH dengan menggunakan algoritma DSA dan RSA tetapi terbilang cukup rumit untuk pengerjaannya.</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; width: 547px;"><tbody><tr style="height: 29.85pt;">  <td style="background: none repeat scroll 0% 0% rgb(84, 141, 212); font-size: 14pt; height: 29.85pt; padding: 0cm 5.4pt;" width="501"><span style="color: white;"><b>A. Instal SSH Server</b></span></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Baiklah, untuk lebih jelasnya kita mulai saja dengan praktik kita dengan mengecek penginstalan SSH apakah sudah di instal atau belum di server kita :</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><b style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;Courier New&quot;;">rpm –qa | grep ssh</span></b></div><div class="MsoNormal"><br /></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">openssh-4.5p1-6.fc7</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">openssh-askpass-4.5p1-6.fc7</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">openssh-clients-4.5p1-6.fc7</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">openssh-server-4.5p1-6.fc7</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Jika belum ada lakukan penginstalan aplikasi SSH tersebut, jika belum paham tentang penginstalan disini ada Perintah Dasar Linux Part 4. Openssh-server hanya diinstal pada komputer server ingat itu ya. </div><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Setelah terinstal aplikasi tersebut maka akan terbentuk file konfigurasi bernama <b style="mso-bidi-font-weight: normal;">/etc/ssh/sshd_config</b>.</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; width: 547px;"><tbody><tr style="height: 29.85pt;">  <td style="background: none repeat scroll 0% 0% rgb(84, 141, 212); font-size: 14pt; height: 29.85pt; padding: 0cm 5.4pt;" width="501"><span style="color: white;"><b>B. Konfigurasi SSH Server</b></span></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Menjalankan SSH Server itu dengan mengecek terlebih dahulu file konfigurasi dengan perintah :</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">cat   /etc/ssh/sshd_config</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Isi file konfigurasi terkesan rumit dan banyak. Maka kita tidak perlu mengubah apapun jika ingin membuat server SSH. Setelah itu kita aktifkan SSH Server tersebut dengan perintah </div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">service sshd   restart</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Kemudian periksa apakah file /etc/nologin ada atau tidak</div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">ls –l /etc/nologin</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Jika file tersebut ada maka user selain root tidak bisa login ke<span style="mso-spacerun: yes;">&nbsp; </span>server, baik dari localhost maupun client. Sebaiknya di ubah saja namanya menjadi :</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">mv /etc/nologin   /etc/nologin.old</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;"></div><table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; width: 547px;"><tbody><tr style="height: 29.85pt;">  <td style="background: none repeat scroll 0% 0% rgb(84, 141, 212); font-size: 14pt; height: 29.85pt; padding: 0cm 5.4pt;" width="501"><span style="color: white;"><b>C. Menjalankan SSH Server</b></span></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Kemudian cara menjalankan SSH server dan melakukan tes ke server dari salah satu komputer client yaitu ketikkan perintah </div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">ssh santekno.com   -1 ihsan</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Atau bisa dengan IP Addressnya</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">ssh 192.168.10.90   -1 ihsan</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><!--[if gte mso 9]><xml> <o:OfficeDocumentSettings>  <o:AllowPNG/> </o:OfficeDocumentSettings></xml><![endif]--> <br /><div class="MsoNormal" style="text-align: justify;">Maka setelah menggunakan itu akan tampak seperti dibawah ini</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">The authenticity of host ‘192.168.10.90 (192.168.10.90)’   can’t be established.</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">RSA key fingerprint is</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">5a:cb:66:7c:95:1f:fd:9a:11:a8:fb:77:67::67:ac:cc.</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">Are you sure you want to continue connecting   (yes/no)? <b style="mso-bidi-font-weight: normal;">Yes</b></span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">Warning: Permanently added ‘192.168.10.90’ (RSA)   to the list of known host.</span></div><div class="MsoNormal"><span style="font-size: 11.0pt;"><a href="mailto:ihsan@192.168.10.90's"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">ihsan@192.168.10.90’s</span></a></span><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">  password :</span><span style="font-family: &quot;Courier New&quot;;"></span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Jika password diketikkan makan akan login ke server SSH. Dan kalau kita akan keluar akhiri dengan perintah exit.</div><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Nah itulah<b> <a href="http://santekno.blogspot.com/2012/11/cara-membuat-ssh-server.html" target="_blank">Cara Membuat SSH Server</a> di Fedora Core 7</b>. Sekarang kita bisa login ke server dari komputer client. Semoga Bermanfaat.<br /><br /><div class="MsoNormal" style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: xx-small;">Referensi :</span></span></div><div class="MsoNormal" style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: xx-small;">Sofana, <span style="font-size: xx-small;">I</span>wan. 2008. <i>Mudah Membangun Server dengan Fedora.</i> Informatika, Bandung.</span></span></div></div>
@@ -95,7 +92,16 @@
       </div>
       <div class="post-content">
          <div class="row">
-            
+            <div class="col-md-6">
+               
+                  <a class="previous" href="https://santekno.com/post/draft/macam-macam-printer/">&lt;- Macam - Macam Printer</a>
+               
+            </div>
+            <div class="col-md-6">
+               
+                  <a class="next" href="https://santekno.com/post/draft/pengertian-monitor-crt-lcd-led-dan-plasma/"> Pengertian Monitor CRT, LCD, LED dan Plasma -></a>
+               
+            </div>
          </div>
       </div>
       
@@ -390,8 +396,9 @@
       </div>
    </body>
    <div id="toTop"></div>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/js/common_scripts.js"></script>
-	<script src="https://ddth2wdm6pubv.cloudfront.net/public/js/functions.js"></script>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/assets/validate.js"></script>
-   <script src="/js/prism.js"></script>
+   
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/common_scripts.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/validate.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/prism.js"></script>
+   
 </html>

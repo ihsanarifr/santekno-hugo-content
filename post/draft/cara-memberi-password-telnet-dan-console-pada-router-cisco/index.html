@@ -25,41 +25,38 @@
       
    <body>
       <div id="page">
-         <header class="header_in is_sticky menu_fixed justify-content-between"><div class="container">
-   <div class="row">
-         <div class="col-lg-3 col-12">
-            <div id="logo">
-               <a href="https://santekno.com/" title="santekno.com">
-                     <img src="/images/logo-santekno.png" class="logo_normal" width="135">
-               </a>
-            </div>
-         </div>
-         <div class="col-lg-9 col-12">
-            <a href="#menu" class="btn_mobile">
-               <div class="hamburger hamburger--spin" id="hamburger">
-                     <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                     </div>
-               </div>
-            </a>
-            <nav id="menu" class="main-menu menu-title" >
-               <ul>
-                  <li><span><a href="#" title="#">Golang</a></span></li>
-                  <li><span><a href="#" title="#">PHP</a></span></li>
-                  <li><span><a href="#0">Java</a></span>
-                     <ul>
-                        <li><a href="checkout.html">Apache Camel</a></li>
-                        <li><a href="confirm.html">Spring Boot</a></li>
-                        <li><a href="confirm.html">RedHat JBoss Fuse</a></li>
-                        <li><a href="confirm.html">RedHat JBoss EAP</a></li>
-                     </ul>
-                  </li>
-                  <li><span><a href="#" title="C++">C++</a></span></li>
-               </ul>
-            </nav>
-         </div>
+         <header class="header_in is_sticky menu_fixed justify-content-between"><nav class="navbar navbar-expand-md navbar-dark fixed-column flex-md-row bd-navbar">
+   <a href="https://santekno.com/" title="santekno.com" class="navbar-brand">
+      <img src="/images/logo-santekno.png" class="logo_normal" width="135">
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+            <a class="nav-link" href="https://santekno.com/">Home <span class="sr-only">[content]</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/network">Network</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/hardware">Hardware</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/tutorial">Tutorial</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/linux">Linux</a>
+         </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
    </div>
-</div></header>
+</nav></header>
          <main>
 <div class="container margin_80_55">
    <div class="row">
@@ -87,7 +84,7 @@
       
       <div class="post-content">
          
-            <img class="img-fluid" src="/img/blog-single.jpg" alt="" width="100%">
+            <img class="img-fluid" src="/img/blog-single.jpg" alt="" style="height:100%;width:100%;">
          
          <p></p>
          <div style="text-align: justify;"><b><a href="http://santekno.blogspot.com/2013/10/cara-memberi-password-telnet-console-pada-router-cisco.html" target="_blank" title="Cara Memberi Password Telnet dan Console pada Router Cisco">Cara Memberi Password Telnet dan Console pada Router Cisco</a></b> - Salam teman-teman, kali ini Santekno akan menjelaskan mengenai Networking atau Jaringan Komputer. Dan pada saat ini <b>Santekno </b>akan lebih menjelaskan kepada Keamanan dalam suatu jaringan dimulai dari <i>device </i>sendiri sampai pada Firewall yang akan nanti diterapkan.</div><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-Mh9LHh_3oIQ/Ul6le5aSPXI/AAAAAAAACjU/jJ6W5SdvkBQ/s1600/password-vty-console-cisco.bmp" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="211" src="http://1.bp.blogspot.com/-Mh9LHh_3oIQ/Ul6le5aSPXI/AAAAAAAACjU/jJ6W5SdvkBQ/s400/password-vty-console-cisco.bmp" width="400" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Password Telnet dan Console pada Router Cisco</td></tr></tbody></table><br /><br /><div style="text-align: justify;">Secara umum, keamanan dalam suatu jaringan itu sangat perlu sekali karena untuk menyelamatkan data kita yang ada di server dan agar terhindar dari para hacker yang mencoba masuk kedalam suatu private network kita yang biasanya tidak boleh diakses dalam remote dari public. Maka dari itu secara mendasar Santekno akan menjelaskan bagaimana pemberian Password Telnet dan Console agar tidak sembarang orang bisa masuk dan konfigurasi ke dalam router kita.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Cara konfigurasi pada Router itu terbagi menjadi 2 yaitu melewati Console dan menggunakan Telnet. Pemberian password pada console yaitu pemberian keamanan untuk Router yang langsung terhubung ke Router tersebut menggunakan kabel console, sedangkan Telnet yaitu mengkonfigurasikan Router secara remote atau secara tidak langsung terhubung ke routernya, seperti bisa melalui jaringan IP public atau internet.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Baiklah, pertama kali kita akan mencoba memberikan password pada Router terlebih dahulu. Berikut adalah konfigurasinya:</div><br /><table bgcolor="grey" style="font-family: &quot;Courier New&quot;,Courier,monospace; height: 110px; width: 400px;"><tbody><tr><td>Router&gt;enable<br />Router#configure terminal<br />Router(config)#enable password <span style="color: red;"><b>santekno</b></span><br />Router(config)#enable secret <b><span style="color: red;">santekno</span></b></td></tr></tbody></table><br /><div style="text-align: justify;">Tulisan yang berwarna merah merupakan password yang nanti jika masuk ke dalam router tersebut pada mode #. enable password dan secret sama saja tetapi mempunyai perbedaan yaitu jika menggunakan password maka password router tersebut tidak di enskripsi sedangkan jika menggunakan secret maka password yang sudah di konfigurasikan akan di enskripsi seperti gambar dibawah ini&nbsp;</div><div style="text-align: justify;"><br /></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-Af1yCzWGxok/Ul6eqcsoGiI/AAAAAAAACi8/tzltOosC-Y4/s1600/password-secret.bmp" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="141" src="http://1.bp.blogspot.com/-Af1yCzWGxok/Ul6eqcsoGiI/AAAAAAAACi8/tzltOosC-Y4/s320/password-secret.bmp" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Perbedaan password dan secret</td></tr></tbody></table><br />Nah setelah itu kita akan memberikan password pada Console jika akan melakukan konfigurasi pada Router Cisco. berikut cara konfigurasinya :<br /><br /><table bgcolor="grey" style="font-family: &quot;Courier New&quot;,Courier,monospace; height: 110px; width: 400px;"><tbody><tr><td>R1&gt;enable<br />R1#config terminal <br />R1(config)# line con 0<br />R1(config-line)# password <span style="color: red;"><b>santekno</b></span><br />R1(config-line)# login </td></tr></tbody></table><br />Sedangkan konfigurasi password untuk Telnet pada Router Cisco sebagai berikut :<br /><br /><table bgcolor="grey" style="font-family: &quot;Courier New&quot;,Courier,monospace; height: 110px; width: 400px;"><tbody><tr><td>R1&gt;enable<br />R1#config terminal<br />R1(config)# line vty 0 4<br />R1(config-line)# password <span style="color: red;"><b>santekno</b></span><br />R1(config-line)# login </td></tr></tbody></table><br /><div style="text-align: justify;">Bagaimana cukup mudah kan untuk pemberian keamanan dalam Router? Keamanan dalam suatu jaringan itu harus dimulai dari yang terkecil seperti pemberian password console, Telnet dan juga password Routernya.</div><div style="text-align: justify;">Sekian penjelasan mengenai <b><a href="http://santekno.blogspot.com/2013/10/cara-memberi-password-telnet-console-pada-router-cisco.html" target="_blank" title="Cara Memberi Password Telnet dan Console pada Router Cisco">Cara Memberi Password Telnet dn Console pada Router Cisco</a></b>, Semoga bermanfaat bagi sobat. ^_^</div>
@@ -95,7 +92,16 @@
       </div>
       <div class="post-content">
          <div class="row">
-            
+            <div class="col-md-6">
+               
+                  <a class="previous" href="https://santekno.com/post/draft/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/">&lt;- Cara membedakan RAM DDR1, DDR2 dan DDR3</a>
+               
+            </div>
+            <div class="col-md-6">
+               
+                  <a class="next" href="https://santekno.com/post/draft/cara-konfigurasi-static-route-pada-router-cisco/"> Cara Konfigurasi Static Route pada Router Cisco -></a>
+               
+            </div>
          </div>
       </div>
       
@@ -390,8 +396,9 @@
       </div>
    </body>
    <div id="toTop"></div>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/js/common_scripts.js"></script>
-	<script src="https://ddth2wdm6pubv.cloudfront.net/public/js/functions.js"></script>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/assets/validate.js"></script>
-   <script src="/js/prism.js"></script>
+   
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/common_scripts.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/validate.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/prism.js"></script>
+   
 </html>

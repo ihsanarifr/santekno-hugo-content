@@ -25,41 +25,38 @@
       
    <body>
       <div id="page">
-         <header class="header_in is_sticky menu_fixed justify-content-between"><div class="container">
-   <div class="row">
-         <div class="col-lg-3 col-12">
-            <div id="logo">
-               <a href="https://santekno.com/" title="santekno.com">
-                     <img src="/images/logo-santekno.png" class="logo_normal" width="135">
-               </a>
-            </div>
-         </div>
-         <div class="col-lg-9 col-12">
-            <a href="#menu" class="btn_mobile">
-               <div class="hamburger hamburger--spin" id="hamburger">
-                     <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                     </div>
-               </div>
-            </a>
-            <nav id="menu" class="main-menu menu-title" >
-               <ul>
-                  <li><span><a href="#" title="#">Golang</a></span></li>
-                  <li><span><a href="#" title="#">PHP</a></span></li>
-                  <li><span><a href="#0">Java</a></span>
-                     <ul>
-                        <li><a href="checkout.html">Apache Camel</a></li>
-                        <li><a href="confirm.html">Spring Boot</a></li>
-                        <li><a href="confirm.html">RedHat JBoss Fuse</a></li>
-                        <li><a href="confirm.html">RedHat JBoss EAP</a></li>
-                     </ul>
-                  </li>
-                  <li><span><a href="#" title="C++">C++</a></span></li>
-               </ul>
-            </nav>
-         </div>
+         <header class="header_in is_sticky menu_fixed justify-content-between"><nav class="navbar navbar-expand-md navbar-dark fixed-column flex-md-row bd-navbar">
+   <a href="https://santekno.com/" title="santekno.com" class="navbar-brand">
+      <img src="/images/logo-santekno.png" class="logo_normal" width="135">
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+            <a class="nav-link" href="https://santekno.com/">Home <span class="sr-only">[content]</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/network">Network</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/hardware">Hardware</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/tutorial">Tutorial</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/linux">Linux</a>
+         </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
    </div>
-</div></header>
+</nav></header>
          <main>
 <div class="container margin_80_55">
    <div class="row">
@@ -87,7 +84,7 @@
       
       <div class="post-content">
          
-            <img class="img-fluid" src="/img/blog-single.jpg" alt="" width="100%">
+            <img class="img-fluid" src="/img/blog-single.jpg" alt="" style="height:100%;width:100%;">
          
          <p></p>
          <p><br /><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><a href="http://2.bp.blogspot.com/-s9T3Ll2O2KU/UIfoanjsR_I/AAAAAAAABuk/A9z5TISEpGc/s1600/router.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="230" src="https://2.bp.blogspot.com/-s9T3Ll2O2KU/UIfoanjsR_I/AAAAAAAABuk/A9z5TISEpGc/s400/router.jpg" width="400"></a></span></span></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><br /></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><a href="http://santekno.blogspot.co.id/2012/10/komponen-router-dan-fungsinya.html"><b>Network</b></a> <b>– </b>Router adalah alat yang sering di jumpai pada instalasi jaringan di berbagai tempat bahkan dunia. Sehingga untuk menjadi seorang ahli jaringan perlu diketahui <b><a href="http://santekno.blogspot.co.id/2012/10/komponen-router-dan-fungsinya.html">Komponen<span style="font-size: small;"> router </span>dan fungsinya</a></b>. Untuk saat ini Santekno akan menjelaskan bagian-bagian dari Router dan fungsi dari bagian-bagian tersebut.</span></span></div><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span><br /><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><br /></div><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span><br /><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><b>1. RAM</b>&nbsp;</span></span><br /><div style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Fungsi utama RAM pada router adalah menyimpan konfigurasi yang sedang berjalan (running configuration) dan sistem operasi IOS yang aktif, menyimpan routing table, menangani cache ARP, menangani fast-swtiching cache, menyediakan memori sementara utk konfigurasi file, menangani paket buffer, mengelola antrian paket. Sifat RAM adalah semua data yang disimpan akan hilang ketika kehilangan sumber daya atau pada saat akan direstart.</span></span></div></div><div style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><br /></div><div style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><b>2. NVRAM (Non Volatile RAM)</b>&nbsp;</span></span><br /><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">NVRAM berguna untuk menyimpan konfigurasi start-up (start-up configuration). Isinya akan tetap ada walaupun router kehilangan power. Ini mungkin termasuk alamat IP (Routing protocol, Hostname dari router)</span></span></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><br /></div><div style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><b>3. FLASH MEMORY</b>&nbsp;</span></span><br /><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Flash berguna untuk menyimpan IOS (Operating System Image). Memory ini bisa menyimpan berbagai versi software IOS. Merupakan jenis EEPROM (Electronically Erasable Programmable ROM), jadi walaupun router kehilangan power, isinya tetap ada.</span></span></div><div style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><br /></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><b>4. ROM</b>&nbsp;</span></span><br /><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">ROM berguna untuk menyimpan sistem bootstrap yang berfungsi untuk mengatur proses dan menjalankan Power On Self Test (POST) dan IOS Image.</span></span></div><div style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><br /></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><b>5. INTERFACE</b></span></span></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><a href="http://3.bp.blogspot.com/-AqypmIdEKPQ/UIfoZMZm9cI/AAAAAAAABuc/fzbta3e2A-I/s1600/interface.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="167" src="https://3.bp.blogspot.com/-AqypmIdEKPQ/UIfoZMZm9cI/AAAAAAAABuc/fzbta3e2A-I/s400/interface.png" width="400"></a></span></span></div><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><br /></div><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span><br /><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"></span></div><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span><br /><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">interface merupakan komponen eksternal dari suatu router. Sebelum menkonfigurasi router, masing-masing fungsi komponen tersebut harus diketahui terlebih dahulu karena komponen yang akan dikoneksikan ke router menggunakan interface yang berbeda tergantung komponennya yang akan dihubungkan. Gambar di atas memperlihatkan interface standar yang dimiliki oleh sebuah router yang meliputi:</span></span></div><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span><br /><ol start="1" style="margin-top: 0cm;" type="1"><li class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Serial Ports, terdiri dari      Serial0 dan Serial1</span></span></li><li class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Fast Ethernet Ports, pasti udah      pada kenal semua</span></span></li><li class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Console Port, port utk      menghubungkan router dgn dunia luar, port ini akan terhubung ke serial      port di PC kita dengan menggunakan kabel Roll Over</span></span></li><li class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Auxiliary Port, hampir sama      dengan Console Port, dan tidak semua port ini dimiliki oleh router</span></span></li><li class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Power Switch, untuk power</span></span></li></ol><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"> </span></span><br /><div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Untuk bisa terhubung ke router kita membutuhkan diantaranya sebagai berikut :</span></span></div><ol start="1" style="margin-top: 0cm;" type="1"><li class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Port Console</span></span></li><li class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Port Aux</span></span></li><li class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Telnet (Ethernet atau Serial      Port)&nbsp;</span></span></li></ol><br /><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><a href="http://3.bp.blogspot.com/-r2pOveFJouU/UIfoS7_ar3I/AAAAAAAABuU/nSRT0xlVef8/s1600/bagian+router.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="260" src="https://3.bp.blogspot.com/-r2pOveFJouU/UIfoS7_ar3I/AAAAAAAABuU/nSRT0xlVef8/s400/bagian+router.png" width="400">&nbsp;</a></span></span></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">&nbsp;Struktur dari Router</span></span></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><a href="http://4.bp.blogspot.com/-CpL0QOQcw3M/UIfodXC0IpI/AAAAAAAABus/ZadC05s-xBk/s1600/tahapan+startup.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="312" src="https://4.bp.blogspot.com/-CpL0QOQcw3M/UIfodXC0IpI/AAAAAAAABus/ZadC05s-xBk/s400/tahapan+startup.png" width="400"></a></span></span></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">&nbsp;Bagian-bagian Komponen Router mempunyai tugas-tugas sendiri</span></span></div><div class="separator" style="clear: both; text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><br /></span></span></div><div class="separator" style="clear: both; text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;">Router itu dalam dunia jaringan sama halnya seperti sebuah Komputer (PC) yang berperan penting dalam menghubungkan dari jaringan antar jaringan. Demikianlah pembahasan mengenai <a href="http://santekno.blogspot.co.id/2012/10/komponen-router-dan-fungsinya.html">Komponen Router dan Fungsinya </a>semoga dari penjelasan ini bisa bermanfaat.</span></span></div><div class="separator" style="clear: both; text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><br /></span></span></div><div class="separator" style="clear: both; text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: small;"><br /></span></span></div></p>
@@ -95,7 +92,16 @@
       </div>
       <div class="post-content">
          <div class="row">
-            
+            <div class="col-md-6">
+               
+                  <a class="previous" href="https://santekno.com/post/bagian-bagian-dari-mouse-komputer/">&lt;- Bagian-bagian dari Mouse Komputer</a>
+               
+            </div>
+            <div class="col-md-6">
+               
+                  <a class="next" href="https://santekno.com/post/draft/definisi-ip-address-dan-subnet-mask/"> Definisi IP Address dan Subnet Mask -></a>
+               
+            </div>
          </div>
       </div>
       
@@ -390,8 +396,9 @@
       </div>
    </body>
    <div id="toTop"></div>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/js/common_scripts.js"></script>
-	<script src="https://ddth2wdm6pubv.cloudfront.net/public/js/functions.js"></script>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/assets/validate.js"></script>
-   <script src="/js/prism.js"></script>
+   
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/common_scripts.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/validate.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/prism.js"></script>
+   
 </html>

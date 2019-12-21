@@ -25,41 +25,38 @@
       
    <body>
       <div id="page">
-         <header class="header_in is_sticky menu_fixed justify-content-between"><div class="container">
-   <div class="row">
-         <div class="col-lg-3 col-12">
-            <div id="logo">
-               <a href="https://santekno.com/" title="santekno.com">
-                     <img src="/images/logo-santekno.png" class="logo_normal" width="135">
-               </a>
-            </div>
-         </div>
-         <div class="col-lg-9 col-12">
-            <a href="#menu" class="btn_mobile">
-               <div class="hamburger hamburger--spin" id="hamburger">
-                     <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                     </div>
-               </div>
-            </a>
-            <nav id="menu" class="main-menu menu-title" >
-               <ul>
-                  <li><span><a href="#" title="#">Golang</a></span></li>
-                  <li><span><a href="#" title="#">PHP</a></span></li>
-                  <li><span><a href="#0">Java</a></span>
-                     <ul>
-                        <li><a href="checkout.html">Apache Camel</a></li>
-                        <li><a href="confirm.html">Spring Boot</a></li>
-                        <li><a href="confirm.html">RedHat JBoss Fuse</a></li>
-                        <li><a href="confirm.html">RedHat JBoss EAP</a></li>
-                     </ul>
-                  </li>
-                  <li><span><a href="#" title="C++">C++</a></span></li>
-               </ul>
-            </nav>
-         </div>
+         <header class="header_in is_sticky menu_fixed justify-content-between"><nav class="navbar navbar-expand-md navbar-dark fixed-column flex-md-row bd-navbar">
+   <a href="https://santekno.com/" title="santekno.com" class="navbar-brand">
+      <img src="/images/logo-santekno.png" class="logo_normal" width="135">
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+            <a class="nav-link" href="https://santekno.com/">Home <span class="sr-only">[content]</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/network">Network</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/hardware">Hardware</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/tutorial">Tutorial</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/linux">Linux</a>
+         </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
    </div>
-</div></header>
+</nav></header>
          <main>
 <div class="container margin_80_55">
    <div class="row">
@@ -89,7 +86,7 @@
       
       <div class="post-content">
          
-            <img class="img-fluid" src="/img/blog-single.jpg" alt="" width="100%">
+            <img class="img-fluid" src="/img/blog-single.jpg" alt="" style="height:100%;width:100%;">
          
          <p></p>
          <p><br /><div class="MsoNormal" style="text-align: justify;"><b><a href="http://santekno.blogspot.co.id/2012/11/jenis-jenis-name-server.html" target="_blank">Linux</a></b> – <b><a href="http://santekno.blogspot.co.id/2012/11/jenis-jenis-name-server.html" target="_blank">Jenis-jenis Name Server</a></b> memang sudah diklasifikasikan terlebih dahulu sehingga semua pengolahan dan konfigurasi pada <b>DNS Server</b> bisa lebih baik dan bisa juga menggunakan beberapa penggunaan yang lain atau antar server lain bisa terhubung. Baiklah ada jenis-jenis Name server :<o:p><a href="/o:p">/o:p</a></div><div class="MsoNormal" style="text-align: justify;"></div><ol><a href="http://2.bp.blogspot.com/-LsN5Ro4PcVw/UJ8bmtxXt4I/AAAAAAAABw8/Uxs68s3RVA0/s1600/dns+server.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="240" src="https://2.bp.blogspot.com/-LsN5Ro4PcVw/UJ8bmtxXt4I/AAAAAAAABw8/Uxs68s3RVA0/s320/dns+server.jpg" width="320"></a><li style="text-align: justify;"><b>Primary NS</b> atau kadangkala disebut Master NS, Merupakan NS utama yang menyimpan database hostname/ IP Address suatuu zona. Pada saat melakukan setting Primary NS, kita harus menggunakan file zone. Primary NS merupakan authoritative server bagi zona tertentu.</li><br /><li style="text-align: justify;"><b>Secondary NS</b> atau Slave NS. Merupakan NS cadangan (backup) bagi suatu zona. Semua informasi yang ada pada Primary NS akan di-update secara berkala oleh Secondary NS melalui proses “copy file” yang disebut file transfer. Jika Primary NS bermasalah maka Secondary NS dapat digunakan sebagai pengganti (untuk sementara waktu). Secondary NS merupakan authoritative server bagi zona tertentu.</li><br /><li><span style="text-align: justify;"><b>Stealth NS</b>. Disebut seperti itu karena keberadaannya yang tersembunyi atau tidak terdaftar dalam RR (Resource Record).</span></li><br /><li><span style="text-align: justify;"><b>Caching NS</b>. Sesuai namanya, NS jenis ini dapat melaukukan caching data-data yang bersal dari server DNS lain. Jadi, caching NS hanya sebagai tempat penyimpanan sementara dan biasanya data hanya dipertahankan sekitar 8 jam. Apabila client memerlukan informasi IP Address maka informasi tersebut dapat dicari terlebih dulu dari cache lokal. Jika tidak ditemukan barulah mencari informasi dari server DNS lain. Hal ini dapat mempercepat proses query dan mengurangi network traffic Caching NS bukan merupakan authoritative server.</span></li></ol><div class="MsoNormal" style="text-align: justify;"><o:p><a href="/o:p">/o:p</a></div><div class="MsoNormal" style="text-align: justify;">Berikut postingan tentang <a href="http://santekno.blogspot.co.id/2012/11/jenis-jenis-name-server.html" target="_blank">Jenis-jenis Name Server</a>. Setelah Anda mengetahui Name Server, kelanjutannya akan lebih mudah untuk Membangun <a href="http://santekno.blogspot.co.id/2012/11/cara-membuat-dns-server.html" target="_blank"><b>DNS Server</b></a>, <a href="http://santekno.blogspot.co.id/2012/11/cara-membuat-dan-konfigurasi-web-server.html" target="_blank"><b>Web Server</b></a>, <b>Proxy Server</b>, <b>Mail Server</b>, <b>FTP Server</b>, <b>DHCP server</b>, dll. Semoga bermanfaat.<br /><br /><br /><div class="MsoNormal" style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: xx-small;">Referensi :</span></span></div><div class="MsoNormal" style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: xx-small;">Sofana, <span style="font-size: xx-small;">I</span>wan. 2008. <i>Mudah Membangun Server dengan Fedora.</i> Informatika, Bandung.</span></span></div><br /></div><div class="MsoNormal" style="text-align: justify;"><o:p><a href="/o:p">/o:p</a></div></p>
@@ -97,7 +94,16 @@
       </div>
       <div class="post-content">
          <div class="row">
-            
+            <div class="col-md-6">
+               
+                  <a class="previous" href="https://santekno.com/post/draft/perintah-dasar-linux-part-4/">&lt;- Perintah Dasar Linux Part 4</a>
+               
+            </div>
+            <div class="col-md-6">
+               
+                  <a class="next" href="https://santekno.com/post/draft/cara-membuat-dns-server/"> Cara Membuat DNS Server -></a>
+               
+            </div>
          </div>
       </div>
       
@@ -392,8 +398,9 @@
       </div>
    </body>
    <div id="toTop"></div>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/js/common_scripts.js"></script>
-	<script src="https://ddth2wdm6pubv.cloudfront.net/public/js/functions.js"></script>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/assets/validate.js"></script>
-   <script src="/js/prism.js"></script>
+   
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/common_scripts.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/validate.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/prism.js"></script>
+   
 </html>

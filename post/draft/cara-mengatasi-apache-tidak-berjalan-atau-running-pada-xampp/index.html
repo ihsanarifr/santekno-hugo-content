@@ -25,41 +25,38 @@
       
    <body>
       <div id="page">
-         <header class="header_in is_sticky menu_fixed justify-content-between"><div class="container">
-   <div class="row">
-         <div class="col-lg-3 col-12">
-            <div id="logo">
-               <a href="https://santekno.com/" title="santekno.com">
-                     <img src="/images/logo-santekno.png" class="logo_normal" width="135">
-               </a>
-            </div>
-         </div>
-         <div class="col-lg-9 col-12">
-            <a href="#menu" class="btn_mobile">
-               <div class="hamburger hamburger--spin" id="hamburger">
-                     <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                     </div>
-               </div>
-            </a>
-            <nav id="menu" class="main-menu menu-title" >
-               <ul>
-                  <li><span><a href="#" title="#">Golang</a></span></li>
-                  <li><span><a href="#" title="#">PHP</a></span></li>
-                  <li><span><a href="#0">Java</a></span>
-                     <ul>
-                        <li><a href="checkout.html">Apache Camel</a></li>
-                        <li><a href="confirm.html">Spring Boot</a></li>
-                        <li><a href="confirm.html">RedHat JBoss Fuse</a></li>
-                        <li><a href="confirm.html">RedHat JBoss EAP</a></li>
-                     </ul>
-                  </li>
-                  <li><span><a href="#" title="C++">C++</a></span></li>
-               </ul>
-            </nav>
-         </div>
+         <header class="header_in is_sticky menu_fixed justify-content-between"><nav class="navbar navbar-expand-md navbar-dark fixed-column flex-md-row bd-navbar">
+   <a href="https://santekno.com/" title="santekno.com" class="navbar-brand">
+      <img src="/images/logo-santekno.png" class="logo_normal" width="135">
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+            <a class="nav-link" href="https://santekno.com/">Home <span class="sr-only">[content]</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/network">Network</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/hardware">Hardware</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/tutorial">Tutorial</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/linux">Linux</a>
+         </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
    </div>
-</div></header>
+</nav></header>
          <main>
 <div class="container margin_80_55">
    <div class="row">
@@ -87,7 +84,7 @@
       
       <div class="post-content">
          
-            <img class="img-fluid" src="/img/blog-single.jpg" alt="" width="100%">
+            <img class="img-fluid" src="/img/blog-single.jpg" alt="" style="height:100%;width:100%;">
          
          <p></p>
          <div style="text-align: justify;"><a href="http://santekno.blogspot.com/2014/08/cara-mengatasi-apache-tidak-berjalan-running-pada-xampp.html" target="_blank"><b>Cara Mengatasi Apache Tidak Berjalan atau <i>Running </i>pada XAMPP </b></a>- Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan <i>virtual server </i>yang sangat terkenal di kalangan para <i>programmer.</i> Suatu <i>virtual </i>yang terdapat pada Xampp ini digunakan untuk para <i>developer </i>khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, <b>phpmyadmin </b>sebagai Database Server dan banyak lagi.</div><div style="text-align: justify;"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-5OCKeKZHEE8/U_4MXbgP3DI/AAAAAAAACxY/OqAi74_6yqQ/s1600/xampp-tidak-start.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-5OCKeKZHEE8/U_4MXbgP3DI/AAAAAAAACxY/OqAi74_6yqQ/s1600/xampp-tidak-start.PNG" height="171" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Apache tidak <i>running</i></td></tr></tbody></table><div style="text-align: justify;">Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah <i>error </i>yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">localhost</span>. Nah permasalahan itulah yang sekarang Santekno akan jelaskan secara terperinci. Cara mengatasi Apache tidak berjalan ini terjadi karena kesalahan Web Server-nya atau mempunyai lebih <i>virtual host </i>di dalam komputer kita sehingga port HTTP yaitu 80 menjadi bentrok. Maka dari itu, berikut ini tahapan cara agar tidak terjadi bentrok sehingga Apache bisa berjalan "Running" kembali.</div><ol style="text-align: justify;"><li>Lakukan perubahan pada file <strong>httpd.conf&nbsp;</strong></li><li>Buka file httpd.conf di folder <strong>C:\xampp\apache\conf\&nbsp;</strong>dengan menggunakan aplikasi notepad.</li><li>Cari kata “<strong>Listen 80</strong>” dan ubahlah menjadi “<strong>Listen 8080</strong>“. Bisa dilihat pada gambar dibawah ini. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-YO4QwAxJijg/U_4MWmLsg-I/AAAAAAAACxQ/H2m7h1x2EGw/s1600/listen-80.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-YO4QwAxJijg/U_4MWmLsg-I/AAAAAAAACxQ/H2m7h1x2EGw/s1600/listen-80.PNG" height="208" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Listen menjadi 8080</td></tr></tbody></table></li><li>Masih di file yang sama, carilah kata “<strong>ServerName localhost:80</strong>” kemudian ubahlah menjadi “<strong>ServerName localhost:8080</strong>“. Lihat gambar dibawah ini. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-kNum_rozfbY/U_4MW_yGsiI/AAAAAAAACxU/DGsMr0PWAX4/s1600/servername-8080.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-kNum_rozfbY/U_4MW_yGsiI/AAAAAAAACxU/DGsMr0PWAX4/s1600/servername-8080.PNG" height="114" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">ServerName localhost menjadi 8080</td></tr></tbody></table></li><li>Lalu <strong>Simpan</strong>.</li><li>Selanjutnya, buka file <strong>httpd-ssl.conf</strong> di <strong>C:\xampp\apache\conf\extra\. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-N91n4-QPwh8/U_4MWTndTJI/AAAAAAAACxM/9s6GxLMygfA/s1600/http-ssl-xampp.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-N91n4-QPwh8/U_4MWTndTJI/AAAAAAAACxM/9s6GxLMygfA/s1600/http-ssl-xampp.PNG" height="213" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">File bernama httpd-ssl.conf</td></tr></tbody></table></strong></li><li>Carilah kata “<strong>Listen 443</strong>” dan ubah menjadi “<strong>Listen 4499</strong>“. Bisa dilihat gambar dibawah ini. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-dPKRxIkiJgw/U_4MVtBEUAI/AAAAAAAACxA/AuMVEBe1J4s/s1600/http-ssl-listen-4499.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-dPKRxIkiJgw/U_4MVtBEUAI/AAAAAAAACxA/AuMVEBe1J4s/s1600/http-ssl-listen-4499.PNG" height="213" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">httpd-ssl menjadi 4499</td></tr></tbody></table></li><li>Masih di file yang sama, dan carilah kata “<strong>virtualhost_default_:443</strong>” kemudian ubahlah menjadi “<strong>virtualhost_default_:4499</strong>“. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-sNHr_BYcPQ8/U_4MVpF_joI/AAAAAAAACxI/FpWK-aQzPp0/s1600/http-ssl-virtualhost-4499.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-sNHr_BYcPQ8/U_4MVpF_joI/AAAAAAAACxI/FpWK-aQzPp0/s1600/http-ssl-virtualhost-4499.PNG" height="255" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">VirtualHost_default menjadi 4499</td></tr></tbody></table></li><li>Masih di file yang sama, carilah kata “<strong>ServerName localhost:443</strong>” dan ubahlah menjadi “<strong>ServerName localhost:4499</strong>“.<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-uLCCZYAERL8/U_4MVhE63UI/AAAAAAAACxE/6PWZsu1c2eI/s1600/http-ssl-virtualhost-default-4499.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://3.bp.blogspot.com/-uLCCZYAERL8/U_4MVhE63UI/AAAAAAAACxE/6PWZsu1c2eI/s1600/http-ssl-virtualhost-default-4499.PNG" height="291" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">ServerName localhost menjadi 4499</td></tr></tbody></table></li><li>Sekarang jalankan XAMPP Contol Panel, lalu klik Start pada Apache. Jika muncul peringatan di kotak detail bagian bawah “<strong>Apache started [port 80]</strong>“, maka bukalah browser dan arahkan ke alamat <strong>http://localhost:8080/xampp</strong>. Jika berhasil maka Web Service Apache tersebut telah berjalan di port 8080.</li></ol><div style="text-align: justify;">Sudah jalankan Apache Xampp sobat? Jika belum bisa berjalan atau running juga maka cobalah langsung jalankan localhost:8080 di browser biasanya walaupun dalam Xampp control sudah di tekan tombol start. Semoga bermanfaat sobat ^_^</div>
@@ -95,7 +92,16 @@
       </div>
       <div class="post-content">
          <div class="row">
-            
+            <div class="col-md-6">
+               
+                  <a class="previous" href="https://santekno.com/post/draft/cara-konfigurasi-vlan-pada-cisco-packet-tracer/">&lt;- Cara Konfigurasi VLAN pada Cisco Packet Tracer</a>
+               
+            </div>
+            <div class="col-md-6">
+               
+                  <a class="next" href="https://santekno.com/post/cara-pertambahan-dua-variable/"> Cara Pertambahan dua variabel -></a>
+               
+            </div>
          </div>
       </div>
       
@@ -390,8 +396,9 @@
       </div>
    </body>
    <div id="toTop"></div>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/js/common_scripts.js"></script>
-	<script src="https://ddth2wdm6pubv.cloudfront.net/public/js/functions.js"></script>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/assets/validate.js"></script>
-   <script src="/js/prism.js"></script>
+   
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/common_scripts.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/validate.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/prism.js"></script>
+   
 </html>

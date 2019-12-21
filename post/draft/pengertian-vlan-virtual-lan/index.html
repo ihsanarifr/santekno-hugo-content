@@ -25,41 +25,38 @@
       
    <body>
       <div id="page">
-         <header class="header_in is_sticky menu_fixed justify-content-between"><div class="container">
-   <div class="row">
-         <div class="col-lg-3 col-12">
-            <div id="logo">
-               <a href="https://santekno.com/" title="santekno.com">
-                     <img src="/images/logo-santekno.png" class="logo_normal" width="135">
-               </a>
-            </div>
-         </div>
-         <div class="col-lg-9 col-12">
-            <a href="#menu" class="btn_mobile">
-               <div class="hamburger hamburger--spin" id="hamburger">
-                     <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                     </div>
-               </div>
-            </a>
-            <nav id="menu" class="main-menu menu-title" >
-               <ul>
-                  <li><span><a href="#" title="#">Golang</a></span></li>
-                  <li><span><a href="#" title="#">PHP</a></span></li>
-                  <li><span><a href="#0">Java</a></span>
-                     <ul>
-                        <li><a href="checkout.html">Apache Camel</a></li>
-                        <li><a href="confirm.html">Spring Boot</a></li>
-                        <li><a href="confirm.html">RedHat JBoss Fuse</a></li>
-                        <li><a href="confirm.html">RedHat JBoss EAP</a></li>
-                     </ul>
-                  </li>
-                  <li><span><a href="#" title="C++">C++</a></span></li>
-               </ul>
-            </nav>
-         </div>
+         <header class="header_in is_sticky menu_fixed justify-content-between"><nav class="navbar navbar-expand-md navbar-dark fixed-column flex-md-row bd-navbar">
+   <a href="https://santekno.com/" title="santekno.com" class="navbar-brand">
+      <img src="/images/logo-santekno.png" class="logo_normal" width="135">
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+            <a class="nav-link" href="https://santekno.com/">Home <span class="sr-only">[content]</span></a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/network">Network</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/hardware">Hardware</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/tutorial">Tutorial</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="/tags/linux">Linux</a>
+         </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
    </div>
-</div></header>
+</nav></header>
          <main>
 <div class="container margin_80_55">
    <div class="row">
@@ -85,7 +82,7 @@
       
       <div class="post-content">
          
-            <img class="img-fluid" src="/img/blog-single.jpg" alt="" width="100%">
+            <img class="img-fluid" src="/img/blog-single.jpg" alt="" style="height:100%;width:100%;">
          
          <p></p>
          <div style="text-align: justify;"><b><a href="http://santekno.blogspot.com/2013/08/pengertian-vlan-virtual-lan.html" target="_blank" title="Pengertian VLAN (Virtual LAN)">Pengertian VLAN (Virtual LAN)</a></b>&nbsp;- Pada kesempatan kali ini <b>Santekno</b> akan membahas lagi mengenai pengetahuan <i>Networking</i> yang mendasar seperti VLAN yang sudah biasa para <i>engginer</i>&nbsp;konfigurasikan agar suatu switch bisa digunakan untuk membagi <i>network</i> yang berbeda dalam satu jaringan lokal. Seperti kita ketahui bahwa switch tidak bisa membaca <b>Layer 3 </b>sehingga <i><b>tidak bisa</b></i> membaca Network sehingga hanya bisa dihubungkan hanya satu <i>network</i> saja.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Dengan dikeluarkannya <b>VLAN</b> maka sangat bermanfaat sekali untuk kemajuan pembagian <i>Network</i> agar lebih efisien. <b><a href="http://santekno.blogspot.com/2013/08/pengertian-vlan-virtual-lan.html" target="_blank" title="Pengertian VLAN (Virtual LAN)">Pengertian dari VLAN (Virtual LAN)</a></b> adalah suatu model jaringan yang tidak terbatas pada lokasi fisik seperti LAN, hal ini mengakibatkan suatu <i>network</i> dapat dikonfigurasi secara virtual tanpa harus menuruti lokasi fisik peralatan. Penggunaan VLAN akan membuat pengaturan jaringan menjadi sangat fleksibel karena dapat dibuat segmen yang bergantung pada organisasi, tanpa bergantung lokasi <i>workstations</i>.</div><div style="text-align: justify;"><br /></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/--nk_ZRCxKdk/UgD8hvQso1I/AAAAAAAACfw/dIq0NXeUFGQ/s1600/vlan-network.gif" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="250" src="http://3.bp.blogspot.com/--nk_ZRCxKdk/UgD8hvQso1I/AAAAAAAACfw/dIq0NXeUFGQ/s320/vlan-network.gif" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Contoh Pembagian VLAN</td></tr></tbody></table><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">VLAN diciptakan untuk menyediakan layanan segmentasi secara tradisional disediakan oleh router di konfigurasi LAN. VLAN menangani masalah-masalah seperti skalabilitas, keamanan, dan manajemen jaringan.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b><span style="font-size: large;">Kegunaan VLAN</span></b></div><ul><li style="text-align: justify;">Menimalisir kemungkinan terjadinya konflik IP yang terlalu banyak.</li><li style="text-align: justify;">Mencegah terjadinya collision domain (tabrakan domain).</li><li style="text-align: justify;">Mengurangi tingkat vulnerabilities.</li></ul><div style="text-align: justify;"><b><span style="font-size: large;"><br /></span></b></div><div style="text-align: justify;"><b><span style="font-size: large;">Cara Kerja VLAN</span></b></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">VLAN diklasifikasikan berdasarkan metode (tipe) yang digunakan untuk mengklasifikasikannya, baik itu menggunakan port, MAC address, dsb. Semua informasi yang mengandung penandaan/pengalamatan suatu VLAN (tagging) disimpan pada suatu <i>database</i>, jika penandaannya berdasarkan <i>port</i> yang digunakan maka database harus mengindikasi <i>port-port</i> yang digunakan VLAN.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Untuk mengaturnya maka biasanya digunakan switch yang bisa diatur. Switch/bridge inilah yang bertanggung jawab menyimpan semua informasi dan konfigurasi suatu VLAN dan dipastikan semua switch memiliki informasi yang sama.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">VLAN Cross Connect (CC) adalah mekanisme yang digunakan untuk membuat VLAN Switched, VLAN CC menggunakan frame IEEE 802.1ad mana Tag S digunakan sebagai Label seperti dalam MPLS. IEEE menyetujui penggunaan seperti mekanisme dalam nominal 6,11 dari IEEE 802.1ad-2005.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Kesimpulannya, VLAN membuat kita dapat mengontrol pola lalu lintas dan bereaksi cepat untuk relokasi. VLAN memberikan fleksibilitas untuk beradaptasi dengan perubahan dalam persyaratan jaringan dan memungkinkan untuk administrasi disederhanakan.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b><span style="font-size: large;">Apa Kelemahan dari VLAN ?</span></b></div><ul><li style="text-align: justify;">Secara logika berbeda <i>network</i> tetapi secara fisik satu network</li><li style="text-align: justify;">Ketika ada <i>broadcast</i> jadi semua dikirim ke semua</li><li style="text-align: justify;">ketika jumlah banyak host-nya maka kerja DHCP akan berantakan dan tidak bisa diduga.</li></ul><div style="text-align: justify;"><b><span style="font-size: large;">Kenapa harus menggunakan VLAN?</span></b></div><ul><li style="text-align: justify;">Jika dalam jumlah yang banyak dalam satu <i>network</i> maka akan terganggu (gampang terserang <i>hack</i>)</li><li style="text-align: justify;">Keamanan menjadi baik karena fisik satu network tetapi logic berbeda network</li><li style="text-align: justify;">Masalah kebutuhan</li><li style="text-align: justify;">Router itu kerjanya lebih lambat ketimbang switch</li><li style="text-align: justify;">Dengan VLAN <i>broadcast </i>akan di batasi</li><li style="text-align: justify;">Untuk membedakan VLAN satu denngan VLAN yang lain dengan menggunakan ID</li><li style="text-align: justify;">Contohnya port 1-5 masuk ke VLAN1</li><li style="text-align: justify;">VLAN dengan bentuk Number Angka</li><li style="text-align: justify;">Contoh VLAN10 -&gt; Sales</li></ul><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b><span style="font-size: large;">Jenis-jenis VLAN dalam Switch</span></b></div><ol><li style="text-align: justify;"><b>VLAN default</b>&nbsp;adalah VLAN yang sudah ada secara default contoh di cisco VLAN1,VLAN1002</li><li style="text-align: justify;"><b>Data VLAN </b>adalah&nbsp;VLAN yang digunakann oleh user</li><li style="text-align: justify;"><b>VLAN VOIP </b>adalah&nbsp;dikhususkan untuk komunikasi suara dan akan memberikan prioritas utama dibandingkan datanya</li><li style="text-align: justify;"><b>VLAN Native </b>&nbsp;</li><li style="text-align: justify;"><b>VLAN management </b>adalah&nbsp;VLAN yang dibangun keperluan <i>management</i> switch, misalnya : akan mengubah konfigurasi switch <i>Admin</i>, dan <i>Admin</i> dimasukkan ke VLAN management artinya hanya orang-orang yang keperluan khusus</li></ol><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b><span style="font-size: large;">Jalur VLAN ada 2 bentuk</span></b></div><ol><li style="text-align: justify;">Tradisional jadi mempunyai banyak jalur</li><li style="text-align: justify;"><b>TRUNKING</b> yaitu VLAN yang mempunyai 1 jalur mempunyai teks yang mengidentifikasikan beberapa VLAN atau jalurnya mempunyai banyak jalur logika dlam 1 fisik</li></ol><div style="text-align: justify;"><span style="font-size: large;"><b>2 Port yang biasa digunakan</b></span></div><div style="text-align: justify;"></div><ol><li><b>Port Access</b> = port menghubungkan ke PC (Data user)</li><li><b>Port Trunking</b> = port yang menghubungkan antar SWITCH</li></ol><br /><div style="text-align: justify;">Nah sekarang sudah mengetahui bagaimana suatu VLAN bisa digunakan. Tinggal dipraktikan saja dalam packet tracer konfigurasinya. Agar Kalian lebih mengerti mengenai <a href="http://santekno.blogspot.com/2014/01/cara-konfigurasi-vlan-virtual-lan.html" target="_blank"><b>Cara Konfigurasi VLAN dalam Packet Tracer</b></a> tinggal lihat saja postingan Santekno Selanjutnya. Demikian penjelasan mengenai <b><a href="http://santekno.blogspot.com/2013/08/pengertian-vlan-virtual-lan.html" target="_blank" title="Pengertian VLAN (Virtual LAN)">Pengertian VLAN (Virtual LAN)</a></b>. Semoga bermanfaat bagi teman-teman semua ^_^</div>
@@ -93,7 +90,16 @@
       </div>
       <div class="post-content">
          <div class="row">
-            
+            <div class="col-md-6">
+               
+                  <a class="previous" href="https://santekno.com/post/draft/pengertian-dan-konfigurasi-dhcp-pada-router-cisco/">&lt;- Pengertian dan Konfigurasi DHCP pada Router Cisco</a>
+               
+            </div>
+            <div class="col-md-6">
+               
+                  <a class="next" href="https://santekno.com/post/draft/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/"> Cara membedakan RAM DDR1, DDR2 dan DDR3 -></a>
+               
+            </div>
          </div>
       </div>
       
@@ -388,8 +394,9 @@
       </div>
    </body>
    <div id="toTop"></div>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/js/common_scripts.js"></script>
-	<script src="https://ddth2wdm6pubv.cloudfront.net/public/js/functions.js"></script>
-   <script src="https://ddth2wdm6pubv.cloudfront.net/public/assets/validate.js"></script>
-   <script src="/js/prism.js"></script>
+   
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/common_scripts.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/validate.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/prism.js"></script>
+   
 </html>
