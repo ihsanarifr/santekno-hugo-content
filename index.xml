@@ -6,10 +6,98 @@
     <description>Recent content in Ananke: a Hugo Theme on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 May 2019 13:06:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 28 Dec 2019 19:54:00 +0000</lastBuildDate>
     
 	<atom:link href="https://santekno.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cara Konfigurasi RIP pada Router Cisco</title>
+      <link>https://santekno.com/post/cara-konfigurasi-rip-pada-router-cisco/</link>
+      <pubDate>Sat, 28 Dec 2019 19:54:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/cara-konfigurasi-rip-pada-router-cisco/</guid>
+      <description>Salam sobat, Santekno saat ini akan menjelaskan tentang bagaimana cara konfigurasi RIP yaitu dynamic protocol yang biasa kita gunakan pada LAN atau sering dipakai pada topologi yang sangat simple karena protokol RIP ini hanya bisa berjalan pada 15 Router saja selebihnya RIP akan tidak berjalan dan berkerja sangat lambat.
+Pada kali ini Santekno, menyertakan file konfigurasi pada Packet Tracer Cisco sehingga bagi sobat bisa diunduh dan dipelajari sebih detail untuk latihan-latihan dasar Jaringan Komputer khususnya konfigurasi Router Cisco.</description>
+    </item>
+    
+    <item>
+      <title>Pengertian Rip Routing Information</title>
+      <link>https://santekno.com/post/pengertian-rip-routing-information/</link>
+      <pubDate>Sat, 28 Dec 2019 19:54:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/pengertian-rip-routing-information/</guid>
+      <description>Pengertian RIP (Router Information Protocol) adalah Routing protokol yang menggunakan algoritma distance vector, yaitu algortima Bellman-Ford. Pertama kali dikenalkan pada tahun 1969 dan merupakan algoritma routing yang pertama pada ARPANET. Versi awal dari routing protokol ini dibuat oleh Xerox Parc’s PARC Universal Packet Internetworking dengan nama Gateway Internet Protocol. Kemudian diganti nama menjadi Router Information Protocol (RIP) yang merupakan bagian Xerox network Services.
+RIP yang merupakan routing protokol dengan algoritma distance vector, yang menghitung jumlah hop (count hop) sebagai routing metric.</description>
+    </item>
+    
+    <item>
+      <title>Cara Konfigurasi EIGRP pada Router Cisco</title>
+      <link>https://santekno.com/post/cara-konfigurasi-eigrp-pada-router-cisco/</link>
+      <pubDate>Sat, 28 Dec 2019 12:17:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/cara-konfigurasi-eigrp-pada-router-cisco/</guid>
+      <description>Salam sobat blogger, kali ini Santekno akan menjelaskan tentang konfigurasi EIGRP (Enhanced Interior Gateway Routing Protocol) dengan mudah dan secara bertahap. Sobat blogger gampang sekali apabila ingin melakukan konfigurasi routing protokol EIGRP pada router Cisco.
+Kenapa router Cisco? Karena fasilitas  routing protokol EIGRP itu hanya ada di perangkat CISCO saja, dan di perangkat lain tidak digunakan. Karena terbilang sangat baik untuk menghubungkan topologi jaringan dan cepat maka EIGRP ini lebih baik dibandingkan dengan RIP yang mempunyai beberapa kelemahan.</description>
+    </item>
+    
+    <item>
+      <title>BGP (Border Gateway Protocol)</title>
+      <link>https://santekno.com/post/bgp-border-gateway-protocol/</link>
+      <pubDate>Sat, 28 Dec 2019 09:50:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/bgp-border-gateway-protocol/</guid>
+      <description>Pengertian Border Gateway Protocol (BGP) merupakan salah satu jenis routing protokol yang digunakan untuk koneksi antar Autonomous System (AS), dan salah satu jenis routing protokol yang banyak digunakan di ISP besar (Telkomsel) ataupun perbankan. BGP termasuk dalam kategori routing protokol jenis Exterior Gateway Protokol (EGP).
+Dengan adanya EGP, router dapat melakukan pertukaran rute dari dan ke luar jaringan lokal Auotonomous System (AS). BGP mempunyai skalabilitas yang tinggi karena dapat melayani pertukaran routing pada beberapa organisasi besar.</description>
+    </item>
+    
+    <item>
+      <title>EIGRP (Enhanced Interior Gateway Routing Protocol)</title>
+      <link>https://santekno.com/post/eigrp-enhanced-interior-gateway-routing-protocol/</link>
+      <pubDate>Sat, 28 Dec 2019 09:25:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/eigrp-enhanced-interior-gateway-routing-protocol/</guid>
+      <description>Pengertian EIGRP (Enhanced Interior Gateway Routing Protocol) merupakan hasil pengembangan dari routing ptotokol pendahulunya yaitu IGRP yang keduanya adalah routing pengembangan dari CISCO. Pengembangan itu dihasilkan oleh perubahan dan bermacam-macam tuntutan dalam jaringan Skala jaringan yang besar. EIGRP menggabungkan kemampuan dari Link-State Protokol dan Distance Vector Protokol, terlebih lagi EIGRP memuat beberapa protocol penting yang secara baik meningkatkan efisiensi penggunaannya ke routing protocol lain.
+EIGRP (Enhanced Interior Gateway Routing Protocol) adalah routing protocol yang hanya di adopsi oleh router cisco atau sering disebut sebagai proprietary protocol pada CISCO.</description>
+    </item>
+    
+    <item>
+      <title>OSPF (Open Shortest Path First)</title>
+      <link>https://santekno.com/post/ospf-open-shortest-path-first/</link>
+      <pubDate>Sat, 28 Dec 2019 09:09:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/ospf-open-shortest-path-first/</guid>
+      <description>Pengertian OSPF (Open Shortest Path First) merupakan sebuah routing protokol berjenis  IGRP (InteriorGateway Routing Protocol) yang hanya dapat bekerja dalam jaringan internal suatu ogranisasi atau perusahaan. Jaringan internal maksudnya adalah jaringan di mana Anda masih memiliki hak untuk menggunakan, mengatur, dan memodifikasinya. Atau dengan kata lain, Anda masih memiliki hak administrasi terhadap jaringan tersebut. Jika Anda sudah tidak memiliki hak untuk menggunakan dan mengaturnya, maka jaringan tersebut dapat dikategorikan sebagai jaringan eksternal.</description>
+    </item>
+    
+    <item>
+      <title>IGRP (Interior Gateway Routing Protocol)</title>
+      <link>https://santekno.com/post/igrp-interior-gateway-routing-protocol/</link>
+      <pubDate>Sat, 28 Dec 2019 09:02:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/igrp-interior-gateway-routing-protocol/</guid>
+      <description>Pengertian IGRP (Interior Gateway Routing Protocol) adalah protocol distance vector yang diciptakan oleh perusahaan Cisco untuk mengatasi kekurangan RIP. Jumlah hop maksimum menjadi 255 dan sebagai metric, IGRP menggunakan Bandwidth, MTU, Delay Dan Load. IGRP adalah protocol routing yang menggunakan Autonomous System (AS) yang dapat menentukan routing berdasarkan system interior atau exterior. Administrative distance untuk IGRP adalah 100.
+IGRP merupakan suatu penjaluran jarak antara vektor protokol, bahwa masing-masing penjaluran bertugas untuk mengirimkan semua atau sebagian dari isi table penjaluran dalam penjaluran pesan untuk memperbaharui pada waktu tertentu untuk masing-masing penjaluran.</description>
+    </item>
+    
+    <item>
+      <title>Pengertian, Perbedaan Routing Static dan Routing Dynamic</title>
+      <link>https://santekno.com/post/pengertian-perbedaan-routing-static-dan-routing-dynamic/</link>
+      <pubDate>Sat, 28 Dec 2019 08:39:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/pengertian-perbedaan-routing-static-dan-routing-dynamic/</guid>
+      <description>Pengertian, Perbedaan Routing Static dan Routing Dynamic yang akan kita bahas pada posting kali ini. Banyak perbedaan dari beberapa routing yang telah ada sekarang dan biasanya routing itu sangat dibutuhkan untuk menghubungkan jaringan antar lokal ataupun antar kota. Routing adalah Konfigurasi yang akan dilakukan pada perangkat keras Router. Jenis-jenis router pun berbeda-beda, konfigurasinya pun berbeda-beda. Contoh CISCO produksi router CISCO banyak digunakan karena konfigurasinya sudah familiar dan banyak instansi pendidikan pun sudah dijadikan matakuliah agar bisa di pelajari lebih lanjut.</description>
+    </item>
+    
+    <item>
+      <title>Cara Konfigurasi Static Route pada Router Cisco</title>
+      <link>https://santekno.com/post/cara-konfigurasi-static-route-pada-router-cisco/</link>
+      <pubDate>Sat, 28 Dec 2019 00:28:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/post/cara-konfigurasi-static-route-pada-router-cisco/</guid>
+      <description>Hai sobat kali ini Santekno akan menjelaskan tentang Static Route. Postingan yang terdahulu memang sudah menjelaskan lebih detail tentang pengenalan, pengertian dari Static Route. Bahkan Santekno telah menjelaskan perbedaan dari Static Route dengan Dynamic Route.
+Kali ini, Santekno akan menjelaskan konfigurasinya pada router cisco tetapi tidak langsung kedalam router cisco hanya pada simulasi packet tracer yang sudah dipelajari. Sebenarnya sama saja kita simulasi dalam packet tracer atau langsung juga karena sintaknya sama saja dari kedua-duanya.</description>
+    </item>
     
     <item>
       <title>Cara Membaut Stack Menggunakan Standar Template Library</title>
@@ -145,40 +233,12 @@ Konfiguras VLANDan sekarang Santekno akan menjelaskan penerapanya pada Packet Tr
     
     <item>
       <title>Cara konfigurasi OSPF pada Router Cisco</title>
-      <link>https://santekno.com/post/draft/cara-konfigurasi-ospf-pada-router-cisco/</link>
+      <link>https://santekno.com/post/cara-konfigurasi-ospf-pada-router-cisco/</link>
       <pubDate>Sun, 24 Nov 2013 09:16:00 +0000</pubDate>
       
-      <guid>https://santekno.com/post/draft/cara-konfigurasi-ospf-pada-router-cisco/</guid>
-      <description>Cara Konfigurasi OSPF pada Router Cisco - Salam sobat blogger, sudah lama tidak posting kembali di blog tercinta. Hari ini santekno akan memposting tentang cara konfigurasi routing protocol OSPF pada router Cisco dengan menggunakan Packet Tracer 6.Teman-teman pasti sudah tahu routing dinamic OSPF ini, karena terkenal sekali di kalangan jaringan komputer karena routing protokol ini open source dan bisa digunakan pada router apapun dari mulai Router Cisco, Mikrotik, dan Juniper. Karena berbagai keunggulan yang ada pada OSPF maka routing protokol ini sangat mudah digunakan dan banyak sekali orang menggunakan routing protokol ini.</description>
-    </item>
-    
-    <item>
-      <title>Cara Konfigurasi EIGRP pada Router Cisco</title>
-      <link>https://santekno.com/post/draft/cara-konfigurasi-eigrp-pada-router-cisco/</link>
-      <pubDate>Wed, 13 Nov 2013 12:17:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/cara-konfigurasi-eigrp-pada-router-cisco/</guid>
-      <description>Cara Konfigurasi EIGRP pada Router Cisco - Salam sobat blogger, kali ini Santekno akan menjelaskan tentang konfigurasi EIGRP (Enhanced Interior Gateway Routing Protocol) dengan mudah dan secara bertahap. Sobat blogger gampang sekali apabila ingin melakukan konfigurasi routing protokol EIGRP pada router Cisco.Kenapa router Cisco? Karena fasilitas routing protokol EIGRP itu hanya ada di perangkat CISCO saja, dan di perangkat lain tidak digunakan. Karena terbilang sangat baik untuk menghubungkan topologi jaringan dan cepat maka EIGRP ini lebih baik dibandingkan dengan RIP yang mempunyai beberapa kelemahan.</description>
-    </item>
-    
-    <item>
-      <title>Cara Konfigurasi RIP pada Router Cisco</title>
-      <link>https://santekno.com/post/draft/cara-konfigurasi-rip-pada-router-cisco/</link>
-      <pubDate>Thu, 31 Oct 2013 19:54:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/cara-konfigurasi-rip-pada-router-cisco/</guid>
-      <description>Cara Konfigurasi RIP v2 pada Router Cisco dengan Packet Tracer - Salam sobat, Santekno saat ini akan menjelaskan tentang bagaimana cara konfigurasi RIP yaitu dynamic protocol yang biasa kita gunakan pada LAN atau sering dipakai pada topologi yang sangat simple karena protokol RIP ini hanya bisa berjalan pada 15 Router saja selebihnya RIP akan tidak berjalan dan berkerja sangat lambat.
-Topologi RIP v2 
-Pada kali ini Santekno, menyertakan file konfigurasi pada Packet Tracer Cisco sehingga bagi sobat bisa diunduh dan dipelajari sebih detail untuk latihan-latihan dasar Jaringan Komputer khususnya konfigurasi Router Cisco.</description>
-    </item>
-    
-    <item>
-      <title>Cara Konfigurasi Static Route pada Router Cisco</title>
-      <link>https://santekno.com/post/draft/cara-konfigurasi-static-route-pada-router-cisco/</link>
-      <pubDate>Fri, 25 Oct 2013 00:28:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/cara-konfigurasi-static-route-pada-router-cisco/</guid>
-      <description>Cara Konfigurasi Static Route pada Router Cisco - Hai sobat kali ini Santekno akan menjelaskan tentang Static Route. Postingan yang terdahulu memang sudah menjelaskan lebih detail tentang pengenalan, pengertian dari Static Route. Bahkan Santekno telah menjelaskan perbedaan dari Static Route dengan Dynamic Route.Kali ini, Santekno akan menjelaskan konfigurasinya pada router cisco tetapi tidak langsung kedalam router cisco hanya pada simulasi packet tracer yang sudah dipelajari. Sebenarnya sama saja kita simulasi dalam packet tracer atau langsung juga karena sintaknya sama saja dari kedua-duanya.</description>
+      <guid>https://santekno.com/post/cara-konfigurasi-ospf-pada-router-cisco/</guid>
+      <description>Salam sobat blogger, sudah lama tidak posting kembali di blog tercinta. Hari ini santekno akan memposting tentang cara konfigurasi routing protocol OSPF pada router Cisco dengan menggunakan Packet Tracer 6.
+Teman-teman pasti sudah tahu routing dinamic OSPF ini, karena terkenal sekali di kalangan jaringan komputer karena routing protokol ini open source dan bisa digunakan pada router apapun dari mulai Router Cisco, Mikrotik, dan Juniper. Karena berbagai keunggulan yang ada pada OSPF maka routing protokol ini sangat mudah digunakan dan banyak sekali orang menggunakan routing protokol ini.</description>
     </item>
     
     <item>
@@ -244,52 +304,6 @@ Secara umum, keamanan dalam suatu jaringan itu sangat perlu sekali karena untuk 
       
       <guid>https://santekno.com/post/draft/layanan-wan-wide-area-network/</guid>
       <description>Network –Layanan WAN yang ada di dunia sudah banyak dan terbilang semakin canggih dan semakin compatible dengan berbagai perangkat seiring dengan berkembangnya teknologi kabel atau nirkabel. Jaringan WAN sangatlah luas dan membutuhkan teknologi yang cepat dalam mentransmisikan data sehingga banyak layanan yang diberikan dari beberapa ISP (orang ke-3) yang memberikan layanan. Layanan WAN dibagi menjadi 2 bagian yaitu :Private, yaitu dibangun untuk menghubungkan hanya untuk kpentingan perusahaan saja PPP (Point to Point Protocol).</description>
-    </item>
-    
-    <item>
-      <title>BGP (Border Gateway Protocol)</title>
-      <link>https://santekno.com/post/draft/bgp-border-gateway-protocol/</link>
-      <pubDate>Fri, 11 Jan 2013 09:50:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/bgp-border-gateway-protocol/</guid>
-      <description>Network - Pengertian Border Gateway Protocol (BGP) merupakan salah satu jenis routing protokol yang digunakan untuk koneksi antar Autonomous System (AS), dan salah satu jenis routing protokol yang banyak digunakan di ISP besar (Telkomsel) ataupun perbankan. BGP termasuk dalam kategori routing protokol jenis Exterior Gateway Protokol (EGP)./o:pDengan adanya EGP, router dapat melakukan pertukaran rute dari dan ke luar jaringan lokal Auotonomous System (AS). BGP mempunyai skalabilitas yang tinggi karena dapat melayani pertukaran routing pada beberapa organisasi besar.</description>
-    </item>
-    
-    <item>
-      <title>EIGRP (Enhanced Interior Gateway Routing Protocol</title>
-      <link>https://santekno.com/post/draft/eigrp-enhanced-interior-gateway-routing-protocol/</link>
-      <pubDate>Fri, 11 Jan 2013 09:25:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/eigrp-enhanced-interior-gateway-routing-protocol/</guid>
-      <description>Network - Pengertian EIGRP (Enhanced Interior Gateway Routing Protocol)&amp;nbsp;merupakan hasil pengembangan dari routing ptotokol pendahulunya yaitu IGRP yang keduanya adalah routing pengembangan dari CISCO. Pengembangan itu dihasilkan oleh perubahan dan bermacam-macam tuntutan dalam jaringan Skala jaringan yang besar. EIGRP menggabungkan kemampuan dari Link-State Protokoldan Distance Vector Protokol, terlebih lagi EIGRP memuat beberapa protocol penting yang secara baik meningkatkan efisiensi penggunaannya ke routing protocol lain.
-/o:pEIGRP (Enhanced Interior Gateway Routing Protocol) adalah routing protocol yang hanya di adopsi oleh router cisco atau sering disebut sebagai proprietary protocol pada CISCO.</description>
-    </item>
-    
-    <item>
-      <title>OSPF (Open Shortest Path First)</title>
-      <link>https://santekno.com/post/draft/ospf-open-shortest-path-first/</link>
-      <pubDate>Fri, 11 Jan 2013 09:09:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/ospf-open-shortest-path-first/</guid>
-      <description>Network - Pengertian OSPF (Open Shortest Path First) merupakan sebuah routing protokol berjenis IGRP (InteriorGateway Routing Protocol) yang hanya dapat bekerja dalam jaringan internal suatu ogranisasi atau perusahaan. Jaringan internal maksudnya adalah jaringan di mana Anda masih memiliki hak untuk menggunakan, mengatur, dan memodifikasinya. Atau dengan kata lain, Anda masih memiliki hak administrasi terhadap jaringan tersebut. Jika Anda sudah tidak memiliki hak untuk menggunakan dan mengaturnya, maka jaringan tersebut dapat dikategorikan sebagai jaringan eksternal.</description>
-    </item>
-    
-    <item>
-      <title>IGRP (Interior Gateway Routing Protocol)</title>
-      <link>https://santekno.com/post/draft/igrp-interior-gateway-routing-protocol/</link>
-      <pubDate>Fri, 11 Jan 2013 09:02:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/igrp-interior-gateway-routing-protocol/</guid>
-      <description>Network – Pengertian IGRP (Interior Gateway Routing Protocol) adalah protocol distance vector yang diciptakan oleh perusahaan Cisco untuk mengatasi kekurangan RIP. Jumlah hop maksimum menjadi 255 dan sebagai metric, IGRP menggunakan Bandwidth, MTU, Delay Dan Load. IGRP adalah protocol routing yang menggunakan Autonomous System (AS) yang dapat menentukan routing berdasarkan system, interior atau exterior. Administrative distanceuntuk IGRP adalah 100/o:pIGRPmerupakan suatu penjaluran jarak antara vektor protokol, bahwa masing-masing penjaluran bertugas untuk mengirimkan semua atau sebagian dari isi table penjaluran dalam penjaluran pesan untuk memperbaharui pada waktu tertentu untuk masing-masing penjaluran.</description>
-    </item>
-    
-    <item>
-      <title>Pengertian, Perbedaan Routing Static dan Routing Dynamic</title>
-      <link>https://santekno.com/post/pengertian-perbedaan-routing-static-dan-routing-dynamic/</link>
-      <pubDate>Fri, 11 Jan 2013 08:39:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/pengertian-perbedaan-routing-static-dan-routing-dynamic/</guid>
-      <description>Pengertian, Perbedaan Routing Static dan Routing Dynamic yang akan kita bahas pada posting kali ini. Banyak perbedaan dari beberapa routing yang telah ada sekarang dan biasanya routing itu sangat dibutuhkan untuk menghubungkan jaringan antar lokal ataupun antar kota. Routing adalah Konfigurasi yang akan dilakukan pada perangkat keras Router. Jenis-jenis router pun berbeda-beda, konfigurasinya pun berbeda-beda. Contoh CISCO produksi router CISCO banyak digunakan karena konfigurasinya sudah familiar dan banyak instansi pendidikan pun sudah dijadikan matakuliah agar bisa di pelajari lebih lanjut.</description>
     </item>
     
     <item>

@@ -3,6 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://santekno.com/post/cara-konfigurasi-rip-pada-router-cisco/</loc>
+    <lastmod>2019-12-28T19:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/post/pengertian-rip-routing-information/</loc>
+    <lastmod>2019-12-28T19:54:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/post/cara-konfigurasi-eigrp-pada-router-cisco/</loc>
+    <lastmod>2019-12-28T12:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/post/bgp-border-gateway-protocol/</loc>
+    <lastmod>2019-12-28T09:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/post/eigrp-enhanced-interior-gateway-routing-protocol/</loc>
+    <lastmod>2019-12-28T09:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/post/ospf-open-shortest-path-first/</loc>
+    <lastmod>2019-12-28T09:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/post/igrp-interior-gateway-routing-protocol/</loc>
+    <lastmod>2019-12-28T09:02:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/post/pengertian-perbedaan-routing-static-dan-routing-dynamic/</loc>
+    <lastmod>2019-12-28T08:39:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/post/cara-konfigurasi-static-route-pada-router-cisco/</loc>
+    <lastmod>2019-12-28T00:28:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/post/cara-membuat-stack-menggunakan-standar-template-library/</loc>
     <lastmod>2019-05-16T13:06:00+07:00</lastmod>
   </url>
@@ -78,23 +123,8 @@
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/cara-konfigurasi-ospf-pada-router-cisco/</loc>
+    <loc>https://santekno.com/post/cara-konfigurasi-ospf-pada-router-cisco/</loc>
     <lastmod>2013-11-24T09:16:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/cara-konfigurasi-eigrp-pada-router-cisco/</loc>
-    <lastmod>2013-11-13T12:17:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/cara-konfigurasi-rip-pada-router-cisco/</loc>
-    <lastmod>2013-10-31T19:54:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/cara-konfigurasi-static-route-pada-router-cisco/</loc>
-    <lastmod>2013-10-25T00:28:00+00:00</lastmod>
   </url>
   
   <url>
@@ -130,31 +160,6 @@
   <url>
     <loc>https://santekno.com/post/draft/layanan-wan-wide-area-network/</loc>
     <lastmod>2013-04-11T22:24:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/bgp-border-gateway-protocol/</loc>
-    <lastmod>2013-01-11T09:50:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/eigrp-enhanced-interior-gateway-routing-protocol/</loc>
-    <lastmod>2013-01-11T09:25:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/ospf-open-shortest-path-first/</loc>
-    <lastmod>2013-01-11T09:09:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/igrp-interior-gateway-routing-protocol/</loc>
-    <lastmod>2013-01-11T09:02:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/pengertian-perbedaan-routing-static-dan-routing-dynamic/</loc>
-    <lastmod>2013-01-11T08:39:00+00:00</lastmod>
   </url>
   
   <url>
@@ -274,7 +279,7 @@
   
   <url>
     <loc>https://santekno.com/</loc>
-    <lastmod>2019-05-16T13:06:00+07:00</lastmod>
+    <lastmod>2019-12-28T19:54:00+00:00</lastmod>
   </url>
   
   <url>
@@ -387,7 +392,7 @@
   
   <url>
     <loc>https://santekno.com/tags/network/</loc>
-    <lastmod>2014-01-14T14:16:00+00:00</lastmod>
+    <lastmod>2019-12-28T19:54:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

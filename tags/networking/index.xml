@@ -31,44 +31,6 @@ Konfiguras VLANDan sekarang Santekno akan menjelaskan penerapanya pada Packet Tr
     </item>
     
     <item>
-      <title>Cara konfigurasi OSPF pada Router Cisco</title>
-      <link>https://santekno.com/post/draft/cara-konfigurasi-ospf-pada-router-cisco/</link>
-      <pubDate>Sun, 24 Nov 2013 09:16:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/cara-konfigurasi-ospf-pada-router-cisco/</guid>
-      <description>Cara Konfigurasi OSPF pada Router Cisco - Salam sobat blogger, sudah lama tidak posting kembali di blog tercinta. Hari ini santekno akan memposting tentang cara konfigurasi routing protocol OSPF pada router Cisco dengan menggunakan Packet Tracer 6.Teman-teman pasti sudah tahu routing dinamic OSPF ini, karena terkenal sekali di kalangan jaringan komputer karena routing protokol ini open source dan bisa digunakan pada router apapun dari mulai Router Cisco, Mikrotik, dan Juniper. Karena berbagai keunggulan yang ada pada OSPF maka routing protokol ini sangat mudah digunakan dan banyak sekali orang menggunakan routing protokol ini.</description>
-    </item>
-    
-    <item>
-      <title>Cara Konfigurasi EIGRP pada Router Cisco</title>
-      <link>https://santekno.com/post/draft/cara-konfigurasi-eigrp-pada-router-cisco/</link>
-      <pubDate>Wed, 13 Nov 2013 12:17:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/cara-konfigurasi-eigrp-pada-router-cisco/</guid>
-      <description>Cara Konfigurasi EIGRP pada Router Cisco - Salam sobat blogger, kali ini Santekno akan menjelaskan tentang konfigurasi EIGRP (Enhanced Interior Gateway Routing Protocol) dengan mudah dan secara bertahap. Sobat blogger gampang sekali apabila ingin melakukan konfigurasi routing protokol EIGRP pada router Cisco.Kenapa router Cisco? Karena fasilitas routing protokol EIGRP itu hanya ada di perangkat CISCO saja, dan di perangkat lain tidak digunakan. Karena terbilang sangat baik untuk menghubungkan topologi jaringan dan cepat maka EIGRP ini lebih baik dibandingkan dengan RIP yang mempunyai beberapa kelemahan.</description>
-    </item>
-    
-    <item>
-      <title>Cara Konfigurasi RIP pada Router Cisco</title>
-      <link>https://santekno.com/post/draft/cara-konfigurasi-rip-pada-router-cisco/</link>
-      <pubDate>Thu, 31 Oct 2013 19:54:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/cara-konfigurasi-rip-pada-router-cisco/</guid>
-      <description>Cara Konfigurasi RIP v2 pada Router Cisco dengan Packet Tracer - Salam sobat, Santekno saat ini akan menjelaskan tentang bagaimana cara konfigurasi RIP yaitu dynamic protocol yang biasa kita gunakan pada LAN atau sering dipakai pada topologi yang sangat simple karena protokol RIP ini hanya bisa berjalan pada 15 Router saja selebihnya RIP akan tidak berjalan dan berkerja sangat lambat.
-Topologi RIP v2 
-Pada kali ini Santekno, menyertakan file konfigurasi pada Packet Tracer Cisco sehingga bagi sobat bisa diunduh dan dipelajari sebih detail untuk latihan-latihan dasar Jaringan Komputer khususnya konfigurasi Router Cisco.</description>
-    </item>
-    
-    <item>
-      <title>Cara Konfigurasi Static Route pada Router Cisco</title>
-      <link>https://santekno.com/post/draft/cara-konfigurasi-static-route-pada-router-cisco/</link>
-      <pubDate>Fri, 25 Oct 2013 00:28:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/post/draft/cara-konfigurasi-static-route-pada-router-cisco/</guid>
-      <description>Cara Konfigurasi Static Route pada Router Cisco - Hai sobat kali ini Santekno akan menjelaskan tentang Static Route. Postingan yang terdahulu memang sudah menjelaskan lebih detail tentang pengenalan, pengertian dari Static Route. Bahkan Santekno telah menjelaskan perbedaan dari Static Route dengan Dynamic Route.Kali ini, Santekno akan menjelaskan konfigurasinya pada router cisco tetapi tidak langsung kedalam router cisco hanya pada simulasi packet tracer yang sudah dipelajari. Sebenarnya sama saja kita simulasi dalam packet tracer atau langsung juga karena sintaknya sama saja dari kedua-duanya.</description>
-    </item>
-    
-    <item>
       <title>Cara Memberi Password Telnet dan Console pada Router Cisco</title>
       <link>https://santekno.com/post/draft/cara-memberi-password-telnet-dan-console-pada-router-cisco/</link>
       <pubDate>Wed, 16 Oct 2013 21:49:00 +0000</pubDate>
