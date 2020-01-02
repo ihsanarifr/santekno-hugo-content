@@ -7,11 +7,12 @@
       <meta name="theme-color" content="#2980b9" />
       <meta name="author" content="santekno.com">
       <meta name="title" content="Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP - Santekno" />
-      <meta name="description" content="Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP - Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan virtual server yang sangat terkenal di kalangan para programmer. Suatu virtual yang terdapat pada Xampp ini digunakan untuk para developer khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, phpmyadmin sebagai Database Server dan banyak lagi.Apache tidak runningPermasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah error yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada localhost.">
+      <meta name="description" content="Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan virtual server yang sangat terkenal di kalangan para programmer. Suatu virtual yang terdapat pada Xampp ini digunakan untuk para developer khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, phpmyadmin sebagai Database Server dan banyak lagi.
+Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah error yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada localhost.">
 
       
       
-      <meta name="keywords" content="Guide, Software, Berbagi Seputar Android, Gadget, Hardware, Linux, Sofware, Networking, Programming, Sains Teknologi" />
+      <meta name="keywords" content="Software, Berbagi Seputar Android, Gadget, Hardware, Linux, Sofware, Networking, Programming, Sains Teknologi" />
       
       
 
@@ -113,8 +114,6 @@
          <ul>
             <li>
                
-                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/topik/guide">#Guide</a></span>
-               
                   <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/topik/software">#Software</a></span>
                
             </li>
@@ -123,10 +122,45 @@
       
       <div class="post-content">
          
-            <img class="img-fluid" src="https://santekno.com/img/blog-single.jpg" alt="" style="height:100%;width:100%;">
+            
+               <img class="img-fluid" src="https://d38wyzu9t46zzv.cloudfront.net/images/mengatasi-masalah-apache-xampp.png" alt="" style="height:100%;width:100%;">
+            
          
          <p></p>
-         <div style="text-align: justify;"><a href="http://santekno.blogspot.com/2014/08/cara-mengatasi-apache-tidak-berjalan-running-pada-xampp.html" target="_blank"><b>Cara Mengatasi Apache Tidak Berjalan atau <i>Running </i>pada XAMPP </b></a>- Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan <i>virtual server </i>yang sangat terkenal di kalangan para <i>programmer.</i> Suatu <i>virtual </i>yang terdapat pada Xampp ini digunakan untuk para <i>developer </i>khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, <b>phpmyadmin </b>sebagai Database Server dan banyak lagi.</div><div style="text-align: justify;"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-5OCKeKZHEE8/U_4MXbgP3DI/AAAAAAAACxY/OqAi74_6yqQ/s1600/xampp-tidak-start.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-5OCKeKZHEE8/U_4MXbgP3DI/AAAAAAAACxY/OqAi74_6yqQ/s1600/xampp-tidak-start.PNG" height="171" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Apache tidak <i>running</i></td></tr></tbody></table><div style="text-align: justify;">Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah <i>error </i>yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">localhost</span>. Nah permasalahan itulah yang sekarang Santekno akan jelaskan secara terperinci. Cara mengatasi Apache tidak berjalan ini terjadi karena kesalahan Web Server-nya atau mempunyai lebih <i>virtual host </i>di dalam komputer kita sehingga port HTTP yaitu 80 menjadi bentrok. Maka dari itu, berikut ini tahapan cara agar tidak terjadi bentrok sehingga Apache bisa berjalan "Running" kembali.</div><ol style="text-align: justify;"><li>Lakukan perubahan pada file <strong>httpd.conf&nbsp;</strong></li><li>Buka file httpd.conf di folder <strong>C:\xampp\apache\conf\&nbsp;</strong>dengan menggunakan aplikasi notepad.</li><li>Cari kata “<strong>Listen 80</strong>” dan ubahlah menjadi “<strong>Listen 8080</strong>“. Bisa dilihat pada gambar dibawah ini. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-YO4QwAxJijg/U_4MWmLsg-I/AAAAAAAACxQ/H2m7h1x2EGw/s1600/listen-80.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-YO4QwAxJijg/U_4MWmLsg-I/AAAAAAAACxQ/H2m7h1x2EGw/s1600/listen-80.PNG" height="208" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Listen menjadi 8080</td></tr></tbody></table></li><li>Masih di file yang sama, carilah kata “<strong>ServerName localhost:80</strong>” kemudian ubahlah menjadi “<strong>ServerName localhost:8080</strong>“. Lihat gambar dibawah ini. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-kNum_rozfbY/U_4MW_yGsiI/AAAAAAAACxU/DGsMr0PWAX4/s1600/servername-8080.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-kNum_rozfbY/U_4MW_yGsiI/AAAAAAAACxU/DGsMr0PWAX4/s1600/servername-8080.PNG" height="114" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">ServerName localhost menjadi 8080</td></tr></tbody></table></li><li>Lalu <strong>Simpan</strong>.</li><li>Selanjutnya, buka file <strong>httpd-ssl.conf</strong> di <strong>C:\xampp\apache\conf\extra\. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-N91n4-QPwh8/U_4MWTndTJI/AAAAAAAACxM/9s6GxLMygfA/s1600/http-ssl-xampp.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-N91n4-QPwh8/U_4MWTndTJI/AAAAAAAACxM/9s6GxLMygfA/s1600/http-ssl-xampp.PNG" height="213" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">File bernama httpd-ssl.conf</td></tr></tbody></table></strong></li><li>Carilah kata “<strong>Listen 443</strong>” dan ubah menjadi “<strong>Listen 4499</strong>“. Bisa dilihat gambar dibawah ini. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-dPKRxIkiJgw/U_4MVtBEUAI/AAAAAAAACxA/AuMVEBe1J4s/s1600/http-ssl-listen-4499.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-dPKRxIkiJgw/U_4MVtBEUAI/AAAAAAAACxA/AuMVEBe1J4s/s1600/http-ssl-listen-4499.PNG" height="213" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">httpd-ssl menjadi 4499</td></tr></tbody></table></li><li>Masih di file yang sama, dan carilah kata “<strong>virtualhost_default_:443</strong>” kemudian ubahlah menjadi “<strong>virtualhost_default_:4499</strong>“. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-sNHr_BYcPQ8/U_4MVpF_joI/AAAAAAAACxI/FpWK-aQzPp0/s1600/http-ssl-virtualhost-4499.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-sNHr_BYcPQ8/U_4MVpF_joI/AAAAAAAACxI/FpWK-aQzPp0/s1600/http-ssl-virtualhost-4499.PNG" height="255" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">VirtualHost_default menjadi 4499</td></tr></tbody></table></li><li>Masih di file yang sama, carilah kata “<strong>ServerName localhost:443</strong>” dan ubahlah menjadi “<strong>ServerName localhost:4499</strong>“.<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-uLCCZYAERL8/U_4MVhE63UI/AAAAAAAACxE/6PWZsu1c2eI/s1600/http-ssl-virtualhost-default-4499.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://3.bp.blogspot.com/-uLCCZYAERL8/U_4MVhE63UI/AAAAAAAACxE/6PWZsu1c2eI/s1600/http-ssl-virtualhost-default-4499.PNG" height="291" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">ServerName localhost menjadi 4499</td></tr></tbody></table></li><li>Sekarang jalankan XAMPP Contol Panel, lalu klik Start pada Apache. Jika muncul peringatan di kotak detail bagian bawah “<strong>Apache started [port 80]</strong>“, maka bukalah browser dan arahkan ke alamat <strong>http://localhost:8080/xampp</strong>. Jika berhasil maka Web Service Apache tersebut telah berjalan di port 8080.</li></ol><div style="text-align: justify;">Sudah jalankan Apache Xampp sobat? Jika belum bisa berjalan atau running juga maka cobalah langsung jalankan localhost:8080 di browser biasanya walaupun dalam Xampp control sudah di tekan tombol start. Semoga bermanfaat sobat ^_^</div>
+         <p>Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan virtual server yang sangat terkenal di kalangan para programmer. Suatu virtual yang terdapat pada Xampp ini digunakan untuk para developer khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, phpmyadmin sebagai Database Server dan banyak lagi.</p>
+
+<p><img border="0" src="https://1.bp.blogspot.com/-5OCKeKZHEE8/U_4MXbgP3DI/AAAAAAAACxY/OqAi74_6yqQ/s1600/xampp-tidak-start.PNG" height="100%" width="100%" /></p>
+
+<p>Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah error yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada localhost. Nah permasalahan itulah yang sekarang Santekno akan jelaskan secara terperinci. Cara mengatasi Apache tidak berjalan ini terjadi karena kesalahan Web Server-nya atau mempunyai lebih virtual host di dalam komputer kita sehingga port HTTP yaitu 80 menjadi bentrok. Maka dari itu, berikut ini tahapan cara agar tidak terjadi bentrok sehingga Apache bisa berjalan &ldquo;Running&rdquo; kembali.</p>
+
+<ol>
+<li>Lakukan perubahan pada file httpd.conf</li>
+<li>Buka file httpd.conf di folder C:\xampp\apache\conf\ dengan menggunakan aplikasi notepad.</li>
+
+<li><p>Cari kata “Listen 80” dan ubahlah menjadi “Listen 8080“. Bisa dilihat pada gambar dibawah ini.
+<img border="0" src="https://1.bp.blogspot.com/-YO4QwAxJijg/U_4MWmLsg-I/AAAAAAAACxQ/H2m7h1x2EGw/s1600/listen-80.PNG" height="100%" width="100%" /></p></li>
+
+<li><p>Masih di file yang sama, carilah kata “ServerName localhost:80” kemudian ubahlah menjadi “ServerName localhost:8080“. Lihat gambar dibawah ini.
+<img border="0" src="https://4.bp.blogspot.com/-kNum_rozfbY/U_4MW_yGsiI/AAAAAAAACxU/DGsMr0PWAX4/s1600/servername-8080.PNG" height="100%" width="100%" /></p></li>
+
+<li><p>Lalu Simpan.</p></li>
+
+<li><p>Selanjutnya, buka file <code>httpd-ssl.conf</code> di *<em>C:\xampp\apache\conf\extra*</em>.
+<img border="0" src="https://4.bp.blogspot.com/-N91n4-QPwh8/U_4MWTndTJI/AAAAAAAACxM/9s6GxLMygfA/s1600/http-ssl-xampp.PNG" height="100%" width="100%" /></p></li>
+
+<li><p>Carilah kata <strong>“Listen 443”</strong> dan ubah menjadi <strong>“Listen 4499“</strong>. Bisa dilihat gambar dibawah ini.
+<img border="0" src="https://1.bp.blogspot.com/-dPKRxIkiJgw/U_4MVtBEUAI/AAAAAAAACxA/AuMVEBe1J4s/s1600/http-ssl-listen-4499.PNG" height="100%" width="100%" /></p></li>
+
+<li><p>Masih di file yang sama, dan carilah kata <strong>“virtualhost<em>default</em>:443”</strong> kemudian ubahlah menjadi <strong>“virtualhost<em>default</em>:4499“</strong>.
+<img border="0" src="https://4.bp.blogspot.com/-sNHr_BYcPQ8/U_4MVpF_joI/AAAAAAAACxI/FpWK-aQzPp0/s1600/http-ssl-virtualhost-4499.PNG" height="100%" width="100%" /></p></li>
+
+<li><p>Masih di file yang sama, carilah kata <strong>“ServerName localhost:443”</strong> dan ubahlah menjadi <strong>“ServerName localhost:4499“</strong>.
+<img border="0" src="https://3.bp.blogspot.com/-uLCCZYAERL8/U_4MVhE63UI/AAAAAAAACxE/6PWZsu1c2eI/s1600/http-ssl-virtualhost-default-4499.PNG" height="100%" width="100%" /></p></li>
+
+<li><p>Sekarang jalankan XAMPP Contol Panel, lalu klik Start pada Apache. Jika muncul peringatan di kotak detail bagian bawah <strong>“Apache started [port 80]“</strong>, maka bukalah browser dan arahkan ke alamat <a href="http://localhost:8080/xampp">http://localhost:8080/xampp</a>. Jika berhasil maka Web Service Apache tersebut telah berjalan di port 8080.</p></li>
+</ol>
+
+<p>Sudah jalankan Apache Xampp sobat? Jika belum bisa berjalan atau running juga maka cobalah langsung jalankan localhost:8080 di browser biasanya walaupun dalam Xampp control sudah di tekan tombol start. Semoga bermanfaat sobat ^_^</p>
 
       </div>
       <div class="post-content">
