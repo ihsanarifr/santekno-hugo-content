@@ -13,19 +13,19 @@
     
     <item>
       <title>Cara Menentukan Bilangan Ganjil Genap</title>
-      <link>https://santekno.com/post/cara-menentukan-bilangan-ganjil-genap/</link>
+      <link>https://santekno.com/cara-menentukan-bilangan-ganjil-genap/</link>
       <pubDate>Sun, 05 May 2019 12:00:00 +0700</pubDate>
       
-      <guid>https://santekno.com/post/cara-menentukan-bilangan-ganjil-genap/</guid>
+      <guid>https://santekno.com/cara-menentukan-bilangan-ganjil-genap/</guid>
       <description>&lt;p&gt;Bilangan ganjil atau genap pada program C dapat digunakan dengan proses kondisional, atau lebih jelasnya menggunakan sintak &lt;code&gt;if .. else&lt;/code&gt; atau &lt;code&gt;switch case&lt;/code&gt;. Berikut ini menentukan Bilangan Ganjil Genap dengan program yang sederhana.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Cara Menampilkan Code ASCII</title>
-      <link>https://santekno.com/post/cara-menampilkan-code-ascii/</link>
+      <link>https://santekno.com/cara-menampilkan-code-ascii/</link>
       <pubDate>Fri, 03 May 2019 12:00:00 +0700</pubDate>
       
-      <guid>https://santekno.com/post/cara-menampilkan-code-ascii/</guid>
+      <guid>https://santekno.com/cara-menampilkan-code-ascii/</guid>
       <description>&lt;p&gt;Pada kali ini Santekno akan menjelaskan program C yang menampilkan Kode ASCII jika user sudah melakukan input. Kode ASCII ini digunakan untuk menampilkan karakter dalam suatu tipe char atau string. Pada postingan sebelumnya telah dibahas tentang bagaimana &lt;a href=&#34;http://localhost:1313/posts/tutorial-c/cara-menampilkan-code-ascii/&#34;&gt;pertambahan dua variabel pada program C&lt;/a&gt; dan sekarang bagaimana caranya menampilkan kode ASCII agar bisa dilihat berapa nilainya.&lt;/p&gt;</description>
     </item>
     

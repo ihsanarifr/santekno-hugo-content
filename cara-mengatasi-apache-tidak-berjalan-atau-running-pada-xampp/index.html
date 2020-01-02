@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+            <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="theme-color" content="#2980b9" />
+      <meta name="author" content="santekno.com">
+      <meta name="title" content="Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP - Santekno" />
+      <meta name="description" content="Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP - Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan virtual server yang sangat terkenal di kalangan para programmer. Suatu virtual yang terdapat pada Xampp ini digunakan untuk para developer khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, phpmyadmin sebagai Database Server dan banyak lagi.Apache tidak runningPermasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah error yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada localhost.">
+
+      
+      
+      <meta name="keywords" content="Guide, Software, Berbagi Seputar Android, Gadget, Hardware, Linux, Sofware, Networking, Programming, Sains Teknologi" />
+      
+      
+
+      
+      <meta name="robots" content="index, follow"/>
+      
+
+      
+      
+      <link rel="canonical" href="https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/" />
+      
+      
+      <title>Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP - Santekno</title>
+      
+      <link href="https://d38wyzu9t46zzv.cloudfront.net/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://d38wyzu9t46zzv.cloudfront.net/css/style.css" rel="stylesheet">
+      <link href="https://d38wyzu9t46zzv.cloudfront.net/css/prism.css" rel="stylesheet">
+      
+      <link href="https://d38wyzu9t46zzv.cloudfront.net/css/blog.css" rel="stylesheet">
+      <link href="https://d38wyzu9t46zzv.cloudfront.net/css/custom.css" rel="stylesheet">
+      
+      <link type="textcss" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+              
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43331816-2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-43331816-2');
+        </script>
+
+   </head>
+   <body>
+      <div id="page">
+         <header class="header_in is_sticky menu_fixed justify-content-between">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-column flex-md-row bd-navbar">
+   <div class="container">
+      <a href="https://santekno.com/" title="santekno.com" class="navbar-brand">
+         <img src="https://santekno.com/images/logo-santekno.png" class="logo_normal" width="135">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+         <ul class="navbar-nav mr-auto">
+            
+               
+               <li class="nav-item">
+                  <a class="nav-link" href="https://santekno.com/">Home</a>
+               </li>
+            
+               
+               <li class="nav-item">
+                  <a class="nav-link" href="https://santekno.com/tags/network/">Network</a>
+               </li>
+            
+               
+               <li class="nav-item">
+                  <a class="nav-link" href="https://santekno.com/tags/hardware/">Hardware</a>
+               </li>
+            
+               
+               <li class="nav-item">
+                  <a class="nav-link" href="https://santekno.com/tags/tutorial/">Tutorial</a>
+               </li>
+            
+               
+               <li class="nav-item">
+                  <a class="nav-link" href="https://santekno.com/tags/linux/">Linux</a>
+               </li>
+            
+         </ul>
+         <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+         </form>
+      </div>
+   </div>
+</nav>
+         </header>
+         <main>
+            
+<div class="container margin_80_55">
+   <div class="row">
+         
+<div class="col-lg-8">
+   <div class="singlepost">
+      <div class="mb-3">
+         <img src="https://santekno.com/img/avatar.jpg" class="rounded-circle" width="32" height="32" alt="author" loading="lazy">
+         <a class="align-middle text-dark" href="https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/" target="_blank" rel="noopener"> Ihsan Arif</a>
+         <small class="align-middle text-muted">
+            <time>August 28, 2014</time> | 2  minutes 
+         </small>
+      </div>
+      <h1>Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP</h1>
+      <div class="postmeta">
+         <ul>
+            <li>
+               
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/topik/guide">#Guide</a></span>
+               
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/topik/software">#Software</a></span>
+               
+            </li>
+         </ul>
+      </div>
+      
+      <div class="post-content">
+         
+            <img class="img-fluid" src="https://santekno.com/img/blog-single.jpg" alt="" style="height:100%;width:100%;">
+         
+         <p></p>
+         <div style="text-align: justify;"><a href="http://santekno.blogspot.com/2014/08/cara-mengatasi-apache-tidak-berjalan-running-pada-xampp.html" target="_blank"><b>Cara Mengatasi Apache Tidak Berjalan atau <i>Running </i>pada XAMPP </b></a>- Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan <i>virtual server </i>yang sangat terkenal di kalangan para <i>programmer.</i> Suatu <i>virtual </i>yang terdapat pada Xampp ini digunakan untuk para <i>developer </i>khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, <b>phpmyadmin </b>sebagai Database Server dan banyak lagi.</div><div style="text-align: justify;"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-5OCKeKZHEE8/U_4MXbgP3DI/AAAAAAAACxY/OqAi74_6yqQ/s1600/xampp-tidak-start.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-5OCKeKZHEE8/U_4MXbgP3DI/AAAAAAAACxY/OqAi74_6yqQ/s1600/xampp-tidak-start.PNG" height="171" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Apache tidak <i>running</i></td></tr></tbody></table><div style="text-align: justify;">Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah <i>error </i>yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">localhost</span>. Nah permasalahan itulah yang sekarang Santekno akan jelaskan secara terperinci. Cara mengatasi Apache tidak berjalan ini terjadi karena kesalahan Web Server-nya atau mempunyai lebih <i>virtual host </i>di dalam komputer kita sehingga port HTTP yaitu 80 menjadi bentrok. Maka dari itu, berikut ini tahapan cara agar tidak terjadi bentrok sehingga Apache bisa berjalan "Running" kembali.</div><ol style="text-align: justify;"><li>Lakukan perubahan pada file <strong>httpd.conf&nbsp;</strong></li><li>Buka file httpd.conf di folder <strong>C:\xampp\apache\conf\&nbsp;</strong>dengan menggunakan aplikasi notepad.</li><li>Cari kata “<strong>Listen 80</strong>” dan ubahlah menjadi “<strong>Listen 8080</strong>“. Bisa dilihat pada gambar dibawah ini. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-YO4QwAxJijg/U_4MWmLsg-I/AAAAAAAACxQ/H2m7h1x2EGw/s1600/listen-80.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-YO4QwAxJijg/U_4MWmLsg-I/AAAAAAAACxQ/H2m7h1x2EGw/s1600/listen-80.PNG" height="208" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Listen menjadi 8080</td></tr></tbody></table></li><li>Masih di file yang sama, carilah kata “<strong>ServerName localhost:80</strong>” kemudian ubahlah menjadi “<strong>ServerName localhost:8080</strong>“. Lihat gambar dibawah ini. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-kNum_rozfbY/U_4MW_yGsiI/AAAAAAAACxU/DGsMr0PWAX4/s1600/servername-8080.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-kNum_rozfbY/U_4MW_yGsiI/AAAAAAAACxU/DGsMr0PWAX4/s1600/servername-8080.PNG" height="114" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">ServerName localhost menjadi 8080</td></tr></tbody></table></li><li>Lalu <strong>Simpan</strong>.</li><li>Selanjutnya, buka file <strong>httpd-ssl.conf</strong> di <strong>C:\xampp\apache\conf\extra\. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-N91n4-QPwh8/U_4MWTndTJI/AAAAAAAACxM/9s6GxLMygfA/s1600/http-ssl-xampp.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-N91n4-QPwh8/U_4MWTndTJI/AAAAAAAACxM/9s6GxLMygfA/s1600/http-ssl-xampp.PNG" height="213" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">File bernama httpd-ssl.conf</td></tr></tbody></table></strong></li><li>Carilah kata “<strong>Listen 443</strong>” dan ubah menjadi “<strong>Listen 4499</strong>“. Bisa dilihat gambar dibawah ini. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-dPKRxIkiJgw/U_4MVtBEUAI/AAAAAAAACxA/AuMVEBe1J4s/s1600/http-ssl-listen-4499.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-dPKRxIkiJgw/U_4MVtBEUAI/AAAAAAAACxA/AuMVEBe1J4s/s1600/http-ssl-listen-4499.PNG" height="213" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">httpd-ssl menjadi 4499</td></tr></tbody></table></li><li>Masih di file yang sama, dan carilah kata “<strong>virtualhost_default_:443</strong>” kemudian ubahlah menjadi “<strong>virtualhost_default_:4499</strong>“. <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-sNHr_BYcPQ8/U_4MVpF_joI/AAAAAAAACxI/FpWK-aQzPp0/s1600/http-ssl-virtualhost-4499.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-sNHr_BYcPQ8/U_4MVpF_joI/AAAAAAAACxI/FpWK-aQzPp0/s1600/http-ssl-virtualhost-4499.PNG" height="255" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">VirtualHost_default menjadi 4499</td></tr></tbody></table></li><li>Masih di file yang sama, carilah kata “<strong>ServerName localhost:443</strong>” dan ubahlah menjadi “<strong>ServerName localhost:4499</strong>“.<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-uLCCZYAERL8/U_4MVhE63UI/AAAAAAAACxE/6PWZsu1c2eI/s1600/http-ssl-virtualhost-default-4499.PNG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://3.bp.blogspot.com/-uLCCZYAERL8/U_4MVhE63UI/AAAAAAAACxE/6PWZsu1c2eI/s1600/http-ssl-virtualhost-default-4499.PNG" height="291" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">ServerName localhost menjadi 4499</td></tr></tbody></table></li><li>Sekarang jalankan XAMPP Contol Panel, lalu klik Start pada Apache. Jika muncul peringatan di kotak detail bagian bawah “<strong>Apache started [port 80]</strong>“, maka bukalah browser dan arahkan ke alamat <strong>http://localhost:8080/xampp</strong>. Jika berhasil maka Web Service Apache tersebut telah berjalan di port 8080.</li></ol><div style="text-align: justify;">Sudah jalankan Apache Xampp sobat? Jika belum bisa berjalan atau running juga maka cobalah langsung jalankan localhost:8080 di browser biasanya walaupun dalam Xampp control sudah di tekan tombol start. Semoga bermanfaat sobat ^_^</div>
+
+      </div>
+      <div class="post-content">
+         <div class="row">
+            <div class="col-md-6">
+               
+                  <a class="previous" href="https://santekno.com/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/">&lt;- Cara membedakan RAM DDR1, DDR2 dan DDR3</a>
+               
+            </div>
+            <div class="col-md-6">
+               
+                  <a class="next" href="https://santekno.com/cara-pertambahan-dua-variabel/"> Cara Pertambahan dua variabel -></a>
+               
+            </div>
+         </div>
+      </div>
+      
+   </div>
+   <div class="singlepost">
+         
+         <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "santekno" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+         
+   </div>
+</div>
+
+<aside class="col-lg-4">
+   <div class="widget">
+    <div class="list-group">
+       <div class="list-group-item"><h4>Artikel Terbaru</h4></div>
+       <ul>
+          
+          <a
+          href="https://santekno.com/pengertian-dan-konfigurasi-dhcp-pada-router-cisco/"
+          class="list-group-item list-group-item-action"
+          >
+          <div class="row">
+             <div class="col-12">
+                
+                   
+                   <img 
+                   class="rounded float-left mr-3" 
+                   src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png" 
+                   data-sizes="auto"
+                   width="70"
+                   height="70"
+                   loading="lazy">
+                   
+                
+                <h6 class="mb-1">Pengertian dan Konfigurasi DHCP pada Router Cisco</h6>
+                <small class="text-secondary">2019-12-29 · 2 minutes read</small>
+             </div>
+          </div></a
+          >
+          
+          <a
+          href="https://santekno.com/layanan-wan-wide-area-network/"
+          class="list-group-item list-group-item-action"
+          >
+          <div class="row">
+             <div class="col-12">
+                
+                   
+                   <img 
+                   class="rounded float-left mr-3" 
+                   src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png" 
+                   data-sizes="auto"
+                   width="70"
+                   height="70"
+                   loading="lazy">
+                   
+                
+                <h6 class="mb-1">Layanan WAN (Wide Area Network)</h6>
+                <small class="text-secondary">2019-12-29 · 3 minutes read</small>
+             </div>
+          </div></a
+          >
+          
+          <a
+          href="https://santekno.com/cara-memberi-password-telnet-dan-console-pada-router-cisco/"
+          class="list-group-item list-group-item-action"
+          >
+          <div class="row">
+             <div class="col-12">
+                
+                   
+                   <img 
+                   class="rounded float-left mr-3" 
+                   src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png" 
+                   data-sizes="auto"
+                   width="70"
+                   height="70"
+                   loading="lazy">
+                   
+                
+                <h6 class="mb-1">Cara Memberi Password Telnet dan Console pada Router Cisco</h6>
+                <small class="text-secondary">2019-12-29 · 2 minutes read</small>
+             </div>
+          </div></a
+          >
+          
+          <a
+          href="https://santekno.com/pengertian-vlan-virtual-lan/"
+          class="list-group-item list-group-item-action"
+          >
+          <div class="row">
+             <div class="col-12">
+                
+                   
+                   <img 
+                   class="rounded float-left mr-3" 
+                   src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png" 
+                   data-sizes="auto"
+                   width="70"
+                   height="70"
+                   loading="lazy">
+                   
+                
+                <h6 class="mb-1">Pengertian VLAN (Virtual LAN)</h6>
+                <small class="text-secondary">2019-12-29 · 3 minutes read</small>
+             </div>
+          </div></a
+          >
+          
+          <a
+          href="https://santekno.com/pengertian-ppp-point-to-point-protocol/"
+          class="list-group-item list-group-item-action"
+          >
+          <div class="row">
+             <div class="col-12">
+                
+                   
+                   <img 
+                   class="rounded float-left mr-3" 
+                   src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png" 
+                   data-sizes="auto"
+                   width="70"
+                   height="70"
+                   loading="lazy">
+                   
+                
+                <h6 class="mb-1">Pengertian PPP (Point to Point Protocol)</h6>
+                <small class="text-secondary">2019-12-29 · 2 minutes read</small>
+             </div>
+          </div></a
+          >
+          
+       </ul>
+    </div>
+ </div>
+ <div class="widget">
+    <ul class="list-group">
+       
+       <a
+       href="https://santekno.com/tags/network"
+       class="list-group-item list-group-item-action"
+       >
+       <div class="row">
+          <div class="col-12">
+             <h6 class="mb-1">network (25)</h6>
+          </div>
+       </div></a
+       >
+       
+       <a
+       href="https://santekno.com/tags/hardware"
+       class="list-group-item list-group-item-action"
+       >
+       <div class="row">
+          <div class="col-12">
+             <h6 class="mb-1">hardware (11)</h6>
+          </div>
+       </div></a
+       >
+       
+       <a
+       href="https://santekno.com/tags/tutorial"
+       class="list-group-item list-group-item-action"
+       >
+       <div class="row">
+          <div class="col-12">
+             <h6 class="mb-1">tutorial (11)</h6>
+          </div>
+       </div></a
+       >
+       
+       <a
+       href="https://santekno.com/tags/linux"
+       class="list-group-item list-group-item-action"
+       >
+       <div class="row">
+          <div class="col-12">
+             <h6 class="mb-1">linux (8)</h6>
+          </div>
+       </div></a
+       >
+       
+       <a
+       href="https://santekno.com/tags/c-programming"
+       class="list-group-item list-group-item-action"
+       >
+       <div class="row">
+          <div class="col-12">
+             <h6 class="mb-1">c-programming (6)</h6>
+          </div>
+       </div></a
+       >
+       
+       <a
+       href="https://santekno.com/tags/sistem-operasi"
+       class="list-group-item list-group-item-action"
+       >
+       <div class="row">
+          <div class="col-12">
+             <h6 class="mb-1">sistem-operasi (6)</h6>
+          </div>
+       </div></a
+       >
+       
+       <a
+       href="https://santekno.com/tags/cpp-programming"
+       class="list-group-item list-group-item-action"
+       >
+       <div class="row">
+          <div class="col-12">
+             <h6 class="mb-1">cpp-programming (5)</h6>
+          </div>
+       </div></a
+       >
+       
+       <a
+       href="https://santekno.com/tags/mouse"
+       class="list-group-item list-group-item-action"
+       >
+       <div class="row">
+          <div class="col-12">
+             <h6 class="mb-1">mouse (3)</h6>
+          </div>
+       </div></a
+       >
+       
+       <a
+       href="https://santekno.com/tags/stack"
+       class="list-group-item list-group-item-action"
+       >
+       <div class="row">
+          <div class="col-12">
+             <h6 class="mb-1">stack (3)</h6>
+          </div>
+       </div></a
+       >
+       
+       <a
+       href="https://santekno.com/tags/ascii"
+       class="list-group-item list-group-item-action"
+       >
+       <div class="row">
+          <div class="col-12">
+             <h6 class="mb-1">ascii (2)</h6>
+          </div>
+       </div></a
+       >
+       
+    </ul>
+ </div>
+</aside>
+   </div>
+</div>
+
+         </main>
+         <footer>
+            <div class="container margin_60_35">
+   <div class="row">
+      <div class="col-lg-6">
+         <ul id="footer-selector">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Arsip</a></li>
+         </ul>
+      </div>
+      <div class="col-lg-6">
+         <ul id="additional_links">
+            <li><span>© 2019 <a href="https://santekno.com/">santekno.com</a> | Made with ❤️ using <a href="https://gohugo.io/">Hugo 0.55.4</a></span></li>
+         </ul>
+      </div>
+   </div>
+</div>
+         </footer>
+      </div>
+   </body>
+   <div id="toTop"></div>
+   
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/common_scripts.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/validate.js"></script>
+   <script src="https://d38wyzu9t46zzv.cloudfront.net/js/prism.js"></script>
+   
+</html>

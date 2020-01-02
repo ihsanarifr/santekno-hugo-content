@@ -13,10 +13,10 @@
     
     <item>
       <title>Cara Membuat Double Linked List menggunakan C&#43;&#43;</title>
-      <link>https://santekno.com/post/cara-membuat-double-linked-list-menggunakan-cpp/</link>
+      <link>https://santekno.com/cara-membuat-double-linked-list-menggunakan-c-/</link>
       <pubDate>Thu, 16 May 2019 13:00:00 +0700</pubDate>
       
-      <guid>https://santekno.com/post/cara-membuat-double-linked-list-menggunakan-cpp/</guid>
+      <guid>https://santekno.com/cara-membuat-double-linked-list-menggunakan-c-/</guid>
       <description>Double Linked List adalah ebuah linked list yang menggunakan sebuah variabel pointer saja untuk menyimpan banyak data dengan metode linked list, suatu daftar isi yang saling berhubungan.
 Baiklah, Santekno akan memberikan implementasi dari Double Linked List dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan Double Linked List adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubung tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya.</description>
     </item>

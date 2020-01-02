@@ -3,102 +3,182 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://santekno.com/post/cara-konfigurasi-rip-pada-router-cisco/</loc>
+    <loc>https://santekno.com/pengertian-dan-konfigurasi-dhcp-pada-router-cisco/</loc>
+    <lastmod>2019-12-29T22:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/layanan-wan-wide-area-network/</loc>
+    <lastmod>2019-12-29T22:24:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-memberi-password-telnet-dan-console-pada-router-cisco/</loc>
+    <lastmod>2019-12-29T21:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/pengertian-vlan-virtual-lan/</loc>
+    <lastmod>2019-12-29T20:46:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/pengertian-ppp-point-to-point-protocol/</loc>
+    <lastmod>2019-12-29T19:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/pengertian-nat-dan-cara-konfigurasi-pada-router-cisco/</loc>
+    <lastmod>2019-12-29T17:22:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-konfigurasi-vlan-pada-cisco-packet-tracer/</loc>
+    <lastmod>2019-12-29T14:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/jenis-jenis-serangan-pada-jaringan-komputer/</loc>
+    <lastmod>2019-12-29T10:22:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-konfigurasi-ospf-pada-router-cisco/</loc>
+    <lastmod>2019-12-29T09:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-konfigurasi-rip-pada-router-cisco/</loc>
     <lastmod>2019-12-28T19:54:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/pengertian-rip-routing-information/</loc>
+    <loc>https://santekno.com/pengertian-rip-routing-information/</loc>
     <lastmod>2019-12-28T19:54:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-konfigurasi-eigrp-pada-router-cisco/</loc>
+    <loc>https://santekno.com/cara-konfigurasi-eigrp-pada-router-cisco/</loc>
     <lastmod>2019-12-28T12:17:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/bgp-border-gateway-protocol/</loc>
+    <loc>https://santekno.com/bgp-border-gateway-protocol/</loc>
     <lastmod>2019-12-28T09:50:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/eigrp-enhanced-interior-gateway-routing-protocol/</loc>
+    <loc>https://santekno.com/eigrp-enhanced-interior-gateway-routing-protocol/</loc>
     <lastmod>2019-12-28T09:25:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/ospf-open-shortest-path-first/</loc>
+    <loc>https://santekno.com/ospf-open-shortest-path-first/</loc>
     <lastmod>2019-12-28T09:09:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/igrp-interior-gateway-routing-protocol/</loc>
+    <loc>https://santekno.com/igrp-interior-gateway-routing-protocol/</loc>
     <lastmod>2019-12-28T09:02:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/pengertian-perbedaan-routing-static-dan-routing-dynamic/</loc>
+    <loc>https://santekno.com/pengertian-perbedaan-routing-static-dan-routing-dynamic/</loc>
     <lastmod>2019-12-28T08:39:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-konfigurasi-static-route-pada-router-cisco/</loc>
+    <loc>https://santekno.com/cara-konfigurasi-static-route-pada-router-cisco/</loc>
     <lastmod>2019-12-28T00:28:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-membuat-stack-menggunakan-standar-template-library/</loc>
+    <loc>https://santekno.com/komponen-router-dan-fungsinya/</loc>
+    <lastmod>2019-12-25T20:22:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-membuat-ftp-server/</loc>
+    <lastmod>2019-12-25T15:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/urutan-kabel-utp-straight-dan-cross-over/</loc>
+    <lastmod>2019-12-25T13:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-membuat-dns-server/</loc>
+    <lastmod>2019-12-25T13:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/definisi-ip-address-dan-subnet-mask/</loc>
+    <lastmod>2019-12-25T13:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/jenis-jenis-name-server/</loc>
+    <lastmod>2019-12-25T10:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-membuat-web-server/</loc>
+    <lastmod>2019-12-25T06:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-membaut-stack-menggunakan-standar-template-library/</loc>
     <lastmod>2019-05-16T13:06:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-membuat-stack-menggunakan-double-linked-list/</loc>
+    <loc>https://santekno.com/cara-membuat-stack-menggunakan-double-linked-list/</loc>
     <lastmod>2019-05-16T13:04:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-membuat-stack-menggunakan-array/</loc>
+    <loc>https://santekno.com/cara-membuat-stack-menggunakan-array-c-/</loc>
     <lastmod>2019-05-16T13:02:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-membuat-double-linked-list-menggunakan-cpp/</loc>
+    <loc>https://santekno.com/cara-membuat-double-linked-list-menggunakan-c-/</loc>
     <lastmod>2019-05-16T13:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-membuat-single-linked-list-menggunakan-cpp/</loc>
+    <loc>https://santekno.com/cara-menggunakan-single-linked-list-menggunakan-c-/</loc>
     <lastmod>2019-05-16T12:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-mencari-akar-dari-persamaan-kuadrat/</loc>
+    <loc>https://santekno.com/cara-mencari-akar-dari-persamaan-kuadrat/</loc>
     <lastmod>2019-05-07T12:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-menentukan-angka-terbesar-dari-3-angka/</loc>
+    <loc>https://santekno.com/cara-menentukan-angka-terbesar-dari-3-angka/</loc>
     <lastmod>2019-05-06T12:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-menentukan-bilangan-ganjil-genap/</loc>
+    <loc>https://santekno.com/cara-menentukan-bilangan-ganjil-genap/</loc>
     <lastmod>2019-05-05T12:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-menentukan-huruf-vokal-dan-konsonan/</loc>
+    <loc>https://santekno.com/cara-menentukan-huruf-vokal-dan-konsonan/</loc>
     <lastmod>2019-05-04T12:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-menampilkan-code-ascii/</loc>
+    <loc>https://santekno.com/cara-menampilkan-code-ascii/</loc>
     <lastmod>2019-05-03T12:00:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/cara-pertambahan-dua-variable/</loc>
+    <loc>https://santekno.com/cara-pertambahan-dua-variabel/</loc>
     <lastmod>2019-05-02T12:00:00+07:00</lastmod>
   </url>
   
@@ -108,178 +188,98 @@
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</loc>
+    <loc>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</loc>
     <lastmod>2014-08-28T00:08:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/cara-konfigurasi-vlan-pada-cisco-packet-tracer/</loc>
-    <lastmod>2014-01-14T14:16:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/jenis-jenis-serangan-pada-jaringan-komputer/</loc>
-    <lastmod>2013-11-27T10:22:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/cara-konfigurasi-ospf-pada-router-cisco/</loc>
-    <lastmod>2013-11-24T09:16:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/cara-memberi-password-telnet-dan-console-pada-router-cisco/</loc>
-    <lastmod>2013-10-16T21:49:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/</loc>
+    <loc>https://santekno.com/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/</loc>
     <lastmod>2013-08-08T22:39:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/pengertian-vlan-virtual-lan/</loc>
-    <lastmod>2013-08-06T20:46:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/pengertian-dan-konfigurasi-dhcp-pada-router-cisco/</loc>
-    <lastmod>2013-06-20T22:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/pengertian-nat-dan-cara-konfigurasi-pada-router-cisco/</loc>
-    <lastmod>2013-06-13T17:22:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/pengertian-ppp-point-to-point-protocol/</loc>
-    <lastmod>2013-04-15T19:14:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/layanan-wan-wide-area-network/</loc>
-    <lastmod>2013-04-11T22:24:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/cara-membuat-mysql-server/</loc>
+    <loc>https://santekno.com/cara-membuat-mysql-server/</loc>
     <lastmod>2012-11-29T21:05:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/cara-membuat-ftp-server/</loc>
-    <lastmod>2012-11-27T15:17:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/pengertian-monitor-crt-lcd-led-dan-plasma/</loc>
+    <loc>https://santekno.com/pengertian-monitor-crt-lcd-led-dan-plasma/</loc>
     <lastmod>2012-11-25T17:59:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/cara-membuat-ssh-server/</loc>
+    <loc>https://santekno.com/cara-membuat-ssh-server/</loc>
     <lastmod>2012-11-25T12:54:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/macam-macam-printer/</loc>
+    <loc>https://santekno.com/macam-macam-printer/</loc>
     <lastmod>2012-11-22T22:28:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/cara-membuat-web-server/</loc>
-    <lastmod>2012-11-21T06:44:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/cara-membuat-dns-server/</loc>
-    <lastmod>2012-11-17T13:19:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/jenis-jenis-name-server/</loc>
-    <lastmod>2012-11-11T10:33:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/perintah-dasar-linux-part-4/</loc>
+    <loc>https://santekno.com/perintah-dasar-linux-part-4/</loc>
     <lastmod>2012-11-10T14:39:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/perintah-dasar-linux-part-3/</loc>
+    <loc>https://santekno.com/perintah-dasar-linux-part-3/</loc>
     <lastmod>2012-11-10T14:27:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/perintah-dasar-linux-part-2/</loc>
+    <loc>https://santekno.com/perintah-dasar-linux-part-2/</loc>
     <lastmod>2012-11-10T06:54:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/perintah-dasar-linux/</loc>
+    <loc>https://santekno.com/perintah-dasar-linux/</loc>
     <lastmod>2012-11-08T21:34:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/definisi-ip-address-dan-subnet-mask/</loc>
-    <lastmod>2012-10-28T13:15:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/komponen-router-dan-fungsinya/</loc>
-    <lastmod>2012-10-24T20:22:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/bagian-bagian-dari-mouse-komputer/</loc>
+    <loc>https://santekno.com/bagian-bagian-dari-mouse-komputer/</loc>
     <lastmod>2012-10-23T06:50:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/sejarah-mouse-komputer/</loc>
+    <loc>https://santekno.com/sejarah-mouse-komputer/</loc>
     <lastmod>2012-10-23T06:07:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/pengertian-dan-fungsi-mouse-komputer/</loc>
+    <loc>https://santekno.com/pengertian-dan-fungsi-mouse-komputer/</loc>
     <lastmod>2012-10-23T04:50:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/bagian-bagian-hardisk/</loc>
+    <loc>https://santekno.com/bagian-bagian-hardisk/</loc>
     <lastmod>2012-10-13T19:20:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/macam-macam-optical-drive/</loc>
+    <loc>https://santekno.com/macam-macam-optical-drive/</loc>
     <lastmod>2012-10-06T11:52:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/cd-dan-dvd/</loc>
+    <loc>https://santekno.com/cd-dan-dvd/</loc>
     <lastmod>2012-10-06T11:28:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/draft/urutan-kabel-utp-straight-dan-cross-over/</loc>
-    <lastmod>2012-09-28T13:50:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/post/draft/jenis-keyboard-masa-kini/</loc>
+    <loc>https://santekno.com/jenis-keyboard-masa-kini/</loc>
     <lastmod>2012-09-26T09:40:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://santekno.com/post/pengertian-dan-jenis-keyboard/</loc>
+    <loc>https://santekno.com/pengertian-dan-jenis-keyboard/</loc>
     <lastmod>2012-09-26T09:32:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://santekno.com/</loc>
-    <lastmod>2019-12-28T19:54:00+00:00</lastmod>
+    <lastmod>2019-12-29T22:30:00+00:00</lastmod>
   </url>
   
   <url>
@@ -309,12 +309,6 @@
   <url>
     <loc>https://santekno.com/tags/cd/</loc>
     <lastmod>2012-10-06T11:52:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/tags/cisco-packet-tracer/</loc>
-    <lastmod>2014-01-14T14:16:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -349,12 +343,6 @@
   </url>
   
   <url>
-    <loc>https://santekno.com/tags/hacking/</loc>
-    <lastmod>2013-11-27T10:22:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://santekno.com/tags/harddisk/</loc>
     <lastmod>2012-10-13T19:20:00+00:00</lastmod>
     <priority>0</priority>
@@ -380,7 +368,7 @@
   
   <url>
     <loc>https://santekno.com/tags/linux/</loc>
-    <lastmod>2012-11-29T21:05:00+00:00</lastmod>
+    <lastmod>2019-12-25T15:17:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -392,13 +380,7 @@
   
   <url>
     <loc>https://santekno.com/tags/network/</loc>
-    <lastmod>2019-12-28T19:54:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/tags/networking/</loc>
-    <lastmod>2014-01-14T14:16:00+00:00</lastmod>
+    <lastmod>2019-12-29T22:30:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
