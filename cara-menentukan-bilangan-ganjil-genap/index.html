@@ -131,38 +131,26 @@
          
          <p></p>
          <p>Bilangan ganjil atau genap pada program C dapat digunakan dengan proses kondisional, atau lebih jelasnya menggunakan sintak <code>if .. else</code> atau <code>switch case</code>. Berikut ini menentukan Bilangan Ganjil Genap dengan program yang sederhana.</p>
-
 <h2 id="souce-code">Souce Code</h2>
-
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-int main(){
-   int num;
-   printf(&quot;Masukkan bilangan interger yang ingin dicek: &quot;);
-   scanf(&quot;%d&quot;,&amp;num);
-   if((num%2)==0)      /* Kondisi menggunakan if else*/
-         printf(&quot;%d adalah Genap.&quot;,num);
-   else
-         printf(&quot;%d adalah Ganjil.&quot;,num);
-   return 0;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+   <span style="color:#66d9ef">int</span> num;
+   printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Masukkan bilangan interger yang ingin dicek: </span><span style="color:#e6db74">&#34;</span>);
+   scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>,<span style="color:#f92672">&amp;</span>num);
+   <span style="color:#66d9ef">if</span>((num<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)      <span style="color:#75715e">/* Kondisi menggunakan if else*/</span>
+         printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d adalah Genap.</span><span style="color:#e6db74">&#34;</span>,num);
+   <span style="color:#66d9ef">else</span>
+         printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d adalah Ganjil.</span><span style="color:#e6db74">&#34;</span>,num);
+   <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
 }
-</code></pre>
-
-<h2 id="output-1">Output 1</h2>
-
-<pre><code class="language-bash">Masukkan bilangan integer yang ingin dicek :
-25 adalah Ganjil
-</code></pre>
-
-<h2 id="output-2">Output 2</h2>
-
-<pre><code class="language-bash">Masukkan bilangan integer yang ingin dicek :
-16 adalah Genap
-</code></pre>
-
-<h2 id="penjelasan">Penjelasan</h2>
-
+</code></pre></div><h2 id="output-1">Output 1</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Masukkan bilangan integer yang ingin dicek :
+<span style="color:#ae81ff">25</span> adalah Ganjil
+</code></pre></div><h2 id="output-2">Output 2</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Masukkan bilangan integer yang ingin dicek :
+<span style="color:#ae81ff">16</span> adalah Genap
+</code></pre></div><h2 id="penjelasan">Penjelasan</h2>
 <p>Dalam program ini, pengguna diminta untuk memasukkan bilangan integer yang disimpan dalam variabel <code>num</code>. Kemudian, sisanya ditemukan saat nomor yang dibagi 2 dan diperiksa apakah sisanya adalah 0 atau tidak. Jika sisa adalah 0 maka, bilangan tersebut genap. Program ini menggunakan <code>if..else</code>.</p>
-
 <p>Selain program yang diatas bisa juga menggunakan operator kondisional [?] yang merupakan notasi singkat dari pernyataan <code>if .. else</code>.</p>
       </div>
       <div class="post-content">
@@ -382,15 +370,12 @@ int main(){
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#souce-code">Souce Code</a></li>
-<li><a href="#output-1">Output 1</a></li>
-<li><a href="#output-2">Output 2</a></li>
-<li><a href="#penjelasan">Penjelasan</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#souce-code">Souce Code</a></li>
+    <li><a href="#output-1">Output 1</a></li>
+    <li><a href="#output-2">Output 2</a></li>
+    <li><a href="#penjelasan">Penjelasan</a></li>
+  </ul>
 </nav>
 </div>
 </aside>

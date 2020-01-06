@@ -126,38 +126,24 @@
             
          
          <p></p>
-         
-
-<h2 id="pengertian">Pengertian</h2>
-
+         <h2 id="pengertian">Pengertian</h2>
 <p><strong>OSPF (Open Shortest Path First)</strong> merupakan sebuah routing protokol berjenis <strong>
 
 <a href="https://santekno.com/post/igrp-interior-gateway-routing-protocol/" title="IGRP (InteriorGateway Routing Protocol)">IGRP (InteriorGateway Routing Protocol)</a></strong> yang hanya dapat bekerja dalam jaringan internal suatu ogranisasi atau perusahaan. Jaringan internal maksudnya adalah jaringan di mana Anda masih memiliki hak untuk menggunakan, mengatur, dan memodifikasinya. Atau dengan kata lain, Anda masih memiliki hak administrasi terhadap jaringan tersebut. Jika Anda sudah tidak memiliki hak untuk menggunakan dan mengaturnya, maka jaringan tersebut dapat dikategorikan sebagai jaringan eksternal.</p>
-
 <p>Selain itu, <strong>OSPF</strong> juga merupakan routing protokol yang berstandar terbuka. Maksudnya adalah routing protokol ini bukan ciptaan dari vendor manapun. Dengan demikian, siapapun dapat menggunakannya, perangkat manapun dapat kompatibel dengannya, dan di manapun routing protokol ini dapat diimplementasikan. OSPF merupakan routing protokol yang menggunakan konsep hirarki routing, artinya OSPF membagi-bagi jaringan menjadi beberapa tingkatan. Tingkatan-tingkatan ini diwujudkan dengan menggunakan sistem pengelompokan area.</p>
-
-<p><img border="0" src="https://2.bp.blogspot.com/-iL2MN9F0Wps/UO90FY-0UKI/AAAAAAAABUg/Qqqcd798SEw/s320/ospf.gif" width="100%" height="100%"/></p>
-
+<!-- raw HTML omitted -->
 <p>Dengan menggunakan konsep hirarki routing ini sistem penyebaran informasinya menjadi lebih teratur dan tersegmentasi, tidak menyebar ke sana ke mari dengan sembarangan. Efek dari keteraturan distribusi routing ini adalah jaringan yang penggunaan bandwidth-nya lebih efisien, lebih cepat mencapai konvergensi, dan lebih presisi dalam menentukan rute-rute terbaik menuju ke sebuah lokasi. OSPF merupakan salah satu routing protokol yang selalu berusaha untuk bekerja demikian. Teknologi yang digunakan oleh routing protokol ini adalah teknologi <strong>link State</strong> yang memang didesain untuk bekerja dengan sangat efisien dalam proses pengiriman update informasi rute. Hal ini membuat routing protokol OSPF menjadi sangat cocok untuk terus dikembangkan menjadi network berskala besar. Pengguna OSPF biasanya adalah para administrator jaringan berskala sedang sampai besar. Jaringan dengan jumlah router lebih dari sepuluh buah, dengan banyak lokasi-lokasi remote yang perlu juga dijangkau dari pusat, dengan jumlah pengguna jaringan lebih dari lima ratus perangkat komputer, mungkin sudah layak menggunakan routing protocol ini.</p>
-
 <h2 id="operasi-ospf">Operasi OSPF</h2>
-
 <p>Untuk memulai semua aktivitas OSPF dalam menjalankan pertukaran informasi routing, hal pertama yang harus dilakukannya adalah membentuk sebuah komunikasi dengan para router lain. Router lain yang berhubungan langsung atau yang berada di dalam satu jaringan dengan router OSPF tersebut disebut dengan <strong>Neighbour Router</strong> atau Router Tetangga. Langkah pertama yang harus dilakukan sebuah router OSPF adalah harus membentuk hubungan dengan <strong>Neighbor Router</strong>.</p>
-
 <p>Router OSPF mempunyai sebuah mekanisme untuk dapat menemukan router tetangganya dan dapat membuka hubungan. Mekanisme tersebut disebut dengan istilah <code>Hello protocol</code>. Dalam membentuk hubungan dengan tetangganya, router OSPF akan mengirimkan sebuah paket berukuran kecil secara periodik ke dalam jaringan atau ke sebuah perangkat yang terhubung langsung dengannya. Paket kecil tersebut dinamai dengan istilah Hello packet.</p>
-
 <p>Pada kondisi standar, <code>Hello packet</code> dikirimkan berkala setiap <code>10 detik sekali (dalam media broadcast multiaccess)</code> dan <code>30 detik sekali dalam media Point-to-Point</code>. <code>Hello packet</code> berisikan informasi seputar pernak-pernik yang ada pada router pengirim. <code>Hello packet</code> pada umumnya dikirim dengan menggunakan multicast address untuk menuju ke semua router yang menjalankan OSPF (IP multicast 224.0.0.5). Semua router yang menjalankan OSPF pasti akan mendengarkan protocol hello ini dan juga akan mengirimkan hello packet-nya secara berkala. Cara kerja dari Hello protocol dan pembentukan <strong>neighbour router</strong> terdiri dari beberapa jenis, tergantung dari jenis media di mana router OSPF berjalan.</p>
-
 <h2 id="tabel-tabel-ospf">Tabel-tabel OSPF</h2>
-
 <ul>
 <li><strong>Routing table</strong> biasa juga disebut sebagai Forwarding database. Database ini berisi the lowest cost untuk mencapai router-router/network-network lainnya. Setiap router mempunyai Routing table yang berbeda-beda.</li>
 <li><strong>Adjecency database</strong>, Database ini berisi semua router tetangganya. Setiap router mempunyai Adjecency database yang berbeda-beda.</li>
 <li><strong>Topological database</strong>, Database ini berisi seluruh informasi tentang router yang berada dalam satu networknya/areanya.</li>
 </ul>
-
 <h2 id="kelebihan">Kelebihan</h2>
-
 <ul>
 <li>Tidak menghasilkan routing loop</li>
 <li>Mendukung penggunaan beberapa metrik sekaligus</li>
@@ -165,16 +151,12 @@
 <li>Membagi jaringan yang besar mejadi beberapa area.</li>
 <li>Waktu yang diperlukan untuk konvergen lebih cepat</li>
 </ul>
-
 <h2 id="kekurangan">Kekurangan</h2>
-
 <ul>
 <li>Membutuhkan basis data yang besar</li>
 <li>Lebih rumit</li>
 </ul>
-
 <h2 id="konfigurasi">Konfigurasi</h2>
-
 <p>Implementasi konfigurasi routing OSPF, kamu bisa lihat pada postingan ini
 <strong>
 
@@ -398,17 +380,14 @@
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#pengertian">Pengertian</a></li>
-<li><a href="#operasi-ospf">Operasi OSPF</a></li>
-<li><a href="#tabel-tabel-ospf">Tabel-tabel OSPF</a></li>
-<li><a href="#kelebihan">Kelebihan</a></li>
-<li><a href="#kekurangan">Kekurangan</a></li>
-<li><a href="#konfigurasi">Konfigurasi</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#pengertian">Pengertian</a></li>
+    <li><a href="#operasi-ospf">Operasi OSPF</a></li>
+    <li><a href="#tabel-tabel-ospf">Tabel-tabel OSPF</a></li>
+    <li><a href="#kelebihan">Kelebihan</a></li>
+    <li><a href="#kekurangan">Kekurangan</a></li>
+    <li><a href="#konfigurasi">Konfigurasi</a></li>
+  </ul>
 </nav>
 </div>
 </aside>

@@ -8,7 +8,7 @@
       <meta name="author" content="santekno.com">
       <meta name="title" content="Cara Membuat Stack menggunakan Double Linked List - Santekno" />
       <meta name="description" content="Stack (tumpukan) adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah LIFO (Last In First Out). Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.
-Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya.">
+Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya. Dalam OOP kita harus membuat suatu kelas yang akan kita namakan Stack.">
 
       
       
@@ -131,64 +131,47 @@ Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming
             
          
          <p></p>
-         
-
-<p><strong>Stack (tumpukan)</strong> adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah <code>LIFO (Last In First Out)</code>. Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.</p>
-
+         <p><strong>Stack (tumpukan)</strong> adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah <code>LIFO (Last In First Out)</code>. Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.</p>
 <p><strong>Stack</strong> yang akan Santekno buat menerapkan sistem <code>OOP (Object Oriented Programming)</code> sehingga agar lebih mudah dipahaminya. Dalam OOP kita harus membuat suatu kelas yang akan kita namakan <strong>Stack</strong>.</p>
-
 <p>Implementasi Stack menggunakan DLL juga sama saja kaidahnya tidak dihilangkan, tetapi yang paling beda yaitu jika menggunakan DLL itu lebih longgar terhadap pengalokasian data, karena struktur data <strong>Double Linked List unlimited</strong> walaupun bisa di batasi.</p>
-
 <h2 id="source-code-stack">Source Code Stack</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;list&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
 
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-#include &lt;list&gt;
-
-using namespace std;
-
-class Stack{
-    list&lt;int&gt; stack;
-    list&lt;int&gt;::iterator atas;
-public:
-    Stack(){atas=stack.begin();}
-    bool empty(){return (atas==stack.end());}
-    int size(){ return stack.size();}
-    void push(int nilai);
-    void pop();
-    int top();
-    list&lt;int&gt;::iterator getAtas() {return atas;}
-    list&lt;int&gt; getStack() {return stack;}
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Stack</span>{
+    list<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> stack;
+    list<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">:</span><span style="color:#f92672">:</span>iterator atas;
+<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+    Stack(){atas<span style="color:#f92672">=</span>stack.begin();}
+    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">empty</span>(){<span style="color:#66d9ef">return</span> (atas<span style="color:#f92672">=</span><span style="color:#f92672">=</span>stack.end());}
+    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">size</span>(){ <span style="color:#66d9ef">return</span> stack.size();}
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">push</span>(<span style="color:#66d9ef">int</span> nilai);
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">pop</span>();
+    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">top</span>();
+    list<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">:</span><span style="color:#f92672">:</span>iterator getAtas() {<span style="color:#66d9ef">return</span> atas;}
+    list<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> getStack() {<span style="color:#66d9ef">return</span> stack;}
 };
-</code></pre>
-
-<h2 id="kode-program-push">Kode Program <code>Push()</code></h2>
-
-<pre><code class="language-cpp">void Stack::push(int val){
+</code></pre></div><h2 id="kode-program-push">Kode Program <code>Push()</code></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> Stack<span style="color:#f92672">:</span><span style="color:#f92672">:</span>push(<span style="color:#66d9ef">int</span> val){
     stack.push_front(val);
-    atas=stack.begin();
+    atas<span style="color:#f92672">=</span>stack.begin();
 }
-</code></pre>
-
-<h2 id="kode-program-pop">Kode Program <code>Pop()</code></h2>
-
-<pre><code class="language-cpp">void Stack::pop(){
-    if(empty())
-        cout &lt;&lt; &quot;Stack is empty\n&quot;;
-    else{
-        ++atas;
+</code></pre></div><h2 id="kode-program-pop">Kode Program <code>Pop()</code></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> Stack<span style="color:#f92672">:</span><span style="color:#f92672">:</span>pop(){
+    <span style="color:#66d9ef">if</span>(empty())
+        cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Stack is empty</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
+    <span style="color:#66d9ef">else</span>{
+        <span style="color:#f92672">+</span><span style="color:#f92672">+</span>atas;
         stack.pop_front();
     }
 }
-</code></pre>
-
-<h2 id="kode-program-top">Kode Program <code>Top()</code></h2>
-
-<pre><code class="language-cpp">int Stack::top(){
-    return (*atas);
+</code></pre></div><h2 id="kode-program-top">Kode Program <code>Top()</code></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> Stack<span style="color:#f92672">:</span><span style="color:#f92672">:</span>top(){
+    <span style="color:#66d9ef">return</span> (<span style="color:#f92672">*</span>atas);
 }
-</code></pre>
-
-<p>Kelas ini memiliki beberapa method atau fungsi yang sesuai dengan sifat-sifat dan kaidah Stack. Seperti Push, Pop, Top dan Full. <strong>Push</strong> adalah menyimpan data ke dalam <strong>stack</strong>. lalu <strong>Pop</strong> adalah mengambil data paling atas dari <strong>Stack</strong> sedangkan <strong>Top</strong> adalah melihat isi data yang paling atas dari suatu <strong>Stack</strong>.</p>
+</code></pre></div><p>Kelas ini memiliki beberapa method atau fungsi yang sesuai dengan sifat-sifat dan kaidah Stack. Seperti Push, Pop, Top dan Full. <strong>Push</strong> adalah menyimpan data ke dalam <strong>stack</strong>. lalu <strong>Pop</strong> adalah mengambil data paling atas dari <strong>Stack</strong> sedangkan <strong>Top</strong> adalah melihat isi data yang paling atas dari suatu <strong>Stack</strong>.</p>
 
       </div>
       <div class="post-content">
@@ -408,15 +391,12 @@ public:
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#source-code-stack">Source Code Stack</a></li>
-<li><a href="#kode-program-push">Kode Program <code>Push()</code></a></li>
-<li><a href="#kode-program-pop">Kode Program <code>Pop()</code></a></li>
-<li><a href="#kode-program-top">Kode Program <code>Top()</code></a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#source-code-stack">Source Code Stack</a></li>
+    <li><a href="#kode-program-push">Kode Program Push()</a></li>
+    <li><a href="#kode-program-pop">Kode Program Pop()</a></li>
+    <li><a href="#kode-program-top">Kode Program Top()</a></li>
+  </ul>
 </nav>
 </div>
 </aside>

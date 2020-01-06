@@ -128,38 +128,46 @@ Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibu
          
          <p></p>
          <p>Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan virtual server yang sangat terkenal di kalangan para programmer. Suatu virtual yang terdapat pada Xampp ini digunakan untuk para developer khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, phpmyadmin sebagai Database Server dan banyak lagi.</p>
-
-<p><img border="0" src="https://1.bp.blogspot.com/-5OCKeKZHEE8/U_4MXbgP3DI/AAAAAAAACxY/OqAi74_6yqQ/s1600/xampp-tidak-start.PNG" height="100%" width="100%" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah error yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada localhost. Nah permasalahan itulah yang sekarang Santekno akan jelaskan secara terperinci. Cara mengatasi Apache tidak berjalan ini terjadi karena kesalahan Web Server-nya atau mempunyai lebih virtual host di dalam komputer kita sehingga port HTTP yaitu 80 menjadi bentrok. Maka dari itu, berikut ini tahapan cara agar tidak terjadi bentrok sehingga Apache bisa berjalan &ldquo;Running&rdquo; kembali.</p>
-
 <ol>
-<li>Lakukan perubahan pada file httpd.conf</li>
-<li>Buka file httpd.conf di folder C:\xampp\apache\conf\ dengan menggunakan aplikasi notepad.</li>
-
-<li><p>Cari kata “Listen 80” dan ubahlah menjadi “Listen 8080“. Bisa dilihat pada gambar dibawah ini.
-<img border="0" src="https://1.bp.blogspot.com/-YO4QwAxJijg/U_4MWmLsg-I/AAAAAAAACxQ/H2m7h1x2EGw/s1600/listen-80.PNG" height="100%" width="100%" /></p></li>
-
-<li><p>Masih di file yang sama, carilah kata “ServerName localhost:80” kemudian ubahlah menjadi “ServerName localhost:8080“. Lihat gambar dibawah ini.
-<img border="0" src="https://4.bp.blogspot.com/-kNum_rozfbY/U_4MW_yGsiI/AAAAAAAACxU/DGsMr0PWAX4/s1600/servername-8080.PNG" height="100%" width="100%" /></p></li>
-
-<li><p>Lalu Simpan.</p></li>
-
-<li><p>Selanjutnya, buka file <code>httpd-ssl.conf</code> di *<em>C:\xampp\apache\conf\extra*</em>.
-<img border="0" src="https://4.bp.blogspot.com/-N91n4-QPwh8/U_4MWTndTJI/AAAAAAAACxM/9s6GxLMygfA/s1600/http-ssl-xampp.PNG" height="100%" width="100%" /></p></li>
-
-<li><p>Carilah kata <strong>“Listen 443”</strong> dan ubah menjadi <strong>“Listen 4499“</strong>. Bisa dilihat gambar dibawah ini.
-<img border="0" src="https://1.bp.blogspot.com/-dPKRxIkiJgw/U_4MVtBEUAI/AAAAAAAACxA/AuMVEBe1J4s/s1600/http-ssl-listen-4499.PNG" height="100%" width="100%" /></p></li>
-
-<li><p>Masih di file yang sama, dan carilah kata <strong>“virtualhost<em>default</em>:443”</strong> kemudian ubahlah menjadi <strong>“virtualhost<em>default</em>:4499“</strong>.
-<img border="0" src="https://4.bp.blogspot.com/-sNHr_BYcPQ8/U_4MVpF_joI/AAAAAAAACxI/FpWK-aQzPp0/s1600/http-ssl-virtualhost-4499.PNG" height="100%" width="100%" /></p></li>
-
-<li><p>Masih di file yang sama, carilah kata <strong>“ServerName localhost:443”</strong> dan ubahlah menjadi <strong>“ServerName localhost:4499“</strong>.
-<img border="0" src="https://3.bp.blogspot.com/-uLCCZYAERL8/U_4MVhE63UI/AAAAAAAACxE/6PWZsu1c2eI/s1600/http-ssl-virtualhost-default-4499.PNG" height="100%" width="100%" /></p></li>
-
-<li><p>Sekarang jalankan XAMPP Contol Panel, lalu klik Start pada Apache. Jika muncul peringatan di kotak detail bagian bawah <strong>“Apache started [port 80]“</strong>, maka bukalah browser dan arahkan ke alamat <a href="http://localhost:8080/xampp">http://localhost:8080/xampp</a>. Jika berhasil maka Web Service Apache tersebut telah berjalan di port 8080.</p></li>
+<li>
+<p>Lakukan perubahan pada file httpd.conf</p>
+</li>
+<li>
+<p>Buka file httpd.conf di folder C:\xampp\apache\conf\ dengan menggunakan aplikasi notepad.</p>
+</li>
+<li>
+<p>Cari kata “Listen 80” dan ubahlah menjadi “Listen 8080“. Bisa dilihat pada gambar dibawah ini.
+<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Masih di file yang sama, carilah kata “ServerName localhost:80” kemudian ubahlah menjadi “ServerName localhost:8080“. Lihat gambar dibawah ini.
+<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Lalu Simpan.</p>
+</li>
+<li>
+<p>Selanjutnya, buka file <code>httpd-ssl.conf</code> di **C:\xampp\apache\conf\extra**.
+<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Carilah kata <strong>“Listen 443”</strong> dan ubah menjadi <strong>“Listen 4499“</strong>. Bisa dilihat gambar dibawah ini.
+<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Masih di file yang sama, dan carilah kata **“virtualhost_default_:443”** kemudian ubahlah menjadi **“virtualhost_default_:4499“**.
+<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Masih di file yang sama, carilah kata <strong>“ServerName localhost:443”</strong> dan ubahlah menjadi <strong>“ServerName localhost:4499“</strong>.
+<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Sekarang jalankan XAMPP Contol Panel, lalu klik Start pada Apache. Jika muncul peringatan di kotak detail bagian bawah <strong>“Apache started [port 80]“</strong>, maka bukalah browser dan arahkan ke alamat http://localhost:8080/xampp. Jika berhasil maka Web Service Apache tersebut telah berjalan di port 8080.</p>
+</li>
 </ol>
-
 <p>Sudah jalankan Apache Xampp sobat? Jika belum bisa berjalan atau running juga maka cobalah langsung jalankan localhost:8080 di browser biasanya walaupun dalam Xampp control sudah di tekan tombol start. Semoga bermanfaat sobat ^_^</p>
 
       </div>
@@ -377,7 +385,7 @@ Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibu
 <div class="box_detail">
       <h2>Table of Content</h2>
       <hr>
-   
+   <nav id="TableOfContents"></nav>
 </div>
 </aside>
    </div>

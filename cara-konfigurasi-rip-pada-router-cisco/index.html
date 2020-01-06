@@ -128,49 +128,40 @@ Pada kali ini Santekno, menyertakan file konfigurasi pada Packet Tracer Cisco se
          
          <p></p>
          <p>Salam sobat, Santekno saat ini akan menjelaskan tentang bagaimana cara konfigurasi RIP yaitu <strong>dynamic protocol</strong> yang biasa kita gunakan pada LAN atau sering dipakai pada topologi yang sangat simple karena protokol RIP ini hanya bisa berjalan pada 15 Router saja selebihnya RIP akan tidak berjalan dan berkerja sangat lambat.</p>
-
-<p><img border="0" src="https://1.bp.blogspot.com/-JGduKpVq4tU/UnJVELLvyeI/AAAAAAAACl8/Xi6bXJbkxQU/s1600/cara-konfigurasi-rip-cisco.bmp" height="100%" width="100%" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>Pada kali ini Santekno, menyertakan file konfigurasi pada Packet Tracer Cisco sehingga bagi sobat bisa diunduh dan dipelajari sebih detail untuk latihan-latihan dasar Jaringan Komputer khususnya konfigurasi Router Cisco.</p>
-
 <p>Silahkan download file .pkt di bawah ini : <strong><a href="https://goo.gl/nkghOz">Download Konfigurasi RIP</a></strong></p>
-
 <p>Nah, Santekno juga memberikan tutorial video di Youtube, jadi sobat tinggal melihat bagaimana cara konfigurasinya dan terapkan langsung pada latihan pada file yang sudah di sertakan.</p>
-
-<p><a href="https://youtu.be/faoUUAC0Gts"><img src="http://img.youtube.com/vi/faoUUAC0Gts/0.jpg" alt="Cara Konfigurasi Static Route Cisco" /></a></p>
-
+<p><a href="https://youtu.be/faoUUAC0Gts"><img src="http://img.youtube.com/vi/faoUUAC0Gts/0.jpg" alt="Cara Konfigurasi Static Route Cisco"></a></p>
 <p>Jika sobat bingung, Santekno akan memperlihatkan konfigurasi pada router-router yang ada pada gambar di atas dengan konfigurasi yang simple dan mudah untuk dipahami, Berikut ini konfigurasinya.</p>
-
-<pre><code class="language-bash">Konfigurasi pada R1
-=======================================
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Konfigurasi pada R1
+<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span>
 R1&gt;enable
 R1#configure terminal
-R1(config)#router rip
-R1(config-router)# version 2 
-R1(config-router)# network 192.168.1.0
-R1(config-router)# network 192.168.4.0
+R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e">#router rip</span>
+R1<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># version 2</span> 
+R1<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.1.0</span>
+R1<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.4.0</span>
 
 Konfigurasi pada R2
-=======================================
+<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span>
 R2&gt;enable
 R2#configure terminal
-R2(config)#router rip
-R2(config-router)# version 2 
-R2(config-router)# network 192.168.4.0
-R2(config-router)# network 192.168.2.0
-R2(config-router)# network 192.168.5.0
+R2<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e">#router rip</span>
+R2<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># version 2</span> 
+R2<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.4.0</span>
+R2<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.2.0</span>
+R2<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.5.0</span>
 
 Konfigurasi pada R3
-=======================================
+<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span>
 R3&gt;enable
 R3#configure terminal
-R3(config)#router rip
-R3(config-router)#version 2 
-R3(config-router)# network 192.168.5.0
-R3(config-router)# network 192.168.3.0
-</code></pre>
-
-<p>Demikian Cara Konfigurasi RIP pada Router Cisco semoga bermanfaat bagi sobat, jika masih bingung atau ingin mempelajari lebih lanjut tentang Jaringan Komputer, tetap kunjugin Santekno.blogspot.com nanti akan memberikan informasi terupdate tentang konfigurasi router khususnya Cisco. Terimakasih sobat ^_^</p>
+R3<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e">#router rip</span>
+R3<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e">#version 2</span> 
+R3<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.5.0</span>
+R3<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.3.0</span>
+</code></pre></div><p>Demikian Cara Konfigurasi RIP pada Router Cisco semoga bermanfaat bagi sobat, jika masih bingung atau ingin mempelajari lebih lanjut tentang Jaringan Komputer, tetap kunjugin Santekno.blogspot.com nanti akan memberikan informasi terupdate tentang konfigurasi router khususnya Cisco. Terimakasih sobat ^_^</p>
 
       </div>
       <div class="post-content">
@@ -389,7 +380,7 @@ R3(config-router)# network 192.168.3.0
 <div class="box_detail">
       <h2>Table of Content</h2>
       <hr>
-   
+   <nav id="TableOfContents"></nav>
 </div>
 </aside>
    </div>

@@ -127,62 +127,49 @@ Kenapa router Cisco? Karena fasilitas  routing protokol EIGRP itu hanya ada di p
             
          
          <p></p>
-         
-
-<p>Salam sobat blogger, kali ini Santekno akan menjelaskan tentang konfigurasi EIGRP (Enhanced Interior Gateway Routing Protocol) dengan mudah dan secara bertahap. Sobat blogger gampang sekali apabila ingin melakukan konfigurasi routing protokol EIGRP pada router Cisco.</p>
-
+         <p>Salam sobat blogger, kali ini Santekno akan menjelaskan tentang konfigurasi EIGRP (Enhanced Interior Gateway Routing Protocol) dengan mudah dan secara bertahap. Sobat blogger gampang sekali apabila ingin melakukan konfigurasi routing protokol EIGRP pada router Cisco.</p>
 <p>Kenapa router Cisco? Karena fasilitas <strong>
 
 <a href="https://santekno.com/post/eigrp-enhanced-interior-gateway-routing-protocol" title="routing protokol EIGRP">routing protokol EIGRP</a></strong> itu hanya ada di perangkat CISCO saja, dan di perangkat lain tidak digunakan. Karena terbilang sangat baik untuk menghubungkan topologi jaringan dan cepat maka EIGRP ini lebih baik dibandingkan dengan RIP yang mempunyai beberapa kelemahan.</p>
-
-<p><img border="0" src="https://3.bp.blogspot.com/-7TldEYiBSPk/UoMDOKWlclI/AAAAAAAACmo/AeL95SUuuZs/s1600/static+route.bmp" height="100%" width="100%" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <p>Bagaimana Dengan routing Protokol <strong>
 
 <a href="https://santekno.com/post/ospf-open-shortest-path-first" title="OSPF (Open Shortest Path First)">OSPF (Open Shortest Path First)</a></strong>? Itu hampir sama kecepatan dalam hal convergensi terhadap topologi jaringan. Yang membedakan dari EIGRP dan OSPF yaitu dari segi perangkat EIGRP hanya bisa berjalan atau melakukan routing di perangkat CISCO saja jadi jika terhubung dengan perangkat lain maka routing tersebut tidak berjalan, sedangkan OSPF bisa di jalankan di berbagai perangkat jaringan karena OSPF itu merupakan aplikasi routing yang Open Source.</p>
-
 <p>Langsung saja pada konfigurasi, berikut bagi sobat yang ingin lebih mempelajari konfigurasi EIGRP secara mendalam lihat video dibawah ini agar lebih paham dalam aplikasinya.</p>
-
-<p><a href="https://youtu.be/sZdHfMsSq6g"><img src="http://img.youtube.com/vi/sZdHfMsSq6g/0.jpg" alt="Cara Konfigurasi Static Route Cisco" /></a></p>
-
+<p><a href="https://youtu.be/sZdHfMsSq6g"><img src="http://img.youtube.com/vi/sZdHfMsSq6g/0.jpg" alt="Cara Konfigurasi Static Route Cisco"></a></p>
 <p>Pada kali ini Santekno, menyertakan file konfigurasi pada Packet Tracer Cisco sehingga bagi sobat bisa diunduh dan dipelajari sebih detail untuk latihan-latihan dasar Jaringan Komputer khususnya konfigurasi Router Cisco.</p>
-
 <p>Silahkan download file .pkt di bawah ini : <strong><a href="https://goo.gl/zBcqbf">Download Konfigurasi EIGRP</a></strong></p>
-
 <h2 id="konfigurasi-router">Konfigurasi Router</h2>
-
-<pre><code class="language-bash">Konfigurasi pada R1
-=======================================
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Konfigurasi pada R1
+<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span>
 R1&gt;enable
 R1#configure terminal
-R1(config)# router eigrp 100 
-R1(config-router)# network 192.168.1.0
-R1(config-router)# network 192.168.4.0
-R1(config-router)# do wr
-R1(config-router)# 
+R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># router eigrp 100</span> 
+R1<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.1.0</span>
+R1<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.4.0</span>
+R1<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># do wr</span>
+R1<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span># 
 
 Konfigurasi pada R2
-=======================================
+<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span>
 R2&gt;enable
 R2# configure terminal
-R2(config)# router eigrp 100 
-R2(config-router)# network 192.168.4.0
-R2(config-router)# network 192.168.2.0
-R2(config-router)# network 192.168.5.0
-R2(config-router)# do wr
-R2(config-router)# 
+R2<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># router eigrp 100</span> 
+R2<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.4.0</span>
+R2<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.2.0</span>
+R2<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.5.0</span>
+R2<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># do wr</span>
+R2<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span># 
 
 Konfigurasi pada R3
-=======================================
+<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#f92672">=</span>
 R3&gt;enable
 R3#configure terminal
-R3(config)# router eigrp 100
-R3(config-router)# network 192.168.5.0
-R3(config-router)# network 192.168.3.0
-R3(config-router)# do wr
-</code></pre>
-
-<p>Demikian Tutorial Cara Konfigurasi EIGRP pada Router Cisco, semoga bermanfaat bagi sobat ya, terus kunjungi Santekno karena nanti akan ada update terbaru mengenai Jaringan Komputer. ^_^</p>
+R3<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># router eigrp 100</span>
+R3<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.5.0</span>
+R3<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># network 192.168.3.0</span>
+R3<span style="color:#f92672">(</span>config-router<span style="color:#f92672">)</span><span style="color:#75715e"># do wr</span>
+</code></pre></div><p>Demikian Tutorial Cara Konfigurasi EIGRP pada Router Cisco, semoga bermanfaat bagi sobat ya, terus kunjungi Santekno karena nanti akan ada update terbaru mengenai Jaringan Komputer. ^_^</p>
 
       </div>
       <div class="post-content">
@@ -402,12 +389,9 @@ R3(config-router)# do wr
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#konfigurasi-router">Konfigurasi Router</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#konfigurasi-router">Konfigurasi Router</a></li>
+  </ul>
 </nav>
 </div>
 </aside>

@@ -127,35 +127,24 @@ RIP yang merupakan routing protokol dengan algoritma distance vector, yang mengh
             
          
          <p></p>
-         
-
-<h2 id="pengertian">Pengertian</h2>
-
+         <h2 id="pengertian">Pengertian</h2>
 <p><strong>RIP (Router Information Protocol)</strong> adalah Routing protokol yang menggunakan algoritma <em>distance vector</em>, yaitu algortima <strong>Bellman-Ford</strong>. Pertama kali dikenalkan pada tahun 1969 dan merupakan algoritma routing yang pertama pada <strong>ARPANET</strong>. Versi awal dari routing protokol ini dibuat oleh <strong>Xerox Parc’s PARC Universal Packet Internetworking</strong> dengan nama Gateway Internet Protocol. Kemudian diganti nama menjadi Router Information Protocol (RIP) yang merupakan bagian Xerox network Services.</p>
-
 <p>RIP yang merupakan routing protokol dengan algoritma distance vector, yang menghitung jumlah hop (count hop) sebagai routing metric. Jumlah maksimum dari hop yang diperbolehkan adalah 15 hop. Tiap RIP router saling tukar informasi routing tiap 30 detik, melalui UDP port 520. Untuk menghindari <strong>loop routing</strong>, digunakan teknik split horizon with <strong>poison reverse</strong>. RIP merupakan routing protocol yang paling mudah untuk di konfigurasi.</p>
-
-<p><img border="0" src="https://4.bp.blogspot.com/-Y4MzfafnxfE/UO9vpEY4oZI/AAAAAAAABTw/tFRIq369H98/s1600/RIP+Topology.PNG" height="100%" width="100%" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <h2 id="version-rip">Version RIP</h2>
-
 <ol>
 <li>RIPv1 merupakan bagian dari distance vektor yang mencari hop terpendek atau router terbaik,rip versi 1 juga merupakan class pul routing.</li>
 <li>RIPv2 merupakan bagian dari distance vektor yang mencari hop terpendek atau router terbaik,rip versi2 juga merupakan class list routing.</li>
 <li>RIPng</li>
 </ol>
-
 <h2 id="kelebihan-rip">Kelebihan RIP</h2>
-
 <ul>
 <li>Menggunakan metode Triggered Update.</li>
 <li>RIP memiliki timer untuk mengetahui kapan router harus kembali memberikan informasi routing.</li>
 <li>Jika terjadi perubahan pada jaringan, sementara timer belum habis, router tetap harus mengirimkan informasi routing karena dipicu oleh perubahan tersebut (triggered update).</li>
 <li>Mengatur routing menggunakan RIP tidak rumit dan memberikan hasil yang cukup dapat diterima, terlebih jika jarang terjadi kegagalan link jaringan.</li>
 </ul>
-
 <h2 id="kekurangan">Kekurangan</h2>
-
 <ul>
 <li>Jumlah host Terbatas</li>
 <li>RIP tidak memiliki informasi tentang subnet setiap route.</li>
@@ -165,9 +154,7 @@ RIP yang merupakan routing protokol dengan algoritma distance vector, yang mengh
 <li>Hop Count Limit RIP tidak dapat mengatur hop lebih dari 15. Hal ini digunakan untuk mencegah  loop pada jaringan.</li>
 <li>Classful Routing Only RIP menggunakan classful routing ( /8, /16, /24 ). RIP tidak dapat mengatur  classless routing.</li>
 </ul>
-
 <h2 id="konfigurasi">Konfigurasi</h2>
-
 <p>Implementasi konfigurasi routing RIP kamu bisa lihat pada postingan ini
 <strong>
 
@@ -391,16 +378,13 @@ RIP yang merupakan routing protokol dengan algoritma distance vector, yang mengh
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#pengertian">Pengertian</a></li>
-<li><a href="#version-rip">Version RIP</a></li>
-<li><a href="#kelebihan-rip">Kelebihan RIP</a></li>
-<li><a href="#kekurangan">Kekurangan</a></li>
-<li><a href="#konfigurasi">Konfigurasi</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#pengertian">Pengertian</a></li>
+    <li><a href="#version-rip">Version RIP</a></li>
+    <li><a href="#kelebihan-rip">Kelebihan RIP</a></li>
+    <li><a href="#kekurangan">Kekurangan</a></li>
+    <li><a href="#konfigurasi">Konfigurasi</a></li>
+  </ul>
 </nav>
 </div>
 </aside>

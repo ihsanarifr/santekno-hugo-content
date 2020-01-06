@@ -127,65 +127,38 @@ EIGRP (Enhanced Interior Gateway Routing Protocol) adalah routing protocol yang 
             
          
          <p></p>
-         
-
-<h2 id="pengertian">Pengertian</h2>
-
+         <h2 id="pengertian">Pengertian</h2>
 <p>EIGRP (Enhanced Interior Gateway Routing Protocol) merupakan hasil pengembangan dari routing ptotokol pendahulunya yaitu IGRP yang keduanya adalah routing pengembangan dari CISCO. Pengembangan itu dihasilkan oleh perubahan dan bermacam-macam tuntutan dalam jaringan Skala jaringan yang besar. EIGRP menggabungkan kemampuan dari <strong>Link-State</strong> Protokol dan <strong>Distance Vector</strong> Protokol, terlebih lagi EIGRP memuat beberapa protocol penting yang secara baik meningkatkan efisiensi penggunaannya ke routing protocol lain.</p>
-
 <p>EIGRP (Enhanced Interior Gateway Routing Protocol) adalah routing protocol yang hanya di adopsi oleh router cisco atau sering disebut sebagai proprietary protocol pada CISCO. Dimana EIGRP ini hanya bisa digunakan sesama router CISCO saja dan routing ini tidak didukung dalam jenis router yang lain.</p>
-
-<p><img border="0" src="https://1.bp.blogspot.com/-9DMA9COjgyE/UO93ite-37I/AAAAAAAABU4/huaWjbYQunM/s1600/eigrp1.jpg" height="100%" width="100%" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <h2 id="cara-kerja">Cara Kerja</h2>
-
 <p>EIGRP sering disebut juga <strong>Hybrid-Distance-Vector Routing Protocol</strong>, karena cara kerjanya menggunkan dua tipe routing protocol,yaitu
 <strong>Distance vector</strong> protocol dan <strong>Link-State</strong> protocol, Dalam pengertian bahwa routing EIGRP sebenarnya merupakan distance vector protocol tetapi prinsip kerjanya menggunakan links-states protocol.sehingga EIGRP disebuat sebagai hybrid-distance-vector,mengapa dikatakan demikian karena prinsip kerjanya sama dengan links-states protocol yaitu mengirimkan semacam hello packet.</p>
-
 <h2 id="fitur-ftur">Fitur-ftur</h2>
-
 <ul>
 <li>Mendukung IP, IPX, dan AppleTalk melalui modul-modul yang bersifat protocol dependent</li>
 <li>Pencarian network tetangga yang dilakukan dengan efisien</li>
 <li>Komunikasi melalui Reliable Transport Protocol (RTP)</li>
 <li>Pemilihan jalur terbaik melalui Diffusing update Algoritma (DUAL)</li>
 </ul>
-
 <h2 id="algoritma">Algoritma</h2>
-
 <p>EIGRP memiliki sistem pembangunan routing protocol dengan membuat sebuah algoritma yang dikenal dengan nama DUAL. Dual digunkan untuk mengkalkulasi dan membangun sebuah routing table.DUAL digunakan untuk memastikan sebuah jalur untuk sebuah network dan menyediakan sebuah loopless routing environment.agar membantu mengirimkan sebuah packet ke sebuah jaringan, DUAL mengirimkan sebuah packet query kepada network yang berseberangan denganya maupun router yang terkoneksi langsung dengan dia.</p>
-
 <p>Selama mengirimkan query packet ,setiap router akan melanjutkan untuk meneruskan query packet tersebut sampai sebuah router akan mengirimkan sebuah replay packet sebagai informasi bagaimana caranya untuk menuju ke sebuah jaringan tertentu. Ketika replay paket telah diterima oleh router yang mengirimkan query packet ,DUAL akan mengkalkulasi dan menentukan router yang mana yang akan menjadi Successor dan router yang mana yang akan menjadi feasible successor.</p>
-
 <p>Successor akan menjadi jalur yang utama,dan jalur yang terdekat,yang paling efissien yang untuk menuju kesebuah network yang dapat di jangkau oleh DUAL.Jalur successor router dikalkulasikan dengan menggunakan Delay,bandwidth,dan factor-faktor yang lain.sedangkan feasible successor adalah jalur backup atau jalur cadangan yang akan digunakan ketika router tidak memilih jalur successornya.dan tidak digharuskan sebuah router yang menggunkan protocol EIGRP menentukan feasible successor.</p>
-
 <p>Ketika successor atupun feasible successor jatuh,Maka DUAL kan mengirimkan kembali query packet ke masing-masing router dan meletkakn jalur yang telah ia pelajri dari pengiriman query paket akan disimpan dalam sebuah routing table.</p>
-
 <p>DUAL memungkinkan router EIGRP untuk menentukan apakah jalur yang diberikan oleh router tetangga looped atau free-loop dan mengizinkan router yang menggunakan protocol EIGRP untuk menemukan jalur alternatif tanpa harus menunggu update dari router lain.</p>
-
 <h2 id="struktur-data">Struktur Data</h2>
-
 <p><strong>Hello packet</strong> dikirim secara multicast ke IP Address 224.0.0.10. EIGRP akan mengirimkan hello packet untuk mengetahui apakah router-router tetangganya masih hidup ataukah dalam keadaan mati Pengiriman hello packet tersebut bersifat simultant, dalam hello packet tersebut mempunyai hold time, bila dalam jangka waktu hold time router tetangga tidak membalas hello paket tadi maka router tersebut akan dianggap dalam keadaan mati. Biasanya hold time itu 3x waktunya hello packet, hello packet defaultnya 15 second. Lalu DUAL akan meng-kalkulasi ulang untuk pathnya dan tidak memerlukan.</p>
-
 <p><strong>Update packets</strong> digunakan untuk menyampaikan tujuan yang dapat dijangkau oleh router. Ketika sebuah router baru ditemukan Update packets dikirim secara unicast sehingga router dapat membangun topologi table.dalam kasus lain, Update packets dikirim secara multicast untuk perubahan link-cost.</p>
-
 <p><strong>Acknowledgement Packet</strong> adalah Hello packet yang tidak berisikan data, packet Acknowledgement memuat non zero acknowledgement number dan selalu dikirimkan dengan mengunakan unicast address, acknowledgement merupakan sebuah pemberitahuan bahwa paket datanya telah diterima.</p>
-
 <p><strong>Query packets</strong> adalah sebuah request atau permintaan yang dilakukan secara multicast yang akan meminta sebuah route. Selama mengirimkan query packet ,setiap router akan melanjutkan untuk meneruskan query packet tersebut sampai sebuah router akan mengirimkan sebuah replay packet sebagai informasi bagaimana caranya untuk menuju ke sebuah jaringan tertentu.
 reply packets dikirim apabila router tujuan tidak memiliki feasible successors. Reply packets dikirim untuk merespon Query packet yang menginstrusikan bahwa router pengirim tidak memperhitunghkan ulang jalurnya karena feasible successors masih tetap ada. Reply packets adalah packet unicast yang dikirim ke router yang mengirimkan Query packet.</p>
-
 <h2 id="teknologi">Teknologi</h2>
-
 <p><strong>Neighbor discovery/recovery</strong>, Mekanisme neighbor discovery/recovery mengijinkan router secara dinamis mempelajari router lain yang secara langsung terhubung ke jaringan mereka. Routers juga harus mengetahui ketika router tetangganya tidak dapat lagi dijangkau. Proses ini dicapai dengan low-overhead yang secara periodik mengirimkan hello packet yang kecil. Selama router menerima Hello packet dari router tetangga, router tersebut menganggap bahwa router tetangga tersebut masih berfungsi. Dan keduanya masih bisa melakukan pertukaran informasi.</p>
-
 <p><strong>Reliable Tansport Protocol (RTP)</strong> bertanggung jawab untuk menjamin pengiriman dan penerimaan packet EIGRP ke semua router. RTP juga mendukung perpaduan pengiriman packet secara unicast ataupun multicast. Untuk efisiensi hanya beberapa packet EIGRP yang dikirimkan. Pada jaringan multi access yang mempunyai kemampuan untuk mengirimkan packet secara multicast seperti Ethernet, tidak perlu mengirimkan Hello packet ke semua router tetangga secara individu. Untuk alasan tersebut, EIGRP mengirimkan single multicast hello packet yang berisi sebuah indicator yang menginformasikan si penerima bahwa packet tidak perlu dibalas. Tipe packet yang lain seperti update packet mengindikasikan bahwa balasan terhadap packet tersebut diperlukan. RTP memuat sebuah ketentuan untuk mengirimkan packet multicast secara cepat ketika balasan terhadap packet sedang ditunda, yang membantu memastikan sisa waktu untuk convergence rendah didalam keberadaan bermacam-macam kecepatan links.</p>
-
 <p><strong>DUAL finite-state machine</strong> menaruh keputusan proses untuk semua perhitungan jalur dengan mengikuti semua jalur yang telah dinyatakan oleh semua router tetangga. DUAL menggunakan informasi tentang jarak untuk memilih jalur yang efisien, jalur loop-free dan memilih jalur untuk penempatan di dalam tabel routing berdasarkan successors yang telah dibuat oleh DUAL, successor adalah router yang berdekatan yang digunakan untuk meneruskan packet yang mempunyai nilai cost paling sedikit dengan router tujuan dan dijamin tidak menjadi bagian dari routing loop. ketika perubahan topologi terjadi, DUAL mencoba mencari successors. Jika ditemukan, DUAL menggunakannya untuk menghindari penghitungan jalur yang tidak diperlukan.,DUAL juga membuat route back –up(jalur cadangan) yang disebut fesible successor.</p>
-
 <p><strong>Potocol-dependent</strong> modules bertanggung jawab pada layer network yang memerlukan protocol khusus. Misalnya IP-EIGRP module yang bertanggung jawab untuk mengirim dan menerima packet EIGRP yang telah dienkapsulasi di dalam protocol IP. IP-EIGRP juga bertanggung jawab untuk menguraikan packet EIGRP dan memberitahukan pada DUAL tentang informasi yang baru saja diterima.</p>
-
 <h2 id="perbandingan-igrp-dan-eigrp">Perbandingan IGRP dan EIGRP</h2>
-
 
 
 
@@ -199,32 +172,27 @@ reply packets dikirim apabila router tujuan tidak memiliki feasible successors. 
 <th align="left">EIGRP</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="left">Compability Mode</td>
 <td align="left">Tidak mendukung multi protokol</td>
 <td align="left">Mendukung multiprotokol</td>
 </tr>
-
 <tr>
 <td align="left">Metric Calculation</td>
 <td align="left">Perhitungan dengan metrik paling efisien menuju ke network tujuan</td>
 <td align="left">Perhitungan dengan metrik paling efisien menuju ke network tujuan</td>
 </tr>
-
 <tr>
 <td align="left">HopCount</td>
 <td align="left">maksimal 255</td>
 <td align="left">maksimal 224</td>
 </tr>
-
 <tr>
 <td align="left">Automatic Protocol Redistribution</td>
 <td align="left">Tidak mendistribusikan secara otomatis</td>
 <td align="left">mendistribusikan secara otomatis ke routing protokol yang lain</td>
 </tr>
-
 <tr>
 <td align="left">Routing Tagging</td>
 <td align="left">Tidak ada</td>
@@ -232,10 +200,7 @@ reply packets dikirim apabila router tujuan tidak memiliki feasible successors. 
 </tr>
 </tbody>
 </table>
-
-
 <h2 id="konfigurasi">Konfigurasi</h2>
-
 <p>Implementasi konfigurasi routing EIGRP kamu bisa lihat pada postingan ini
 <strong>
 
@@ -459,19 +424,16 @@ reply packets dikirim apabila router tujuan tidak memiliki feasible successors. 
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#pengertian">Pengertian</a></li>
-<li><a href="#cara-kerja">Cara Kerja</a></li>
-<li><a href="#fitur-ftur">Fitur-ftur</a></li>
-<li><a href="#algoritma">Algoritma</a></li>
-<li><a href="#struktur-data">Struktur Data</a></li>
-<li><a href="#teknologi">Teknologi</a></li>
-<li><a href="#perbandingan-igrp-dan-eigrp">Perbandingan IGRP dan EIGRP</a></li>
-<li><a href="#konfigurasi">Konfigurasi</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#pengertian">Pengertian</a></li>
+    <li><a href="#cara-kerja">Cara Kerja</a></li>
+    <li><a href="#fitur-ftur">Fitur-ftur</a></li>
+    <li><a href="#algoritma">Algoritma</a></li>
+    <li><a href="#struktur-data">Struktur Data</a></li>
+    <li><a href="#teknologi">Teknologi</a></li>
+    <li><a href="#perbandingan-igrp-dan-eigrp">Perbandingan IGRP dan EIGRP</a></li>
+    <li><a href="#konfigurasi">Konfigurasi</a></li>
+  </ul>
 </nav>
 </div>
 </aside>

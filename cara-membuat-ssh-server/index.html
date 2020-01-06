@@ -129,70 +129,39 @@ SSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang secure.">
             
          
          <p></p>
-         
-
-<p>Cara Membuat SSH Server pada Fedora Core 7 itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau Secure Shell menyediakan service untuk keperluan remote login. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : <code>ssh</code>, <code>putty</code> dan sebagainya.</p>
-
+         <p>Cara Membuat SSH Server pada Fedora Core 7 itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau Secure Shell menyediakan service untuk keperluan remote login. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : <code>ssh</code>, <code>putty</code> dan sebagainya.</p>
 <p>SSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang <em>secure</em>. Kedua service tersebut sudah sangat populer, namun informasi yang lalu lalang antara client dan Server tidak “terlindungi” karena tidak di enkripsi. Maka informasi mudah di sadap dan di baca oleh orang yang tidak berhak. Dan ada juga enkripsi pada SSH dengan menggunakan algoritma DSA dan RSA tetapi terbilang cukup rumit untuk pengerjaannya.</p>
-
 <h2 id="instalasi-ssh-server">Instalasi SSH Server</h2>
-
 <p>Baiklah, untuk lebih jelasnya kita mulai saja dengan praktik kita dengan mengecek penginstalan SSH apakah sudah di instal atau belum di server kita :</p>
-
-<pre><code class="language-bash">rpm –qa | grep ssh
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rpm –qa | grep ssh
 
 openssh-4.5p1-6.fc7
 openssh-askpass-4.5p1-6.fc7
 openssh-clients-4.5p1-6.fc7
 openssh-server-4.5p1-6.fc7
-</code></pre>
-
-<p>Jika belum ada lakukan penginstalan aplikasi SSH tersebut, jika belum paham tentang penginstalan disini ada Perintah Dasar Linux Part 4. Openssh-server hanya diinstal pada komputer server ingat itu ya.</p>
-
+</code></pre></div><p>Jika belum ada lakukan penginstalan aplikasi SSH tersebut, jika belum paham tentang penginstalan disini ada Perintah Dasar Linux Part 4. Openssh-server hanya diinstal pada komputer server ingat itu ya.</p>
 <p>Setelah terinstal aplikasi tersebut maka akan terbentuk file konfigurasi bernama <code>/etc/ssh/sshd_config</code>.</p>
-
 <h2 id="konfigurasi-ssh-server">Konfigurasi SSH Server</h2>
-
 <p>Menjalankan SSH Server itu dengan mengecek terlebih dahulu file konfigurasi dengan perintah :</p>
-
-<pre><code class="language-bash">cat /etc/ssh/sshd_config
-</code></pre>
-
-<p>Isi file konfigurasi terkesan rumit dan banyak. Maka kita tidak perlu mengubah apapun jika ingin membuat server SSH. Setelah itu kita aktifkan SSH Server tersebut dengan perintah</p>
-
-<pre><code class="language-bash">service sshd restart
-</code></pre>
-
-<p>Kemudian periksa apakah file /etc/nologin ada atau tidak <code>ls –l /etc/nologin</code></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat /etc/ssh/sshd_config
+</code></pre></div><p>Isi file konfigurasi terkesan rumit dan banyak. Maka kita tidak perlu mengubah apapun jika ingin membuat server SSH. Setelah itu kita aktifkan SSH Server tersebut dengan perintah</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">service sshd restart
+</code></pre></div><p>Kemudian periksa apakah file /etc/nologin ada atau tidak <code>ls –l /etc/nologin</code></p>
 <p>Jika file tersebut ada maka user selain root tidak bisa login ke  server, baik dari localhost maupun client. Sebaiknya di ubah saja namanya menjadi :</p>
-
-<pre><code class="language-bash">mv /etc/nologin /etc/nologin.old
-</code></pre>
-
-<h2 id="menjalankan-ssh-server">Menjalankan SSH Server</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mv /etc/nologin /etc/nologin.old
+</code></pre></div><h2 id="menjalankan-ssh-server">Menjalankan SSH Server</h2>
 <p>Kemudian cara menjalankan SSH server dan melakukan tes ke server dari salah satu komputer client yaitu ketikkan perintah</p>
-
-<pre><code class="language-bash">ssh santekno.com -1 ihsan
-</code></pre>
-
-<p>Atau bisa dengan IP Addressnya</p>
-
-<pre><code class="language-bash">ssh 192.168.10.90 -1 ihsan
-</code></pre>
-
-<p>Maka setelah menggunakan itu akan tampak seperti dibawah ini</p>
-
-<pre><code class="language-bash">The authenticity of host ‘192.168.10.90 (192.168.10.90)’ can’t be established.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh santekno.com -1 ihsan
+</code></pre></div><p>Atau bisa dengan IP Addressnya</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh 192.168.10.90 -1 ihsan
+</code></pre></div><p>Maka setelah menggunakan itu akan tampak seperti dibawah ini</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">The authenticity of host ‘192.168.10.90 <span style="color:#f92672">(</span>192.168.10.90<span style="color:#f92672">)</span>’ can’t be established.
 RSA key fingerprint is
 5a:cb:66:7c:95:1f:fd:9a:11:a8:fb:77:67::67:ac:cc.
-Are you sure you want to continue connecting (yes/no)? Yes
-Warning: Permanently added ‘192.168.10.90’ (RSA) to the list of known host.
+Are you sure you want to <span style="color:#66d9ef">continue</span> connecting <span style="color:#f92672">(</span>yes/no<span style="color:#f92672">)</span>? Yes
+Warning: Permanently added ‘192.168.10.90’ <span style="color:#f92672">(</span>RSA<span style="color:#f92672">)</span> to the list of known host.
 ihsan@192.168.10.90’s password :
-</code></pre>
-
-<p>Jika password diketikkan makan akan login ke server SSH. Dan kalau kita akan keluar akhiri dengan perintah exit. Nah itulah Cara Membuat SSH Server di Fedora Core 7. Sekarang kita bisa login ke server dari komputer client. Semoga Bermanfaat.</p>
+</code></pre></div><p>Jika password diketikkan makan akan login ke server SSH. Dan kalau kita akan keluar akhiri dengan perintah exit. Nah itulah Cara Membuat SSH Server di Fedora Core 7. Sekarang kita bisa login ke server dari komputer client. Semoga Bermanfaat.</p>
 
       </div>
       <div class="post-content">
@@ -412,14 +381,11 @@ ihsan@192.168.10.90’s password :
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#instalasi-ssh-server">Instalasi SSH Server</a></li>
-<li><a href="#konfigurasi-ssh-server">Konfigurasi SSH Server</a></li>
-<li><a href="#menjalankan-ssh-server">Menjalankan SSH Server</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#instalasi-ssh-server">Instalasi SSH Server</a></li>
+    <li><a href="#konfigurasi-ssh-server">Konfigurasi SSH Server</a></li>
+    <li><a href="#menjalankan-ssh-server">Menjalankan SSH Server</a></li>
+  </ul>
 </nav>
 </div>
 </aside>

@@ -131,78 +131,63 @@
          
          <p></p>
          <p>Pada program ini pengguna diminta untuk memasukkan tiga angka dan program ini akan menemukan terbesar di antara tiga angka tersebut yang sudah dimasukkan oleh pengguna. Program ini dapat diselesaikan dalam satu cara.</p>
-
 <h2 id="souce-code-1">Souce Code 1</h2>
-
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-int main(){
-   float a, b, c;
-   printf(&quot;Masukkan 3 angka: &quot;);
-   scanf(&quot;%f %f %f&quot;, &amp;a, &amp;b, &amp;c);
-   if(a&gt;=b &amp;&amp; a&gt;=c)
-      printf(&quot;Angka paling besar = %.2f&quot;, a);
-   if(b&gt;=a &amp;&amp; b&gt;=c)
-      printf(&quot;Angka paling besar = %.2f&quot;, b);
-   if(c&gt;=a &amp;&amp; c&gt;=b)
-      printf(&quot;Angka paling besar = %.2f&quot;, c);
-   return 0;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+   <span style="color:#66d9ef">float</span> a, b, c;
+   printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Masukkan 3 angka: </span><span style="color:#e6db74">&#34;</span>);
+   scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%f %f %f</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>a, <span style="color:#f92672">&amp;</span>b, <span style="color:#f92672">&amp;</span>c);
+   <span style="color:#66d9ef">if</span>(a<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>b <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> a<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>c)
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Angka paling besar = %.2f</span><span style="color:#e6db74">&#34;</span>, a);
+   <span style="color:#66d9ef">if</span>(b<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>a <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> b<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>c)
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Angka paling besar = %.2f</span><span style="color:#e6db74">&#34;</span>, b);
+   <span style="color:#66d9ef">if</span>(c<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>a <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> c<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>b)
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Angka paling besar = %.2f</span><span style="color:#e6db74">&#34;</span>, c);
+   <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
 }
-</code></pre>
-
-<h2 id="souce-code-2">Souce Code 2</h2>
-
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-int main(){
-   float a, b, c;
-   printf(&quot;Masukkan 3 angka: &quot;);
-   scanf(&quot;%f %f %f&quot;, &amp;a, &amp;b, &amp;c);
-   if (a&gt;=b)
+</code></pre></div><h2 id="souce-code-2">Souce Code 2</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+   <span style="color:#66d9ef">float</span> a, b, c;
+   printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Masukkan 3 angka: </span><span style="color:#e6db74">&#34;</span>);
+   scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%f %f %f</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>a, <span style="color:#f92672">&amp;</span>b, <span style="color:#f92672">&amp;</span>c);
+   <span style="color:#66d9ef">if</span> (a<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>b)
    {
-      if(a&gt;=c)
-         printf(&quot;Angka paling besar = %.2f&quot;,a);
-      else
-         printf(&quot;Angka paling besar = %.2f&quot;,c);
+      <span style="color:#66d9ef">if</span>(a<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>c)
+         printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Angka paling besar = %.2f</span><span style="color:#e6db74">&#34;</span>,a);
+      <span style="color:#66d9ef">else</span>
+         printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Angka paling besar = %.2f</span><span style="color:#e6db74">&#34;</span>,c);
    }
-   else
+   <span style="color:#66d9ef">else</span>
    {
-      if(b&gt;=c)
-         printf(&quot;Angka paling besar = %.2f&quot;,b);
-      else
-         printf(&quot;Angka paling besar = %.2f&quot;,c);
+      <span style="color:#66d9ef">if</span>(b<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>c)
+         printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Angka paling besar = %.2f</span><span style="color:#e6db74">&#34;</span>,b);
+      <span style="color:#66d9ef">else</span>
+         printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Angka paling besar = %.2f</span><span style="color:#e6db74">&#34;</span>,c);
    }
-   return 0;
+   <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
 }
-</code></pre>
-
-<h2 id="source-code-3">Source Code 3</h2>
-
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-int main(){
-   float a, b, c;
-   printf(&quot;Masukkan 3 angka: &quot;);
-   scanf(&quot;%f %f %f&quot;, &amp;a, &amp;b, &amp;c);
-   if(a&gt;=b &amp;&amp; a&gt;=c)
-      printf(&quot;Angka paling besar = %.2f&quot;, a);
-   else if(b&gt;=a &amp;&amp; b&gt;=c)
-      printf(&quot;Angka paling besar = %.2f&quot;, b);
-   else
-      printf(&quot;Angka paling besar = %.2f&quot;, c);
-   return 0;
+</code></pre></div><h2 id="source-code-3">Source Code 3</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+   <span style="color:#66d9ef">float</span> a, b, c;
+   printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Masukkan 3 angka: </span><span style="color:#e6db74">&#34;</span>);
+   scanf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%f %f %f</span><span style="color:#e6db74">&#34;</span>, <span style="color:#f92672">&amp;</span>a, <span style="color:#f92672">&amp;</span>b, <span style="color:#f92672">&amp;</span>c);
+   <span style="color:#66d9ef">if</span>(a<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>b <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> a<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>c)
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Angka paling besar = %.2f</span><span style="color:#e6db74">&#34;</span>, a);
+   <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(b<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>a <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> b<span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span>c)
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Angka paling besar = %.2f</span><span style="color:#e6db74">&#34;</span>, b);
+   <span style="color:#66d9ef">else</span>
+      printf(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Angka paling besar = %.2f</span><span style="color:#e6db74">&#34;</span>, c);
+   <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
 }
-</code></pre>
-
-<h2 id="output-1">Output 1</h2>
-
-<pre><code class="language-bash">Enter three numbers: 12.2
+</code></pre></div><h2 id="output-1">Output 1</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Enter three numbers: 12.2
 13.452
 10.193
-Largest number = 13.45
-</code></pre>
-
-<h2 id="penjelasan">Penjelasan</h2>
-
+Largest number <span style="color:#f92672">=</span> 13.45
+</code></pre></div><h2 id="penjelasan">Penjelasan</h2>
 <p>Dalam program ini, pengguna diminta untuk memasukkan bilangan integer yang disimpan dalam variabel <code>num</code>. Kemudian, sisanya ditemukan saat nomor yang dibagi 2 dan diperiksa apakah sisanya adalah 0 atau tidak. Jika sisa adalah 0 maka, bilangan tersebut genap. Program ini menggunakan <code>if..else</code>.</p>
-
 <p>Selain program yang diatas bisa juga menggunakan operator kondisional [?] yang merupakan notasi singkat dari pernyataan <code>if .. else</code>.</p>
       </div>
       <div class="post-content">
@@ -422,16 +407,13 @@ Largest number = 13.45
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#souce-code-1">Souce Code 1</a></li>
-<li><a href="#souce-code-2">Souce Code 2</a></li>
-<li><a href="#source-code-3">Source Code 3</a></li>
-<li><a href="#output-1">Output 1</a></li>
-<li><a href="#penjelasan">Penjelasan</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#souce-code-1">Souce Code 1</a></li>
+    <li><a href="#souce-code-2">Souce Code 2</a></li>
+    <li><a href="#source-code-3">Source Code 3</a></li>
+    <li><a href="#output-1">Output 1</a></li>
+    <li><a href="#penjelasan">Penjelasan</a></li>
+  </ul>
 </nav>
 </div>
 </aside>

@@ -126,32 +126,26 @@
             
          
          <p></p>
-         
-
-<h2 id="pengertian">Pengertian</h2>
-
+         <h2 id="pengertian">Pengertian</h2>
 <p><strong>Point-to-Point Protocol</strong> (sering disingkat menjadi PPP) adalah sebuah protokol enkapsulasi paket jaringan yang banyak digunakan pada wide area network (WAN). Protokol ini merupakan standar industri yang berjalan pada lapisan data-link (layer 2)  dan dikembangkan pada awal tahun 1990-an sebagai respons terhadap masalah-masalah yang terjadi pada protokol Serial Line Internet Protocol (SLIP), yang hanya mendukung pengalamatan IP statis kepada para kliennya. Dibandingkan dengan pendahulunya (SLIP), PPP jauh lebih baik, mengingat kerja protokol ini lebih cepat, menawarkan koreksi kesalahan, dan negosiasi sesi secara dinamis tanpa adanya intervensi dari pengguna. Selain itu, protokol ini juga mendukung banyak protokol-protokol jaringan secara simultan.</p>
-
 <h2 id="komponen-dan-fitur">Komponen dan Fitur</h2>
-
-<p>PPP menyediakan metode untuk transmisi datagram lebih link point-to-point serial. PPP terdiri dari tiga komponen utama:
-* Sebuah metode untuk encapsulating datagrams atas link serial.
-* PPP menggunakan Tingkat Tinggi Data Link Control (HDLC) protokol sebagai dasar untuk encapsulating datagrams lebih link point-to-point.
-* Sebuah LCP extensible untuk membangun, mengkonfigurasi, dan menguji koneksi data link.
-* Sebuah keluarga NCPs untuk menetapkan dan mengkonfigurasi protokol jaringan lapisan yang berbeda.
-* PPP protocol beroperasi melalui koneksi interface piranti Data Communication Equipment (DCE) dan piranti Data Terminal Equipment (DTE).
-* PPP protocol dapat beroperasi pada kedua modus synchronous (dial-up) ataupun asynchronous dan ISDN.
-* Tidak ada batas transmission rate
-* Keseimbangan load melalui multi-link
-* LCP dipertukarkan saat link dibangun untuk mengetest jalur dan setuju karenanya
-* PPP protocol mendukung berbagai macam protocol layer diatasnya seperti IP; IPX; AppleTalk dan sebagainya.
-* PPP protocol mendukung authentication kedua jenis clear text PAP (Password Authentication Protocol) dan enkripsi CHAP (Chalange Handshake Authentication Protocol)
-* NCP meng-encapsulate protocol layer Network dan mengandung suatu field yang mengindikasikan protocol layer atas</p>
-
+<p>PPP menyediakan metode untuk transmisi datagram lebih link point-to-point serial. PPP terdiri dari tiga komponen utama:</p>
+<ul>
+<li>Sebuah metode untuk encapsulating datagrams atas link serial.</li>
+<li>PPP menggunakan Tingkat Tinggi Data Link Control (HDLC) protokol sebagai dasar untuk encapsulating datagrams lebih link point-to-point.</li>
+<li>Sebuah LCP extensible untuk membangun, mengkonfigurasi, dan menguji koneksi data link.</li>
+<li>Sebuah keluarga NCPs untuk menetapkan dan mengkonfigurasi protokol jaringan lapisan yang berbeda.</li>
+<li>PPP protocol beroperasi melalui koneksi interface piranti Data Communication Equipment (DCE) dan piranti Data Terminal Equipment (DTE).</li>
+<li>PPP protocol dapat beroperasi pada kedua modus synchronous (dial-up) ataupun asynchronous dan ISDN.</li>
+<li>Tidak ada batas transmission rate</li>
+<li>Keseimbangan load melalui multi-link</li>
+<li>LCP dipertukarkan saat link dibangun untuk mengetest jalur dan setuju karenanya</li>
+<li>PPP protocol mendukung berbagai macam protocol layer diatasnya seperti IP; IPX; AppleTalk dan sebagainya.</li>
+<li>PPP protocol mendukung authentication kedua jenis clear text PAP (Password Authentication Protocol) dan enkripsi CHAP (Chalange Handshake Authentication Protocol)</li>
+<li>NCP meng-encapsulate protocol layer Network dan mengandung suatu field yang mengindikasikan protocol layer atas</li>
+</ul>
 <p>PPP mengandung Header yang mengindikasikan pemakaian protocol layer Network.PPP protocol Link Control Protocol (LCP) merupakan satu set layanan yang melaksanakan setup link.</p>
-
 <h2 id="fase-fase-ppp">Fase-fase PPP</h2>
-
 <ul>
 <li><strong>Link Entablisment</strong> and <strong>Negotiation</strong>, mencoba untuk membentuk link dengan router lawan (pembentukan link) request link dan router tetangga mengirim acnowlegment dengan isi [setuju atau tidak]. Pada fase ini akan menawarkan opsi :
 <strong>Authentication</strong>, mengirim dalam persetujuan PAP atau CHAP
@@ -160,12 +154,13 @@
 <li>Determination Link Qualitiy, menentukan kualitas linknya (optional)</li>
 <li>NCP (Network Control Protocol) berfungsi mengontrol establisment</li>
 </ul>
-
-<p>PPP protocol dapat berjalan pada bermacam-macam standard <em>physical synchronous</em> dan <em>asynckronous</em> termasuk :
-* Serial Asynchronous seperti dial-up
-* ISDN
-* Serial synchronous
-* HIgh Speed Serial Interface (HSSI)</p>
+<p>PPP protocol dapat berjalan pada bermacam-macam standard <em>physical synchronous</em> dan <em>asynckronous</em> termasuk :</p>
+<ul>
+<li>Serial Asynchronous seperti dial-up</li>
+<li>ISDN</li>
+<li>Serial synchronous</li>
+<li>HIgh Speed Serial Interface (HSSI)</li>
+</ul>
 
       </div>
       <div class="post-content">
@@ -385,14 +380,11 @@
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#pengertian">Pengertian</a></li>
-<li><a href="#komponen-dan-fitur">Komponen dan Fitur</a></li>
-<li><a href="#fase-fase-ppp">Fase-fase PPP</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#pengertian">Pengertian</a></li>
+    <li><a href="#komponen-dan-fitur">Komponen dan Fitur</a></li>
+    <li><a href="#fase-fase-ppp">Fase-fase PPP</a></li>
+  </ul>
 </nav>
 </div>
 </aside>

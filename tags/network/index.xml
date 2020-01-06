@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network on Santekno</title>
@@ -27,7 +27,8 @@
       
       <guid>https://santekno.com/layanan-wan-wide-area-network/</guid>
       <description>Layanan WAN yang ada di dunia sudah banyak dan terbilang semakin canggih dan semakin compatible dengan berbagai perangkat seiring dengan berkembangnya teknologi kabel atau nirkabel. Jaringan WAN sangatlah luas dan membutuhkan teknologi yang cepat dalam mentransmisikan data sehingga banyak layanan yang diberikan dari beberapa ISP (orang ke-3) yang memberikan layanan.
-Pembagian Layanan WAN Layanan WAN dibagi menjadi 2 bagian yaitu : * Public, layanan yang diberikan dalam bentuk internet dan dengan keamanan yang sangat tinggi.</description>
+Pembagian Layanan WAN Layanan WAN dibagi menjadi 2 bagian yaitu :
+ Public, layanan yang diberikan dalam bentuk internet dan dengan keamanan yang sangat tinggi.</description>
     </item>
     
     <item>
@@ -234,7 +235,7 @@ FTP atau File Transfer Protocol merupakan service yang digunakan untuk keperluan
       <guid>https://santekno.com/urutan-kabel-utp-straight-dan-cross-over/</guid>
       <description>Kabel UTP merupakan salah satu media transmisi yang paling banyak digunakan untuk membuat sebuah jaringan local (Local Area Network), selain karena harganya relative murah, mudah dipasang dan cukup bisa diandalkan. Sesuai namanya Unshielded Twisted Pair berarti kabel pasangan berpilin/terbelit (twisted pair) tanpa pelindung (unshielded).
 Fungsi lilitan ini adalah sebagai eleminasi terhadap induksi dan kebocoran. Sebelumnya ada juga kabel STP (Shielded Twisted Pair), untuk contoh gambarnya dapat dilihat dibawah.
-Terdapat beberapa jenis kategori kabel UTP ini yang menunjukkan kualitas, jumlah kerapatan lilitan pairnya, semakin tinggi katagorinya semakin rapat lilitannya dan parameter lainnya seperti berikut ini: * Kabel UTP Category 1, Digunakan untuk komunikasi telepon (mentransmisikan data kecepatan rendah), sehingga tidak cocock untuk mentransmisikan data.</description>
+Terdapat beberapa jenis kategori kabel UTP ini yang menunjukkan kualitas, jumlah kerapatan lilitan pairnya, semakin tinggi katagorinya semakin rapat lilitannya dan parameter lainnya seperti berikut ini:</description>
     </item>
     
     <item>
