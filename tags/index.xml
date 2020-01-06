@@ -5,7 +5,7 @@
     <link>https://santekno.com/tags/</link>
     <description>Recent content in Tags on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>id</language>
     <lastBuildDate>Sun, 05 May 2019 12:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://santekno.com/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -77,7 +77,7 @@
     <item>
       <title>Hardware</title>
       <link>https://santekno.com/tags/hardware/</link>
-      <pubDate>Thu, 08 Aug 2013 22:39:00 +0000</pubDate>
+      <pubDate>Sun, 29 Dec 2019 22:59:00 +0000</pubDate>
       
       <guid>https://santekno.com/tags/hardware/</guid>
       <description></description>
@@ -104,16 +104,34 @@
     <item>
       <title>Linux</title>
       <link>https://santekno.com/tags/linux/</link>
-      <pubDate>Wed, 25 Dec 2019 15:17:00 +0000</pubDate>
+      <pubDate>Sun, 29 Dec 2019 21:05:00 +0000</pubDate>
       
       <guid>https://santekno.com/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Memory</title>
+      <link>https://santekno.com/tags/memory/</link>
+      <pubDate>Sun, 29 Dec 2019 22:39:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/tags/memory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monitor</title>
+      <link>https://santekno.com/tags/monitor/</link>
+      <pubDate>Sun, 29 Dec 2019 22:59:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/tags/monitor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mouse</title>
       <link>https://santekno.com/tags/mouse/</link>
-      <pubDate>Tue, 23 Oct 2012 06:50:00 +0000</pubDate>
+      <pubDate>Tue, 23 Oct 2012 06:07:00 +0000</pubDate>
       
       <guid>https://santekno.com/tags/mouse/</guid>
       <description></description>
@@ -156,18 +174,9 @@
     </item>
     
     <item>
-      <title>Ram</title>
-      <link>https://santekno.com/tags/ram/</link>
-      <pubDate>Thu, 08 Aug 2013 22:39:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/tags/ram/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Sistem Operasi</title>
       <link>https://santekno.com/tags/sistem-operasi/</link>
-      <pubDate>Thu, 29 Nov 2012 21:05:00 +0000</pubDate>
+      <pubDate>Sat, 10 Nov 2012 14:39:00 +0000</pubDate>
       
       <guid>https://santekno.com/tags/sistem-operasi/</guid>
       <description></description>
@@ -176,7 +185,7 @@
     <item>
       <title>Software</title>
       <link>https://santekno.com/tags/software/</link>
-      <pubDate>Thu, 28 Aug 2014 00:08:00 +0000</pubDate>
+      <pubDate>Sun, 29 Dec 2019 23:08:00 +0000</pubDate>
       
       <guid>https://santekno.com/tags/software/</guid>
       <description></description>

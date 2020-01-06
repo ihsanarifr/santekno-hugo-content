@@ -5,7 +5,7 @@
     <link>https://santekno.com/tags/network/</link>
     <description>Recent content in Network on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>id</language>
     <lastBuildDate>Sun, 29 Dec 2019 22:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://santekno.com/tags/network/index.xml" rel="self" type="application/rss+xml" />
@@ -38,6 +38,16 @@ Pembagian Layanan WAN Layanan WAN dibagi menjadi 2 bagian yaitu : * Public, laya
       <guid>https://santekno.com/cara-memberi-password-telnet-dan-console-pada-router-cisco/</guid>
       <description>Salam teman-teman, kali ini Santekno akan menjelaskan mengenai Networking atau Jaringan Komputer. Dan pada saat ini Santekno akan lebih menjelaskan kepada Keamanan dalam suatu jaringan dimulai dari device sendiri sampai pada Firewall yang akan nanti diterapkan.
 Secara umum, keamanan dalam suatu jaringan itu sangat perlu sekali karena untuk menyelamatkan data kita yang ada di server dan agar terhindar dari para hacker yang mencoba masuk kedalam suatu private network kita yang biasanya tidak boleh diakses dalam remote dari public.</description>
+    </item>
+    
+    <item>
+      <title>Cara Membuat MySQL Server</title>
+      <link>https://santekno.com/cara-membuat-mysql-server/</link>
+      <pubDate>Sun, 29 Dec 2019 21:05:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/cara-membuat-mysql-server/</guid>
+      <description>Cara membuat MySQL Server di Fedora Core 7 itu lumayan gampang karena asalkan aplikasi mySQL pada Linux Anda sudah di instal maka bisa langsung di jalankan dengan baik dan bisa digunakan secar mudah. Tetapi kita harus tahu dulu perintah-perintah SQL agar nanti gampang untuk pembuatan tabel, database dan lain sebagainya.
+Aplikasi MySQL adalah aplikasi yang digunakan untuk membuat database semua sehingga bisa tercatat dan tersusun data dengan baik disana. Biasanya klo di windows kita sering menggunakan XAMPP dan disini juga kurang lebih seperti itu, jadi kita bisa mudah membuat database dalam Linux Fedora Core 7.</description>
     </item>
     
     <item>
@@ -76,6 +86,16 @@ Dengan dikeluarkannya VLAN maka sangat bermanfaat sekali untuk kemajuan pembagia
       <guid>https://santekno.com/cara-konfigurasi-vlan-pada-cisco-packet-tracer/</guid>
       <description>Salam sobat blogger, kali ini Santekno akan menjelaskan konfigurasi VLAN (Virtual LAN). VLAN adalah aplikasi yang digunakan pada jaringan komputer khususnya layer 2 dan perangkat yang digunakan adalah Switch. Santekno telah menjelaskan pada postingan sebelumnya yaitu Pengertian VLAN (Virtual LAN) dengan detail dan jelas.
 Dan sekarang Santekno akan menjelaskan penerapanya pada Packet Tracer VLAN tersebut. Sesuai dengan topologi yang sudah dibuat dengan sederhana, konfigurasi VLAN ini disertai dengan tutorial yang lengkap diantaranya file Packet Tracer, file Konfigurasi serta Video tutorial yang sudah Santekno Upload di Youtube.</description>
+    </item>
+    
+    <item>
+      <title>Cara Membuat SSH Server</title>
+      <link>https://santekno.com/cara-membuat-ssh-server/</link>
+      <pubDate>Sun, 29 Dec 2019 12:54:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/cara-membuat-ssh-server/</guid>
+      <description>Cara Membuat SSH Server pada Fedora Core 7 itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau Secure Shell menyediakan service untuk keperluan remote login. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : ssh, putty dan sebagainya.
+SSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang secure.</description>
     </item>
     
     <item>

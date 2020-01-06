@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
    <head>
             <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +7,12 @@
       <meta name="theme-color" content="#2980b9" />
       <meta name="author" content="santekno.com">
       <meta name="title" content="Cara Membuat SSH Server - Santekno" />
-      <meta name="description" content="Linux – Cara Membuat SSH Serverpada Fedora Core 7 itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau Secure Shell menyediakan service untuk keperluan remote login. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : ssh, putty dan sebagainya.
-Gambar SSH ServerSSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang secure.">
+      <meta name="description" content="Cara Membuat SSH Server pada Fedora Core 7 itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau Secure Shell menyediakan service untuk keperluan remote login. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : ssh, putty dan sebagainya.
+SSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang secure.">
 
       
       
-      <meta name="keywords" content="Linux, Sistem Operasi, Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
+      <meta name="keywords" content="Network, Linux, Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
       
       
 
@@ -106,7 +106,7 @@ Gambar SSH ServerSSH merupakan pengganti dari Telnet dan rlogin yang dianggap ku
          <img src="https://santekno.com/img/avatar.jpg" class="rounded-circle" width="32" height="32" alt="author" loading="lazy">
          <a class="align-middle text-dark" href="https://santekno.com/cara-membuat-ssh-server/" target="_blank" rel="noopener"> Ihsan Arif</a>
          <small class="align-middle text-muted">
-            <time>November 25, 2012</time> | 2  minutes 
+            <time>December 29, 2019</time> | 2  minutes 
          </small>
       </div>
       <h1>Cara Membuat SSH Server</h1>
@@ -114,9 +114,9 @@ Gambar SSH ServerSSH merupakan pengganti dari Telnet dan rlogin yang dianggap ku
          <ul>
             <li>
                
-                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/topik/linux">#Linux</a></span>
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/topik/network">#Network</a></span>
                
-                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/topik/sistem-operasi">#Sistem Operasi</a></span>
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/topik/linux">#Linux</a></span>
                
             </li>
          </ul>
@@ -124,22 +124,87 @@ Gambar SSH ServerSSH merupakan pengganti dari Telnet dan rlogin yang dianggap ku
       
       <div class="post-content">
          
-            <img class="img-fluid" src="https://santekno.com/img/blog-single.jpg" alt="" style="height:100%;width:100%;">
+            
+               <img class="img-fluid" src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer.png" alt="" style="height:100%;width:100%;">
+            
          
          <p></p>
-         <div class="MsoNormal" style="text-align: justify;"><span style="color: black;"><a href="http://santekno.blogspot.com/search/label/Linux" target="_blank"><b>Linux </b></a>– <b><a href="http://santekno.blogspot.com/2012/11/cara-membuat-ssh-server.html" target="_blank">Cara Membuat SSH Server</a>pada Fedora Core 7</b> itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau <b style="mso-bidi-font-weight: normal;">Secure Shell </b>menyediakan service untuk keperluan remote <i style="mso-bidi-font-style: normal;">login</i>. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : <b style="mso-bidi-font-weight: normal;">ssh, putty</b> dan sebagainya.</span><br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-ljiXQJDIquU/ULGyGCZsExI/AAAAAAAAB5c/VXPC3ebfFds/s1600/Linux-Server.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="149" src="http://2.bp.blogspot.com/-ljiXQJDIquU/ULGyGCZsExI/AAAAAAAAB5c/VXPC3ebfFds/s320/Linux-Server.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Gambar SSH Server</td></tr></tbody></table><div class="separator" style="clear: both; text-align: center;"><span style="color: black;"></span></div></div><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">SSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang <i style="mso-bidi-font-style: normal;">secure</i>. Kedua service tersebut sudah sangat populer, namun informasi yang lalu lalang antara client dan Server tidak “terlindungi” karena tidak di enkripsi. Maka informasi mudah di sadap dan di baca oleh orang yang tidak berhak. Dan ada juga enkripsi pada SSH dengan menggunakan algoritma DSA dan RSA tetapi terbilang cukup rumit untuk pengerjaannya.</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; width: 547px;"><tbody><tr style="height: 29.85pt;">  <td style="background: none repeat scroll 0% 0% rgb(84, 141, 212); font-size: 14pt; height: 29.85pt; padding: 0cm 5.4pt;" width="501"><span style="color: white;"><b>A. Instal SSH Server</b></span></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Baiklah, untuk lebih jelasnya kita mulai saja dengan praktik kita dengan mengecek penginstalan SSH apakah sudah di instal atau belum di server kita :</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><b style="mso-bidi-font-weight: normal;"><span style="font-family: &quot;Courier New&quot;;">rpm –qa | grep ssh</span></b></div><div class="MsoNormal"><br /></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">openssh-4.5p1-6.fc7</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">openssh-askpass-4.5p1-6.fc7</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">openssh-clients-4.5p1-6.fc7</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">openssh-server-4.5p1-6.fc7</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Jika belum ada lakukan penginstalan aplikasi SSH tersebut, jika belum paham tentang penginstalan disini ada Perintah Dasar Linux Part 4. Openssh-server hanya diinstal pada komputer server ingat itu ya. </div><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Setelah terinstal aplikasi tersebut maka akan terbentuk file konfigurasi bernama <b style="mso-bidi-font-weight: normal;">/etc/ssh/sshd_config</b>.</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; width: 547px;"><tbody><tr style="height: 29.85pt;">  <td style="background: none repeat scroll 0% 0% rgb(84, 141, 212); font-size: 14pt; height: 29.85pt; padding: 0cm 5.4pt;" width="501"><span style="color: white;"><b>B. Konfigurasi SSH Server</b></span></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Menjalankan SSH Server itu dengan mengecek terlebih dahulu file konfigurasi dengan perintah :</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">cat   /etc/ssh/sshd_config</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Isi file konfigurasi terkesan rumit dan banyak. Maka kita tidak perlu mengubah apapun jika ingin membuat server SSH. Setelah itu kita aktifkan SSH Server tersebut dengan perintah </div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">service sshd   restart</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Kemudian periksa apakah file /etc/nologin ada atau tidak</div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">ls –l /etc/nologin</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Jika file tersebut ada maka user selain root tidak bisa login ke<span style="mso-spacerun: yes;">&nbsp; </span>server, baik dari localhost maupun client. Sebaiknya di ubah saja namanya menjadi :</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">mv /etc/nologin   /etc/nologin.old</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;"></div><table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; width: 547px;"><tbody><tr style="height: 29.85pt;">  <td style="background: none repeat scroll 0% 0% rgb(84, 141, 212); font-size: 14pt; height: 29.85pt; padding: 0cm 5.4pt;" width="501"><span style="color: white;"><b>C. Menjalankan SSH Server</b></span></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Kemudian cara menjalankan SSH server dan melakukan tes ke server dari salah satu komputer client yaitu ketikkan perintah </div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">ssh santekno.com   -1 ihsan</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Atau bisa dengan IP Addressnya</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;;">ssh 192.168.10.90   -1 ihsan</span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><!--[if gte mso 9]><xml> <o:OfficeDocumentSettings>  <o:AllowPNG/> </o:OfficeDocumentSettings></xml><![endif]--> <br /><div class="MsoNormal" style="text-align: justify;">Maka setelah menggunakan itu akan tampak seperti dibawah ini</div><div class="MsoNormal" style="text-align: justify;"><br /></div><table border="0" cellpadding="0" cellspacing="0" class="MsoTableGrid" style="background: #D9D9D9; border-collapse: collapse; border: none; margin-left: 26.7pt; mso-background-themecolor: background1; mso-background-themeshade: 217; mso-border-insideh: none; mso-border-insidev: none; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-yfti-tbllook: 1184; width: 472px;"> <tbody><tr style="height: 26.95pt; mso-yfti-firstrow: yes; mso-yfti-irow: 0; mso-yfti-lastrow: yes;">  <td style="height: 26.95pt; padding: 0cm 5.4pt 0cm 5.4pt; width: 354.35pt;" width="472"><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">The authenticity of host ‘192.168.10.90 (192.168.10.90)’   can’t be established.</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">RSA key fingerprint is</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">5a:cb:66:7c:95:1f:fd:9a:11:a8:fb:77:67::67:ac:cc.</span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">Are you sure you want to continue connecting   (yes/no)? <b style="mso-bidi-font-weight: normal;">Yes</b></span></div><div class="MsoNormal"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">Warning: Permanently added ‘192.168.10.90’ (RSA)   to the list of known host.</span></div><div class="MsoNormal"><span style="font-size: 11.0pt;"><a href="mailto:ihsan@192.168.10.90's"><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">ihsan@192.168.10.90’s</span></a></span><span style="font-family: &quot;Courier New&quot;; font-size: 10.0pt; mso-bidi-font-size: 11.0pt;">  password :</span><span style="font-family: &quot;Courier New&quot;;"></span></div></td> </tr></tbody></table><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Jika password diketikkan makan akan login ke server SSH. Dan kalau kita akan keluar akhiri dengan perintah exit.</div><div class="MsoNormal" style="text-align: justify;"><br /></div><div class="MsoNormal" style="text-align: justify;">Nah itulah<b> <a href="http://santekno.blogspot.com/2012/11/cara-membuat-ssh-server.html" target="_blank">Cara Membuat SSH Server</a> di Fedora Core 7</b>. Sekarang kita bisa login ke server dari komputer client. Semoga Bermanfaat.<br /><br /><div class="MsoNormal" style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: xx-small;">Referensi :</span></span></div><div class="MsoNormal" style="text-align: justify;"><span style="font-family: Arial,Helvetica,sans-serif;"><span style="font-size: xx-small;">Sofana, <span style="font-size: xx-small;">I</span>wan. 2008. <i>Mudah Membangun Server dengan Fedora.</i> Informatika, Bandung.</span></span></div></div>
+         
+
+<p>Cara Membuat SSH Server pada Fedora Core 7 itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau Secure Shell menyediakan service untuk keperluan remote login. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : <code>ssh</code>, <code>putty</code> dan sebagainya.</p>
+
+<p>SSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang <em>secure</em>. Kedua service tersebut sudah sangat populer, namun informasi yang lalu lalang antara client dan Server tidak “terlindungi” karena tidak di enkripsi. Maka informasi mudah di sadap dan di baca oleh orang yang tidak berhak. Dan ada juga enkripsi pada SSH dengan menggunakan algoritma DSA dan RSA tetapi terbilang cukup rumit untuk pengerjaannya.</p>
+
+<h2 id="instalasi-ssh-server">Instalasi SSH Server</h2>
+
+<p>Baiklah, untuk lebih jelasnya kita mulai saja dengan praktik kita dengan mengecek penginstalan SSH apakah sudah di instal atau belum di server kita :</p>
+
+<pre><code class="language-bash">rpm –qa | grep ssh
+
+openssh-4.5p1-6.fc7
+openssh-askpass-4.5p1-6.fc7
+openssh-clients-4.5p1-6.fc7
+openssh-server-4.5p1-6.fc7
+</code></pre>
+
+<p>Jika belum ada lakukan penginstalan aplikasi SSH tersebut, jika belum paham tentang penginstalan disini ada Perintah Dasar Linux Part 4. Openssh-server hanya diinstal pada komputer server ingat itu ya.</p>
+
+<p>Setelah terinstal aplikasi tersebut maka akan terbentuk file konfigurasi bernama <code>/etc/ssh/sshd_config</code>.</p>
+
+<h2 id="konfigurasi-ssh-server">Konfigurasi SSH Server</h2>
+
+<p>Menjalankan SSH Server itu dengan mengecek terlebih dahulu file konfigurasi dengan perintah :</p>
+
+<pre><code class="language-bash">cat /etc/ssh/sshd_config
+</code></pre>
+
+<p>Isi file konfigurasi terkesan rumit dan banyak. Maka kita tidak perlu mengubah apapun jika ingin membuat server SSH. Setelah itu kita aktifkan SSH Server tersebut dengan perintah</p>
+
+<pre><code class="language-bash">service sshd restart
+</code></pre>
+
+<p>Kemudian periksa apakah file /etc/nologin ada atau tidak <code>ls –l /etc/nologin</code></p>
+
+<p>Jika file tersebut ada maka user selain root tidak bisa login ke  server, baik dari localhost maupun client. Sebaiknya di ubah saja namanya menjadi :</p>
+
+<pre><code class="language-bash">mv /etc/nologin /etc/nologin.old
+</code></pre>
+
+<h2 id="menjalankan-ssh-server">Menjalankan SSH Server</h2>
+
+<p>Kemudian cara menjalankan SSH server dan melakukan tes ke server dari salah satu komputer client yaitu ketikkan perintah</p>
+
+<pre><code class="language-bash">ssh santekno.com -1 ihsan
+</code></pre>
+
+<p>Atau bisa dengan IP Addressnya</p>
+
+<pre><code class="language-bash">ssh 192.168.10.90 -1 ihsan
+</code></pre>
+
+<p>Maka setelah menggunakan itu akan tampak seperti dibawah ini</p>
+
+<pre><code class="language-bash">The authenticity of host ‘192.168.10.90 (192.168.10.90)’ can’t be established.
+RSA key fingerprint is
+5a:cb:66:7c:95:1f:fd:9a:11:a8:fb:77:67::67:ac:cc.
+Are you sure you want to continue connecting (yes/no)? Yes
+Warning: Permanently added ‘192.168.10.90’ (RSA) to the list of known host.
+ihsan@192.168.10.90’s password :
+</code></pre>
+
+<p>Jika password diketikkan makan akan login ke server SSH. Dan kalau kita akan keluar akhiri dengan perintah exit. Nah itulah Cara Membuat SSH Server di Fedora Core 7. Sekarang kita bisa login ke server dari komputer client. Semoga Bermanfaat.</p>
 
       </div>
       <div class="post-content">
          <div class="row">
             <div class="col-md-6">
                
-                  <a class="previous" href="https://santekno.com/macam-macam-printer/">&lt;- Macam - Macam Printer</a>
+                  <a class="previous" href="https://santekno.com/jenis-jenis-serangan-pada-jaringan-komputer/">&lt;- Jenis-jenis Serangan pada Jaringan Komputer</a>
                
             </div>
             <div class="col-md-6">
                
-                  <a class="next" href="https://santekno.com/pengertian-monitor-crt-lcd-led-dan-plasma/"> Pengertian Monitor CRT, LCD, LED dan Plasma -></a>
+                  <a class="next" href="https://santekno.com/cara-konfigurasi-vlan-pada-cisco-packet-tracer/"> Cara Konfigurasi VLAN pada Cisco Packet Tracer -></a>
                
             </div>
          </div>
@@ -174,243 +239,189 @@ Gambar SSH ServerSSH merupakan pengganti dari Telnet dan rlogin yang dianggap ku
 
 <aside class="col-lg-4">
    <div class="widget">
-    <div class="list-group">
-       <div class="list-group-item"><h4>Artikel Terbaru</h4></div>
-       <ul>
-          
-          <a
-          href="https://santekno.com/pengertian-dan-konfigurasi-dhcp-pada-router-cisco/"
-          class="list-group-item list-group-item-action"
-          >
-          <div class="row">
-             <div class="col-12">
-                
-                   
-                   <img 
-                   class="rounded float-left mr-3" 
-                   src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png" 
-                   data-sizes="auto"
-                   width="70"
-                   height="70"
-                   loading="lazy">
-                   
-                
-                <h6 class="mb-1">Pengertian dan Konfigurasi DHCP pada Router Cisco</h6>
-                <small class="text-secondary">2019-12-29 · 2 minutes read</small>
-             </div>
-          </div></a
-          >
-          
-          <a
-          href="https://santekno.com/layanan-wan-wide-area-network/"
-          class="list-group-item list-group-item-action"
-          >
-          <div class="row">
-             <div class="col-12">
-                
-                   
-                   <img 
-                   class="rounded float-left mr-3" 
-                   src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png" 
-                   data-sizes="auto"
-                   width="70"
-                   height="70"
-                   loading="lazy">
-                   
-                
-                <h6 class="mb-1">Layanan WAN (Wide Area Network)</h6>
-                <small class="text-secondary">2019-12-29 · 3 minutes read</small>
-             </div>
-          </div></a
-          >
-          
-          <a
-          href="https://santekno.com/cara-memberi-password-telnet-dan-console-pada-router-cisco/"
-          class="list-group-item list-group-item-action"
-          >
-          <div class="row">
-             <div class="col-12">
-                
-                   
-                   <img 
-                   class="rounded float-left mr-3" 
-                   src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png" 
-                   data-sizes="auto"
-                   width="70"
-                   height="70"
-                   loading="lazy">
-                   
-                
-                <h6 class="mb-1">Cara Memberi Password Telnet dan Console pada Router Cisco</h6>
-                <small class="text-secondary">2019-12-29 · 2 minutes read</small>
-             </div>
-          </div></a
-          >
-          
-          <a
-          href="https://santekno.com/pengertian-vlan-virtual-lan/"
-          class="list-group-item list-group-item-action"
-          >
-          <div class="row">
-             <div class="col-12">
-                
-                   
-                   <img 
-                   class="rounded float-left mr-3" 
-                   src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png" 
-                   data-sizes="auto"
-                   width="70"
-                   height="70"
-                   loading="lazy">
-                   
-                
-                <h6 class="mb-1">Pengertian VLAN (Virtual LAN)</h6>
-                <small class="text-secondary">2019-12-29 · 3 minutes read</small>
-             </div>
-          </div></a
-          >
-          
-          <a
-          href="https://santekno.com/pengertian-ppp-point-to-point-protocol/"
-          class="list-group-item list-group-item-action"
-          >
-          <div class="row">
-             <div class="col-12">
-                
-                   
-                   <img 
-                   class="rounded float-left mr-3" 
-                   src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png" 
-                   data-sizes="auto"
-                   width="70"
-                   height="70"
-                   loading="lazy">
-                   
-                
-                <h6 class="mb-1">Pengertian PPP (Point to Point Protocol)</h6>
-                <small class="text-secondary">2019-12-29 · 2 minutes read</small>
-             </div>
-          </div></a
-          >
-          
-       </ul>
-    </div>
- </div>
- <div class="widget">
-    <ul class="list-group">
-       
-       <a
-       href="https://santekno.com/tags/network"
-       class="list-group-item list-group-item-action"
-       >
-       <div class="row">
-          <div class="col-12">
-             <h6 class="mb-1">network (25)</h6>
-          </div>
-       </div></a
-       >
-       
-       <a
-       href="https://santekno.com/tags/hardware"
-       class="list-group-item list-group-item-action"
-       >
-       <div class="row">
-          <div class="col-12">
-             <h6 class="mb-1">hardware (11)</h6>
-          </div>
-       </div></a
-       >
-       
-       <a
-       href="https://santekno.com/tags/tutorial"
-       class="list-group-item list-group-item-action"
-       >
-       <div class="row">
-          <div class="col-12">
-             <h6 class="mb-1">tutorial (11)</h6>
-          </div>
-       </div></a
-       >
-       
-       <a
-       href="https://santekno.com/tags/linux"
-       class="list-group-item list-group-item-action"
-       >
-       <div class="row">
-          <div class="col-12">
-             <h6 class="mb-1">linux (8)</h6>
-          </div>
-       </div></a
-       >
-       
-       <a
-       href="https://santekno.com/tags/c-programming"
-       class="list-group-item list-group-item-action"
-       >
-       <div class="row">
-          <div class="col-12">
-             <h6 class="mb-1">c-programming (6)</h6>
-          </div>
-       </div></a
-       >
-       
-       <a
-       href="https://santekno.com/tags/sistem-operasi"
-       class="list-group-item list-group-item-action"
-       >
-       <div class="row">
-          <div class="col-12">
-             <h6 class="mb-1">sistem-operasi (6)</h6>
-          </div>
-       </div></a
-       >
-       
-       <a
-       href="https://santekno.com/tags/cpp-programming"
-       class="list-group-item list-group-item-action"
-       >
-       <div class="row">
-          <div class="col-12">
-             <h6 class="mb-1">cpp-programming (5)</h6>
-          </div>
-       </div></a
-       >
-       
-       <a
-       href="https://santekno.com/tags/mouse"
-       class="list-group-item list-group-item-action"
-       >
-       <div class="row">
-          <div class="col-12">
-             <h6 class="mb-1">mouse (3)</h6>
-          </div>
-       </div></a
-       >
-       
-       <a
-       href="https://santekno.com/tags/stack"
-       class="list-group-item list-group-item-action"
-       >
-       <div class="row">
-          <div class="col-12">
-             <h6 class="mb-1">stack (3)</h6>
-          </div>
-       </div></a
-       >
-       
-       <a
-       href="https://santekno.com/tags/ascii"
-       class="list-group-item list-group-item-action"
-       >
-       <div class="row">
-          <div class="col-12">
-             <h6 class="mb-1">ascii (2)</h6>
-          </div>
-       </div></a
-       >
-       
-    </ul>
- </div>
+   <div class="list-group">
+      <div class="list-group-item">
+         <h4>Artikel Terbaru</h4>
+      </div>
+      <ul>
+         
+         <a href="https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/" class="list-group-item list-group-item-action">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://d38wyzu9t46zzv.cloudfront.net/images/mengatasi-masalah-apache-xampp-thumbnail.png"
+                     data-sizes="auto" width="70" height="70" loading="lazy">
+                  
+                  
+                  <h6 class="mb-1">Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP</h6>
+                  <small class="text-secondary">2019-12-29 · 2 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+         <a href="https://santekno.com/pengertian-monitor-crt-lcd-led-dan-plasma/" class="list-group-item list-group-item-action">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://d38wyzu9t46zzv.cloudfront.net/images/perbedaan-monitor-crt-lcd-led-plasma-thumbnail.png"
+                     data-sizes="auto" width="70" height="70" loading="lazy">
+                  
+                  
+                  <h6 class="mb-1">Pengertian Monitor CRT, LCD, LED dan Plasma</h6>
+                  <small class="text-secondary">2019-12-29 · 6 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+         <a href="https://santekno.com/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/" class="list-group-item list-group-item-action">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://d38wyzu9t46zzv.cloudfront.net/images/cara-membedakan-ddr1-ddr2-ddr3-thumbnail.png"
+                     data-sizes="auto" width="70" height="70" loading="lazy">
+                  
+                  
+                  <h6 class="mb-1">Cara membedakan RAM DDR1, DDR2 dan DDR3</h6>
+                  <small class="text-secondary">2019-12-29 · 2 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+         <a href="https://santekno.com/pengertian-dan-konfigurasi-dhcp-pada-router-cisco/" class="list-group-item list-group-item-action">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png"
+                     data-sizes="auto" width="70" height="70" loading="lazy">
+                  
+                  
+                  <h6 class="mb-1">Pengertian dan Konfigurasi DHCP pada Router Cisco</h6>
+                  <small class="text-secondary">2019-12-29 · 2 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+         <a href="https://santekno.com/layanan-wan-wide-area-network/" class="list-group-item list-group-item-action">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://d38wyzu9t46zzv.cloudfront.net/images/tutorial-jaringan-komputer-thumbnail.png"
+                     data-sizes="auto" width="70" height="70" loading="lazy">
+                  
+                  
+                  <h6 class="mb-1">Layanan WAN (Wide Area Network)</h6>
+                  <small class="text-secondary">2019-12-29 · 3 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+      </ul>
+   </div>
+</div>
+<div class="widget">
+   <ul class="list-group">
+      
+      <a href="https://santekno.com/tags/network" class="list-group-item list-group-item-action">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">network (27)</h6>
+            </div>
+         </div>
+      </a>
+      
+      <a href="https://santekno.com/tags/hardware" class="list-group-item list-group-item-action">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">hardware (11)</h6>
+            </div>
+         </div>
+      </a>
+      
+      <a href="https://santekno.com/tags/tutorial" class="list-group-item list-group-item-action">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">tutorial (11)</h6>
+            </div>
+         </div>
+      </a>
+      
+      <a href="https://santekno.com/tags/linux" class="list-group-item list-group-item-action">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">linux (8)</h6>
+            </div>
+         </div>
+      </a>
+      
+      <a href="https://santekno.com/tags/c-programming" class="list-group-item list-group-item-action">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">c-programming (6)</h6>
+            </div>
+         </div>
+      </a>
+      
+      <a href="https://santekno.com/tags/cpp-programming" class="list-group-item list-group-item-action">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">cpp-programming (5)</h6>
+            </div>
+         </div>
+      </a>
+      
+      <a href="https://santekno.com/tags/sistem-operasi" class="list-group-item list-group-item-action">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">sistem-operasi (4)</h6>
+            </div>
+         </div>
+      </a>
+      
+      <a href="https://santekno.com/tags/mouse" class="list-group-item list-group-item-action">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">mouse (3)</h6>
+            </div>
+         </div>
+      </a>
+      
+      <a href="https://santekno.com/tags/stack" class="list-group-item list-group-item-action">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">stack (3)</h6>
+            </div>
+         </div>
+      </a>
+      
+      <a href="https://santekno.com/tags/ascii" class="list-group-item list-group-item-action">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">ascii (2)</h6>
+            </div>
+         </div>
+      </a>
+      
+   </ul>
+</div>
+<div class="box_detail">
+      <h2>Table of Content</h2>
+      <hr>
+   <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#instalasi-ssh-server">Instalasi SSH Server</a></li>
+<li><a href="#konfigurasi-ssh-server">Konfigurasi SSH Server</a></li>
+<li><a href="#menjalankan-ssh-server">Menjalankan SSH Server</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
 </aside>
    </div>
 </div>

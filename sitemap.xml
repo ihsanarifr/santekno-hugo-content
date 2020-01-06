@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</loc>
+    <lastmod>2019-12-29T23:08:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/pengertian-monitor-crt-lcd-led-dan-plasma/</loc>
+    <lastmod>2019-12-29T22:59:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/</loc>
+    <lastmod>2019-12-29T22:39:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/pengertian-dan-konfigurasi-dhcp-pada-router-cisco/</loc>
     <lastmod>2019-12-29T22:30:00+00:00</lastmod>
   </url>
@@ -15,6 +30,11 @@
   <url>
     <loc>https://santekno.com/cara-memberi-password-telnet-dan-console-pada-router-cisco/</loc>
     <lastmod>2019-12-29T21:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-membuat-mysql-server/</loc>
+    <lastmod>2019-12-29T21:05:00+00:00</lastmod>
   </url>
   
   <url>
@@ -35,6 +55,11 @@
   <url>
     <loc>https://santekno.com/cara-konfigurasi-vlan-pada-cisco-packet-tracer/</loc>
     <lastmod>2019-12-29T14:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-membuat-ssh-server/</loc>
+    <lastmod>2019-12-29T12:54:00+00:00</lastmod>
   </url>
   
   <url>
@@ -188,31 +213,6 @@
   </url>
   
   <url>
-    <loc>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</loc>
-    <lastmod>2014-08-28T00:08:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/</loc>
-    <lastmod>2013-08-08T22:39:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/cara-membuat-mysql-server/</loc>
-    <lastmod>2012-11-29T21:05:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/pengertian-monitor-crt-lcd-led-dan-plasma/</loc>
-    <lastmod>2012-11-25T17:59:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/cara-membuat-ssh-server/</loc>
-    <lastmod>2012-11-25T12:54:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://santekno.com/macam-macam-printer/</loc>
     <lastmod>2012-11-22T22:28:00+00:00</lastmod>
   </url>
@@ -235,11 +235,6 @@
   <url>
     <loc>https://santekno.com/perintah-dasar-linux/</loc>
     <lastmod>2012-11-08T21:34:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/bagian-bagian-dari-mouse-komputer/</loc>
-    <lastmod>2012-10-23T06:50:00+00:00</lastmod>
   </url>
   
   <url>
@@ -281,6 +276,10 @@
     <loc>https://santekno.com/tags/ascii/</loc>
     <lastmod>2019-05-05T12:00:00+07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/bagian-bagian-dari-mouse-komputer/</loc>
   </url>
   
   <url>
@@ -339,7 +338,7 @@
   
   <url>
     <loc>https://santekno.com/tags/hardware/</loc>
-    <lastmod>2013-08-08T22:39:00+00:00</lastmod>
+    <lastmod>2019-12-29T22:59:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -357,13 +356,25 @@
   
   <url>
     <loc>https://santekno.com/tags/linux/</loc>
-    <lastmod>2019-12-25T15:17:00+00:00</lastmod>
+    <lastmod>2019-12-29T21:05:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/tags/memory/</loc>
+    <lastmod>2019-12-29T22:39:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/tags/monitor/</loc>
+    <lastmod>2019-12-29T22:59:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://santekno.com/tags/mouse/</loc>
-    <lastmod>2012-10-23T06:50:00+00:00</lastmod>
+    <lastmod>2012-10-23T06:07:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -392,25 +403,19 @@
   </url>
   
   <url>
-    <loc>https://santekno.com/tags/ram/</loc>
-    <lastmod>2013-08-08T22:39:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://santekno.com/</loc>
-    <lastmod>2019-12-29T22:30:00+00:00</lastmod>
+    <lastmod>2019-12-29T23:08:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://santekno.com/tags/sistem-operasi/</loc>
-    <lastmod>2012-11-29T21:05:00+00:00</lastmod>
+    <lastmod>2012-11-10T14:39:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://santekno.com/tags/software/</loc>
-    <lastmod>2014-08-28T00:08:00+00:00</lastmod>
+    <lastmod>2019-12-29T23:08:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

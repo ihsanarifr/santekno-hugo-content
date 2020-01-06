@@ -5,31 +5,11 @@
     <link>https://santekno.com/tags/sistem-operasi/</link>
     <description>Recent content in Sistem Operasi on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 29 Nov 2012 21:05:00 +0000</lastBuildDate>
+    <language>id</language>
+    <lastBuildDate>Sat, 10 Nov 2012 14:39:00 +0000</lastBuildDate>
     
 	<atom:link href="https://santekno.com/tags/sistem-operasi/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Cara Membuat MySQL Server</title>
-      <link>https://santekno.com/cara-membuat-mysql-server/</link>
-      <pubDate>Thu, 29 Nov 2012 21:05:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/cara-membuat-mysql-server/</guid>
-      <description>Linux– Cara membuat MySQL Serverdi Fedora Core 7 itu lumayan gampang karena asalkan aplikasi mySQL pada Linux Anda sudah di instal maka bisa langsung di jalankan dengan baik dan bisa digunakan secar mudah. Tetapi kita harus tahu dulu perintah-perintah SQL agar nanti gampang untuk pembuatan tabel, database dan lain sebagainya.
-/o:pAplikasi MySQL adalah aplikasi yang digunakan untuk membuat database semua sehingga bisa tercatat dan tersusun data dengan baik disana. Biasanya klo di windows kita sering menggunakan XAMPP dan disini juga kurang lebih seperti itu, jadi kita bisa mudah membuat database dalam Linux Fedora Core 7.</description>
-    </item>
-    
-    <item>
-      <title>Cara Membuat SSH Server</title>
-      <link>https://santekno.com/cara-membuat-ssh-server/</link>
-      <pubDate>Sun, 25 Nov 2012 12:54:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/cara-membuat-ssh-server/</guid>
-      <description>Linux – Cara Membuat SSH Serverpada Fedora Core 7 itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau Secure Shell menyediakan service untuk keperluan remote login. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : ssh, putty dan sebagainya.
-Gambar SSH ServerSSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang secure.</description>
-    </item>
     
     <item>
       <title>Perintah Dasar Linux Part 4</title>

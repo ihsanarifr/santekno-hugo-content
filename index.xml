@@ -5,11 +5,41 @@
     <link>https://santekno.com/</link>
     <description>Recent content on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2019 22:30:00 +0000</lastBuildDate>
+    <language>id</language>
+    <lastBuildDate>Sun, 29 Dec 2019 23:08:00 +0000</lastBuildDate>
     
 	<atom:link href="https://santekno.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP</title>
+      <link>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</link>
+      <pubDate>Sun, 29 Dec 2019 23:08:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</guid>
+      <description>Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan virtual server yang sangat terkenal di kalangan para programmer. Suatu virtual yang terdapat pada Xampp ini digunakan untuk para developer khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, phpmyadmin sebagai Database Server dan banyak lagi.
+Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah error yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada localhost.</description>
+    </item>
+    
+    <item>
+      <title>Pengertian Monitor CRT, LCD, LED dan Plasma</title>
+      <link>https://santekno.com/pengertian-monitor-crt-lcd-led-dan-plasma/</link>
+      <pubDate>Sun, 29 Dec 2019 22:59:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/pengertian-monitor-crt-lcd-led-dan-plasma/</guid>
+      <description>Perbedaan Monitor CRT, LCD, LED dan Plasma itu sangat di gantungkan oleh generasi dan cara pemanfaatan monitor tersebut. Monitor komputer adalah sebuah media output/ alat pengeluaran berbentuk gambar visual yang berasal dari sinyal elektronik komputer. Karena merupakan media visualisasi tampilan sistem operasi, penggunaan monitor pada komputer atau laptop memiliki peranan yang sangat penting dalam menampilkan pemrosesan data dan hasil dari pemrosesan tersebut. Setiap merek, tipe dan ukuran monitor memiliki resolusi yang berbeda-beda.</description>
+    </item>
+    
+    <item>
+      <title>Cara membedakan RAM DDR1, DDR2 dan DDR3</title>
+      <link>https://santekno.com/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/</link>
+      <pubDate>Sun, 29 Dec 2019 22:39:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/</guid>
+      <description>Kali ini Santekno akan memposting tentang bagaimana cara membedakan atau perbedaan RAM DDR1, DDR2, DDR3 dalam beberapa segi penglihatan. Bisa kita lihat dari bentuknya, kecepatan, clock dan lain sebagainya.
+Sebenarnya untuk membedakan suatu memori khususnya pada PC (Personal Computer) itu sangat gampang sekali dengan cara melihatnya kita sudah bisa membedakan bahwa memori itu termasuk kedalam DDR1, DDR2 atau DDR3.
+Seiring dengan dikeluarkannya memori tiap tahun begitu canggih dan cepat maka sesuai dengan urutannya kita bisa membedakan bahwa generasi awal pasti kecepatan dan spesifikasinya itu lebih kecil dibanding dengan memory dengan keluaran yang terbaru yaitu DDR3.</description>
+    </item>
     
     <item>
       <title>Pengertian dan Konfigurasi DHCP pada Router Cisco</title>
@@ -38,6 +68,16 @@ Pembagian Layanan WAN Layanan WAN dibagi menjadi 2 bagian yaitu : * Public, laya
       <guid>https://santekno.com/cara-memberi-password-telnet-dan-console-pada-router-cisco/</guid>
       <description>Salam teman-teman, kali ini Santekno akan menjelaskan mengenai Networking atau Jaringan Komputer. Dan pada saat ini Santekno akan lebih menjelaskan kepada Keamanan dalam suatu jaringan dimulai dari device sendiri sampai pada Firewall yang akan nanti diterapkan.
 Secara umum, keamanan dalam suatu jaringan itu sangat perlu sekali karena untuk menyelamatkan data kita yang ada di server dan agar terhindar dari para hacker yang mencoba masuk kedalam suatu private network kita yang biasanya tidak boleh diakses dalam remote dari public.</description>
+    </item>
+    
+    <item>
+      <title>Cara Membuat MySQL Server</title>
+      <link>https://santekno.com/cara-membuat-mysql-server/</link>
+      <pubDate>Sun, 29 Dec 2019 21:05:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/cara-membuat-mysql-server/</guid>
+      <description>Cara membuat MySQL Server di Fedora Core 7 itu lumayan gampang karena asalkan aplikasi mySQL pada Linux Anda sudah di instal maka bisa langsung di jalankan dengan baik dan bisa digunakan secar mudah. Tetapi kita harus tahu dulu perintah-perintah SQL agar nanti gampang untuk pembuatan tabel, database dan lain sebagainya.
+Aplikasi MySQL adalah aplikasi yang digunakan untuk membuat database semua sehingga bisa tercatat dan tersusun data dengan baik disana. Biasanya klo di windows kita sering menggunakan XAMPP dan disini juga kurang lebih seperti itu, jadi kita bisa mudah membuat database dalam Linux Fedora Core 7.</description>
     </item>
     
     <item>
@@ -76,6 +116,16 @@ Dengan dikeluarkannya VLAN maka sangat bermanfaat sekali untuk kemajuan pembagia
       <guid>https://santekno.com/cara-konfigurasi-vlan-pada-cisco-packet-tracer/</guid>
       <description>Salam sobat blogger, kali ini Santekno akan menjelaskan konfigurasi VLAN (Virtual LAN). VLAN adalah aplikasi yang digunakan pada jaringan komputer khususnya layer 2 dan perangkat yang digunakan adalah Switch. Santekno telah menjelaskan pada postingan sebelumnya yaitu Pengertian VLAN (Virtual LAN) dengan detail dan jelas.
 Dan sekarang Santekno akan menjelaskan penerapanya pada Packet Tracer VLAN tersebut. Sesuai dengan topologi yang sudah dibuat dengan sederhana, konfigurasi VLAN ini disertai dengan tutorial yang lengkap diantaranya file Packet Tracer, file Konfigurasi serta Video tutorial yang sudah Santekno Upload di Youtube.</description>
+    </item>
+    
+    <item>
+      <title>Cara Membuat SSH Server</title>
+      <link>https://santekno.com/cara-membuat-ssh-server/</link>
+      <pubDate>Sun, 29 Dec 2019 12:54:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/cara-membuat-ssh-server/</guid>
+      <description>Cara Membuat SSH Server pada Fedora Core 7 itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau Secure Shell menyediakan service untuk keperluan remote login. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : ssh, putty dan sebagainya.
+SSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang secure.</description>
     </item>
     
     <item>
@@ -360,54 +410,6 @@ Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan me
     </item>
     
     <item>
-      <title>Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP</title>
-      <link>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</link>
-      <pubDate>Thu, 28 Aug 2014 00:08:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</guid>
-      <description>Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan virtual server yang sangat terkenal di kalangan para programmer. Suatu virtual yang terdapat pada Xampp ini digunakan untuk para developer khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, phpmyadmin sebagai Database Server dan banyak lagi.
-Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah error yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada localhost.</description>
-    </item>
-    
-    <item>
-      <title>Cara membedakan RAM DDR1, DDR2 dan DDR3</title>
-      <link>https://santekno.com/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/</link>
-      <pubDate>Thu, 08 Aug 2013 22:39:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/cara-membedakan-ram-ddr1-ddr2-dan-ddr3/</guid>
-      <description>Cara membedakan atau perbedaan RAM DDR1, DDR2 dan DDR3 - Salam teman blogger, kali ini Santekno akan memposting tentang bagaimana cara membedakan atau perbedaan RAM DDR1, DDR2, DDR3 dalam beberapa segi penglihatan. Bisa kita lihat dari bentuknya, kecepatan, clock dan lain sebagainya.Sebenarnya untuk membedakan suatu memori khususnya pada PC (Personal Computer) itu sangat gampang sekali dengan cara melihatnya kita sudah bisa membedakan bahwa memori itu termasuk kedalam DDR1, DDR2 atau DDR3.</description>
-    </item>
-    
-    <item>
-      <title>Cara Membuat MySQL Server</title>
-      <link>https://santekno.com/cara-membuat-mysql-server/</link>
-      <pubDate>Thu, 29 Nov 2012 21:05:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/cara-membuat-mysql-server/</guid>
-      <description>Linux– Cara membuat MySQL Serverdi Fedora Core 7 itu lumayan gampang karena asalkan aplikasi mySQL pada Linux Anda sudah di instal maka bisa langsung di jalankan dengan baik dan bisa digunakan secar mudah. Tetapi kita harus tahu dulu perintah-perintah SQL agar nanti gampang untuk pembuatan tabel, database dan lain sebagainya.
-/o:pAplikasi MySQL adalah aplikasi yang digunakan untuk membuat database semua sehingga bisa tercatat dan tersusun data dengan baik disana. Biasanya klo di windows kita sering menggunakan XAMPP dan disini juga kurang lebih seperti itu, jadi kita bisa mudah membuat database dalam Linux Fedora Core 7.</description>
-    </item>
-    
-    <item>
-      <title>Pengertian Monitor CRT, LCD, LED dan Plasma</title>
-      <link>https://santekno.com/pengertian-monitor-crt-lcd-led-dan-plasma/</link>
-      <pubDate>Sun, 25 Nov 2012 17:59:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/pengertian-monitor-crt-lcd-led-dan-plasma/</guid>
-      <description>Hardware - Pengertian Monitor CRT, LCD, LED dan Plasma itu sangat di gantungkan oleh generasi dan cara pemanfaatan monitor tersebut. Monitor komputer adalah sebuah media output/ alat pengeluaran berbentuk gambar visual yang berasal dari sinyal elektronik komputer. Karena merupakan media visualisasi tampilan sistem operasi, penggunaan &amp;nbsp;monitor pada komputer atau laptop memiliki peranan yang sangat&amp;nbsp; penting dalam menampilkan pemrosesan data dan hasil dari pemrosesan tersebut.Setiap merek, tipe dan ukuran monitor memiliki resolusi yang berbeda-beda.</description>
-    </item>
-    
-    <item>
-      <title>Cara Membuat SSH Server</title>
-      <link>https://santekno.com/cara-membuat-ssh-server/</link>
-      <pubDate>Sun, 25 Nov 2012 12:54:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/cara-membuat-ssh-server/</guid>
-      <description>Linux – Cara Membuat SSH Serverpada Fedora Core 7 itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau Secure Shell menyediakan service untuk keperluan remote login. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : ssh, putty dan sebagainya.
-Gambar SSH ServerSSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang secure.</description>
-    </item>
-    
-    <item>
       <title>Macam - Macam Printer</title>
       <link>https://santekno.com/macam-macam-printer/</link>
       <pubDate>Thu, 22 Nov 2012 22:28:00 +0000</pubDate>
@@ -453,20 +455,6 @@ Pada postingan kali ini, akan menjelaskan suatu file itu bisa di akses oleh bebe
       
       <guid>https://santekno.com/perintah-dasar-linux/</guid>
       <description>Linux – Perintah Dasar Linuxsangat banyak sekali tetapi harus kita pahami sedikit demi sedikit. Perintah linux itu harus kita gunakan setiap hari jika ingin mahir dalam pengoperasian linux. Distro Linux seperti Debian, Redhat, CentOS, Fedora, Ubuntu, perintahnya hampir sma semua. Kebetulan Santekno sekarang sedang mempelajari distro Linux Fedora Core 7. Jadi tidak perlu pusing membedakan distro Linux manapun. Jika Anda pernah menggunakan DOS, maka akan melihat bahwa beberapa perintah DOS itu mirip dengan perintah Linux.</description>
-    </item>
-    
-    <item>
-      <title>Bagian-bagian dari Mouse Komputer</title>
-      <link>https://santekno.com/bagian-bagian-dari-mouse-komputer/</link>
-      <pubDate>Tue, 23 Oct 2012 06:50:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/bagian-bagian-dari-mouse-komputer/</guid>
-      <description>Pada kesempatan kali ini Santekno akan membahas tentang Mouse Komputer, di sebelum-sebelumnya sudah di posting mengenai Mouse. Sejarah Mouse dan Pengertian Mouse secara luas sudah di dijelaskan dalam postingan sebelumnya. Dan sekarang Santekno akan membahas bagian-bagian dari Mouse tersebut.Bagian-bagian pada Mouse Ball
-Bagian Atas
-Bagian Bawah
-Semua Bagian-bagian Mouse
-Ilustrasi Bagian Mouse
-Bagian-bagiannya sebagai berikut [sesuai dengan nomor pada gambar di atas] :  Tombol Klik kiri mouse Klik tengah tombol Tombol klik kanan mouse Kabel koneksi ke PS/2 socket di komputer IC (analog) mouse untuk menggerakkan mouse dan di lanjutkan ke sinyal digital untuk dikirim ke komputer X-axis pendeteksi ketika mouse akan di geser ke kanan dan kiri Y-axis pendeteksi ketika mouse akan di geser ke depan atau belakang Rubbur ball, bola yang akan menerima geseran dan menghasilkan sudut x dan y yang dikirimkan pada pendeteksi axisElectrolytic capacitor Resistors Bagian-bagian Mouse Optical  Bagian-bagian dari Mouse Optical diantaranya sebagai berikut :  LED (obscured by wheel).</description>
     </item>
     
     <item>
@@ -537,6 +525,20 @@ Wireless Illuminated Super Tiny Keyboard Keistimewaan keyboard ini adalah pada B
       <description>Papan ketik(bahasa Inggris: atau kibor adalah peranti untuk mengetik atau memasukkan huruf, angka, atau simbol tertentu ke perangkat lunak atau sistem operasi yang dijalankan oleh komputer.
 Papan ketik / keyboard terdiri atas tombol-tombol berbentuk kotak dengan huruf, angka, atau simbol yang tercetak di atasnya. Dalam beberapa sistem operasi, apabila dua tombol ditekan secara bersamaan, maka akan memunculkan fungsi khusus atau pintasan yang telah diatur sebelumnya.
 Ada berbagai jenis tata letak tombol pada papan ketik.</description>
+    </item>
+    
+    <item>
+      <title>Bagian-bagian dari Mouse Komputer</title>
+      <link>https://santekno.com/bagian-bagian-dari-mouse-komputer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/bagian-bagian-dari-mouse-komputer/</guid>
+      <description>Pada kesempatan kali ini Santekno akan membahas tentang Mouse Komputer, di sebelum-sebelumnya sudah di posting mengenai Mouse. Sejarah Mouse dan Pengertian Mouse secara luas sudah di dijelaskan dalam postingan sebelumnya. Dan sekarang Santekno akan membahas bagian-bagian dari Mouse tersebut.Bagian-bagian pada Mouse Ball
+Bagian Atas
+Bagian Bawah
+Semua Bagian-bagian Mouse
+Ilustrasi Bagian Mouse
+Bagian-bagiannya sebagai berikut [sesuai dengan nomor pada gambar di atas] :  Tombol Klik kiri mouse Klik tengah tombol Tombol klik kanan mouse Kabel koneksi ke PS/2 socket di komputer IC (analog) mouse untuk menggerakkan mouse dan di lanjutkan ke sinyal digital untuk dikirim ke komputer X-axis pendeteksi ketika mouse akan di geser ke kanan dan kiri Y-axis pendeteksi ketika mouse akan di geser ke depan atau belakang Rubbur ball, bola yang akan menerima geseran dan menghasilkan sudut x dan y yang dikirimkan pada pendeteksi axisElectrolytic capacitor Resistors Bagian-bagian Mouse Optical  Bagian-bagian dari Mouse Optical diantaranya sebagai berikut :  LED (obscured by wheel).</description>
     </item>
     
   </channel>
