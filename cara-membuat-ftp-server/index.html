@@ -129,60 +129,93 @@ FTP atau File Transfer Protocol merupakan service yang digunakan untuk keperluan
             
          
          <p></p>
-         <p>Cara membuat FTP Server di Fedora 8 membutuhkan beberapa Server DNS yang sudah di setting untuk FTP. Maka jika belum harus setting terlebih dahulu, lihat postingan sebelumnya Cara Membuat DNS Server di Fedora 8.</p>
+         
+
+<p>Cara membuat FTP Server di Fedora 8 membutuhkan beberapa Server DNS yang sudah di setting untuk FTP. Maka jika belum harus setting terlebih dahulu, lihat postingan sebelumnya Cara Membuat DNS Server di Fedora 8.</p>
+
 <p>FTP atau File Transfer Protocol merupakan service yang digunakan untuk keperluan transfer file. Dengan memanfaatkan service FTP, user dapat mengirim(upload) file ke server dan dapat mengambil (download) file dari server. Seperti halnya telnet, service FTP dianggap kurang secure. Karena data yang dikirim tidak di enkripsi.</p>
+
 <p>Membangun server FTP pada kali ini akan menggunakan aplikasi <code>vsftpd</code>. Aplikasi ini sudah tersedia biasanya pada Installer Fedora. Nah untuk client juga sudah tersedia. Contoh aplikasi client FTP yaitu ftp,lftp, Firefox dan sebagainya.</p>
+
 <h2 id="persiapan">Persiapan</h2>
+
 <p>Sebelum masuk ke dalam pengeditan kita periksa terlebih dahulu aplikasi yang dibutuhkan sudah ada apa belum.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rpm –qa | grep ftp
+
+<pre><code class="language-bash">rpm –qa | grep ftp
 
 ftp-0.17-40.fc7
 vsftpd-2.0.5-16.fc7
 lftp-3.5.10-3.fc7
-</code></pre></div><p>Sebuah Server FTP pun dapat dibangun dalam waktu kurang dari 5 menit. Setelah vsftp diinstal, akan terbentuk beberapa file konfigurasi berikut</p>
+</code></pre>
+
+<p>Sebuah Server FTP pun dapat dibangun dalam waktu kurang dari 5 menit. Setelah vsftp diinstal, akan terbentuk beberapa file konfigurasi berikut</p>
+
 <pre><code>/etc/vsftpd/ftpusers
 /etc/vsftpd/user_list
 /etc/vsftpd/vsftpd.conf
-</code></pre><p>File konfigurasi utama adalah vsfpd.conf. Sedangkan file lain berfungsi sebagai kontrol akses. Di dalam file ftpusers dapat dimasukkan dafar login user yang ‘dilarang’ mengakses server ftp.</p>
+</code></pre>
+
+<p>File konfigurasi utama adalah vsfpd.conf. Sedangkan file lain berfungsi sebagai kontrol akses. Di dalam file ftpusers dapat dimasukkan dafar login user yang ‘dilarang’ mengakses server ftp.</p>
+
 <p>Sedangkan file <code>user_list</code> memiliki hampir sama dengan ftpusers. Hanya saja file ini berhubungan dengan file <code>vsftpd.conf</code>. Di dalam file <code>vsftpd.conf</code> dapat secara default-nya userlist_deny=YES, artinya tidak mengizinkan user-user yang telah didaftar dalam file ini mengakses server FTP. Jika bernilai NO artinya hanya mengijinkan user-user yang ada di daftar file ini mengakses server FTP.</p>
+
 <h2 id="konfigurasi">Konfigurasi</h2>
+
 <p>Setelah itu kita akan edit sedikit pada vsftpd.conf dengan perintah :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi /etc/vsftpd.conf
-</code></pre></div><p>Editlah pada baris yang ada pada kata-kata sebagai berikut :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">anonymous_enable<span style="color:#f92672">=</span>YES
-</code></pre></div><p>menjadi</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">anonymous_enable<span style="color:#f92672">=</span>NO
-</code></pre></div><p>Baris-baris yang diawali dengan simbol <code>#</code> tidak akan diproses dan hanya di anggap sebagai komentar. Baris ke-2 dan k3 pada argumen setelahnya biasanya ditutup dengan simbol <code>#</code>. Dalam praktiknya memang jarang terjadi sebuah anonymous FTP server mengijinkan upload file, apalagi mengizinkan user membuat direktori dan menyimpan file hasil upload di server.</p>
+
+<pre><code class="language-bash">vi /etc/vsftpd.conf
+</code></pre>
+
+<p>Editlah pada baris yang ada pada kata-kata sebagai berikut :</p>
+
+<pre><code class="language-bash">anonymous_enable=YES
+</code></pre>
+
+<p>menjadi</p>
+
+<pre><code class="language-bash">anonymous_enable=NO
+</code></pre>
+
+<p>Baris-baris yang diawali dengan simbol <code>#</code> tidak akan diproses dan hanya di anggap sebagai komentar. Baris ke-2 dan k3 pada argumen setelahnya biasanya ditutup dengan simbol <code>#</code>. Dalam praktiknya memang jarang terjadi sebuah anonymous FTP server mengijinkan upload file, apalagi mengizinkan user membuat direktori dan menyimpan file hasil upload di server.</p>
+
 <p>Setelah itu simpan editan tersebut dengan perintah :wq dan aktifkan server FTP dengan perintah restart :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">service vsftpd restart
-</code></pre></div><p>Selanjutnya melakukan tes</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ftp ftp.ihsan.com
+
+<pre><code class="language-bash">service vsftpd restart
+</code></pre>
+
+<p>Selanjutnya melakukan tes</p>
+
+<pre><code class="language-bash">ftp ftp.ihsan.com
 
 ftp fedora.net.id
-Connected to ftp.ihsan.com<span style="color:#f92672">(</span>192.168.10.90<span style="color:#f92672">)</span>
-220<span style="color:#f92672">(</span>vsFTPd 2.0.5<span style="color:#f92672">)</span>
-Name <span style="color:#f92672">(</span>ftp.ihsan.com:root<span style="color:#f92672">)</span>:
-</code></pre></div><p>Untuk mengakses anonymouse FTP server, ketikkan loginnya : ftp atau anonymous dan paswordnya ihsan atau sembarang saja. Setelah berhasil memasuki server FTP, coba tampilkan virtual root directory dengan perintah pwd. Hasil yang dihrapkan adalah “/”. Untuk keluar dari server FTP ketikkan saja bye.</p>
+Connected to ftp.ihsan.com(192.168.10.90)
+220(vsFTPd 2.0.5)
+Name (ftp.ihsan.com:root):
+</code></pre>
+
+<p>Untuk mengakses anonymouse FTP server, ketikkan loginnya : ftp atau anonymous dan paswordnya ihsan atau sembarang saja. Setelah berhasil memasuki server FTP, coba tampilkan virtual root directory dengan perintah pwd. Hasil yang dihrapkan adalah “/”. Untuk keluar dari server FTP ketikkan saja bye.</p>
+
 <p>Selanjutnya, jika ingin mempunyai user baru, maka add saja user dengan perintah adduser dan passwd sesuai dengan keinginan. Lalu login lagi dengan <code>ftp ftp.ihsan.com</code></p>
-<p>Setelah masuk ke FTP server ada beberapa perintah yang biasanya digunakan diantaranya</p>
+
+<p>Setelah masuk ke FTP server ada beberapa perintah yang biasanya digunakan diantaranya
+* lcd \                 = masuk ke dalam direktori yang paling atas
+* get namafile          = untuk mendownload file dari ftp
+* put namafile          = untuk mengupload [mengambil] dari C: atau sesuai dengan * lokasi penyimpanan
+* bye                          = perintah untuk meninggalkan ftp
+* mput namafile1 namafile2 = untuk mengupload [mengambil] banyak file</p>
+
+<p>Penjelasan lebih lanjutnya sebenarnya Ada dua jenis server FTP, yaitu
+* Anonymous atau public FTP server</p>
+
+<pre><code>Server FTP jenis ini dapat diakses oleh sembarang user, menggunakan login ftp atau anonymouse, dan password bebas(biasanya password berupa sembarang email address). Public ftp banyak digunakan untuk keperluan sharing atau download file-file yang bersifat free atau open source. User yang telah login dapat menjumpai file yang bolh di download di dalam direktori /pub. Padahal direktori ini sebenarnya adalah /var/ftp/pub.
+</code></pre>
+
 <ul>
-<li>lcd \                 = masuk ke dalam direktori yang paling atas</li>
-<li>get namafile          = untuk mendownload file dari ftp</li>
-<li>put namafile          = untuk mengupload [mengambil] dari C: atau sesuai dengan * lokasi penyimpanan</li>
-<li>bye                          = perintah untuk meninggalkan ftp</li>
-<li>mput namafile1 namafile2 = untuk mengupload [mengambil] banyak file</li>
+<li><p>Non Anonymous FTP Server</p>
+
+<p>Server FTP jenis ini hanya dapat di akses oleh user yang sudah memiliki login dan password. Login yang digunakan sama dengan login untuk server telnet. Secara teori, semua user bisa login ke FTP Server.</p></li>
 </ul>
-<p>Penjelasan lebih lanjutnya sebenarnya Ada dua jenis server FTP, yaitu</p>
-<ul>
-<li>
-<p>Anonymous atau public FTP server</p>
-<p>Server FTP jenis ini dapat diakses oleh sembarang user, menggunakan login ftp atau anonymouse, dan password bebas(biasanya password berupa sembarang email address). Public ftp banyak digunakan untuk keperluan sharing atau download file-file yang bersifat free atau open source. User yang telah login dapat menjumpai file yang bolh di download di dalam direktori /pub. Padahal direktori ini sebenarnya adalah /var/ftp/pub.</p>
-</li>
-<li>
-<p>Non Anonymous FTP Server</p>
-<p>Server FTP jenis ini hanya dapat di akses oleh user yang sudah memiliki login dan password. Login yang digunakan sama dengan login untuk server telnet. Secara teori, semua user bisa login ke FTP Server.</p>
-</li>
-</ul>
+
 <p>Demikian tutorial tentang Cara Membuat FTP Server semoga bisa membantu semua teman-teman dalam menjalankan semua hal berhubungan dengan jaringan ini.</p>
 
       </div>
@@ -403,10 +436,13 @@ Name <span style="color:#f92672">(</span>ftp.ihsan.com:root<span style="color:#f
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#persiapan">Persiapan</a></li>
-    <li><a href="#konfigurasi">Konfigurasi</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#persiapan">Persiapan</a></li>
+<li><a href="#konfigurasi">Konfigurasi</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

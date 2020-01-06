@@ -126,16 +126,24 @@
             
          
          <p></p>
-         <p>Pengertian, Perbedaan Routing Static dan Routing Dynamic yang akan kita bahas pada posting kali ini. Banyak perbedaan dari beberapa routing yang telah ada sekarang dan biasanya routing itu sangat dibutuhkan untuk menghubungkan jaringan antar lokal ataupun antar kota. Routing adalah Konfigurasi yang akan dilakukan pada perangkat keras Router. Jenis-jenis router pun berbeda-beda, konfigurasinya pun berbeda-beda. Contoh CISCO produksi router CISCO banyak digunakan karena konfigurasinya sudah familiar dan banyak instansi pendidikan pun sudah dijadikan matakuliah agar bisa di pelajari lebih lanjut. Secara umum, router dibagi menjadi dua buah jenis, yaitu</p>
+         
+
+<p>Pengertian, Perbedaan Routing Static dan Routing Dynamic yang akan kita bahas pada posting kali ini. Banyak perbedaan dari beberapa routing yang telah ada sekarang dan biasanya routing itu sangat dibutuhkan untuk menghubungkan jaringan antar lokal ataupun antar kota. Routing adalah Konfigurasi yang akan dilakukan pada perangkat keras Router. Jenis-jenis router pun berbeda-beda, konfigurasinya pun berbeda-beda. Contoh CISCO produksi router CISCO banyak digunakan karena konfigurasinya sudah familiar dan banyak instansi pendidikan pun sudah dijadikan matakuliah agar bisa di pelajari lebih lanjut. Secara umum, router dibagi menjadi dua buah jenis, yaitu</p>
+
 <h2 id="static-routing-routing-statis">Static routing (Routing Statis)</h2>
+
 <p>Static routing (Routing Statis) adalah sebuah router yang memiliki tabel routing statik yang di setting secara manual oleh para administrator jaringan. Routing static pengaturan routing paling sederhana yang dapat dilakukan pada jaringan komputer.  Menggunakan routing statik murni dalam sebuah jaringan berarti mengisi setiap entri dalam  forwarding  table  di  setiap router yang berada di jaringan tersebut.
 Penggunaan  routing  statik  dalam  sebuah  jaringan  yang  kecil  tentu  bukanlah suatu masalah,  hanya  beberapa  entri  yang  perlu  diisikan  pada  forwarding table di setiap router. Namun Anda tentu dapat membayangkan bagaimana jika harus melengkapi forwarding table di setiap router yang  jumlahnya  tidak sedikit dalam  jaringan yang besar.</p>
-<p><!-- raw HTML omitted --></p>
+
+<p><img border="0" src="https://1.bp.blogspot.com/-pKOsOWiSgjA/UO9sMTVqN6I/AAAAAAAABTQ/Ir6mvoHCdKc/s1600/STATIC+ROUTING.jpg" height="100%" width="100%" /></p>
+
 <p>Berikut ini jika kamu ingin lebih lanjut mempelajari konfigurasi static route bisa lihat di link ini
 <strong>
 
 <a href="https://santekno.com/post/cara-konfigurasi-static-route-pada-router-cisco/" title="Cara Konfigurasi Static Route pada Router Cisco">Cara Konfigurasi Static Route pada Router Cisco</a></strong></p>
+
 <p>Nah, setiap routing mempunyai kelebihan dan kekurangan saat melakukan routing jaringannya. Bisa dilihat pada tabel dibawah ini.</p>
+
 
 
 
@@ -149,12 +157,14 @@ Penggunaan  routing  statik  dalam  sebuah  jaringan  yang  kecil  tentu  bukanl
 <th align="left">Kelebihan</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>Penggunaan Next Hop</td>
 <td align="left">Dapat mencegah terjadinya error dalam meneruskan paket ke router tujuan apabila router yang akan meneruskan paket memiliki link yang terhubung dengan banyak router. Itu disebabkan karena router telah mengetahui next hop, yaitu IP Address router tujuan</td>
 <td align="left">static routing yang menggunakan next hop akan mengalami multiple lookup atau lookup yg berulang. lookup yg pertama yang akan dilakukan adalah mencari network tujuan,setelah itu akan kembali melakukan proses lookup untuk mencari interface mana yang digunakan untuk menjangkau next hopnya.</td>
 </tr>
+
 <tr>
 <td>Penggunaan exit interface</td>
 <td align="left">Proses lookup hanya akan terjadi satu kali saja ( single lookup ) karena router akan langsung meneruskan paket ke network tujuan melalui interface yang sesuai pada routing table</td>
@@ -162,15 +172,26 @@ Penggunaan  routing  statik  dalam  sebuah  jaringan  yang  kecil  tentu  bukanl
 </tr>
 </tbody>
 </table>
+
+
 <p>Routing static dengan menggunakan <em>next hop</em> cocok digunakan untuk jaringan <em>multi-access network</em> atau <em>point to multipoint</em> sedangkan untuk jaringan <em>point to point</em>, cocok dengan menggunakan <code>exit interface</code> dalam mengkonfigurasi <code>static route</code>.</p>
+
 <p><strong>Recursive route lookup</strong> adalah proses yang terjadi pada routing tabel untuk menentukan exit interface mana yang akan digunakan ketika akan meneruskan paket ke tujuannya.</p>
+
 <h2 id="dynamic-routing-routing-dinamis">Dynamic Routing (Routing Dinamis)</h2>
+
 <p><strong>Dynamic Routing (Router Dinamis)</strong> adalah sebuah router yang memiliki dan membuat tabel routing secara otomatis, dengan mendengarkan lalu lintas jaringan dan juga dengan saling berhubungan antara router lainnya. Protokol routing mengatur router-router sehingga dapat berkomunikasi satu dengan yang lain dan saling memberikan informasi satu dengan yang lain dan saling memberikan informasi routing yang dapat mengubah isi forwarding table, tergantung keadaan jaringannya. Dengan cara ini, router-router mengetahui keadaan jaringan yang terakhir dan mampu meneruskan data ke arah yang benar. Dengan kata lain, <strong>routing dinamik</strong> adalah proses pengisian data routing di table routing secara otomatis.</p>
+
 <p><strong>Dynamic router</strong> mempelajari sendiri Rute yang terbaik yang akan ditempuhnya untuk meneruskan paket dari sebuah network ke network lainnya. Administrator tidak menentukan rute yang harus ditempuh oleh paket-paket tersebut. Administrator hanya menentukan bagaimana cara router mempelajari paket, dan kemudian router mempelajarinya sendiri. Rute pada dynamic routing berubah, sesuai dengan pelajaran yang didapatkan oleh router.</p>
-<!-- raw HTML omitted -->
+
+<p><img border="0" src="https://1.bp.blogspot.com/-TGFYdM17dwA/UO9ssD6r1dI/AAAAAAAABTY/bE61zlzGijE/s1600/routing-dynamic.jpg" width="100%" height="100%"/></p>
+
 <p>Apabila jaringan memiliki lebih dari satu kemungkinan rute untuk tujuan yang sama maka perlu digunakan dynamic routing. Sebuah  dynamic routing dibangun berdasarkan informasi yang dikumpulkan oleh protokol routing. Protokol ini didesain untuk mendistribusikan informasi yang secara dinamis mengikuti perubahan kondisi jaringan. Protokol routing mengatasi situasi routing yang kompleks secara cepat dan akurat. Protokol routng didesain tidak hanya untuk mengubah ke rute  backup  bila rute utama tidak berhasil, namun juga didesain untuk menentukan rute mana yang terbaik untuk mencapai tujuan tersebut.</p>
+
 <p>Pengisian dan pemeliharaan tabel routing tidak dilakukan secara manual oleh admin. Router saling bertukar informasi routing agar dapat mengetahui alamat tujuan dan menerima tabel routing. Pemeliharaan jalur dilakukan berdasarkan pada jarak terpendek antara device pengirim dan device tujuan.</p>
+
 <h3 id="routing-dinamis-dynamic-router">Routing Dinamis (Dynamic Router)</h3>
+
 <ol>
 <li><strong>
 
@@ -188,7 +209,9 @@ Penggunaan  routing  statik  dalam  sebuah  jaringan  yang  kecil  tentu  bukanl
 
 <a href="https://santekno.com/post/bgp-border-gateway-protocol" title="BGP (Border Gateway Protokol) Info Lanjut BGP">BGP (Border Gateway Protokol) Info Lanjut BGP</a></strong></li>
 </ol>
+
 <h2 id="perbedaan-routing-static-dan-routing-dynamic">Perbedaan Routing Static dan Routing Dynamic</h2>
+
 
 
 
@@ -201,29 +224,35 @@ Penggunaan  routing  statik  dalam  sebuah  jaringan  yang  kecil  tentu  bukanl
 <th align="left">Routing Dynamic</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td align="left">Berfungsi pada protocol IP</td>
 <td align="left">Berfungsi pada inter-routing protocol</td>
 </tr>
+
 <tr>
 <td align="left">Router tidak dapat membagi informasi routing</td>
 <td align="left">Router membagi informasi routing secara otomatis</td>
 </tr>
+
 <tr>
 <td align="left">Routing table dibuat dan dihapus secara manual</td>
 <td align="left">Routing table dibuat dan dihapus secara otomatis</td>
 </tr>
+
 <tr>
 <td align="left">Tidak menggunakan routig protocol</td>
 <td align="left">Terdapat routing protocol, seperti RIP atau OSPF</td>
 </tr>
+
 <tr>
 <td align="left">Microsoft mendukung multihomed system seperti router</td>
 <td align="left">Microsoft mendukung RIP untuk IP dan IPX/SPX</td>
 </tr>
 </tbody>
 </table>
+
 
       </div>
       <div class="post-content">
@@ -443,15 +472,17 @@ Penggunaan  routing  statik  dalam  sebuah  jaringan  yang  kecil  tentu  bukanl
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#static-routing-routing-statis">Static routing (Routing Statis)</a></li>
-    <li><a href="#dynamic-routing-routing-dinamis">Dynamic Routing (Routing Dinamis)</a>
-      <ul>
-        <li><a href="#routing-dinamis-dynamic-router">Routing Dinamis (Dynamic Router)</a></li>
-      </ul>
-    </li>
-    <li><a href="#perbedaan-routing-static-dan-routing-dynamic">Perbedaan Routing Static dan Routing Dynamic</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#static-routing-routing-statis">Static routing (Routing Statis)</a></li>
+<li><a href="#dynamic-routing-routing-dinamis">Dynamic Routing (Routing Dinamis)</a>
+<ul>
+<li><a href="#routing-dinamis-dynamic-router">Routing Dinamis (Dynamic Router)</a></li>
+</ul></li>
+<li><a href="#perbedaan-routing-static-dan-routing-dynamic">Perbedaan Routing Static dan Routing Dynamic</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

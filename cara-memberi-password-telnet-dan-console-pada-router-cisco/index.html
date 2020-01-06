@@ -128,29 +128,44 @@ Secara umum, keamanan dalam suatu jaringan itu sangat perlu sekali karena untuk 
          
          <p></p>
          <p>Salam teman-teman, kali ini Santekno akan menjelaskan mengenai Networking atau Jaringan Komputer. Dan pada saat ini Santekno akan lebih menjelaskan kepada Keamanan dalam suatu jaringan dimulai dari device sendiri sampai pada Firewall yang akan nanti diterapkan.</p>
-<p><!-- raw HTML omitted --></p>
+
+<p><img border="0" src="https://1.bp.blogspot.com/-Mh9LHh_3oIQ/Ul6le5aSPXI/AAAAAAAACjU/jJ6W5SdvkBQ/s1600/password-vty-console-cisco.bmp" height="100%" width="100%" /></p>
+
 <p>Secara umum, keamanan dalam suatu jaringan itu sangat perlu sekali karena untuk menyelamatkan data kita yang ada di server dan agar terhindar dari para hacker yang mencoba masuk kedalam suatu private network kita yang biasanya tidak boleh diakses dalam remote dari public. Maka dari itu secara mendasar Santekno akan menjelaskan bagaimana pemberian Password Telnet dan Console agar tidak sembarang orang bisa masuk dan konfigurasi ke dalam router kita.</p>
+
 <p>Cara konfigurasi pada Router itu terbagi menjadi 2 yaitu melewati Console dan menggunakan Telnet. Pemberian password pada console yaitu pemberian keamanan untuk Router yang langsung terhubung ke Router tersebut menggunakan kabel console, sedangkan Telnet yaitu mengkonfigurasikan Router secara remote atau secara tidak langsung terhubung ke routernya, seperti bisa melalui jaringan IP public atau internet.</p>
+
 <p>Baiklah, pertama kali kita akan mencoba memberikan password pada Router terlebih dahulu. Berikut adalah konfigurasinya:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Router&gt;enable
+
+<pre><code class="language-bash">Router&gt;enable
 Router#configure terminal
-Router<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e">#enable password santekno</span>
-Router<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e">#enable secret santekno</span>
-</code></pre></div><p>Tulisan yang berwarna merah merupakan password yang nanti jika masuk ke dalam router tersebut pada mode #. enable password dan secret sama saja tetapi mempunyai perbedaan yaitu jika menggunakan password maka password router tersebut tidak di enskripsi sedangkan jika menggunakan secret maka password yang sudah di konfigurasikan akan di enskripsi seperti gambar dibawah ini</p>
-<p><!-- raw HTML omitted --></p>
+Router(config)#enable password santekno
+Router(config)#enable secret santekno
+</code></pre>
+
+<p>Tulisan yang berwarna merah merupakan password yang nanti jika masuk ke dalam router tersebut pada mode #. enable password dan secret sama saja tetapi mempunyai perbedaan yaitu jika menggunakan password maka password router tersebut tidak di enskripsi sedangkan jika menggunakan secret maka password yang sudah di konfigurasikan akan di enskripsi seperti gambar dibawah ini</p>
+
+<p><img border="0" src="https://1.bp.blogspot.com/-Af1yCzWGxok/Ul6eqcsoGiI/AAAAAAAACi8/tzltOosC-Y4/s1600/password-secret.bmp" height="100%" width="100%" /></p>
+
 <p>Nah setelah itu kita akan memberikan password pada Console jika akan melakukan konfigurasi pada Router Cisco. berikut cara konfigurasinya :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">R1&gt;enable
+
+<pre><code class="language-bash">R1&gt;enable
 R1#config terminal
-R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># line con 0</span>
-R1<span style="color:#f92672">(</span>config-line<span style="color:#f92672">)</span><span style="color:#75715e"># password santekno</span>
-R1<span style="color:#f92672">(</span>config-line<span style="color:#f92672">)</span><span style="color:#75715e"># login</span>
-</code></pre></div><p>Sedangkan konfigurasi password untuk Telnet pada Router Cisco sebagai berikut:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">R1&gt;enable
+R1(config)# line con 0
+R1(config-line)# password santekno
+R1(config-line)# login
+</code></pre>
+
+<p>Sedangkan konfigurasi password untuk Telnet pada Router Cisco sebagai berikut:</p>
+
+<pre><code class="language-bash">R1&gt;enable
 R1#config terminal
-R1<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># line vty 0 4</span>
-R1<span style="color:#f92672">(</span>config-line<span style="color:#f92672">)</span><span style="color:#75715e"># password santekno</span>
-R1<span style="color:#f92672">(</span>config-line<span style="color:#f92672">)</span><span style="color:#75715e"># login</span>
-</code></pre></div><p>Bagaimana cukup mudah kan untuk pemberian keamanan dalam Router? Keamanan dalam suatu jaringan itu harus dimulai dari yang terkecil seperti pemberian password console, Telnet dan juga password Routernya. Sekian penjelasan mengenai Cara Memberi Password Telnet dn Console pada Router Cisco, Semoga bermanfaat bagi sobat. ^_^</p>
+R1(config)# line vty 0 4
+R1(config-line)# password santekno
+R1(config-line)# login
+</code></pre>
+
+<p>Bagaimana cukup mudah kan untuk pemberian keamanan dalam Router? Keamanan dalam suatu jaringan itu harus dimulai dari yang terkecil seperti pemberian password console, Telnet dan juga password Routernya. Sekian penjelasan mengenai Cara Memberi Password Telnet dn Console pada Router Cisco, Semoga bermanfaat bagi sobat. ^_^</p>
 
       </div>
       <div class="post-content">
@@ -369,7 +384,7 @@ R1<span style="color:#f92672">(</span>config-line<span style="color:#f92672">)</
 <div class="box_detail">
       <h2>Table of Content</h2>
       <hr>
-   <nav id="TableOfContents"></nav>
+   
 </div>
 </aside>
    </div>

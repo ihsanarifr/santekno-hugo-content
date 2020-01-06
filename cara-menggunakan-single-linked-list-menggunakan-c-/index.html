@@ -129,10 +129,16 @@ Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan me
             
          
          <p></p>
-         <p><strong>Linked List</strong> adalah salah satu bentuk struktur data, berisi kumpulan data (<em>node</em>) yang tersusun secara <em>sekuensial</em>, saling sambung menyambung, dinamis dan terbatas. Sedangkan <strong>Single Linked List</strong> adalah sebuah <strong>linked list</strong> yang menggunakan sebuah <code>variabel pointer</code> saja untuk menyimpan banyak data dengan metode <strong>linked list</strong>, suatu daftar isi yang saling berhubungan.</p>
+         
+
+<p><strong>Linked List</strong> adalah salah satu bentuk struktur data, berisi kumpulan data (<em>node</em>) yang tersusun secara <em>sekuensial</em>, saling sambung menyambung, dinamis dan terbatas. Sedangkan <strong>Single Linked List</strong> adalah sebuah <strong>linked list</strong> yang menggunakan sebuah <code>variabel pointer</code> saja untuk menyimpan banyak data dengan metode <strong>linked list</strong>, suatu daftar isi yang saling berhubungan.</p>
+
 <p>Baiklah, Santekno akan memberikan implementasi dari <strong>Single Linked List</strong> dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan <strong>Single Linked List</strong> adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubun tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, <strong>insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya</strong>.</p>
+
 <p>Linked List yang akan Santekno buat menerapkan sistem <strong>OOP (Object Oriented Programming)</strong> sehingga agar lebih mudah dipahaminya. Dalam OOP kita harus membuat suatu kelas yang akan kita namakan SSL, atau singkatan dari <strong>Single Linked List</strong>.</p>
+
 <h2 id="fungsi-fungsi-yang-akan-dibuat">Fungsi-fungsi yang akan dibuat</h2>
+
 <ul>
 <li>Membuat Node Fungsi <code>make()</code></li>
 <li>Tambah Node di belakang <code>push_back()</code></li>
@@ -144,64 +150,70 @@ Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan me
 <li>Mencetak linked list <code>print()</code></li>
 <li>Main Program</li>
 </ul>
+
 <h2 id="code-program-kelas-sll">Code Program Kelas SLL</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;utility&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;forward_list&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
 
-<span style="color:#66d9ef">typedef</span> par<span style="color:#f92672">&lt;</span>string, <span style="color:#66d9ef">float</span><span style="color:#f92672">&gt;</span> P;
-<span style="color:#66d9ef">typedef</span> forward_list<span style="color:#f92672">&lt;</span>P<span style="color:#f92672">&gt;</span> SLLP;
+<pre><code class="language-cpp">#include &lt;utility&gt;
+#include &lt;iostream&gt;
+#include &lt;forward_list&gt;
+#include &lt;string&gt;
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SLL</span>{
+using namespace std;
+
+typedef par&lt;string, float&gt; P;
+typedef forward_list&lt;P&gt; SLLP;
+
+class SLL{
     SLLP dt;
-    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">push_front</span>(string nim,<span style="color:#66d9ef">float</span> ipk);
-    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">push_back</span>(string nim, <span style="color:#66d9ef">float</span> ipk);
-    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">push_after</span>(string nim,<span style="color:#66d9ef">float</span> ipk, string after);
-    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">del</span>(string nim);
-    SLLP<span style="color:#f92672">:</span><span style="color:#f92672">:</span>iterator find(string nim);
-    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">print</span>();
+    void push_front(string nim,float ipk);
+    void push_back(string nim, float ipk);
+    void push_after(string nim,float ipk, string after);
+    void del(string nim);
+    SLLP::iterator find(string nim);
+    void print();
 };
 
-<span style="color:#66d9ef">void</span> SLL<span style="color:#f92672">:</span><span style="color:#f92672">:</span>print(){
-    SLLP<span style="color:#f92672">:</span><span style="color:#f92672">:</span>iterator it;
-    <span style="color:#66d9ef">for</span>(it<span style="color:#f92672">=</span>dt.begin();it<span style="color:#f92672">!</span><span style="color:#f92672">=</span>dt.end();<span style="color:#f92672">+</span><span style="color:#f92672">+</span>it){
-        cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">(</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> it<span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>first <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">,</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> it<span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>second <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">)-&gt;</span><span style="color:#e6db74">&#34;</span>;
+void SLL::print(){
+    SLLP::iterator it;
+    for(it=dt.begin();it!=dt.end();++it){
+        cout &lt;&lt; &quot;(&quot; &lt;&lt; it-&gt;first &lt;&lt; &quot;,&quot; &lt;&lt; it-&gt;second &lt;&lt; &quot;)-&gt;&quot;;
     }
-    cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">NULL</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> endl;
+    cout &lt;&lt; &quot;NULL&quot;&lt;&lt; endl;
 }
 
-<span style="color:#66d9ef">void</span> SLL<span style="color:#f92672">:</span><span style="color:#f92672">:</span>push_front(string nim, <span style="color:#66d9ef">float</span> ipk){
-    P t<span style="color:#f92672">=</span>make_pair(nim,ipk);
+void SLL::push_front(string nim, float ipk){
+    P t=make_pair(nim,ipk);
     dt.push_front(t);
 }
-<span style="color:#66d9ef">void</span> SLL<span style="color:#f92672">:</span><span style="color:#f92672">:</span>push_back(string nim,<span style="color:#66d9ef">float</span> ipk){
-    P t<span style="color:#f92672">=</span>make_pair(nim,ipk);
+void SLL::push_back(string nim,float ipk){
+    P t=make_pair(nim,ipk);
 
-    <span style="color:#66d9ef">if</span>(dt.empty())
+    if(dt.empty())
         dt.push_front(t);
-    <span style="color:#66d9ef">else</span>{
-        SLLP<span style="color:#f92672">:</span><span style="color:#f92672">:</span>iterator before<span style="color:#f92672">=</span>dt.begin();
-        SLLP<span style="color:#f92672">:</span><span style="color:#f92672">:</span>iterator it<span style="color:#f92672">=</span>dt.begin();
-        <span style="color:#66d9ef">for</span>(;it<span style="color:#f92672">!</span><span style="color:#f92672">=</span>dt.end();before<span style="color:#f92672">=</span>it,<span style="color:#f92672">+</span><span style="color:#f92672">+</span>it);
+    else{
+        SLLP::iterator before=dt.begin();
+        SLLP::iterator it=dt.begin();
+        for(;it!=dt.end();before=it,++it);
         dt.insert_after(before,t);
     }
 }
 
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+int main(){
     SLL list;
     list.make();
-    list.push_back(<span style="color:#ae81ff">100</span>); list.push_back(<span style="color:#ae81ff">50</span>);
-    list.push_front(<span style="color:#ae81ff">75</span>); list.print();
-    list.push_after(<span style="color:#ae81ff">35</span>,<span style="color:#ae81ff">100</span>); list.print();
-    list.del(<span style="color:#ae81ff">50</span>); list.print();
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+    list.push_back(100); list.push_back(50);
+    list.push_front(75); list.print();
+    list.push_after(35,100); list.print();
+    list.del(50); list.print();
+    return 0;
 }
-</code></pre></div><h2 id="output">Output</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
-</code></pre></div>
+</code></pre>
+
+<h2 id="output">Output</h2>
+
+<pre><code class="language-bash">
+</code></pre>
+
       </div>
       <div class="post-content">
          <div class="row">
@@ -420,11 +432,14 @@ Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan me
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#fungsi-fungsi-yang-akan-dibuat">Fungsi-fungsi yang akan dibuat</a></li>
-    <li><a href="#code-program-kelas-sll">Code Program Kelas SLL</a></li>
-    <li><a href="#output">Output</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#fungsi-fungsi-yang-akan-dibuat">Fungsi-fungsi yang akan dibuat</a></li>
+<li><a href="#code-program-kelas-sll">Code Program Kelas SLL</a></li>
+<li><a href="#output">Output</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

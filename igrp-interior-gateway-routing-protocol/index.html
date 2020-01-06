@@ -127,26 +127,35 @@ IGRP merupakan suatu penjaluran jarak antara vektor protokol, bahwa masing-masin
             
          
          <p></p>
-         <h2 id="pengertian">Pengertian</h2>
+         
+
+<h2 id="pengertian">Pengertian</h2>
+
 <p>IGRP (Interior Gateway Routing Protocol) adalah protocol <strong>distance vector</strong> yang diciptakan oleh perusahaan Cisco untuk mengatasi kekurangan RIP. Jumlah hop maksimum menjadi 255 dan sebagai metric, IGRP menggunakan <strong>Bandwidth, MTU, Delay Dan Load</strong>. IGRP adalah protocol routing yang menggunakan Autonomous System (AS) yang dapat menentukan routing berdasarkan system interior atau exterior. <strong>Administrative distance</strong> untuk IGRP adalah 100.</p>
+
 <p>IGRP merupakan suatu penjaluran jarak antara vektor protokol, bahwa masing-masing penjaluran bertugas untuk mengirimkan semua atau sebagian dari isi table penjaluran dalam penjaluran pesan untuk memperbaharui pada waktu tertentu untuk masing-masing penjaluran.</p>
+
 <p>Penjaluran memilih alur yang terbaik antara sumber dan tujuan. Untuk menyediakan fleksibilitas tambahan, IGRP mengijinkan untuk melakukan penjaluran multipath. Bentuk garis equal bandwidth dapat menjalankan arus lalu lintas dalam round robin, dengan melakukan peralihan secara otomatis kepada garis kedua jika sampai garis kesatu turun.</p>
-<!-- raw HTML omitted -->
-<p>Isi dari informasi routing adalah:</p>
-<ul>
-<li>Identifikasi tujuan baru,</li>
-<li>Mempelajari apabila terjadi kegagalan.</li>
-</ul>
-<p>IGRP mengirimkan update routing setiap interval 90 detik. Update ini advertise semua jaringan dalam AS. Kunci desain jaringan IGRP adalah:</p>
-<ul>
-<li>Secara otomatis dapat menangani topologi yang komplek</li>
-<li>Kemampuan ke segmen dengan bandwidth dan delay yang berbeda</li>
-<li>Skalabilitas, untuk fungsi jaringan yang besar</li>
-</ul>
+
+<p><img border="0" src="https://2.bp.blogspot.com/-3Ji3Qc8D3T8/UO9xw0rLYjI/AAAAAAAABUI/wmXyZ2yZnkg/s320/IGRP.jpg" width="100%" height="100%"/></p>
+
+<p>Isi dari informasi routing adalah:
+* Identifikasi tujuan baru,
+* Mempelajari apabila terjadi kegagalan.</p>
+
+<p>IGRP mengirimkan update routing setiap interval 90 detik. Update ini advertise semua jaringan dalam AS. Kunci desain jaringan IGRP adalah:
+* Secara otomatis dapat menangani topologi yang komplek
+* Kemampuan ke segmen dengan bandwidth dan delay yang berbeda
+* Skalabilitas, untuk fungsi jaringan yang besar</p>
+
 <p>Secara default, IGRP menggunakan <strong>bandwidth dan delay</strong> sebagai metric. Untuk konfigurasi tambahan, IGRP dapat dikonfigurasi menggunakan kombinasi semua varibel atau yang disebut dengan <strong>Composite Metric</strong>. Variabel-variabel itu misalnya: <strong>bandwidth, delay, load, reliability</strong>.</p>
+
 <h2 id="operasi-igrp">Operasi IGRP</h2>
+
 <p>Masing-masing penjaluran secara rutin mengirimkan masing-masing jaringan lokal kepada suatu pesan yang berisi salinan tabel penjaluran dari tabel lainnya. Pesan ini berisi tentang biaya-biaya dan jaringan yang akan dicapai untuk menjangkau masing-masing jaringan tersebut. Penerima pesan penjaluran dapat menjangkau semua jaringan didalam pesan sepanjang penjaluran yang bisa digunakan untuk mengirimkan pesan.</p>
+
 <h2 id="tujuan-igrp">Tujuan IGRP</h2>
+
 <ul>
 <li>Penjaluran stabil dijaringan kompleks sangat besar dan tidaka ada pengulangan penjaluran.</li>
 <li>Overhead rendah, IGRP sendiri tidak menggunakan bandwidth yang diperlukan untuk tugasnya.</li>
@@ -156,12 +165,12 @@ IGRP merupakan suatu penjaluran jarak antara vektor protokol, bahwa masing-masin
 <li>Penjaluran stabil dijaringan kompleks sangat besar dan tidaka ada pengulangan penjaluran.</li>
 <li>Overhead rendah, IGRP sendiri tidak menggunakan bandwidth yang diperlukan untuk tugasnya.</li>
 </ul>
+
 <h2 id="perubahan-igrp">Perubahan IGRP</h2>
-<p>Kemudian setelah melalui proses pembaharuan IGRP kemudian menjadi EIGRP (Enhanced IGRP), persamaannya adalah IGRP dan EIGRP sama-sama kompatibel dan antara router-router yang menjalankan EIGRP dan IGRP dengan autonomous system yang sama akan langsung otomatis terdistribusi. Selain itu EIGRP juga akan memberikan tagging external route untuk setiap route yang berasal dari:</p>
-<ul>
-<li>Routing protocol non EIGRP.</li>
-<li>Routing protocol IGRP dengan AS number yang sama.</li>
-</ul>
+
+<p>Kemudian setelah melalui proses pembaharuan IGRP kemudian menjadi EIGRP (Enhanced IGRP), persamaannya adalah IGRP dan EIGRP sama-sama kompatibel dan antara router-router yang menjalankan EIGRP dan IGRP dengan autonomous system yang sama akan langsung otomatis terdistribusi. Selain itu EIGRP juga akan memberikan tagging external route untuk setiap route yang berasal dari:
+* Routing protocol non EIGRP.
+* Routing protocol IGRP dengan AS number yang sama.</p>
 
       </div>
       <div class="post-content">
@@ -381,12 +390,15 @@ IGRP merupakan suatu penjaluran jarak antara vektor protokol, bahwa masing-masin
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#pengertian">Pengertian</a></li>
-    <li><a href="#operasi-igrp">Operasi IGRP</a></li>
-    <li><a href="#tujuan-igrp">Tujuan IGRP</a></li>
-    <li><a href="#perubahan-igrp">Perubahan IGRP</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#pengertian">Pengertian</a></li>
+<li><a href="#operasi-igrp">Operasi IGRP</a></li>
+<li><a href="#tujuan-igrp">Tujuan IGRP</a></li>
+<li><a href="#perubahan-igrp">Perubahan IGRP</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

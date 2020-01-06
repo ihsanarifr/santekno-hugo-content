@@ -126,36 +126,69 @@
             
          
          <p></p>
-         <p>Cara membuat Web Server pada Fedora Core 7 merupakan suatu layanan internet yang bisa di gunakan bagi para ahli networking. Yang sering di jumpai pada Web Server adalah WWW (World Wide Web), dimana www fasilitas yang paling terpopuler di dunia internet. Kalian pernah melihat suatu Web? Pasti bagi pengguna internet dimana mencari suatu artikel pasti menemukan sebuah web entah itu blog, wordpress, joomla, dll. Protokol yang biasa digunakan pada web adalah HTTP singkatan dari Hypertext Transfer Protocol. HTTP bertenggung jawab menganngani proses komunikasi antara client Web (browser atau web browser) dan Server web.</p>
-<p>Pada kali ini kita akan membangun Server Web  menggunakan Apache (<a href="http://httpd.apache.org/)">http://httpd.apache.org/)</a>. Apache merupakan aplikasi pilihan pengguna Linux yang open source, dan Apache juga mudah dikonfigurasi, performa dan security cukup baik, dan tersedia berbagai modul tambahan dari pihak ketiga untuk menambah kemampuan apache.</p>
+         
+
+<p>Cara membuat Web Server pada Fedora Core 7 merupakan suatu layanan internet yang bisa di gunakan bagi para ahli networking. Yang sering di jumpai pada Web Server adalah WWW (World Wide Web), dimana www fasilitas yang paling terpopuler di dunia internet. Kalian pernah melihat suatu Web? Pasti bagi pengguna internet dimana mencari suatu artikel pasti menemukan sebuah web entah itu blog, wordpress, joomla, dll. Protokol yang biasa digunakan pada web adalah HTTP singkatan dari Hypertext Transfer Protocol. HTTP bertenggung jawab menganngani proses komunikasi antara client Web (browser atau web browser) dan Server web.</p>
+
+<p>Pada kali ini kita akan membangun Server Web  menggunakan Apache (<a href="http://httpd.apache.org/">http://httpd.apache.org/</a>). Apache merupakan aplikasi pilihan pengguna Linux yang open source, dan Apache juga mudah dikonfigurasi, performa dan security cukup baik, dan tersedia berbagai modul tambahan dari pihak ketiga untuk menambah kemampuan apache.</p>
+
 <p>Apache memerlukan Server DNS. Jadi harus paham dulu bagaimana pembuatan DNS server. Sudah mahir dengan itu baru lanjut ke Web Server. Sesuai dengan praktikan Sebelumnya yaitu DNS Server, SanTekno menggunakan Fedora Core untuk mempelajari semua ini. Jadi Anda jangan usah pusing sebenernya semua distro Linux hampir sama penginstalannya. Oke kita langsung saja ke pembahasan sebagai berikut.</p>
+
 <h2 id="instalasi-apache">Instalasi Apache</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rpm –qa | grep httpd
+
+<pre><code class="language-bash">rpm –qa | grep httpd
 
 httpd-2.2.4-4
 httpd-manual-2.2.4-4
 system-config-httpd-1.4.3-1.fc7
 
-</code></pre></div><p>Instal httpd tersebut seperti yang pernah kita laukan pada postingan Perintah Linux Part 4 yaitu dengan menggunakan perintah <code>rpm –ivh httpd-2.2.4-4.rpm</code></p>
+</code></pre>
+
+<p>Instal httpd tersebut seperti yang pernah kita laukan pada postingan Perintah Linux Part 4 yaitu dengan menggunakan perintah <code>rpm –ivh httpd-2.2.4-4.rpm</code></p>
+
 <h2 id="konfigurasi-apache">Konfigurasi Apache</h2>
+
 <p>Apache menyertakan beberapa buah file konfigurasi yang berada di direktori /etc/httpd/conf. File konfigurasi utama yaitu di /etc/httpd/conf/httpd.conf. File ini akan dibaca oleh daemon httpd ketika dijalankan. Seperti halnya named.conf milik DNS, httpd.conf juga sensitif terhadap pemakaian huruf besar/kecil.</p>
+
 <p>Kompuer yang akan digunakan Server Web yaitu santekno.com dan port untuk service http adalah 80. Hapuslah simbol # diawal baris. Buka terlebih dahulu file httpd.conf tersebut dengan perintah sebagai berikut.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi /etc/httpd/conf/httpd.conf
-</code></pre></div><p>Lihat baris yang menyatakan seperti berikut.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#ServerName www.example.com:80</span>
-</code></pre></div><p>Gantikan menjadi seperti ini</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ServerName www.santekno.com:80
-</code></pre></div><h2 id="menjalankan-apache">Menjalankan Apache</h2>
+
+<pre><code class="language-bash">vi /etc/httpd/conf/httpd.conf
+</code></pre>
+
+<p>Lihat baris yang menyatakan seperti berikut.</p>
+
+<pre><code class="language-bash">#ServerName www.example.com:80
+</code></pre>
+
+<p>Gantikan menjadi seperti ini</p>
+
+<pre><code class="language-bash">ServerName www.santekno.com:80
+</code></pre>
+
+<h2 id="menjalankan-apache">Menjalankan Apache</h2>
+
 <p>Cara menjalankan sebuah Apache Web Server dengan cara seperti merestart DNS Server dengan perintah sebagai berikut.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">service httpd restart
-</code></pre></div><p>Untuk mengecek httpd sudah aktif atau belum. Ketikkan perintah sebagai berikut.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">netstat –na | grep <span style="color:#ae81ff">80</span>
-</code></pre></div><p>Maka hasilnya akan terlihat sebagai berikut</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tcp  <span style="color:#ae81ff">0</span>    <span style="color:#ae81ff">0</span>    192.168.10.90 :::*      LISTEN
-</code></pre></div><p>Cara lain yang lebih gampang terbukti jalan atau tidaknya dengan web browser seperti Mozilla, Internet Explorer, Opera, atau yang lainnya. Jalankan web Browser lalu pada kotak Address atau URL ketikkan :</p>
-<p><!-- raw HTML omitted --></p>
+
+<pre><code class="language-bash">service httpd restart
+</code></pre>
+
+<p>Untuk mengecek httpd sudah aktif atau belum. Ketikkan perintah sebagai berikut.</p>
+
+<pre><code class="language-bash">netstat –na | grep 80
+</code></pre>
+
+<p>Maka hasilnya akan terlihat sebagai berikut</p>
+
+<pre><code class="language-bash">tcp  0    0    192.168.10.90 :::*      LISTEN
+</code></pre>
+
+<p>Cara lain yang lebih gampang terbukti jalan atau tidaknya dengan web browser seperti Mozilla, Internet Explorer, Opera, atau yang lainnya. Jalankan web Browser lalu pada kotak Address atau URL ketikkan :</p>
+
+<p><img border="0" src="https://3.bp.blogspot.com/-3IOhz9MWGsM/UKwR4Pfb1GI/AAAAAAAAB1U/TF2B55uIfSQ/s320/httpd-bowser-link.jpg" height="100%" width="100%" /></p>
+
 <p>Maka hasil dari pengecekan tersebut terlihat di web browser seperti mozilla sebagai berikut.</p>
-<p><!-- raw HTML omitted --></p>
+
+<p><img border="0" src="https://1.bp.blogspot.com/-KjCIemsJGzU/UKwSCF8dgMI/AAAAAAAAB1c/HC2Zxjo04OA/s400/httpd-bowser.png" height="100%" width="100%" /></p>
 
       </div>
       <div class="post-content">
@@ -375,11 +408,14 @@ system-config-httpd-1.4.3-1.fc7
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#instalasi-apache">Instalasi Apache</a></li>
-    <li><a href="#konfigurasi-apache">Konfigurasi Apache</a></li>
-    <li><a href="#menjalankan-apache">Menjalankan Apache</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#instalasi-apache">Instalasi Apache</a></li>
+<li><a href="#konfigurasi-apache">Konfigurasi Apache</a></li>
+<li><a href="#menjalankan-apache">Menjalankan Apache</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

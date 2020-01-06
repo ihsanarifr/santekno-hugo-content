@@ -8,7 +8,7 @@
       <meta name="author" content="santekno.com">
       <meta name="title" content="Cara Membuat Stack menggunakan Array C&#43;&#43; - Santekno" />
       <meta name="description" content="Stack (tumpukan) adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah LIFO (Last In First Out). Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.
-Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya. Dalam OOP kita harus membuat suatu kelas yang akan kita namakan Stack.">
+Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya.">
 
       
       
@@ -131,102 +131,118 @@ Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming
             
          
          <p></p>
-         <p><strong>Stack (tumpukan)</strong> adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah <code>LIFO (Last In First Out)</code>. Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.</p>
-<p><strong>Stack</strong> yang akan Santekno buat menerapkan sistem <code>OOP (Object Oriented Programming)</code> sehingga agar lebih mudah dipahaminya. Dalam OOP kita harus membuat suatu kelas yang akan kita namakan <strong>Stack</strong>.</p>
-<h2 id="kode-kelas-stack">Kode Kelas Stack</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;iomanip&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">define SIZE 100</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+         
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Stack</span>{
-    <span style="color:#66d9ef">int</span> stack[SIZE];
-    <span style="color:#66d9ef">int</span> atas;
-<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
-    Stack(){atas<span style="color:#f92672">=</span>SIZE;}
-    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">empty</span>(){<span style="color:#66d9ef">return</span> atas<span style="color:#f92672">=</span><span style="color:#f92672">=</span>SIZE;}
-    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">full</span>(){<span style="color:#66d9ef">return</span> atas<span style="color:#f92672">=</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;}
-    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">push</span>(<span style="color:#66d9ef">int</span> value);
-    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">pop</span>();
-    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">top</span>();
-    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">size</span>(){<span style="color:#66d9ef">return</span> SIZE<span style="color:#f92672">-</span>atas;}
-    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getAtas</span>() {<span style="color:#66d9ef">return</span> atas;}
-    <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">getStack</span>() {<span style="color:#66d9ef">return</span> stack;}
+<p><strong>Stack (tumpukan)</strong> adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah <code>LIFO (Last In First Out)</code>. Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.</p>
+
+<p><strong>Stack</strong> yang akan Santekno buat menerapkan sistem <code>OOP (Object Oriented Programming)</code> sehingga agar lebih mudah dipahaminya. Dalam OOP kita harus membuat suatu kelas yang akan kita namakan <strong>Stack</strong>.</p>
+
+<h2 id="kode-kelas-stack">Kode Kelas Stack</h2>
+
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+#define SIZE 100
+using namespace std;
+
+class Stack{
+    int stack[SIZE];
+    int atas;
+public:
+    Stack(){atas=SIZE;}
+    bool empty(){return atas==SIZE;}
+    bool full(){return atas==0;}
+    void push(int value);
+    void pop();
+    int top();
+    int size(){return SIZE-atas;}
+    int getAtas() {return atas;}
+    int *getStack() {return stack;}
 };
 
-<span style="color:#66d9ef">void</span> Stack<span style="color:#f92672">:</span><span style="color:#f92672">:</span>push(<span style="color:#66d9ef">int</span> val){
-    <span style="color:#66d9ef">if</span>(full())
-        cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Stack is full</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
-    <span style="color:#66d9ef">else</span>{
-        stack[<span style="color:#f92672">-</span><span style="color:#f92672">-</span>atas]<span style="color:#f92672">=</span>val;
+void Stack::push(int val){
+    if(full())
+        cout &lt;&lt; &quot;Stack is full\n&quot;;
+    else{
+        stack[--atas]=val;
     }
 }
 
-<span style="color:#66d9ef">void</span> Stack<span style="color:#f92672">:</span><span style="color:#f92672">:</span>pop(){
-    <span style="color:#66d9ef">if</span>(empty())
-        cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Stack is empty</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
-    <span style="color:#66d9ef">else</span>
-        <span style="color:#f92672">+</span><span style="color:#f92672">+</span>atas;
+void Stack::pop(){
+    if(empty())
+        cout &lt;&lt; &quot;Stack is empty\n&quot;;
+    else
+        ++atas;
 }
 
-<span style="color:#66d9ef">int</span> Stack<span style="color:#f92672">:</span><span style="color:#f92672">:</span>top(){
-    <span style="color:#66d9ef">if</span>(empty()){
-        cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Stack is empty</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-    }<span style="color:#66d9ef">else</span>{
-        <span style="color:#66d9ef">return</span> stack[atas];
+int Stack::top(){
+    if(empty()){
+        cout &lt;&lt; &quot;Stack is empty\n&quot;;
+        return 0;
+    }else{
+        return stack[atas];
     }
 }
 
-ostream<span style="color:#f92672">&amp;</span> <span style="color:#66d9ef">operator</span><span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> (ostream <span style="color:#f92672">&amp;</span>out,Stack <span style="color:#f92672">&amp;</span>s){
-    <span style="color:#66d9ef">if</span>(s.empty())
-        out <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Stack is empty</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
-    <span style="color:#66d9ef">else</span>{
-        <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>s.getAtas();i <span style="color:#f92672">&lt;</span> s.getAtas() <span style="color:#f92672">+</span> s.size();<span style="color:#f92672">+</span><span style="color:#f92672">+</span>i)
-            out <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> s.getStack()[i] <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> endl;
+ostream&amp; operator&lt;&lt; (ostream &amp;out,Stack &amp;s){
+    if(s.empty())
+        out &lt;&lt; &quot;Stack is empty\n&quot;;
+    else{
+        for(int i=s.getAtas();i &lt; s.getAtas() + s.size();++i)
+            out &lt;&lt; s.getStack()[i] &lt;&lt; endl;
     }
-    <span style="color:#66d9ef">return</span> out;
+    return out;
 }
 
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+int main(){
     Stack st;
-    st.push(<span style="color:#ae81ff">50</span>);
-    st.push(<span style="color:#ae81ff">15</span>);
-    st.push(<span style="color:#ae81ff">20</span>);
-    cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Stack Awal</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
-    cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> st;
-    <span style="color:#66d9ef">int</span> nilai<span style="color:#f92672">=</span>st.top();
+    st.push(50);
+    st.push(15);
+    st.push(20);
+    cout &lt;&lt; &quot;Stack Awal\n&quot;;
+    cout &lt;&lt; st;
+    int nilai=st.top();
     st.pop();
-    cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Hasil pop(): </span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> nilai <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> endl;
-    cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Stack Akhir</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
-    cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> st;
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+    cout &lt;&lt; &quot;\nHasil pop(): &quot; &lt;&lt; nilai &lt;&lt; endl;
+    cout &lt;&lt; &quot;\nStack Akhir\n&quot;;
+    cout &lt;&lt; st;
+    return 0;
 }
-</code></pre></div><h2 id="kode-program-push">Kode Program <code>Push()</code></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> Stack<span style="color:#f92672">:</span><span style="color:#f92672">:</span>push(<span style="color:#66d9ef">int</span> val){
-    <span style="color:#66d9ef">if</span>(full())
-        cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Stack is full</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
-    <span style="color:#66d9ef">else</span>{
-        stack[<span style="color:#f92672">-</span><span style="color:#f92672">-</span>atas]<span style="color:#f92672">=</span>val;
+</code></pre>
+
+<h2 id="kode-program-push">Kode Program <code>Push()</code></h2>
+
+<pre><code class="language-cpp">void Stack::push(int val){
+    if(full())
+        cout &lt;&lt; &quot;Stack is full\n&quot;;
+    else{
+        stack[--atas]=val;
     }
 }
-</code></pre></div><h2 id="kode-program-pop">Kode Program <code>Pop()</code></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> Stack<span style="color:#f92672">:</span><span style="color:#f92672">:</span>pop(){
-    <span style="color:#66d9ef">if</span>(empty())
-        cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Stack is empty</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
-    <span style="color:#66d9ef">else</span>
-        <span style="color:#f92672">+</span><span style="color:#f92672">+</span>atas;
+</code></pre>
+
+<h2 id="kode-program-pop">Kode Program <code>Pop()</code></h2>
+
+<pre><code class="language-cpp">void Stack::pop(){
+    if(empty())
+        cout &lt;&lt; &quot;Stack is empty\n&quot;;
+    else
+        ++atas;
 }
-</code></pre></div><h2 id="kode-program-top">Kode Program <code>Top()</code></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">int</span> Stack<span style="color:#f92672">:</span><span style="color:#f92672">:</span>top(){
-    <span style="color:#66d9ef">if</span>(empty()){
-        cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Stack is empty</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
-        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-    }<span style="color:#66d9ef">else</span>{
-        <span style="color:#66d9ef">return</span> stack[atas];
+</code></pre>
+
+<h2 id="kode-program-top">Kode Program <code>Top()</code></h2>
+
+<pre><code class="language-cpp">int Stack::top(){
+    if(empty()){
+        cout &lt;&lt; &quot;Stack is empty\n&quot;;
+        return 0;
+    }else{
+        return stack[atas];
     }
 }
-</code></pre></div><p>Kelas ini memiliki beberapa method atau fungsi yang sesuai dengan sifat-sifat dan kaidah Stack. Seperti Push, Pop, Top dan Full. <strong>Push</strong> adalah menyimpan data ke dalam <strong>stack</strong>. lalu <strong>Pop</strong> adalah mengambil data paling atas dari <strong>Stack</strong> sedangkan <strong>Top</strong> adalah melihat isi data yang paling atas dari suatu <strong>Stack</strong>.</p>
+</code></pre>
+
+<p>Kelas ini memiliki beberapa method atau fungsi yang sesuai dengan sifat-sifat dan kaidah Stack. Seperti Push, Pop, Top dan Full. <strong>Push</strong> adalah menyimpan data ke dalam <strong>stack</strong>. lalu <strong>Pop</strong> adalah mengambil data paling atas dari <strong>Stack</strong> sedangkan <strong>Top</strong> adalah melihat isi data yang paling atas dari suatu <strong>Stack</strong>.</p>
 
       </div>
       <div class="post-content">
@@ -446,12 +462,15 @@ ostream<span style="color:#f92672">&amp;</span> <span style="color:#66d9ef">oper
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#kode-kelas-stack">Kode Kelas Stack</a></li>
-    <li><a href="#kode-program-push">Kode Program Push()</a></li>
-    <li><a href="#kode-program-pop">Kode Program Pop()</a></li>
-    <li><a href="#kode-program-top">Kode Program Top()</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#kode-kelas-stack">Kode Kelas Stack</a></li>
+<li><a href="#kode-program-push">Kode Program <code>Push()</code></a></li>
+<li><a href="#kode-program-pop">Kode Program <code>Pop()</code></a></li>
+<li><a href="#kode-program-top">Kode Program <code>Top()</code></a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

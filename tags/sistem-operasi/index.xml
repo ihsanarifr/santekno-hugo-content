@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sistem Operasi on Santekno</title>
@@ -17,7 +17,7 @@
       <pubDate>Sat, 10 Nov 2012 14:39:00 +0000</pubDate>
       
       <guid>https://santekno.com/perintah-dasar-linux-part-4/</guid>
-      <description>Linux– Perintah dasar Linuxsebelumnya sudah di bahas banyak sekali partnya. Dan alhamdulillah ini adalah pembahasan yang terakhir untuk Perintah Dasar Linux. Pada hari ini Santekno akan membahas lebih dalam lagi mengenai System Resource dan Manajemen User. Dimana perintah-perintah ini sangat penting untuk bisa mendalami dan memahami Perintah Linux.&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Beberapa perintah yang terkait dengan System Resourcedapat dipelajari dengan tabel berikut .&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Fungsi&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Command&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Contoh&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Menampilkan aktifitas user&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;w&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;w&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Menampilkan user yang login&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;who&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;who&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;menampilkan jam dan tanggal&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;date&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;date&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;menampilkan pemakaian disk&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;df&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;df –h&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;menampilkan informasi memori&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;free&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;free&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;menampilkan proses&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;ps&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;ps –ax&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Mematikan proses&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;kill&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;kill 254&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Menampilkan mounting device&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;mount&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;mount&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Menampilkan kalender&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;calc&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;calc&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Setelah perintah System Resource maka perintah selanjutna yaitu terkaint mengenai manajemen user dapat dilihat di tabel berikut.</description>
+      <description>Linux – Perintah dasar Linux sebelumnya sudah di bahas banyak sekali partnya. Dan alhamdulillah ini adalah pembahasan yang terakhir untuk Perintah Dasar Linux. Pada hari ini Santekno akan membahas lebih dalam lagi mengenai System Resource dan Manajemen User. Dimana perintah-perintah ini sangat penting untuk bisa mendalami dan memahami Perintah Linux./o:pBeberapa perintah yang terkait dengan System Resource dapat dipelajari dengan tabel berikut ./o:p Fungsi/o:p Command/o:p Contoh/o:p  Menampilkan aktifitas user/o:p w/o:p w/o:p  Menampilkan user yang login/o:p who/o:p who/o:p  menampilkan jam dan tanggal/o:p date/o:p date/o:p  menampilkan pemakaian disk/o:p df/o:p df –h/o:p  menampilkan informasi memori/o:p free/o:p free/o:p  menampilkan proses/o:p ps/o:p ps –ax/o:p  Mematikan proses/o:p kill/o:p kill 254/o:p  Menampilkan mounting device/o:p mount/o:p mount/o:p  Menampilkan kalender/o:p calc/o:p calc/o:p Setelah perintah System Resource maka perintah selanjutna yaitu terkaint mengenai manajemen user dapat dilihat di tabel berikut.</description>
     </item>
     
     <item>
@@ -26,7 +26,9 @@
       <pubDate>Sat, 10 Nov 2012 14:27:00 +0000</pubDate>
       
       <guid>https://santekno.com/perintah-dasar-linux-part-3/</guid>
-      <description>Linux – Setelah Anda Mempelajari pada postingan sebelumnya Perintah Dasar Part 2. Kini tinggal melanjutkan tahapan kita, agar bisa lebih mahir dan bertambah pengetahuan juga, kita melanjutkan postingan Kali ini dengan Perintah Dasar Linux.&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Pada postingan kali ini, akan menjelaskan suatu file itu bisa di akses oleh beberapa orang user, owner, other ataupun grup. Biasa sering kita sebut dengan Mode Akses dan Owner.Setiap file (termasuk) dapat diatur hak aksesnya menggunakan perintah chmod.</description>
+      <description>Linux – Setelah Anda Mempelajari pada postingan sebelumnya Perintah Dasar Part 2. Kini tinggal melanjutkan tahapan kita, agar bisa lebih mahir dan bertambah pengetahuan juga, kita melanjutkan postingan Kali ini dengan Perintah Dasar Linux./o:p
+
+Pada postingan kali ini, akan menjelaskan suatu file itu bisa di akses oleh beberapa orang user, owner, other ataupun grup. Biasa sering kita sebut dengan Mode Akses dan Owner.Setiap file (termasuk) dapat diatur hak aksesnya menggunakan perintah chmod.</description>
     </item>
     
     <item>
@@ -35,7 +37,8 @@
       <pubDate>Sat, 10 Nov 2012 06:54:00 +0000</pubDate>
       
       <guid>https://santekno.com/perintah-dasar-linux-part-2/</guid>
-      <description>Linux–Perintah Dasar Linuxsudah di pelajari di postingan sebelumnya. Sekarang, Perintah dasar Linux Part 2 akan menjelaskan lanjutan dari penjelasan Artikel yang pertama. Jika ingin lebih paham lagi perintah dasar linux dengan baik coba saja pelajari dari Artikel pertamaPerintah Dasar Linuxdan lanjutkan ke artikel berikutnya.&amp;lt;o:p&amp;gt;&amp;lt;/o:p&amp;gt;Salah satu konseip yang elegan dari Linux adalah “everything is a file”. Dimana segala sesuatu ada di Linux, mulai dari hardware, software direktori, dan sebagainya diperlakukan sebagai file.</description>
+      <description>Linux&amp;nbsp;–&amp;nbsp;Perintah Dasar Linux&amp;nbsp;sudah di pelajari di postingan sebelumnya. Sekarang, Perintah dasar Linux Part 2 akan menjelaskan lanjutan dari penjelasan Artikel yang pertama. Jika ingin lebih paham lagi perintah dasar linux dengan baik coba saja pelajari dari Artikel pertama&amp;nbsp;Perintah Dasar Linux&amp;nbsp;dan lanjutkan ke artikel berikutnya.
+/o:pSalah satu konseip yang elegan dari Linux adalah “everything is a file”. Dimana segala sesuatu ada di Linux, mulai dari hardware, software direktori, dan sebagainya diperlakukan sebagai&amp;nbsp;file.</description>
     </item>
     
     <item>
@@ -44,7 +47,7 @@
       <pubDate>Thu, 08 Nov 2012 21:34:00 +0000</pubDate>
       
       <guid>https://santekno.com/perintah-dasar-linux/</guid>
-      <description></description>
+      <description>Linux – Perintah Dasar Linuxsangat banyak sekali tetapi harus kita pahami sedikit demi sedikit. Perintah linux itu harus kita gunakan setiap hari jika ingin mahir dalam pengoperasian linux. Distro Linux seperti Debian, Redhat, CentOS, Fedora, Ubuntu, perintahnya hampir sma semua. Kebetulan Santekno sekarang sedang mempelajari distro Linux Fedora Core 7. Jadi tidak perlu pusing membedakan distro Linux manapun. Jika Anda pernah menggunakan DOS, maka akan melihat bahwa beberapa perintah DOS itu mirip dengan perintah Linux.</description>
     </item>
     
   </channel>

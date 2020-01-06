@@ -127,29 +127,46 @@ Dengan dikeluarkannya VLAN maka sangat bermanfaat sekali untuk kemajuan pembagia
             
          
          <p></p>
-         <h2 id="pengertian">Pengertian</h2>
+         
+
+<h2 id="pengertian">Pengertian</h2>
+
 <p>Pada kesempatan kali ini Santekno akan membahas lagi mengenai pengetahuan Networking yang mendasar seperti VLAN yang sudah biasa para engginer konfigurasikan agar suatu switch bisa digunakan untuk membagi network yang berbeda dalam satu jaringan lokal. Seperti kita ketahui bahwa switch tidak bisa membaca <strong>Layer 3</strong> sehingga tidak bisa membaca Network sehingga hanya bisa dihubungkan hanya satu network saja.</p>
+
 <p>Dengan dikeluarkannya VLAN maka sangat bermanfaat sekali untuk kemajuan pembagian Network agar lebih efisien. Pengertian dari VLAN (Virtual LAN) adalah suatu model jaringan yang tidak terbatas pada lokasi fisik seperti LAN, hal ini mengakibatkan suatu network dapat dikonfigurasi secara virtual tanpa harus menuruti lokasi fisik peralatan. Penggunaan VLAN akan membuat pengaturan jaringan menjadi sangat fleksibel karena dapat dibuat segmen yang bergantung pada organisasi, tanpa bergantung lokasi workstations.</p>
-<!-- raw HTML omitted -->
+
+<p><img border="0" src="https://3.bp.blogspot.com/--nk_ZRCxKdk/UgD8hvQso1I/AAAAAAAACfw/dIq0NXeUFGQ/s1600/vlan-network.gif" width="100%" height="100%"/></p>
+
 <p>VLAN diciptakan untuk menyediakan layanan segmentasi secara tradisional disediakan oleh router di konfigurasi LAN. VLAN menangani masalah-masalah seperti skalabilitas, keamanan, dan manajemen jaringan.</p>
+
 <h2 id="kegunaan">Kegunaan</h2>
+
 <ul>
 <li>Menimalisir kemungkinan terjadinya konflik IP yang terlalu banyak.</li>
 <li>Mencegah terjadinya collision domain (tabrakan domain).</li>
 <li>Mengurangi tingkat vulnerabilities.</li>
 </ul>
+
 <h2 id="cara-kerja">Cara Kerja</h2>
+
 <p>VLAN diklasifikasikan berdasarkan metode (tipe) yang digunakan untuk mengklasifikasikannya, baik itu menggunakan port, MAC address, dsb. Semua informasi yang mengandung penandaan/pengalamatan suatu VLAN (tagging) disimpan pada suatu database, jika penandaannya berdasarkan port yang digunakan maka database harus mengindikasi port-port yang digunakan VLAN.</p>
+
 <p>Untuk mengaturnya maka biasanya digunakan switch yang bisa diatur. Switch/bridge inilah yang bertanggung jawab menyimpan semua informasi dan konfigurasi suatu VLAN dan dipastikan semua switch memiliki informasi yang sama.</p>
+
 <p>VLAN Cross Connect (CC) adalah mekanisme yang digunakan untuk membuat VLAN Switched, VLAN CC menggunakan frame IEEE 802.1ad mana Tag S digunakan sebagai Label seperti dalam MPLS. IEEE menyetujui penggunaan seperti mekanisme dalam nominal 6,11 dari IEEE 802.1ad-2005.</p>
+
 <p>Kesimpulannya, VLAN membuat kita dapat mengontrol pola lalu lintas dan bereaksi cepat untuk relokasi. VLAN memberikan fleksibilitas untuk beradaptasi dengan perubahan dalam persyaratan jaringan dan memungkinkan untuk administrasi disederhanakan.</p>
+
 <h2 id="kekurangan">Kekurangan</h2>
+
 <ul>
 <li>Secara logika berbeda network tetapi secara fisik satu network</li>
 <li>Ketika ada broadcast jadi semua dikirim ke semua</li>
 <li>ketika jumlah banyak host-nya maka kerja DHCP akan berantakan dan tidak bisa diduga.</li>
 </ul>
+
 <h2 id="penggunaan">Penggunaan</h2>
+
 <ul>
 <li>Jika dalam jumlah yang banyak dalam satu network maka akan terganggu (gampang * terserang hack)</li>
 <li>Keamanan menjadi baik karena fisik satu network tetapi logic berbeda network</li>
@@ -161,25 +178,33 @@ Dengan dikeluarkannya VLAN maka sangat bermanfaat sekali untuk kemajuan pembagia
 <li>VLAN dengan bentuk Number Angka</li>
 <li>Contoh VLAN10 -&gt; Sales</li>
 </ul>
+
 <h2 id="jenis-jenis">Jenis-jenis</h2>
+
 <ul>
 <li><strong>VLAN default</strong> adalah VLAN yang sudah ada secara default contoh di cisco VLAN1,VLAN1002</li>
 <li><strong>Data VLAN</strong> adalah VLAN yang digunakann oleh user</li>
 <li><strong>VLAN VOIP</strong> adalah dikhususkan untuk komunikasi suara dan akan memberikan prioritas utama dibandingkan datanya</li>
-<li><strong>VLAN Native</strong></li>
+<li><strong>VLAN Native</strong><br /></li>
 <li><strong>VLAN management</strong> adalah VLAN yang dibangun keperluan management switch, misalnya : akan mengubah konfigurasi switch Admin, dan Admin dimasukkan ke VLAN management artinya hanya orang-orang yang keperluan khusus</li>
 </ul>
+
 <h2 id="jalur-vlan-ada-2-bentuk">Jalur VLAN ada 2 bentuk</h2>
+
 <ul>
 <li>Tradisional jadi mempunyai banyak jalur</li>
 <li><strong>TRUNKING</strong> yaitu VLAN yang mempunyai 1 jalur mempunyai teks yang mengidentifikasikan beberapa VLAN atau jalurnya mempunyai banyak jalur logika dlam 1 fisik</li>
 </ul>
+
 <h2 id="port">Port</h2>
+
 <ul>
 <li><strong>Port Access</strong> = port menghubungkan ke PC (Data user)</li>
 <li><strong>Port Trunking</strong> = port yang menghubungkan antar SWITCH</li>
 </ul>
+
 <h2 id="konfigurasi">Konfigurasi</h2>
+
 <p>Implementasi konfigurasi vlan, kamu bisa lihat pada postingan ini
 <strong>
 
@@ -403,17 +428,20 @@ Dengan dikeluarkannya VLAN maka sangat bermanfaat sekali untuk kemajuan pembagia
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#pengertian">Pengertian</a></li>
-    <li><a href="#kegunaan">Kegunaan</a></li>
-    <li><a href="#cara-kerja">Cara Kerja</a></li>
-    <li><a href="#kekurangan">Kekurangan</a></li>
-    <li><a href="#penggunaan">Penggunaan</a></li>
-    <li><a href="#jenis-jenis">Jenis-jenis</a></li>
-    <li><a href="#jalur-vlan-ada-2-bentuk">Jalur VLAN ada 2 bentuk</a></li>
-    <li><a href="#port">Port</a></li>
-    <li><a href="#konfigurasi">Konfigurasi</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#pengertian">Pengertian</a></li>
+<li><a href="#kegunaan">Kegunaan</a></li>
+<li><a href="#cara-kerja">Cara Kerja</a></li>
+<li><a href="#kekurangan">Kekurangan</a></li>
+<li><a href="#penggunaan">Penggunaan</a></li>
+<li><a href="#jenis-jenis">Jenis-jenis</a></li>
+<li><a href="#jalur-vlan-ada-2-bentuk">Jalur VLAN ada 2 bentuk</a></li>
+<li><a href="#port">Port</a></li>
+<li><a href="#konfigurasi">Konfigurasi</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

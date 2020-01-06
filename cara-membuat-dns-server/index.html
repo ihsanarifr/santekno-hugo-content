@@ -126,83 +126,131 @@
             
          
          <p></p>
-         <p>Cara Membuat DNS Server pada Fedora Core 7 merupakan pengalihan dari suatu ip address menjadi nama sesuai dengan keinginan kita agar gampang di ingat. Baiklah, SanTekno sekarang akan membahas tentang DNS Server. DNS server bertanggung jawab penuh mengelola domain masing-masing client. Tidak ada server tunggal yang akan bertanggung jawab mengelola semua domain. Jika sebuah client memerlukan informasi IP Address yang tidak dapat diberikan oleh server yang ada pada domainnya, maka server tersebut akan “men-delegasikan-nya” kepada server lain mengikuti prinsip top-down.</p>
+         
+
+<p>Cara Membuat DNS Server pada Fedora Core 7 merupakan pengalihan dari suatu ip address menjadi nama sesuai dengan keinginan kita agar gampang di ingat. Baiklah, SanTekno sekarang akan membahas tentang DNS Server. DNS server bertanggung jawab penuh mengelola domain masing-masing client. Tidak ada server tunggal yang akan bertanggung jawab mengelola semua domain. Jika sebuah client memerlukan informasi IP Address yang tidak dapat diberikan oleh server yang ada pada domainnya, maka server tersebut akan “men-delegasikan-nya” kepada server lain mengikuti prinsip top-down.</p>
+
 <p>Artinya proses akan dimulai dari domain paling atas hingga paling bawah, dari root-toplevel-secondlevel-dan seterusnya, sampai IP Address yang diinginkan dapat ditemukan atau gagal. Untuk langkah pertama kali pembuatan DNS server dengan Instalasi Primary Name Server. Apa itu Primary Name Server? Apakah Ada Secondary Name Server?</p>
+
 <p>Untuk pembahasannya lihat Jenis-Jenis Name Server agar bisa lebih memperjelas pertanyaan yang tadi di keluarkan. Baiklah Kita lanjutkan dengan membangun DNS Server dengan menginstal utilitas yang digunakan adalah Bberkeley Internet Name Domain (BIND atau bind). Bind merupakan software client-server yang menyertakan sebuah program bernama <code>named</code> (baca:nem-di). Software client disebut resolver yang berisi query-query informasi tentang suatu domain dan mengirim query tersebut ke server. Sedangkan software server bertugas menjawab query dari client.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rpm –qa | grep bind
+
+<pre><code class="language-bash">rpm –qa | grep bind
 
 bind-libs-9.4.0-6.fc7
 bind-utils-9.4.0-6.fc7
 bind-9.4.0-6.fc7
 bind-chroot-9.4.0-6.fc7
-</code></pre></div><p>Sebelum konfigurasi utama kita harus konfigurasi resolv.conf untuk name server kita bisa mengarah ke dalam IP Addres yang sudah di tentukan yaitu 192.168.1.1. Maka ketik perintah sebagai berikut.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi /etc/resolv.conf
-</code></pre></div><p>Edit isian dari file resolv.conf tersebut sehingga terlihat seperti berikut</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nameserver 192.168.1.1
-</code></pre></div><h2 id="konfigurasi-utama">Konfigurasi Utama</h2>
+</code></pre>
+
+<p>Sebelum konfigurasi utama kita harus konfigurasi resolv.conf untuk name server kita bisa mengarah ke dalam IP Addres yang sudah di tentukan yaitu 192.168.1.1. Maka ketik perintah sebagai berikut.</p>
+
+<pre><code class="language-bash">vi /etc/resolv.conf
+</code></pre>
+
+<p>Edit isian dari file resolv.conf tersebut sehingga terlihat seperti berikut</p>
+
+<pre><code class="language-bash">nameserver 192.168.1.1
+</code></pre>
+
+<h2 id="konfigurasi-utama">Konfigurasi Utama</h2>
+
 <p>File <code>/etc/named.conf</code> merupakan file konfigurasi utama. File ini disebut boot script dan named akan menggunakannya sebagai acuan yang akan menentukan cara kerja server. jika kita menginstal aplikasi bind-chroot maka named.conf akan disimpan di direktori <code>/var/named/chroot/etc/</code>. Sedangkan <code>/etc/named.conf</code> hanya link-nya atau shortcut saja. Buka file <code>named.conf</code> dengan perintah sebagai berikut</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi /var/named/chroot/etc/named.conf
-</code></pre></div><p>Maka akan keluar editan file named.conf pindahkan ke baris paling bawah lalu tambahkan argumen berikut :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zone “santekno.com” IN <span style="color:#f92672">{</span>
+
+<pre><code class="language-bash">vi /var/named/chroot/etc/named.conf
+</code></pre>
+
+<p>Maka akan keluar editan file named.conf pindahkan ke baris paling bawah lalu tambahkan argumen berikut :</p>
+
+<pre><code class="language-bash">zone “santekno.com” IN {
      type master;
      file “santekno.com.zone”;
-<span style="color:#f92672">}</span>;
-</code></pre></div><p>Blok argumen di atas untuk keperluan pemetaan hostname menjadi IP Address semua komputer di zone <code>santekno.com</code>
+};
+</code></pre>
+
+<p>Blok argumen di atas untuk keperluan pemetaan hostname menjadi IP Address semua komputer di zone <code>santekno.com</code>
 Sebuah Statement selalu diakhiri dengan simbol <code>;</code>. Jika tidak, maka named akan menganggap baris tersebut masih ada kelanjutannya.</p>
+
 <p>Lalu jika kita menginstal aplikasi <code>bind-chroot</code> maka <code>named.conf</code> harus disimpan di <code>/var/named/chroot/etc/named.conf</code> sedangkan file zona disimpan di direktori <code>/var/named/chroot/var/named/</code>.</p>
+
 <p>Selanjutnya kita akan mengedit zona <strong>reserve santekno.com</strong>. Tambahkan argumen berikut tepat di bawah argumen yang sudah kita buat.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zone “01.168.192.in-addr.arpa” IN <span style="color:#f92672">{</span>
+
+<pre><code class="language-bash">zone “01.168.192.in-addr.arpa” IN {
      type master;
      file “santekno.com.rev.zone”;
-<span style="color:#f92672">}</span>;
-</code></pre></div><h2 id="konfigurasi-file-zona">Konfigurasi File Zona</h2>
+};
+</code></pre>
+
+<h2 id="konfigurasi-file-zona">Konfigurasi File Zona</h2>
+
 <p>File Zona adalah file konfigurasi dimana semua client dan semua DNS Server di alamatkan ke dalam IP Address masing-masing. Untuk lebih lanjutnya silahkan tulis perintah sebagai berikut untuk pembuatan file Zona santekno.com.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch /var/named/chroot/var/named/santekno.com.zone
-</code></pre></div><p>Selanjutnya buka file zona tersebut dengan perintah berikut.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi /var/named/chroot/var/named/santekno.com.zone
-</code></pre></div><p>Tulislah argumen sebagai berikut</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$TTL <span style="color:#ae81ff">8600</span>
+
+<pre><code class="language-bash">touch /var/named/chroot/var/named/santekno.com.zone
+</code></pre>
+
+<p>Selanjutnya buka file zona tersebut dengan perintah berikut.</p>
+
+<pre><code class="language-bash">vi /var/named/chroot/var/named/santekno.com.zone
+</code></pre>
+
+<p>Tulislah argumen sebagai berikut</p>
+
+<pre><code class="language-bash">$TTL 8600
 @    IN   SOA  santekno.com  root.santekno.com
-              <span style="color:#f92672">(</span>
-                   <span style="color:#ae81ff">10102012</span>  ;serial
-                   <span style="color:#ae81ff">28800</span>     ;Refresh
-                   <span style="color:#ae81ff">14400</span>     ;Retry
-                   <span style="color:#ae81ff">3600000</span>   ;Expire
-                   86400<span style="color:#f92672">)</span>    ;minimum
+              (
+                   10102012  ;serial
+                   28800     ;Refresh
+                   14400     ;Retry
+                   3600000   ;Expire
+                   86400)    ;minimum
 
 @         1D   IN   NS        ns1
-@         1D   IN   MX <span style="color:#ae81ff">10</span>     mx1
+@         1D   IN   MX 10     mx1
 ns1       1D   IN   A         192.168.1.1
 mx1       1D   IN   A         192.168.1.2
 @         ID   IN   A         192.168.1.1
 www       1D   IN   CNAME     @
 mail      1D   IN   A         192.168.1.2
 ftp       1D   IN   A         192.168.1.3
-</code></pre></div><p>Buat juga argumen reserve File dengan membuat dahulu file sebagai berikut</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">touch /var/named/chroot/var/named/santekno.com.rev.zone
-</code></pre></div><p>Selanjutnya buka file zona tersebut dengan perintah berikut.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vi /var/named/chroot/var/named/santekno.com.zone
-</code></pre></div><p>Tulislah argumen sebagai berikut</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$TTL <span style="color:#ae81ff">8600</span>
+</code></pre>
+
+<p>Buat juga argumen reserve File dengan membuat dahulu file sebagai berikut</p>
+
+<pre><code class="language-bash">touch /var/named/chroot/var/named/santekno.com.rev.zone
+</code></pre>
+
+<p>Selanjutnya buka file zona tersebut dengan perintah berikut.</p>
+
+<pre><code class="language-bash">vi /var/named/chroot/var/named/santekno.com.zone
+</code></pre>
+
+<p>Tulislah argumen sebagai berikut</p>
+
+<pre><code class="language-bash">$TTL 8600
 @    IN   SOA  santekno.com  root.santekno.com
-              <span style="color:#f92672">(</span>
-                   <span style="color:#ae81ff">10102012</span>  ;serial
-                   <span style="color:#ae81ff">28800</span>     ;Refresh
-                   <span style="color:#ae81ff">14400</span>     ;Retry
-                   <span style="color:#ae81ff">3600000</span>   ;Expire
-                   86400<span style="color:#f92672">)</span>    ;Minimum
+              (
+                   10102012  ;serial
+                   28800     ;Refresh
+                   14400     ;Retry
+                   3600000   ;Expire
+                   86400)    ;Minimum
 
 @         1D   IN   NS        ns1.santekno.com
-@         1D   IN   MX <span style="color:#ae81ff">10</span>     mx1.santekno.com
-<span style="color:#ae81ff">1</span>         1D   IN   PTR       ns1.santekno.com
-<span style="color:#ae81ff">2</span>         1D   IN   PTR       mx1.santekno.com
-<span style="color:#ae81ff">1</span>         ID   IN   PTR       www.santekno.com
-<span style="color:#ae81ff">3</span>         1D   IN   PTR       ftp.santekno.com
-<span style="color:#ae81ff">2</span>         1D   IN   PTR       mail.santekno.com
-</code></pre></div><p>Jangan lupa setelah pengeditan simpan dengan perintah :wq
+@         1D   IN   MX 10     mx1.santekno.com
+1         1D   IN   PTR       ns1.santekno.com
+2         1D   IN   PTR       mx1.santekno.com
+1         ID   IN   PTR       www.santekno.com
+3         1D   IN   PTR       ftp.santekno.com
+2         1D   IN   PTR       mail.santekno.com
+</code></pre>
+
+<p>Jangan lupa setelah pengeditan simpan dengan perintah :wq
 Setelah file-file konfigurasi siap, selanjutnya mengaktifkan server dengan menjalankan service named dengan perintah sebagai berikut.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">service named restart
-</code></pre></div><p>Demikian tutorial tentang Cara Membuat DNS Server pada Fedora Core 7, dan bisa dijadikan pedoman. Sudah jadi sebuah DNS server bisa di ping di dalam fedora. DNS Server bisa digunakan dengan baik. Semoga bermanfaat.</p>
+
+<pre><code class="language-bash">service named restart
+</code></pre>
+
+<p>Demikian tutorial tentang Cara Membuat DNS Server pada Fedora Core 7, dan bisa dijadikan pedoman. Sudah jadi sebuah DNS server bisa di ping di dalam fedora. DNS Server bisa digunakan dengan baik. Semoga bermanfaat.</p>
+
 <p>Referensi :
 <code>Sofana, Iwan. 2008. Mudah Membangun Server dengan Fedora. Informatika, Bandung.</code></p>
 
@@ -424,10 +472,13 @@ Setelah file-file konfigurasi siap, selanjutnya mengaktifkan server dengan menja
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#konfigurasi-utama">Konfigurasi Utama</a></li>
-    <li><a href="#konfigurasi-file-zona">Konfigurasi File Zona</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#konfigurasi-utama">Konfigurasi Utama</a></li>
+<li><a href="#konfigurasi-file-zona">Konfigurasi File Zona</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

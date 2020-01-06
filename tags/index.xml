@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Santekno</title>
@@ -6,17 +6,71 @@
     <description>Recent content in Tags on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Sun, 29 Dec 2019 23:08:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 12:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://santekno.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Software</title>
-      <link>https://santekno.com/tags/software/</link>
-      <pubDate>Sun, 29 Dec 2019 23:08:00 +0000</pubDate>
+      <title>Ascii</title>
+      <link>https://santekno.com/tags/ascii/</link>
+      <pubDate>Sun, 05 May 2019 12:00:00 +0700</pubDate>
       
-      <guid>https://santekno.com/tags/software/</guid>
+      <guid>https://santekno.com/tags/ascii/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C Programming</title>
+      <link>https://santekno.com/tags/c-programming/</link>
+      <pubDate>Tue, 07 May 2019 12:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/c-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cd</title>
+      <link>https://santekno.com/tags/cd/</link>
+      <pubDate>Sat, 06 Oct 2012 11:52:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/tags/cd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cpp Programming</title>
+      <link>https://santekno.com/tags/cpp-programming/</link>
+      <pubDate>Thu, 16 May 2019 13:06:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/cpp-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Double Linked List</title>
+      <link>https://santekno.com/tags/double-linked-list/</link>
+      <pubDate>Thu, 16 May 2019 13:00:00 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/double-linked-list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dvd</title>
+      <link>https://santekno.com/tags/dvd/</link>
+      <pubDate>Sat, 06 Oct 2012 11:52:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/tags/dvd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harddisk</title>
+      <link>https://santekno.com/tags/harddisk/</link>
+      <pubDate>Sat, 13 Oct 2012 19:20:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/tags/harddisk/</guid>
       <description></description>
     </item>
     
@@ -30,29 +84,20 @@
     </item>
     
     <item>
-      <title>Monitor</title>
-      <link>https://santekno.com/tags/monitor/</link>
-      <pubDate>Sun, 29 Dec 2019 22:59:00 +0000</pubDate>
+      <title>Keyboard</title>
+      <link>https://santekno.com/tags/keyboard/</link>
+      <pubDate>Wed, 26 Sep 2012 09:40:00 +0000</pubDate>
       
-      <guid>https://santekno.com/tags/monitor/</guid>
+      <guid>https://santekno.com/tags/keyboard/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Memory</title>
-      <link>https://santekno.com/tags/memory/</link>
-      <pubDate>Sun, 29 Dec 2019 22:39:00 +0000</pubDate>
+      <title>Konsonan</title>
+      <link>https://santekno.com/tags/konsonan/</link>
+      <pubDate>Sat, 04 May 2019 12:00:00 +0700</pubDate>
       
-      <guid>https://santekno.com/tags/memory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Network</title>
-      <link>https://santekno.com/tags/network/</link>
-      <pubDate>Sun, 29 Dec 2019 22:30:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/tags/network/</guid>
+      <guid>https://santekno.com/tags/konsonan/</guid>
       <description></description>
     </item>
     
@@ -66,92 +111,56 @@
     </item>
     
     <item>
-      <title>cpp-programming</title>
-      <link>https://santekno.com/tags/cpp-programming/</link>
-      <pubDate>Thu, 16 May 2019 13:06:00 +0700</pubDate>
+      <title>Memory</title>
+      <link>https://santekno.com/tags/memory/</link>
+      <pubDate>Sun, 29 Dec 2019 22:39:00 +0000</pubDate>
       
-      <guid>https://santekno.com/tags/cpp-programming/</guid>
+      <guid>https://santekno.com/tags/memory/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>stack</title>
-      <link>https://santekno.com/tags/stack/</link>
-      <pubDate>Thu, 16 May 2019 13:06:00 +0700</pubDate>
+      <title>Monitor</title>
+      <link>https://santekno.com/tags/monitor/</link>
+      <pubDate>Sun, 29 Dec 2019 22:59:00 +0000</pubDate>
       
-      <guid>https://santekno.com/tags/stack/</guid>
+      <guid>https://santekno.com/tags/monitor/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tutorial</title>
-      <link>https://santekno.com/tags/tutorial/</link>
-      <pubDate>Thu, 16 May 2019 13:06:00 +0700</pubDate>
+      <title>Mouse</title>
+      <link>https://santekno.com/tags/mouse/</link>
+      <pubDate>Tue, 23 Oct 2012 06:07:00 +0000</pubDate>
       
-      <guid>https://santekno.com/tags/tutorial/</guid>
+      <guid>https://santekno.com/tags/mouse/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>double-linked-list</title>
-      <link>https://santekno.com/tags/double-linked-list/</link>
-      <pubDate>Thu, 16 May 2019 13:00:00 +0700</pubDate>
+      <title>Network</title>
+      <link>https://santekno.com/tags/network/</link>
+      <pubDate>Sun, 29 Dec 2019 22:30:00 +0000</pubDate>
       
-      <guid>https://santekno.com/tags/double-linked-list/</guid>
+      <guid>https://santekno.com/tags/network/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>c-programming</title>
-      <link>https://santekno.com/tags/c-programming/</link>
-      <pubDate>Tue, 07 May 2019 12:00:00 +0700</pubDate>
+      <title>Optical Drive</title>
+      <link>https://santekno.com/tags/optical-drive/</link>
+      <pubDate>Sat, 06 Oct 2012 11:52:00 +0000</pubDate>
       
-      <guid>https://santekno.com/tags/c-programming/</guid>
+      <guid>https://santekno.com/tags/optical-drive/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>persamaan kuadrat</title>
+      <title>Persamaan Kuadrat</title>
       <link>https://santekno.com/tags/persamaan-kuadrat/</link>
       <pubDate>Tue, 07 May 2019 12:00:00 +0700</pubDate>
       
       <guid>https://santekno.com/tags/persamaan-kuadrat/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>terbesar</title>
-      <link>https://santekno.com/tags/terbesar/</link>
-      <pubDate>Mon, 06 May 2019 12:00:00 +0700</pubDate>
-      
-      <guid>https://santekno.com/tags/terbesar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ascii</title>
-      <link>https://santekno.com/tags/ascii/</link>
-      <pubDate>Sun, 05 May 2019 12:00:00 +0700</pubDate>
-      
-      <guid>https://santekno.com/tags/ascii/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>konsonan</title>
-      <link>https://santekno.com/tags/konsonan/</link>
-      <pubDate>Sat, 04 May 2019 12:00:00 +0700</pubDate>
-      
-      <guid>https://santekno.com/tags/konsonan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vokal</title>
-      <link>https://santekno.com/tags/vokal/</link>
-      <pubDate>Sat, 04 May 2019 12:00:00 +0700</pubDate>
-      
-      <guid>https://santekno.com/tags/vokal/</guid>
       <description></description>
     </item>
     
@@ -174,56 +183,47 @@
     </item>
     
     <item>
-      <title>Mouse</title>
-      <link>https://santekno.com/tags/mouse/</link>
-      <pubDate>Tue, 23 Oct 2012 06:07:00 +0000</pubDate>
+      <title>Software</title>
+      <link>https://santekno.com/tags/software/</link>
+      <pubDate>Sun, 29 Dec 2019 23:08:00 +0000</pubDate>
       
-      <guid>https://santekno.com/tags/mouse/</guid>
+      <guid>https://santekno.com/tags/software/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Harddisk</title>
-      <link>https://santekno.com/tags/harddisk/</link>
-      <pubDate>Sat, 13 Oct 2012 19:20:00 +0000</pubDate>
+      <title>Stack</title>
+      <link>https://santekno.com/tags/stack/</link>
+      <pubDate>Thu, 16 May 2019 13:06:00 +0700</pubDate>
       
-      <guid>https://santekno.com/tags/harddisk/</guid>
+      <guid>https://santekno.com/tags/stack/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>CD</title>
-      <link>https://santekno.com/tags/cd/</link>
-      <pubDate>Sat, 06 Oct 2012 11:52:00 +0000</pubDate>
+      <title>Terbesar</title>
+      <link>https://santekno.com/tags/terbesar/</link>
+      <pubDate>Mon, 06 May 2019 12:00:00 +0700</pubDate>
       
-      <guid>https://santekno.com/tags/cd/</guid>
+      <guid>https://santekno.com/tags/terbesar/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>DVD</title>
-      <link>https://santekno.com/tags/dvd/</link>
-      <pubDate>Sat, 06 Oct 2012 11:52:00 +0000</pubDate>
+      <title>Tutorial</title>
+      <link>https://santekno.com/tags/tutorial/</link>
+      <pubDate>Thu, 16 May 2019 13:06:00 +0700</pubDate>
       
-      <guid>https://santekno.com/tags/dvd/</guid>
+      <guid>https://santekno.com/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Optical Drive</title>
-      <link>https://santekno.com/tags/optical-drive/</link>
-      <pubDate>Sat, 06 Oct 2012 11:52:00 +0000</pubDate>
+      <title>Vokal</title>
+      <link>https://santekno.com/tags/vokal/</link>
+      <pubDate>Sat, 04 May 2019 12:00:00 +0700</pubDate>
       
-      <guid>https://santekno.com/tags/optical-drive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keyboard</title>
-      <link>https://santekno.com/tags/keyboard/</link>
-      <pubDate>Wed, 26 Sep 2012 09:40:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/tags/keyboard/</guid>
+      <guid>https://santekno.com/tags/vokal/</guid>
       <description></description>
     </item>
     

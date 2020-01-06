@@ -129,90 +129,170 @@ Aplikasi MySQL adalah aplikasi yang digunakan untuk membuat database semua sehin
             
          
          <p></p>
-         <p>Cara membuat MySQL Server di Fedora Core 7 itu lumayan gampang karena asalkan aplikasi mySQL pada Linux Anda sudah di instal maka bisa langsung di jalankan dengan baik dan bisa digunakan secar mudah. Tetapi kita harus tahu dulu perintah-perintah SQL agar nanti gampang untuk pembuatan tabel, database dan lain sebagainya.</p>
+         
+
+<p>Cara membuat MySQL Server di Fedora Core 7 itu lumayan gampang karena asalkan aplikasi mySQL pada Linux Anda sudah di instal maka bisa langsung di jalankan dengan baik dan bisa digunakan secar mudah. Tetapi kita harus tahu dulu perintah-perintah SQL agar nanti gampang untuk pembuatan tabel, database dan lain sebagainya.</p>
+
 <p>Aplikasi MySQL adalah aplikasi yang digunakan untuk membuat database semua sehingga bisa tercatat dan tersusun data dengan baik disana. Biasanya klo di windows kita sering menggunakan XAMPP dan disini juga kurang lebih seperti itu, jadi kita bisa mudah membuat database dalam Linux Fedora Core 7.</p>
+
 <h2 id="instalasi-mysql">Instalasi MySQL</h2>
+
 <p>Pengecekan pada Linux Anda sangat penting sekali karena agar bisa melihat apakah Linux kita sudah terpasang aplikasi MySQL server atau tidak. Jika tidak Instal saja MySQL server tersebut. Cara pengecekannya seperti berikut ini.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rpm –qa | grep mysql
+
+<pre><code class="language-bash">rpm –qa | grep mysql
 
 mysql-server-5.0.37-2.fc7
 mysql-libs-5.0.37-2.fc7
 mysql-5.0.37-2.fc7
 php-mysql-5.2.2-3
-</code></pre></div><p>Minimal yang diatas Aplikasi tersebut sudah diinstal agar bisa mendukung praktik kita mengenai MySQL Server ini. Kita juga memerlukan php-mysql untuk keperluan akses database MySQL via aplikasi web yang dibuat menggunakan bahasa PHP.</p>
-<h2 id="penggunaan-mysql">Penggunaan MySQL</h2>
-<p>Setelah instalasi dilakukan, user sudah dapat mengakses server database menggunakan aplikasi client mysql. Pastikan service mysqld telah aktif.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">service mysqld restart
-</code></pre></div><p>Kemudian melakukan koneksi ke server dengan perintah dibawah ini lalu [enter]</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql
-</code></pre></div><p>Maka akan keluar</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Welcome to the MySQL Monitor. Commands end with ; or <span style="color:#ae81ff">\g</span>.
-Your MySQL connection id is <span style="color:#ae81ff">2</span>
-Server version: 5.0.37 Source distribution
-Type ‘help;’ or ‘<span style="color:#ae81ff">\h</span>’ <span style="color:#66d9ef">for</span> help. Type ‘<span style="color:#ae81ff">\c</span>’ to clear the buffer.
-mysql&gt;
-</code></pre></div><p>Promt <code>mysql&gt;</code> merupakan tanda bahwa kita sudah berhasil memasuki server. Pada prompt tersebut kita dapat mengetik perintah-perintah yang ditulis dengan bahasa SQL.</p>
-<p>Bahasa SQL (Structured Query Language) merupakan bahasa standar untuk server database. Dan kita akan sekilas membuat perintah-perintah SQL disini agar nanti bisa menggunakan MySQL Server di Linux ini dengan baik.</p>
-<p>Melihat versi MySQL</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; <span style="color:#66d9ef">select</span> version<span style="color:#f92672">(</span><span style="color:#f92672">)</span>;
-</code></pre></div><p>Melihat Tanggal</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; <span style="color:#66d9ef">select</span> current_date;
-</code></pre></div><p>Melihat user</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; <span style="color:#66d9ef">select</span> user<span style="color:#f92672">(</span><span style="color:#f92672">)</span>;
-</code></pre></div><p>Melihat daftar database</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; show databases;
-</code></pre></div><p>Memilih database, misalkan database bernama mysql</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; use mysql;
-</code></pre></div><p>Menampilkan daftar tabel</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; show tables;
-</code></pre></div><p>Menampilkan tipe data yang digunakan pada tabel user</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; describe user;
-</code></pre></div><p>Menampilkan isi field user dan host dari tabel user</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; <span style="color:#66d9ef">select</span> user, host from user;
-</code></pre></div><p>Membuat database bernama dbsantekno</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; create database dbsantekno;
-</code></pre></div><p>Membuat tabel peserta pada database dbsantekno. Tabel peserta terdiri atas dua buah field, yaitu Nama dan Alamat</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; use dbsantekno;
-mysql&gt; create table peserta <span style="color:#f92672">(</span>Nama char<span style="color:#f92672">(</span>20<span style="color:#f92672">)</span>, Alamat char<span style="color:#f92672">(</span>50<span style="color:#f92672">)</span><span style="color:#f92672">)</span>;
-</code></pre></div><p>Memasukkan record pada tabel peserta. Kita akan memasukkan dua buah record saja</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; insert into peserta values<span style="color:#f92672">(</span>‘Ihsan Arif’, ‘Tasikmalaya’<span style="color:#f92672">)</span>;
+</code></pre>
 
-mysql&gt; insert into peserta values<span style="color:#f92672">(</span>‘Arif Rahman’,’Tasikmalaya’<span style="color:#f92672">)</span>;
-</code></pre></div><p>Menampilkan isi tabel peserta</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; <span style="color:#66d9ef">select</span> * from peserta;
+<p>Minimal yang diatas Aplikasi tersebut sudah diinstal agar bisa mendukung praktik kita mengenai MySQL Server ini. Kita juga memerlukan php-mysql untuk keperluan akses database MySQL via aplikasi web yang dibuat menggunakan bahasa PHP.</p>
+
+<h2 id="penggunaan-mysql">Penggunaan MySQL</h2>
+
+<p>Setelah instalasi dilakukan, user sudah dapat mengakses server database menggunakan aplikasi client mysql. Pastikan service mysqld telah aktif.</p>
+
+<pre><code class="language-bash">service mysqld restart
+</code></pre>
+
+<p>Kemudian melakukan koneksi ke server dengan perintah dibawah ini lalu [enter]</p>
+
+<pre><code class="language-bash">mysql
+</code></pre>
+
+<p>Maka akan keluar</p>
+
+<pre><code class="language-bash">Welcome to the MySQL Monitor. Commands end with ; or \g.
+Your MySQL connection id is 2
+Server version: 5.0.37 Source distribution
+Type ‘help;’ or ‘\h’ for help. Type ‘\c’ to clear the buffer.
+mysql&gt;
+</code></pre>
+
+<p>Promt <code>mysql&gt;</code> merupakan tanda bahwa kita sudah berhasil memasuki server. Pada prompt tersebut kita dapat mengetik perintah-perintah yang ditulis dengan bahasa SQL.</p>
+
+<p>Bahasa SQL (Structured Query Language) merupakan bahasa standar untuk server database. Dan kita akan sekilas membuat perintah-perintah SQL disini agar nanti bisa menggunakan MySQL Server di Linux ini dengan baik.</p>
+
+<p>Melihat versi MySQL</p>
+
+<pre><code class="language-bash">mysql&gt; select version();
+</code></pre>
+
+<p>Melihat Tanggal</p>
+
+<pre><code class="language-bash">mysql&gt; select current_date;
+</code></pre>
+
+<p>Melihat user</p>
+
+<pre><code class="language-bash">mysql&gt; select user();
+</code></pre>
+
+<p>Melihat daftar database</p>
+
+<pre><code class="language-bash">mysql&gt; show databases;
+</code></pre>
+
+<p>Memilih database, misalkan database bernama mysql</p>
+
+<pre><code class="language-bash">mysql&gt; use mysql;
+</code></pre>
+
+<p>Menampilkan daftar tabel</p>
+
+<pre><code class="language-bash">mysql&gt; show tables;
+</code></pre>
+
+<p>Menampilkan tipe data yang digunakan pada tabel user</p>
+
+<pre><code class="language-bash">mysql&gt; describe user;
+</code></pre>
+
+<p>Menampilkan isi field user dan host dari tabel user</p>
+
+<pre><code class="language-bash">mysql&gt; select user, host from user;
+</code></pre>
+
+<p>Membuat database bernama dbsantekno</p>
+
+<pre><code class="language-bash">mysql&gt; create database dbsantekno;
+</code></pre>
+
+<p>Membuat tabel peserta pada database dbsantekno. Tabel peserta terdiri atas dua buah field, yaitu Nama dan Alamat</p>
+
+<pre><code class="language-bash">mysql&gt; use dbsantekno;
+mysql&gt; create table peserta (Nama char(20), Alamat char(50));
+</code></pre>
+
+<p>Memasukkan record pada tabel peserta. Kita akan memasukkan dua buah record saja</p>
+
+<pre><code class="language-bash">mysql&gt; insert into peserta values(‘Ihsan Arif’, ‘Tasikmalaya’);
+
+mysql&gt; insert into peserta values(‘Arif Rahman’,’Tasikmalaya’);
+</code></pre>
+
+<p>Menampilkan isi tabel peserta</p>
+
+<pre><code class="language-bash">mysql&gt; select * from peserta;
 +--------------------+-----------------+
 |  Nama            |  Alamat        |
 +------------------+----------------+
 |  Ihsan Arif      |  Tasikmalaya   |
 |  Arif Rahman     |  Tasikmalaya   |
 +------------------+----------------+
-<span style="color:#ae81ff">2</span> rows in set <span style="color:#f92672">(</span>0.00 sec<span style="color:#f92672">)</span>     
-</code></pre></div><p>Keluar dari server MySQL</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; exit
-</code></pre></div><h2 id="konfigurasi-mysql">Konfigurasi MySQL</h2>
+2 rows in set (0.00 sec)     
+</code></pre>
+
+<p>Keluar dari server MySQL</p>
+
+<pre><code class="language-bash">mysql&gt; exit
+</code></pre>
+
+<h2 id="konfigurasi-mysql">Konfigurasi MySQL</h2>
+
 <p>Mengenai keamanan itu merupakan hal yang penting bagi sebuah server database. Apalagi jika data tersebut sangat penting dan tidak boleh di akses oleh setiap user. Secar Default setelah MySQL diinstal maka setiap user diizinkan mengakses semua data server menggunakan login root tanpa harus mengetikkan password. Maka harus menentukan password root agar tidak bisa di akses oleh sembarang user. Gunakanlah utilitas mysqladmin untuk menentukan password root.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysqladmin password “root1234”
-</code></pre></div><p>Maka jika akan login ke MySQL Server perintahnya harus seperti ini</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql –u root –p
-</code></pre></div><p>Maka akan keluar perintah untuk memasukkan password dan passwordnya yang telah dibuat tadi yaitu “root1234”. Nah, sekarang user tidak bisa mengakses server dengan perintah mysql saja.
+
+<pre><code class="language-bash">mysqladmin password “root1234”
+</code></pre>
+
+<p>Maka jika akan login ke MySQL Server perintahnya harus seperti ini</p>
+
+<pre><code class="language-bash">mysql –u root –p
+</code></pre>
+
+<p>Maka akan keluar perintah untuk memasukkan password dan passwordnya yang telah dibuat tadi yaitu “root1234”. Nah, sekarang user tidak bisa mengakses server dengan perintah mysql saja.
 Jika ingin mengubah password root tinggal perintah seperti dibawaih ini</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysqladmin password “rootpass” –p
-</code></pre></div><p>Untuk menambah user dan menentukan hak aksesnnya dapat ditentukan dengan dua cara yaitu:</p>
+
+<pre><code class="language-bash">mysqladmin password “rootpass” –p
+</code></pre>
+
+<p>Untuk menambah user dan menentukan hak aksesnnya dapat ditentukan dengan dua cara yaitu:</p>
+
 <h3 id="menggunakan-perintah-grant">Menggunakan perintah GRANT</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; GRANT ...
+
+<pre><code class="language-bash">mysql&gt; GRANT ...
 ON *.*
 TO myusername@”%.mydomainname.com”
 IDENTIFIED BY ‘mypassword’;
-</code></pre></div><h3 id="menggunakan-perintah-insert">Menggunakan perintah INSERT</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; insert mysql;
-mysql&gt; INSERT INTO user VALUES <span style="color:#f92672">(</span>‘%mydomainname.com’, ‘myusername’, PASSWORD<span style="color:#f92672">(</span>‘mypassword’<span style="color:#f92672">)</span>,...<span style="color:#f92672">)</span>;
+</code></pre>
+
+<h3 id="menggunakan-perintah-insert">Menggunakan perintah INSERT</h3>
+
+<pre><code class="language-bash">mysql&gt; insert mysql;
+mysql&gt; INSERT INTO user VALUES (‘%mydomainname.com’, ‘myusername’, PASSWORD(‘mypassword’),...);
 mysql&gt; FLUSH PRIVILEGES;
-</code></pre></div><p>Untuk yang kedua tidak disarankan karen ini terlalu panjang seperti halnya untuk membuat record dalam sebuah tabel.</p>
+</code></pre>
+
+<p>Untuk yang kedua tidak disarankan karen ini terlalu panjang seperti halnya untuk membuat record dalam sebuah tabel.</p>
+
 <p>Misalkan kita akan membuat user bernama santekno dengan password santekno1234. User ini dizinkan mengakses database dari komputer santekno.com. Login terlebih dahulu selanjutnya ketikkan perintah sebagai berikut :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mysql&gt; GRANT all privileges
+
+<pre><code class="language-bash">mysql&gt; GRANT all privileges
 ON *.* TO santekno@”santekno.com”
 IDENTIFIED BY ‘santekno1234’;
-</code></pre></div>
+</code></pre>
+
       </div>
       <div class="post-content">
          <div class="row">
@@ -431,16 +511,18 @@ IDENTIFIED BY ‘santekno1234’;
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#instalasi-mysql">Instalasi MySQL</a></li>
-    <li><a href="#penggunaan-mysql">Penggunaan MySQL</a></li>
-    <li><a href="#konfigurasi-mysql">Konfigurasi MySQL</a>
-      <ul>
-        <li><a href="#menggunakan-perintah-grant">Menggunakan perintah GRANT</a></li>
-        <li><a href="#menggunakan-perintah-insert">Menggunakan perintah INSERT</a></li>
-      </ul>
-    </li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#instalasi-mysql">Instalasi MySQL</a></li>
+<li><a href="#penggunaan-mysql">Penggunaan MySQL</a></li>
+<li><a href="#konfigurasi-mysql">Konfigurasi MySQL</a>
+<ul>
+<li><a href="#menggunakan-perintah-grant">Menggunakan perintah GRANT</a></li>
+<li><a href="#menggunakan-perintah-insert">Menggunakan perintah INSERT</a></li>
+</ul></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

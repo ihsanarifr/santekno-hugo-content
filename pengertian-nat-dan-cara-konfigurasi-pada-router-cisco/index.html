@@ -126,11 +126,17 @@
             
          
          <p></p>
-         <h2 id="pengertian">Pengertian</h2>
+         
+
+<h2 id="pengertian">Pengertian</h2>
+
 <p>Saat ini, protokol IP yang banyak digunakan adalah IP versi 4 (IPv4). Dengan panjang alamat 4 byte berarti terdapat 2 pangkat 32 = 4.294.967.296 alamat IP yang tersedia. Jumlah ini secara teoritis, jumlah komputer yang dapat langsung koneksi ke internet. Karena keterbatasan ini sebagian besar ISP (Internet Service Provider) hanya akan mengalokasikan satu alamat untuk satu pengguna dan alamat ini bersifat dinamik, dalam arti alamat IP yang diberikan akan berbeda setiap kali user melakukan koneksi ke Internet.</p>
+
 <p>Di satu sisi mereka membutuhkan banyak komputer yang terkoneksi ke internet, akan tetapi di sisi lain hanya tersedia satu alamat IP yang berarti hanya ada satu komputer yang bisa terkoneksi ke internet. Hal ini bisa diatasi dengan metode NAT. Dengan NAT gateway yang dijalankan di salah satu komputer, satu alamat IP tersebut dapat dibagi ke beberapa komputer yang lain dan mereka bisa melakukan koneksi ke internet secara bersamaan.</p>
+
 <p>IP address private tidak bisa di route ke internet (non-routed), hanya dipakai pada
 jaringan internal yang berada pada range berikut:</p>
+
 
 
 
@@ -144,17 +150,20 @@ jaringan internal yang berada pada range berikut:</p>
 <th align="left">End Address</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td align="left">Class A</td>
 <td align="left">10.0.0.0</td>
 <td align="left">10.255.255.254</td>
 </tr>
+
 <tr>
 <td align="left">Class B</td>
 <td align="left">172.16.0.0</td>
 <td align="left">172.31.255.254</td>
 </tr>
+
 <tr>
 <td align="left">Class C</td>
 <td align="left">192.168.0.0</td>
@@ -162,73 +171,89 @@ jaringan internal yang berada pada range berikut:</p>
 </tr>
 </tbody>
 </table>
+
+
 <p>Untuk setiap paket yang dihasilkan oleh client, implementasi Network Address Translation (NAT) menggantikan IP address yang terdaftar kepada IP address client yang tidak terdaftar.</p>
+
 <p><strong>NAT</strong> adalah suatu metode untuk menghubungkan lebih dari satu komputer ke jaringan internet dengan menggunakan satu alamat IP. Banyaknya penggunaan metode ini disebabkan karena ketersediaan alamat IP yang terbatas, kebutuhan akan keamanan (Security), kemudahan serta fleksibilitas dalam administrasi jaringan.</p>
+
 <p><strong>NAT</strong> merupakan salah satu protocol dalam suatu sistem jaringan, NAT memungkinkan suatu jaringan dengan IP atau internet protocol yang bersifat privat IP belum teregistrasi di jaringan internet untuk mengakses jalur internet, hal ini berarti suatu alamat IP dapat mengakses internet dengan menggunakan IP Privat atau bukan menggunakan IP Public, NAT biasanya dibenamkan dalam sebuah router, NAT juga sering digunakan untuk menggabungkan atau menghubungkan dua jaringan yang berbeda, dan mentranslate atau menterjemahkan IP Privat dalam jaringan internal ke dalam jaringan yang legal network sehingga memiliki hak untuk melakukan akses data dalam sebuah jaringan.</p>
+
 <h2 id="jenis-jenis">Jenis-jenis</h2>
+
 <ul>
-<li>
-<p>Full cone NAT
-<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p>Restricted cone NAT
-<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p>Port restricted cone NAT
-<!-- raw HTML omitted --></p>
-</li>
-<li>
-<p>Symmetric NAT
-<!-- raw HTML omitted --></p>
-</li>
+<li><p>Full cone NAT
+<img border="0" src="https://2.bp.blogspot.com/-kMsPfI-6P0Q/UbmbuD4_cUI/AAAAAAAACBY/hX2s5tUiGic/s1600/500px-Full_Cone_NAT.svg.png" height="100%" width="100%" /></p></li>
+
+<li><p>Restricted cone NAT
+<img border="0" src="https://1.bp.blogspot.com/-o8QhnJaOxpw/UbmbwgdJsBI/AAAAAAAACB0/z8cvpmyC0i0/s1600/500px-Restricted_Cone_NAT.svg.png" height="100%" width="100%" /></p></li>
+
+<li><p>Port restricted cone NAT
+<img border="0" src="https://2.bp.blogspot.com/-YKcx99QuVFg/UbmbwJOLT8I/AAAAAAAACBk/lYObEHQq3jk/s1600/500px-Port_Restricted_Cone_NAT.svg.png" height="100%" width="100%" /></p></li>
+
+<li><p>Symmetric NAT
+<img border="0" src="https://2.bp.blogspot.com/-WTbBGM2iEuo/Ubmbwd5kY-I/AAAAAAAACBw/6BTuYfiYKIA/s1600/500px-Symmetric_NAT.svg.png" height="100%" width="100%" /></p></li>
 </ul>
+
 <h2 id="tipe-tipe">Tipe-tipe</h2>
+
 <h3 id="nat-tipe-statis">NAT Tipe Statis</h3>
+
 <p>NAT Statis menggunakan table routing yang tetap, atau alokasi translasi alamat ip ditetapkan sesuai dengan alamat asal atau source ke alamat tujuan atau destination, sehingga tidak memungkinkan terjadinya pertukaran data dalam suatu alamat ip bila translasi alamat IPnya belum didaftarkan dalam table NAT. NAT Statia terjadi ketika sebuah alamat lokal (inside) di petakan ke sebuah alamat global/internet (outside). Alamat lokal dan global dipetakan satu lawan satu secara statik. NAT secara statis akan melakukan request atau pengambilan dan pengiriman paket data sesuai dengan aturan yang telah ditabelkan dalam sebuah NAT
 .</p>
-<h3 id="nat-tipe-dinamis">NAT Tipe Dinamis</h3>
-<p>NAT dengan tipe dinamis menggunakan logika balancing atau menggunakan logika pengaturan beban, di mana dalam tabelnya sendiri telah ditanamkan logika kemungkinan dan pemecahannya, NAT dengan tipe dinamis pada umumnya dibagi menjadi 2 jenis yaitu NAT sistem pool dan NAT sistem overload.</p>
-<h3 id="nat-sistem-pool">NAT Sistem Pool</h3>
-<p>NAT dengan sistem pool atau kelompok menggunakan sebuah tabel NAT dengan logika dinamis, dimana logika yang ditanamkan dalam NAT tersebut pada umumnya merupakan logika Fuzzy atau jika lambang yang nilai translasinya belum pasti, dalam sistem pool suatu request belum tentu akan melewati jaringan yang sama bila melakukan request yang sama untuk kedua kalinya, Translasi Dinamik terjadi ketika router NAT diset untuk memahami alamat lokal yang harus ditranslasikan, dan kelompok (pool) alamat global yang akan digunakan untuk terhubung ke internet. NAT dengan sistem pool biasanya sering dimanfaatkan untuk melakukan balancing atau penyeimbangan beban pada jaringan.</p>
-<h3 id="nat-sistem-overload">NAT Sistem Overload</h3>
-<p>NAT dengan sistem Overloading menggunakan logika request atau permintaan dari banyak client atau banyak alamat dioperkan atau diberikan ke satu alamat IP distribusi. Sejumlah IP lokal/internal dapat ditranslasikan ke satu alamat IP global (outside). Sejumlah IP Lokal /internal dapat ditranslasikan ke satu alamat IP global (outside). Hal ini sangat menghemat penggunakan alokasi IP dari ISP. Sharing/pemakaian bersama satu alamat IP ini menggunakan metoda port multiplexing, atau perubahan port ke packet outbound.</p>
-<p>Penggabungan sistem <em>overloading</em> dan sistem pool telah dilakukan oleh banyak produsen router dan menghasilkan logika yang banyak digunakan untuk load balancing saat ini yaitu Round Robbin Load Balancing, dimana logika ini melakukan pengiriman request secara berurutan, secara bergantian ke alamat gateway yang telah ditanamkan dalam tabel NAT sebelumnya, sehingga suatu multirequest dari sebuah alamat IP dapat melalui lebih dari satu alamat distribusi, penerapan ini dapat dilakukan dalam penggunaan <em>Dual Wan Router</em>, selain itu logika ini juga memiliki logika <em>Fail Over</em>, dimana bila suatu alamat distribusi tidak dapat lagi mengirimkan paket maka paket akan dialihkan ke alamat distribusi yang lain.</p>
-<h2 id="konfigurasi">Konfigurasi</h2>
-<p>Saat ini Santekno akan menjelaskan cara mengkonfigurasi NAT menggunakan <strong>Cisco 3640</strong>.
-Ini contoh saja biar bisa terbayangkan konfigurasi di Router Cisco untuk penerapan NAT. Berikut konfigurasinya :</p>
-<ol>
-<li>FastEthernet1 (f0/0) dengan IP 192.168.1.0. Interface ini terhubung ke jaringan yang akan di NAT</li>
-<li>Serial 0/0/0 dengan IP 200.200.200.1. Interface ini terhubung ke internet. Masuk ke mode privileged <code>config t</code></li>
-</ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Router# configure terminal
-Router<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># interface fa0/0 (IP Private)</span>
-Router<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># ip add 192.168.0.1 255.255.255.0</span>
 
-Router<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># interface s0/0/0 (IP Public)</span>
-Router<span style="color:#f92672">(</span>config-if<span style="color:#f92672">)</span><span style="color:#75715e"># ip add 200.200.200.1 255.255.255.0</span>
+<h3 id="nat-tipe-dinamis">NAT Tipe Dinamis</h3>
+
+<p>NAT dengan tipe dinamis menggunakan logika balancing atau menggunakan logika pengaturan beban, di mana dalam tabelnya sendiri telah ditanamkan logika kemungkinan dan pemecahannya, NAT dengan tipe dinamis pada umumnya dibagi menjadi 2 jenis yaitu NAT sistem pool dan NAT sistem overload.</p>
+
+<h3 id="nat-sistem-pool">NAT Sistem Pool</h3>
+
+<p>NAT dengan sistem pool atau kelompok menggunakan sebuah tabel NAT dengan logika dinamis, dimana logika yang ditanamkan dalam NAT tersebut pada umumnya merupakan logika Fuzzy atau jika lambang yang nilai translasinya belum pasti, dalam sistem pool suatu request belum tentu akan melewati jaringan yang sama bila melakukan request yang sama untuk kedua kalinya, Translasi Dinamik terjadi ketika router NAT diset untuk memahami alamat lokal yang harus ditranslasikan, dan kelompok (pool) alamat global yang akan digunakan untuk terhubung ke internet. NAT dengan sistem pool biasanya sering dimanfaatkan untuk melakukan balancing atau penyeimbangan beban pada jaringan.</p>
+
+<h3 id="nat-sistem-overload">NAT Sistem Overload</h3>
+
+<p>NAT dengan sistem Overloading menggunakan logika request atau permintaan dari banyak client atau banyak alamat dioperkan atau diberikan ke satu alamat IP distribusi. Sejumlah IP lokal/internal dapat ditranslasikan ke satu alamat IP global (outside). Sejumlah IP Lokal /internal dapat ditranslasikan ke satu alamat IP global (outside). Hal ini sangat menghemat penggunakan alokasi IP dari ISP. Sharing/pemakaian bersama satu alamat IP ini menggunakan metoda port multiplexing, atau perubahan port ke packet outbound.</p>
+
+<p>Penggabungan sistem <em>overloading</em> dan sistem pool telah dilakukan oleh banyak produsen router dan menghasilkan logika yang banyak digunakan untuk load balancing saat ini yaitu Round Robbin Load Balancing, dimana logika ini melakukan pengiriman request secara berurutan, secara bergantian ke alamat gateway yang telah ditanamkan dalam tabel NAT sebelumnya, sehingga suatu multirequest dari sebuah alamat IP dapat melalui lebih dari satu alamat distribusi, penerapan ini dapat dilakukan dalam penggunaan <em>Dual Wan Router</em>, selain itu logika ini juga memiliki logika <em>Fail Over</em>, dimana bila suatu alamat distribusi tidak dapat lagi mengirimkan paket maka paket akan dialihkan ke alamat distribusi yang lain.</p>
+
+<h2 id="konfigurasi">Konfigurasi</h2>
+
+<p>Saat ini Santekno akan menjelaskan cara mengkonfigurasi NAT menggunakan <strong>Cisco 3640</strong>.
+Ini contoh saja biar bisa terbayangkan konfigurasi di Router Cisco untuk penerapan NAT. Berikut konfigurasinya :
+1. FastEthernet1 (f0/0) dengan IP 192.168.1.0. Interface ini terhubung ke jaringan yang akan di NAT
+2. Serial 0/0/0 dengan IP 200.200.200.1. Interface ini terhubung ke internet. Masuk ke mode privileged <code>config t</code></p>
+
+<pre><code class="language-bash">Router# configure terminal
+Router(config)# interface fa0/0 (IP Private)
+Router(config-if)# ip add 192.168.0.1 255.255.255.0
+
+Router(config)# interface s0/0/0 (IP Public)
+Router(config-if)# ip add 200.200.200.1 255.255.255.0
 
 Interface diatas terhubung ke jaringan yang akan di NAT.
 
 Konfigurasi access list untuk digunakan dalam proses NAT
 
-HQ<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># access-list 1 permit 192.168.1.0 0.0.0.255</span>
+HQ(config)# access-list 1 permit 192.168.1.0 0.0.0.255
 
-Konfigurasi router agar NAT semua paket dari IP Private 192.168.1.0 ke dalam IP Public 200.200.200.2 - <span style="color:#ae81ff">6</span>
+Konfigurasi router agar NAT semua paket dari IP Private 192.168.1.0 ke dalam IP Public 200.200.200.2 - 6
 
-HQ<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># ip nat pool INTERNET 200.200.200.2 200.200.200.6 netmask 255.255.255.248</span>
-HQ<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># ip nat inside source list 1 pool INTERNET overload</span>
+HQ(config)# ip nat pool INTERNET 200.200.200.2 200.200.200.6 netmask 255.255.255.248
+HQ(config)# ip nat inside source list 1 pool INTERNET overload
 
 Pilih interface yang langsung terhubung dengan NAT, dan definisikan network pada jaringan ini sebagai network yang akan di NAT.
 
-HQ<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># int f0/0</span>
-HQ<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># ip nat inside</span>
-HQ<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># ip s0/0/0</span>
-HQ<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e"># ip nat outside</span>
+HQ(config)# int f0/0
+HQ(config)# ip nat inside
+HQ(config)# ip s0/0/0
+HQ(config)# ip nat outside
 
-</code></pre></div><p>Konfigurasi selesai. Cek apakah host pada jaringan 192.168.1.0 dapat terhubung ke internet. Cek juga konfigurasi NAT pada router dengan perintah <code>show ip nat translation</code>. Demikian Pengertian NAT (Network Address Translation) dan Cara Konfigurasinya, semoga postingan Santekno bermanfaat.</p>
-<p><a href="https://youtu.be/Fgd8NScqzD4"><img src="http://img.youtube.com/vi/Fgd8NScqzD4/0.jpg" alt="Konfigurasi NAT pada Router Cisco"></a></p>
+</code></pre>
+
+<p>Konfigurasi selesai. Cek apakah host pada jaringan 192.168.1.0 dapat terhubung ke internet. Cek juga konfigurasi NAT pada router dengan perintah <code>show ip nat translation</code>. Demikian Pengertian NAT (Network Address Translation) dan Cara Konfigurasinya, semoga postingan Santekno bermanfaat.</p>
+
+<p><a href="https://youtu.be/Fgd8NScqzD4"><img src="http://img.youtube.com/vi/Fgd8NScqzD4/0.jpg" alt="Konfigurasi NAT pada Router Cisco" /></a></p>
+
 <p>Lebih lengkapnya lagi, silahkan download file .pkt di bawah ini : <strong><a href="https://goo.gl/fQ2ns9">Download Konfigurasi NAT Cisco</a></strong></p>
 
       </div>
@@ -449,19 +474,21 @@ HQ<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span>
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#pengertian">Pengertian</a></li>
-    <li><a href="#jenis-jenis">Jenis-jenis</a></li>
-    <li><a href="#tipe-tipe">Tipe-tipe</a>
-      <ul>
-        <li><a href="#nat-tipe-statis">NAT Tipe Statis</a></li>
-        <li><a href="#nat-tipe-dinamis">NAT Tipe Dinamis</a></li>
-        <li><a href="#nat-sistem-pool">NAT Sistem Pool</a></li>
-        <li><a href="#nat-sistem-overload">NAT Sistem Overload</a></li>
-      </ul>
-    </li>
-    <li><a href="#konfigurasi">Konfigurasi</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#pengertian">Pengertian</a></li>
+<li><a href="#jenis-jenis">Jenis-jenis</a></li>
+<li><a href="#tipe-tipe">Tipe-tipe</a>
+<ul>
+<li><a href="#nat-tipe-statis">NAT Tipe Statis</a></li>
+<li><a href="#nat-tipe-dinamis">NAT Tipe Dinamis</a></li>
+<li><a href="#nat-sistem-pool">NAT Sistem Pool</a></li>
+<li><a href="#nat-sistem-overload">NAT Sistem Overload</a></li>
+</ul></li>
+<li><a href="#konfigurasi">Konfigurasi</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

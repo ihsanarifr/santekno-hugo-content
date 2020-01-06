@@ -127,63 +127,76 @@ Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jari
             
          
          <p></p>
-         <p>Salam sobat blogger, Santekno akan menjelaskan berbagai macam dan jenis serangan yang ada pada jaringan komputer. Banyak sekali serangan yang dilakukan seorang hacker agar bisa menjebol suatu pertahanan dalam suatu jaringan LAN, MAN atau bahkan WAN.</p>
+         
+
+<p>Salam sobat blogger, Santekno akan menjelaskan berbagai macam dan jenis serangan yang ada pada jaringan komputer. Banyak sekali serangan yang dilakukan seorang hacker agar bisa menjebol suatu pertahanan dalam suatu jaringan LAN, MAN atau bahkan WAN.</p>
+
 <p>Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jaringan yang sudah kita buat, contohnya untuk sebuah perusahaan mempunyai data yang sangat rahasia dan tidak boleh data tersebut disebarluaskan di jaringan internet. Maka perlu pengamanan yang sangat ketat dari berbagai tahapan layer dalam jaringan komputer.</p>
-<p><!-- raw HTML omitted --></p>
+
+<p><img border="0" src="https://2.bp.blogspot.com/-7AXvMVbLrPA/UpVfo82QRdI/AAAAAAAACnE/LOHU0-ski8w/s1600/serangan-jaringan-komputer.jpg" height="100%" width="100%" /></p>
+
 <p>Kita tahu bahwa berdasarkan OSI layer jaringan komputer terbagi menjadi 7 bagian diantaranya sebagai berikut Aplication, Presentation, Session, Transport, Network, Data Link, Physical. Di semua layer seharunya kita bisa mengamankan jaringan komputer tersebut, oleh karena itu Santekno akan menjelaskan beberapa serangan pada jaringan komputer berdasarkan OSI layer.</p>
+
 <h2 id="osi-layer">OSI Layer</h2>
-<p>Berikut adalah susunan model OSI dari layer paling atas (layer 7) sampai layer paling bawah (layer 1) beserta fungsi yang dijalankan :</p>
-<ul>
-<li><strong>Application</strong>	Menyediakan dukungan untuk aplikasi seperti FTP, Telnet, dan HTTP</li>
-<li><strong>Presentation</strong>	Enkripsi, SMB, ASCII, format data</li>
-<li><strong>Session</strong>	Flow control data, inisiasi dan terminasi koneksi</li>
-<li><strong>Transport</strong>	Komunikasi end-to-end (aplikasi ke aplikasi), layanan TCP dan UDP.</li>
-<li><strong>Network</strong>	Routing (OSPF, dan lain-lain). IP addressing</li>
-<li><strong>Data</strong> Link	Lan card, MAC address, pembentukan frame</li>
-<li><strong>Physical</strong>	Media transmisi seperti kabel UTP, wireless, maupun Fiber Optik</li>
-</ul>
+
+<p>Berikut adalah susunan model OSI dari layer paling atas (layer 7) sampai layer paling bawah (layer 1) beserta fungsi yang dijalankan :
+* <strong>Application</strong>   Menyediakan dukungan untuk aplikasi seperti FTP, Telnet, dan HTTP
+* <strong>Presentation</strong>  Enkripsi, SMB, ASCII, format data
+* <strong>Session</strong>   Flow control data, inisiasi dan terminasi koneksi
+* <strong>Transport</strong> Komunikasi end-to-end (aplikasi ke aplikasi), layanan TCP dan UDP.
+* <strong>Network</strong>   Routing (OSPF, dan lain-lain). IP addressing
+* <strong>Data</strong> Link Lan card, MAC address, pembentukan frame
+* <strong>Physical</strong>  Media transmisi seperti kabel UTP, wireless, maupun Fiber Optik</p>
+
 <h3 id="application-layer">Application Layer</h3>
-<p>Layer 7 (application) penyerangan interface yang digunakan oleh aplikasi/program/software untuk berkomunikas. Berikut adalah beberapa layanan dan protokol yang bisa dibilang “tidak aman” :</p>
+
+<p>Layer 7 (application) penyerangan interface yang digunakan oleh aplikasi/program/software untuk berkomunikas. Berikut adalah beberapa layanan dan protokol yang bisa dibilang “tidak aman” :
+* <strong>FTP</strong>, layanan TCP yang beroperasi pada port 20 dan 21. Port 20 digunakan untuk transfer data klien dan server, sedangkan port 21 digunakan untuk control dan pengiriman command antara klien dan FTP server. Serangan pada layanan ini bisa berupa eksploitasi kesalahan konfigurasi directory permission dan atau sniffing password yang berbentuk cleartext.</p>
+
 <ul>
-<li>
-<p><strong>FTP</strong>, layanan TCP yang beroperasi pada port 20 dan 21. Port 20 digunakan untuk transfer data klien dan server, sedangkan port 21 digunakan untuk control dan pengiriman command antara klien dan FTP server. Serangan pada layanan ini bisa berupa eksploitasi kesalahan konfigurasi directory permission dan atau sniffing password yang berbentuk cleartext.</p>
-</li>
-<li>
-<p><strong>Telnet</strong>, layanan shell pada TCP yang beroperasi pada port 23. Telnet mengirimkan informasi yang kita ketikkan di klien kepada komputer lain. Telnet bisa diatur untuk koneksi secara anonymous dan bisa juga diatur agar menggunakan username dan password. Kelemahan telnet adalah semua data termasuk username dan password dikirim dalam bentuk cleartext.</p>
-</li>
-<li>
-<p><strong>SMTP</strong>, layanan TCP yang beroperasi pada port 25 dan berfungsi untuk menjalankan proses pertukaran email antar sistem network. Pesan yang dikirim melalui SMTP memiliki 2 bagian, address header dan pesan text. Semua jenis komputer dapat bertukar pesan email dengan SMTP. Dua jenis serangan SMTP yang cukup beresiko adalah spoofing dan spamming.</p>
-</li>
-<li>
-<p><strong>DNS</strong>, layanan ini berjalan pada port 53 dan berfungsi untuk melakukan address mapping. DNS mengkonversi Fully Qualified Domain Names (FQDNs) seperti <a href="http://www.google.com">www.google.com</a> ke bentuk IP address dan sebaliknya. DNS menggunakan UDP untuk DNS query dan TCP untuk zone transfers. DNS rawan oleh serangan poisoning dan jika salah konfigurasi dapat disalahgunakan untuk melakukan zone full transfer.</p>
-</li>
-<li>
-<p><strong>TFTP</strong>, beroperasi pada port 69, merupakan versi FTP yang menggunakan UDP untuk mengurangi overhead dan reliability dengan menghilangkan proses session management dan autentikasi, hal ini menimbulkan resiko keamanan yang cukup tinggi. TFTP biasa digunakan untuk mengirim file-file konfigurasi router dan untuk mengkonfigurasi kabel modem. Orang yang melakukan hacking pada kabel modem biasa dikenal sebagai uncapper.</p>
-</li>
-<li>
-<p><strong>HTTP</strong>, layanan TCP yang beroperasi pada port 80 ini membuat web menjadi layanan paling populer saat ini. HTTP menggunakan protokol request response, dimana klien mengirimkan request kemudian server memberikan response. Serangan pada HTTP bisa ditujukan ke server, browser, atau script-script yang berjalan pada browser.</p>
-</li>
-<li>
-<p><strong>SNMP</strong>, layanan UDP yang beroperasi pada port 161 dan 162, SNMP didesain sebagai cara yang efisien dan murah untuk memonitor network. Protokol SNMP memungkinkan perangkat-perangkat jaringan yang berfungsi sebagai agent untuk mengumpulkan berbagai macam informasi dan mengirimkannya ke server management. Hal yang membuat SNMP kurang aman adalah proses pengiriman community string yang masih dalam bentuk clear-text. SNMP versi 3 merupakan versi terbaru dan menawarkan fitur enkripsi agar lebih aman.</p>
-</li>
+<li><p><strong>Telnet</strong>, layanan shell pada TCP yang beroperasi pada port 23. Telnet mengirimkan informasi yang kita ketikkan di klien kepada komputer lain. Telnet bisa diatur untuk koneksi secara anonymous dan bisa juga diatur agar menggunakan username dan password. Kelemahan telnet adalah semua data termasuk username dan password dikirim dalam bentuk cleartext.</p></li>
+
+<li><p><strong>SMTP</strong>, layanan TCP yang beroperasi pada port 25 dan berfungsi untuk menjalankan proses pertukaran email antar sistem network. Pesan yang dikirim melalui SMTP memiliki 2 bagian, address header dan pesan text. Semua jenis komputer dapat bertukar pesan email dengan SMTP. Dua jenis serangan SMTP yang cukup beresiko adalah spoofing dan spamming.</p></li>
+
+<li><p><strong>DNS</strong>, layanan ini berjalan pada port 53 dan berfungsi untuk melakukan address mapping. DNS mengkonversi Fully Qualified Domain Names (FQDNs) seperti www.google.com ke bentuk IP address dan sebaliknya. DNS menggunakan UDP untuk DNS query dan TCP untuk zone transfers. DNS rawan oleh serangan poisoning dan jika salah konfigurasi dapat disalahgunakan untuk melakukan zone full transfer.</p></li>
+
+<li><p><strong>TFTP</strong>, beroperasi pada port 69, merupakan versi FTP yang menggunakan UDP untuk mengurangi overhead dan reliability dengan menghilangkan proses session management dan autentikasi, hal ini menimbulkan resiko keamanan yang cukup tinggi. TFTP biasa digunakan untuk mengirim file-file konfigurasi router dan untuk mengkonfigurasi kabel modem. Orang yang melakukan hacking pada kabel modem biasa dikenal sebagai uncapper.</p></li>
+
+<li><p><strong>HTTP</strong>, layanan TCP yang beroperasi pada port 80 ini membuat web menjadi layanan paling populer saat ini. HTTP menggunakan protokol request response, dimana klien mengirimkan request kemudian server memberikan response. Serangan pada HTTP bisa ditujukan ke server, browser, atau script-script yang berjalan pada browser.</p></li>
+
+<li><p><strong>SNMP</strong>, layanan UDP yang beroperasi pada port 161 dan 162, SNMP didesain sebagai cara yang efisien dan murah untuk memonitor network. Protokol SNMP memungkinkan perangkat-perangkat jaringan yang berfungsi sebagai agent untuk mengumpulkan berbagai macam informasi dan mengirimkannya ke server management. Hal yang membuat SNMP kurang aman adalah proses pengiriman community string yang masih dalam bentuk clear-text. SNMP versi 3 merupakan versi terbaru dan menawarkan fitur enkripsi agar lebih aman.</p></li>
 </ul>
+
 <h3 id="transport-layer">Transport Layer</h3>
+
 <p>Layer transport penuh dengan lubang keamanan karena merupakan tempat bagi UDP dan TCP. Karena UDP bersifat connectionless, mudah bagi hacker untuk melakukan serangan DoS (Denial of Service). Selain itu juga mudah untuk melakukan spoofing. Sedangkan TCP dapat dieksploitasi oleh hacker untuk mengidentifikasi berbagai macam layanan yang berjalan dan sistem operasi yang digunakan oleh target. Hal ini penting bagi hacker sebelum melakukan serangan.</p>
+
 <h3 id="network-layer">Network Layer</h3>
+
 <p>Pada layer ini terdapat IP dan ICMP. IPv4 tidak memiliki built-in fitur security, karenanya IPSec yang merupakan komponen built-in dikembangkan. Tanpa IPSec, IP dapat dengan mudah menjadi target bagi berbagai macam serangan. Sedangkan ICMP dapat menjadi target bagi serangan Smurf DoS.</p>
+
 <h3 id="data-link-layer">Data Link Layer</h3>
+
 <p>Konversi pengalamatan logik (IP) ke physical (MAC) harus dilakukan antara layer network dan layer data link. Protokol ARP digunakan untuk hal ini. Namun, ARP sering dimanfaatkan oleh hacker untuk melakukan ARP poisoning, sehingga hacker dapat mem-bypass switch dan monitor traffic. Selain itu, passive sniffing dapat menjadi metode bagus bagi hacker jika ia berada pada posisi yang strategis didalam network.</p>
+
 <h3 id="pyhsical-layer">Pyhsical Layer</h3>
+
 <p>Layer physical ini adalah layer yang paling mudah untuk “dibobol“. Logika sederhananya adalah jika seseorang mendapatkan akses secara fisik ke sebuah perangkat jaringan, tentunya dia juga bisa mendapatkan kendali penuh terhadap perangkat tersebut. Beberapa vendor perangkat jaringan juga menyediakan metode melakukan reset password untuk mendapatkan akses ke perangkat tersebut.</p>
+
 <h3 id="human-layer">Human Layer</h3>
+
 <p>Layer ini tidak termasuk dalam susunan Model OSI. Namun layer ini bisa kita tambahkan sebagai layer terpenting dalam desain dan implementasi jaringan. Begitu pula dalam hal keamanan, layer ini memiliki ancaman terbesar yang dikenal sebagai social engineering, karena targetnya adalah manusia (admin, dan lain-lain). Pada umumnya organisasi membelanjakan anggaran yang cukup besar dalam bidang kontrol dan teknis, namun sangat sedikit anggaran yang dikeluarkan untuk pendidikan/pelatihan proses dan prosedur keamanan bagi karyawannya. Hacker dapat menggunakan berbagai macam teknik untuk melakukan tipu muslihat pada karyawan.</p>
+
 <p>Ancaman lain pada layer ini adalah dumpster diving. Banyak perusahaan yang “membuang” berbagai macam hal yang terlihat tidak berguna tapi dapat dimanfaatkan oleh hacker sebagai alat untuk mengorek informasi tentang network internal. Misalnya, printout nama dan password, source code, memo, dan lain-lain.</p>
+
 <h2 id="osi-bekerja">OSI Bekerja</h2>
+
 <ul>
 <li>Informasi dikirim dengan cara dikirim mulai dari layer application turun sampai layer physical.</li>
 <li>Kemudian dikirimkan melewati media (kabel, wireless) sampai ke tujuan.</li>
 <li>Setelah sampai, informasi di proses naik dari layer physical sampai ke layer application.</li>
 </ul>
+
 <p>sumber : <a href="http://net.comlabs.itb.ac.id/blog/?p=425">http://net.comlabs.itb.ac.id/blog/?p=425</a></p>
 
       </div>
@@ -404,19 +417,21 @@ Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jari
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#osi-layer">OSI Layer</a>
-      <ul>
-        <li><a href="#application-layer">Application Layer</a></li>
-        <li><a href="#transport-layer">Transport Layer</a></li>
-        <li><a href="#network-layer">Network Layer</a></li>
-        <li><a href="#data-link-layer">Data Link Layer</a></li>
-        <li><a href="#pyhsical-layer">Pyhsical Layer</a></li>
-        <li><a href="#human-layer">Human Layer</a></li>
-      </ul>
-    </li>
-    <li><a href="#osi-bekerja">OSI Bekerja</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#osi-layer">OSI Layer</a>
+<ul>
+<li><a href="#application-layer">Application Layer</a></li>
+<li><a href="#transport-layer">Transport Layer</a></li>
+<li><a href="#network-layer">Network Layer</a></li>
+<li><a href="#data-link-layer">Data Link Layer</a></li>
+<li><a href="#pyhsical-layer">Pyhsical Layer</a></li>
+<li><a href="#human-layer">Human Layer</a></li>
+</ul></li>
+<li><a href="#osi-bekerja">OSI Bekerja</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

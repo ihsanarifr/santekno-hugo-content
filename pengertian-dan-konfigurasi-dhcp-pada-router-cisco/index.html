@@ -126,11 +126,18 @@
             
          
          <p></p>
-         <h2 id="pengertian">Pengertian</h2>
+         
+
+<h2 id="pengertian">Pengertian</h2>
+
 <p>DHCP (Dynamic Host Configuration Protocol) pada Router Cisco adalah protocol yang berbasis arsitektur client/server yang digunakan untuk memudahkan pengalokasian alamat IP dalam satu jaringan. ISP secara otomatis akan memberikan alamat IP baru kepada komputer yang memintanya. Komputer yang meminta alamat IP disebut DHCP Client sedangkan Komputer yang memberikan alamat IP disebut DHCP server. Ketika konfigurasi TCP/IP, administrator tidak perlu memberikan alamat IP secara manual, tapi cukup dengan memberikan referensi kepada DHCP Server.</p>
+
 <p>Ketika kedua DHCP client dihidupkan, maka komputer tersebut melakukan permintaan ke DHCP-Server untuk memperoleh alamat IP. Kemudian DHCP akan merespon dengan memberikan alamat IP yang ada di database DHCP. Setelah DHCP Server memberikan alamat IP, maka server meminjamkan (lease) alamat IP yang ada ke DHCP Client dan mencoret nomor IP tersebut dari daftar pool. Alamat IP diberikan bersama dengan subnet mask dan default gateway. Apabila tidak terdapat lagi alamt IP yang bisa diberikan, maka client tidak akan bisa menginisialisasi TCP/IP, sehingga tidak bisa tersambung dengan jaringan tersebut.</p>
+
 <p>Pemakaian DHCP Client tersebut dinyatakan selesai setelah periode waktu tertentu, sehingga client tidak memperbaharui permintaannya lagi, dan alamat IP tersebut dikembalikan kepada DHCP Server sehingga server dapat memberikan nomor IP tersebut kepada Client yang memerlukan. Jangka waktu periode ini bisa ditentukan dalam hitungan menit, jam, bulan atau selamanya. Jangka waktu tersebut disebut leased period.</p>
+
 <h2 id="kelebihan">Kelebihan</h2>
+
 <ul>
 <li>Memudahkan dalam transfer data kepada PC client lain atau PC server.</li>
 <li>DHCP menyediakan alamat-alamat IP secara dinamis dan konfigurasi lain. DHCP ini didesain untuk melayani network yang besar dan konfigurasi TCP/IP yang kompleks.</li>
@@ -138,24 +145,36 @@
 <li>DHCP memungkinkan suatu client menggunakan satu alamat IP untuk jangka waktu tertentu dari server.</li>
 <li>DHCP akan memberikan satu alamat IP dan parameter-parameter kofigurasi lainnya kepada client.</li>
 </ul>
+
 <h2 id="konfigurasi">Konfigurasi</h2>
+
 <pre><code>Asumsi:
 IP FastEthernet : 192.168.10.1
 Network : 192.168.10.0
 Netmask : 255.255.255.0
-</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Router&gt;enable
+</code></pre>
+
+<pre><code class="language-bash">Router&gt;enable
 Router#configure terminal
-Router<span style="color:#f92672">(</span>config<span style="color:#f92672">)</span><span style="color:#75715e">#ip dhcp pool aris</span>
-Router<span style="color:#f92672">(</span>dhcp-config<span style="color:#f92672">)</span><span style="color:#75715e">#network 192.168.10.0 255.255.255.0</span>
-Router<span style="color:#f92672">(</span>dhcp-config<span style="color:#f92672">)</span><span style="color:#75715e">#default-router 192.168.10.1</span>
-Router<span style="color:#f92672">(</span>dhcp-config<span style="color:#f92672">)</span><span style="color:#75715e">#dns-server 8.8.8.8</span>
-Router<span style="color:#f92672">(</span>dhcp-config<span style="color:#f92672">)</span><span style="color:#75715e">#exit</span>
-</code></pre></div><p>Setelah konfigurasi yang diatas sudah dilakukan pada Router Cisco. Maka tinggal pengecekan pada komputer atau PC yang sudah terhubung langsung dengan cara klik PC—&gt; Deskstop, maka akan muncul seperti gambar di bawah</p>
-<p><!-- raw HTML omitted --></p>
+Router(config)#ip dhcp pool aris
+Router(dhcp-config)#network 192.168.10.0 255.255.255.0
+Router(dhcp-config)#default-router 192.168.10.1
+Router(dhcp-config)#dns-server 8.8.8.8
+Router(dhcp-config)#exit
+</code></pre>
+
+<p>Setelah konfigurasi yang diatas sudah dilakukan pada Router Cisco. Maka tinggal pengecekan pada komputer atau PC yang sudah terhubung langsung dengan cara klik PC—&gt; Deskstop, maka akan muncul seperti gambar di bawah</p>
+
+<p><img border="0" src="https://4.bp.blogspot.com/--rfVtdob0eQ/UcMZV3BDbLI/AAAAAAAACbM/qBk2NiFvXP4/s1600/02+DHCP.png" height="100%" width="100%" /></p>
+
 <p>selanjutnya klik IP Configuration, ubah IP Static menjadi DHCP, maka jika berhasil dengan sendirinya IP</p>
-<p><!-- raw HTML omitted --></p>
+
+<p><img border="0" src="https://2.bp.blogspot.com/-HBrH2OG3jyc/UcMZVUA4UBI/AAAAAAAACbE/DhPFReZCfv0/s1600/01+DCHP.png" height="100%" width="100%" /></p>
+
 <p>PC atau Laptop akan terisi sendiri dengan status DHCP <em>request successfull</em></p>
-<p><!-- raw HTML omitted --></p>
+
+<p><img border="0" src="https://3.bp.blogspot.com/-tYm758jVB6s/UcMZUnV9yiI/AAAAAAAACa8/6-K1EsMscSI/s1600/03+DHCP.png" height="100%" width="100%" /></p>
+
 <p>jika sudah berhasil, lakukan langkah yang sama ke pada masing masing PC.
 Demikian penjelasan mengenai Pengertian dan Konfigurasi DHCP (Dynamic Host Configuration Protocol)pada Router Cisco. Semoga bermanfaat ya teman-teman ^__^</p>
 
@@ -377,11 +396,14 @@ Demikian penjelasan mengenai Pengertian dan Konfigurasi DHCP (Dynamic Host Confi
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#pengertian">Pengertian</a></li>
-    <li><a href="#kelebihan">Kelebihan</a></li>
-    <li><a href="#konfigurasi">Konfigurasi</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#pengertian">Pengertian</a></li>
+<li><a href="#kelebihan">Kelebihan</a></li>
+<li><a href="#konfigurasi">Konfigurasi</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

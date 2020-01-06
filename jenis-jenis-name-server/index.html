@@ -129,14 +129,24 @@ Primary NS Kadangkala disebut Master NS, Merupakan NS utama yang menyimpan datab
             
          
          <p></p>
-         <p>Jenis-jenis Name Server memang sudah diklasifikasikan terlebih dahulu sehingga semua pengolahan dan konfigurasi pada DNS Server bisa lebih baik dan bisa juga menggunakan beberapa penggunaan yang lain atau antar server lain bisa terhubung. Baiklah ada jenis-jenis Name server :</p>
+         
+
+<p>Jenis-jenis Name Server memang sudah diklasifikasikan terlebih dahulu sehingga semua pengolahan dan konfigurasi pada DNS Server bisa lebih baik dan bisa juga menggunakan beberapa penggunaan yang lain atau antar server lain bisa terhubung. Baiklah ada jenis-jenis Name server :</p>
+
 <h2 id="primary-ns">Primary NS</h2>
+
 <p>Kadangkala disebut Master NS, Merupakan NS utama yang menyimpan database hostname/ IP Address suatuu zona. Pada saat melakukan setting Primary NS, kita harus menggunakan file zone. Primary NS merupakan authoritative server bagi zona tertentu.</p>
+
 <h2 id="secondary-ns-atau-slave-ns">Secondary NS atau Slave NS</h2>
+
 <p>Merupakan NS cadangan (backup) bagi suatu zona. Semua informasi yang ada pada Primary NS akan di-update secara berkala oleh Secondary NS melalui proses “copy file” yang disebut file transfer. Jika Primary NS bermasalah maka Secondary NS dapat digunakan sebagai pengganti (untuk sementara waktu). Secondary NS merupakan authoritative server bagi zona tertentu.</p>
+
 <h2 id="stealth-ns">Stealth NS</h2>
+
 <p>Disebut seperti itu karena keberadaannya yang tersembunyi atau tidak terdaftar dalam RR (Resource Record).</p>
+
 <h2 id="caching-ns">Caching NS</h2>
+
 <p>Sesuai namanya, NS jenis ini dapat melaukukan caching data-data yang bersal dari server DNS lain. Jadi, caching NS hanya sebagai tempat penyimpanan sementara dan biasanya data hanya dipertahankan sekitar 8 jam. Apabila client memerlukan informasi IP Address maka informasi tersebut dapat dicari terlebih dulu dari cache lokal. Jika tidak ditemukan barulah mencari informasi dari server DNS lain. Hal ini dapat mempercepat proses query dan mengurangi network traffic Caching NS bukan merupakan authoritative server.</p>
 
       </div>
@@ -357,12 +367,15 @@ Primary NS Kadangkala disebut Master NS, Merupakan NS utama yang menyimpan datab
       <h2>Table of Content</h2>
       <hr>
    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#primary-ns">Primary NS</a></li>
-    <li><a href="#secondary-ns-atau-slave-ns">Secondary NS atau Slave NS</a></li>
-    <li><a href="#stealth-ns">Stealth NS</a></li>
-    <li><a href="#caching-ns">Caching NS</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#primary-ns">Primary NS</a></li>
+<li><a href="#secondary-ns-atau-slave-ns">Secondary NS atau Slave NS</a></li>
+<li><a href="#stealth-ns">Stealth NS</a></li>
+<li><a href="#caching-ns">Caching NS</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </aside>

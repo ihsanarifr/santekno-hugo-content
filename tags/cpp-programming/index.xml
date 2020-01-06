@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cpp-programming on Santekno</title>
+    <title>Cpp Programming on Santekno</title>
     <link>https://santekno.com/tags/cpp-programming/</link>
-    <description>Recent content in cpp-programming on Santekno</description>
+    <description>Recent content in Cpp Programming on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
     <lastBuildDate>Thu, 16 May 2019 13:06:00 +0700</lastBuildDate>
@@ -18,7 +18,7 @@
       
       <guid>https://santekno.com/cara-membaut-stack-menggunakan-standar-template-library/</guid>
       <description>Stack (tumpukan) adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah LIFO (Last In First Out). Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.
-Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya. Dalam OOP kita harus membuat suatu kelas yang akan kita namakan Stack.</description>
+Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya.</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@ Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming
       
       <guid>https://santekno.com/cara-membuat-stack-menggunakan-double-linked-list/</guid>
       <description>Stack (tumpukan) adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah LIFO (Last In First Out). Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.
-Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya. Dalam OOP kita harus membuat suatu kelas yang akan kita namakan Stack.</description>
+Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@ Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming
       
       <guid>https://santekno.com/cara-membuat-stack-menggunakan-array-c-/</guid>
       <description>Stack (tumpukan) adalah struktur data yang memberikan data seperti tumpukan dalam gelas, jadi jika suatu data akan dimasukkan ke dalam gelas yang pertama akan menjadi yang terakhir untuk diambil, maka struktur data ini menganut kaidah LIFO (Last In First Out). Arti dari LIFO itu adalah yang terakhir masuk maka akan menjadi yang pertama keluar.
-Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya. Dalam OOP kita harus membuat suatu kelas yang akan kita namakan Stack.</description>
+Stack yang akan Santekno buat menerapkan sistem OOP (Object Oriented Programming) sehingga agar lebih mudah dipahaminya.</description>
     </item>
     
     <item>
