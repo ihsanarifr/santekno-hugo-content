@@ -275,5 +275,15 @@ Primary NS Kadangkala disebut Master NS, Merupakan NS utama yang menyimpan datab
       <description>Cara membuat Web Server pada Fedora Core 7 merupakan suatu layanan internet yang bisa di gunakan bagi para ahli networking. Yang sering di jumpai pada Web Server adalah WWW (World Wide Web), dimana www fasilitas yang paling terpopuler di dunia internet. Kalian pernah melihat suatu Web? Pasti bagi pengguna internet dimana mencari suatu artikel pasti menemukan sebuah web entah itu blog, wordpress, joomla, dll. Protokol yang biasa digunakan pada web adalah HTTP singkatan dari Hypertext Transfer Protocol.</description>
     </item>
     
+    <item>
+      <title>Kenapa Ipv6</title>
+      <link>https://santekno.com/kenapa-ipv6/</link>
+      <pubDate>Thu, 12 Dec 2019 08:47:45 +0700</pubDate>
+      
+      <guid>https://santekno.com/kenapa-ipv6/</guid>
+      <description>Kenapa harus IPv6 Kenapa IPv6? Ini adalah pertanyaan yang banyak di lontarkan oleh semua orang. IPv6 merupakan alihan dari protokol terdahulu yaitu  IPv4 yang di APNIC sudah penuh sehingga perlu perluasan alamat. Maka dikeluarkanlah IPv6 yang sangat panjang bitnya.
+Pertumbuhan internet yang sangat cepat baik di segi pemakai internet di rumah, perkantoran, sekolah, instansi-instansi maupun perkembangan pesat perangkat telekomunikasi yang sudah mulai menggabungkan IP ke dalam teknologinya (convergence) di seluruh dunia telah menyebabkan alamat IPv4 dengan format 32 bit binary yang sudah digunakan sejak awal keberadaan internet, tidak bisa lagi menampung kebutuhan pengalamatan internet setelah jangka waktu 20 tahun kedepan atau bahkan lebih cepat dari itu.</description>
+    </item>
+    
   </channel>
 </rss>
