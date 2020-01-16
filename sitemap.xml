@@ -168,6 +168,11 @@
   </url>
   
   <url>
+    <loc>https://santekno.com/bagian-bagian-harddisk/</loc>
+    <lastmod>2019-10-13T19:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/cara-membaut-stack-menggunakan-standar-template-library/</loc>
     <lastmod>2019-05-16T13:06:00+07:00</lastmod>
   </url>
@@ -263,11 +268,6 @@
   </url>
   
   <url>
-    <loc>https://santekno.com/bagian-bagian-hardisk/</loc>
-    <lastmod>2012-10-13T19:20:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://santekno.com/macam-macam-optical-drive/</loc>
     <lastmod>2012-10-06T11:52:00+00:00</lastmod>
   </url>
@@ -328,19 +328,19 @@
   </url>
   
   <url>
-    <loc>https://santekno.com/tags/harddisk/</loc>
-    <lastmod>2012-10-13T19:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/categories/hardware/</loc>
-    <lastmod>2019-12-29T22:59:00+00:00</lastmod>
+    <loc>https://santekno.com/tags/hardisk/</loc>
+    <lastmod>2019-10-13T19:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://santekno.com/tags/hardware/</loc>
+    <lastmod>2019-12-29T22:59:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/categories/hardware/</loc>
     <lastmod>2019-12-29T22:59:00+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -45,5 +45,15 @@ Sebenarnya untuk membedakan suatu memori khususnya pada PC (Personal Computer) i
 Seiring dengan dikeluarkannya memori tiap tahun begitu canggih dan cepat maka sesuai dengan urutannya kita bisa membedakan bahwa generasi awal pasti kecepatan dan spesifikasinya itu lebih kecil dibanding dengan memory dengan keluaran yang terbaru yaitu DDR3.</description>
     </item>
     
+    <item>
+      <title>Bagian-bagian Harddisk</title>
+      <link>https://santekno.com/bagian-bagian-harddisk/</link>
+      <pubDate>Sun, 13 Oct 2019 19:20:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/bagian-bagian-harddisk/</guid>
+      <description>Pada postingan kali ini saya ingin memberikan sedikit informasi tentang bagian-bagian dari harddisk komputer, Adapun beberapa bagian seperti di bawah ini:
+Boot Sector Merupakan sektor boot dari sebuah sektor harddisk, floppy disk, atau perangkat penyimpanan data yang sama yang berisi kode program untuk boot (biasanya, tapi tidak harus, sistem operasi) disimpan di bagian lain dari disk. Pada mesin IBM PC yang kompatibel BIOS memilih perangkat boot, maka salinan sektor pertama dari perangkat (yang mungkin suatu MBR, VBR atau kode yang dapat dieksekusi), untuk lokasi alamat 0x7C00.</description>
+    </item>
+    
   </channel>
 </rss>

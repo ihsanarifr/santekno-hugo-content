@@ -57,6 +57,16 @@ Ada berbagai jenis tata letak tombol pada papan ketik.</description>
     </item>
     
     <item>
+      <title>Bagian-bagian Harddisk</title>
+      <link>https://santekno.com/bagian-bagian-harddisk/</link>
+      <pubDate>Sun, 13 Oct 2019 19:20:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/bagian-bagian-harddisk/</guid>
+      <description>Pada postingan kali ini saya ingin memberikan sedikit informasi tentang bagian-bagian dari harddisk komputer, Adapun beberapa bagian seperti di bawah ini:
+Boot Sector Merupakan sektor boot dari sebuah sektor harddisk, floppy disk, atau perangkat penyimpanan data yang sama yang berisi kode program untuk boot (biasanya, tapi tidak harus, sistem operasi) disimpan di bagian lain dari disk. Pada mesin IBM PC yang kompatibel BIOS memilih perangkat boot, maka salinan sektor pertama dari perangkat (yang mungkin suatu MBR, VBR atau kode yang dapat dieksekusi), untuk lokasi alamat 0x7C00.</description>
+    </item>
+    
+    <item>
       <title>Macam - Macam Printer</title>
       <link>https://santekno.com/macam-macam-printer/</link>
       <pubDate>Thu, 22 Nov 2012 22:28:00 +0000</pubDate>
@@ -81,15 +91,6 @@ Ada berbagai jenis tata letak tombol pada papan ketik.</description>
       
       <guid>https://santekno.com/pengertian-dan-fungsi-mouse-komputer/</guid>
       <description>Hardware - Pengertian dari mouse adalah sebuah perangkat keras (hardware) yang terhubung ke komputer baik melalui kabel / nirkabel. Mengapa dinamakan mouse? jawabannya adalah karena bentuk awal dari piranti ini menyerupai tikus. Selain itu, kabel yang menghubungkan mouse dengan komputer bentuknya mirip dengan ekor tikus. Sebagai tambahan informasi bagi pengetahuan kita, komputer pertama yang dijual satu paket bersama dengan mouse adalah jenis Xerox Star yang diluncurkan pada tahun 1981. Walaupun saat ini keberadaan mouse sudah banyak tergantikan dengan perangkat touchpad dimana semua fungsi dari mouse bisa dilakukan dengan menggunakan touchpad ini, namun masih lebih banyak user yang lebih memilih menggunakan mouse &amp;nbsp;daripada touchpad.</description>
-    </item>
-    
-    <item>
-      <title>Bagian-bagian Hardisk</title>
-      <link>https://santekno.com/bagian-bagian-hardisk/</link>
-      <pubDate>Sat, 13 Oct 2012 19:20:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/bagian-bagian-hardisk/</guid>
-      <description>Hardware - Pada postingan kali ini saya ingin memberikan sedikit informasi tentang bagian-bagian dari harddisk komputer, Adapun beberapa bagian seperti di bawah ini : Boot Sector Merupakan sektor boot dari sebuah sektor harddisk, floppy disk, atau perangkat penyimpanan data yang sama yang berisi kode program untuk boot (biasanya, tapi tidak harus, sistem operasi) disimpan di bagian lain dari disk. Pada mesin IBM PC yang kompatibel BIOS memilih perangkat boot, maka salinan sektor pertama dari perangkat (yang mungkin suatu MBR, VBR atau kode yang dapat dieksekusi), untuk lokasi alamat 0x7C00.</description>
     </item>
     
     <item>
