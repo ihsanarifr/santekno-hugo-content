@@ -2,54 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Santekno</title>
-    <link>https://santekno.com/tags/linux/</link>
+    <link>https://santekno.com/categories/linux/</link>
     <description>Recent content in Linux on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Sun, 29 Dec 2019 21:05:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Nov 2019 14:39:00 +0000</lastBuildDate>
     
-	<atom:link href="https://santekno.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://santekno.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Cara Membuat MySQL Server</title>
-      <link>https://santekno.com/cara-membuat-mysql-server/</link>
-      <pubDate>Sun, 29 Dec 2019 21:05:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/cara-membuat-mysql-server/</guid>
-      <description>Cara membuat MySQL Server di Fedora Core 7 itu lumayan gampang karena asalkan aplikasi mySQL pada Linux Anda sudah di instal maka bisa langsung di jalankan dengan baik dan bisa digunakan secar mudah. Tetapi kita harus tahu dulu perintah-perintah SQL agar nanti gampang untuk pembuatan tabel, database dan lain sebagainya.
-Aplikasi MySQL adalah aplikasi yang digunakan untuk membuat database semua sehingga bisa tercatat dan tersusun data dengan baik disana. Biasanya klo di windows kita sering menggunakan XAMPP dan disini juga kurang lebih seperti itu, jadi kita bisa mudah membuat database dalam Linux Fedora Core 7.</description>
-    </item>
-    
-    <item>
-      <title>Cara Membuat SSH Server</title>
-      <link>https://santekno.com/cara-membuat-ssh-server/</link>
-      <pubDate>Sun, 29 Dec 2019 12:54:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/cara-membuat-ssh-server/</guid>
-      <description>Cara Membuat SSH Server pada Fedora Core 7 itu gampang-gampang susah tetapi jika sudah terjun langsung dan mempraktikan konfigurasinya terkesan sangat simpel dari konfigurasi server-server yang lainnya. Server SSH atau Secure Shell menyediakan service untuk keperluan remote login. Remote login adalah bagaimana agar user dapat melakukan login dari client ke server SSH via jaringan. User cuku menggunakan aplikasi SSH seperti : ssh, putty dan sebagainya.
-SSH merupakan pengganti dari Telnet dan rlogin yang dianggap kurang secure.</description>
-    </item>
-    
-    <item>
-      <title>Cara Membuat FTP Server</title>
-      <link>https://santekno.com/cara-membuat-ftp-server/</link>
-      <pubDate>Wed, 25 Dec 2019 15:17:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/cara-membuat-ftp-server/</guid>
-      <description>Cara membuat FTP Server di Fedora 8 membutuhkan beberapa Server DNS yang sudah di setting untuk FTP. Maka jika belum harus setting terlebih dahulu, lihat postingan sebelumnya Cara Membuat DNS Server di Fedora 8.
-FTP atau File Transfer Protocol merupakan service yang digunakan untuk keperluan transfer file. Dengan memanfaatkan service FTP, user dapat mengirim(upload) file ke server dan dapat mengambil (download) file dari server. Seperti halnya telnet, service FTP dianggap kurang secure.</description>
-    </item>
-    
-    <item>
-      <title>Jenis-jenis Name Server</title>
-      <link>https://santekno.com/jenis-jenis-name-server/</link>
-      <pubDate>Wed, 25 Dec 2019 10:33:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/jenis-jenis-name-server/</guid>
-      <description>Jenis-jenis Name Server memang sudah diklasifikasikan terlebih dahulu sehingga semua pengolahan dan konfigurasi pada DNS Server bisa lebih baik dan bisa juga menggunakan beberapa penggunaan yang lain atau antar server lain bisa terhubung. Baiklah ada jenis-jenis Name server :
-Primary NS Kadangkala disebut Master NS, Merupakan NS utama yang menyimpan database hostname/ IP Address suatuu zona. Pada saat melakukan setting Primary NS, kita harus menggunakan file zone. Primary NS merupakan authoritative server bagi zona tertentu.</description>
-    </item>
     
     <item>
       <title>Perintah Dasar Linux Part 4</title>

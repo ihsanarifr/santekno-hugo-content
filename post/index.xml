@@ -351,6 +351,46 @@ Printer adalah suatu alat untuk mencetak tulisan (dokumen) yang terlihat pada la
     </item>
     
     <item>
+      <title>Perintah Dasar Linux Part 4</title>
+      <link>https://santekno.com/perintah-dasar-linux-part-4/</link>
+      <pubDate>Sun, 10 Nov 2019 14:39:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/perintah-dasar-linux-part-4/</guid>
+      <description>Perintah dasar Linux sebelumnya sudah di bahas banyak sekali partnya. Dan alhamdulillah ini adalah pembahasan yang terakhir untuk Perintah Dasar Linux. Pada hari ini Santekno akan membahas lebih dalam lagi mengenai System Resource dan Manajemen User. Dimana perintah-perintah ini sangat penting untuk bisa mendalami dan memahami Perintah Linux.
+Beberapa perintah yang terkait dengan System Resource dapat dipelajari dengan tabel berikut.
+  Perintah Command Contoh     Menampilkan aktifitas use w w   Menampilkan use yang login who who   Menampilkan jam dan tanggal date date   Menampilkan pemakaian disk df df -h   Menampilkan informasi memori free free -m   Menampilkan proses ps ps -ax   Mematikan proses kill kill 254   Menampilkan mounting device mount mount   Menampilkan kalender cal cal    Setelah perintah system resource maka selanjutnya yaitu terkait manajemen user dapat dilihat pada tabel dibawah ini.</description>
+    </item>
+    
+    <item>
+      <title>Perintah Dasar Linux Part 3</title>
+      <link>https://santekno.com/perintah-dasar-linux-part-3/</link>
+      <pubDate>Sun, 10 Nov 2019 14:27:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/perintah-dasar-linux-part-3/</guid>
+      <description>Setelah Anda Mempelajari pada postingan sebelumnya Perintah Dasar Part 2. Kini tinggal melanjutkan tahapan kita, agar bisa lebih mahir dan bertambah pengetahuan juga, kita melanjutkan postingan Kali ini dengan Perintah Dasar Linux.
+Manajemen Akses pada file Pada postingan kali ini, akan menjelaskan suatu file itu bisa di akses oleh beberapa orang user, owner, other ataupun grup. Biasa sering kita sebut dengan Mode Akses dan Owner. Setiap file (termasuk) dapat diatur hak aksesnya menggunakan perintah chmod.</description>
+    </item>
+    
+    <item>
+      <title>Perintah Dasar Linux Part 2</title>
+      <link>https://santekno.com/perintah-dasar-linux-part-2/</link>
+      <pubDate>Sun, 10 Nov 2019 06:54:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/perintah-dasar-linux-part-2/</guid>
+      <description>Perintah Dasar Linux sudah di pelajari di postingan sebelumnya. Sekarang, Perintah dasar Linux Part 2 akan menjelaskan lanjutan dari penjelasan Artikel yang pertama. Jika ingin lebih paham lagi perintah dasar linux dengan baik coba saja pelajari dari Artikel pertama Perintah Dasar Linux dan lanjutkan ke artikel berikutnya.
+Salah satu konsep yang elegan dari Linux adalah “everything is a file”. Dimana segala sesuatu ada di Linux, mulai dari hardware, software direktori, dan sebagainya diperlakukan sebagai file.</description>
+    </item>
+    
+    <item>
+      <title>Perintah Dasar Linux</title>
+      <link>https://santekno.com/perintah-dasar-linux/</link>
+      <pubDate>Fri, 08 Nov 2019 21:34:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/perintah-dasar-linux/</guid>
+      <description>Perintah Dasar Linux sangat banyak sekali tetapi harus kita pahami sedikit demi sedikit. Perintah linux itu harus kita gunakan setiap hari jika ingin mahir dalam pengoperasian linux. Distro Linux seperti Debian, Redhat, CentOS, Fedora, Ubuntu, perintahnya hampir sma semua. Kebetulan Santekno sekarang sedang mempelajari distro Linux Fedora Core 7. Jadi tidak perlu pusing membedakan distro Linux manapun. Jika Anda pernah menggunakan DOS, maka akan melihat bahwa beberapa perintah DOS itu mirip dengan perintah Linux.</description>
+    </item>
+    
+    <item>
       <title>Sejarah Mouse Komputer</title>
       <link>https://santekno.com/sejarah-mouse-komputer/</link>
       <pubDate>Wed, 23 Oct 2019 06:07:00 +0000</pubDate>
@@ -511,45 +551,6 @@ Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan me
       
       <guid>https://santekno.com/cara-pertambahan-dua-variabel/</guid>
       <description>&lt;p&gt;Pada kesempatan ini, Santekno akan memberikan tutorial bagaimana cara menghitung pertambahan dua variabel dengan menggunakan program C. Program C ini merupakan dasar logika agar bisa terlatih untuk melakukan pemrograman apapun. Program pertambaha ini sangat berguna karena semua program pasti melakukan aritmatika seperti pertambahan, pengurangan, pembagian, dan perkalian.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Perintah Dasar Linux Part 4</title>
-      <link>https://santekno.com/perintah-dasar-linux-part-4/</link>
-      <pubDate>Sat, 10 Nov 2012 14:39:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/perintah-dasar-linux-part-4/</guid>
-      <description>Linux – Perintah dasar Linux sebelumnya sudah di bahas banyak sekali partnya. Dan alhamdulillah ini adalah pembahasan yang terakhir untuk Perintah Dasar Linux. Pada hari ini Santekno akan membahas lebih dalam lagi mengenai System Resource dan Manajemen User. Dimana perintah-perintah ini sangat penting untuk bisa mendalami dan memahami Perintah Linux./o:pBeberapa perintah yang terkait dengan System Resource dapat dipelajari dengan tabel berikut ./o:p Fungsi/o:p Command/o:p Contoh/o:p  Menampilkan aktifitas user/o:p w/o:p w/o:p  Menampilkan user yang login/o:p who/o:p who/o:p  menampilkan jam dan tanggal/o:p date/o:p date/o:p  menampilkan pemakaian disk/o:p df/o:p df –h/o:p  menampilkan informasi memori/o:p free/o:p free/o:p  menampilkan proses/o:p ps/o:p ps –ax/o:p  Mematikan proses/o:p kill/o:p kill 254/o:p  Menampilkan mounting device/o:p mount/o:p mount/o:p  Menampilkan kalender/o:p calc/o:p calc/o:p Setelah perintah System Resource maka perintah selanjutna yaitu terkaint mengenai manajemen user dapat dilihat di tabel berikut.</description>
-    </item>
-    
-    <item>
-      <title>Perintah Dasar Linux Part 3</title>
-      <link>https://santekno.com/perintah-dasar-linux-part-3/</link>
-      <pubDate>Sat, 10 Nov 2012 14:27:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/perintah-dasar-linux-part-3/</guid>
-      <description>Linux – Setelah Anda Mempelajari pada postingan sebelumnya Perintah Dasar Part 2. Kini tinggal melanjutkan tahapan kita, agar bisa lebih mahir dan bertambah pengetahuan juga, kita melanjutkan postingan Kali ini dengan Perintah Dasar Linux./o:p
-
-Pada postingan kali ini, akan menjelaskan suatu file itu bisa di akses oleh beberapa orang user, owner, other ataupun grup. Biasa sering kita sebut dengan Mode Akses dan Owner.Setiap file (termasuk) dapat diatur hak aksesnya menggunakan perintah chmod.</description>
-    </item>
-    
-    <item>
-      <title>Perintah Dasar Linux Part 2</title>
-      <link>https://santekno.com/perintah-dasar-linux-part-2/</link>
-      <pubDate>Sat, 10 Nov 2012 06:54:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/perintah-dasar-linux-part-2/</guid>
-      <description>Linux&amp;nbsp;–&amp;nbsp;Perintah Dasar Linux&amp;nbsp;sudah di pelajari di postingan sebelumnya. Sekarang, Perintah dasar Linux Part 2 akan menjelaskan lanjutan dari penjelasan Artikel yang pertama. Jika ingin lebih paham lagi perintah dasar linux dengan baik coba saja pelajari dari Artikel pertama&amp;nbsp;Perintah Dasar Linux&amp;nbsp;dan lanjutkan ke artikel berikutnya.
-/o:pSalah satu konseip yang elegan dari Linux adalah “everything is a file”. Dimana segala sesuatu ada di Linux, mulai dari hardware, software direktori, dan sebagainya diperlakukan sebagai&amp;nbsp;file.</description>
-    </item>
-    
-    <item>
-      <title>Perintah Dasar Linux</title>
-      <link>https://santekno.com/perintah-dasar-linux/</link>
-      <pubDate>Thu, 08 Nov 2012 21:34:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/perintah-dasar-linux/</guid>
-      <description>Linux – Perintah Dasar Linuxsangat banyak sekali tetapi harus kita pahami sedikit demi sedikit. Perintah linux itu harus kita gunakan setiap hari jika ingin mahir dalam pengoperasian linux. Distro Linux seperti Debian, Redhat, CentOS, Fedora, Ubuntu, perintahnya hampir sma semua. Kebetulan Santekno sekarang sedang mempelajari distro Linux Fedora Core 7. Jadi tidak perlu pusing membedakan distro Linux manapun. Jika Anda pernah menggunakan DOS, maka akan melihat bahwa beberapa perintah DOS itu mirip dengan perintah Linux.</description>
     </item>
     
   </channel>
