@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://santekno.com/cara-mengatasi-error-handling-pada-golang/</loc>
+    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/vscode-extension-yang-sering-digunakan-programmer-golang/</loc>
     <lastmod>2020-02-17T16:07:35+07:00</lastmod>
   </url>
@@ -321,6 +326,12 @@
   </url>
   
   <url>
+    <loc>https://santekno.com/tags/defer/</loc>
+    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/tags/double-linked-list/</loc>
     <lastmod>2019-05-16T13:00:00+07:00</lastmod>
     <priority>0</priority>
@@ -333,6 +344,12 @@
   </url>
   
   <url>
+    <loc>https://santekno.com/tags/error-handling/</loc>
+    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/tags/extension/</loc>
     <lastmod>2020-02-17T16:07:35+07:00</lastmod>
     <priority>0</priority>
@@ -340,7 +357,7 @@
   
   <url>
     <loc>https://santekno.com/tags/golang/</loc>
-    <lastmod>2020-02-17T16:07:35+07:00</lastmod>
+    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -423,6 +440,12 @@
   </url>
   
   <url>
+    <loc>https://santekno.com/tags/panic/</loc>
+    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/categories/pemrograman/</loc>
     <lastmod>2019-05-16T13:06:00+07:00</lastmod>
     <priority>0</priority>
@@ -441,8 +464,14 @@
   </url>
   
   <url>
+    <loc>https://santekno.com/tags/recover/</loc>
+    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/</loc>
-    <lastmod>2020-02-17T16:07:35+07:00</lastmod>
+    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
   </url>
   
   <url>
@@ -489,13 +518,13 @@
   
   <url>
     <loc>https://santekno.com/tags/tutorial/</loc>
-    <lastmod>2020-02-17T16:07:35+07:00</lastmod>
+    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://santekno.com/categories/tutorial/</loc>
-    <lastmod>2020-02-17T16:07:35+07:00</lastmod>
+    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
     <priority>0</priority>
   </url>
   
