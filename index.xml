@@ -6,10 +6,21 @@
     <description>Recent content on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Sat, 22 Aug 2020 21:47:35 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2020 16:35:00 +0000</lastBuildDate>
     
 	<atom:link href="https://santekno.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tentang Santekno: Tutorial Teknologi</title>
+      <link>https://santekno.com/about/</link>
+      <pubDate>Mon, 12 Oct 2020 16:35:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/about/</guid>
+      <description>Tentang Santekno : Tutorial Tutorial Teknologi Selamat datang di Santekno.
+Santekno adalah sebuah blog yang memberikan informasi dan membantu belajar pemrograman, devOps di dunia teknologi. Mulai dari beberapa hal yang dasar sampai yang expert.
+Siapa dibalik Santekno? { &amp;quot;name&amp;quot;: &amp;quot;Ihsan Arif Rahman&amp;quot;, &amp;quot;email&amp;quot;: &amp;quot;ihsanarifr@gmail.com&amp;quot;, &amp;quot;twitter&amp;quot;: &amp;quot;https://twitter.com/ihsanarifr&amp;quot;, &amp;quot;accountGithub&amp;quot;: &amp;quot;https://github.com/ihsanarifr&amp;quot;, }  Santekno awalnya blog catatan saya saat kuliah di suatu perguruan tinggi. Pada saat itu saya kuliah jurusan Jaringan Komputer dan melanjutkan kuliah lagi dengan Jurusan Ilmu Komputer.</description>
+    </item>
     
     <item>
       <title>Cara Mengatasi Error Handling pada Golang</title>
@@ -46,6 +57,15 @@ Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibu
       
       <guid>https://santekno.com/perbedaan-monitor-crt-lcd-led-dan-plasma/</guid>
       <description>Perbedaan Monitor CRT, LCD, LED dan Plasma itu sangat di gantungkan oleh generasi dan cara pemanfaatan monitor tersebut. Monitor komputer adalah sebuah media output/ alat pengeluaran berbentuk gambar visual yang berasal dari sinyal elektronik komputer. Karena merupakan media visualisasi tampilan sistem operasi, penggunaan monitor pada komputer atau laptop memiliki peranan yang sangat penting dalam menampilkan pemrosesan data dan hasil dari pemrosesan tersebut. Setiap merek, tipe dan ukuran monitor memiliki resolusi yang berbeda-beda.</description>
+    </item>
+    
+    <item>
+      <title>Arsip</title>
+      <link>https://santekno.com/archive/</link>
+      <pubDate>Sun, 29 Dec 2019 22:50:00 +0000</pubDate>
+      
+      <guid>https://santekno.com/archive/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -569,15 +589,6 @@ Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan me
       
       <guid>https://santekno.com/cara-pertambahan-dua-variabel/</guid>
       <description>&lt;p&gt;Pada kesempatan ini, Santekno akan memberikan tutorial bagaimana cara menghitung pertambahan dua variabel dengan menggunakan program C. Program C ini merupakan dasar logika agar bisa terlatih untuk melakukan pemrograman apapun. Program pertambaha ini sangat berguna karena semua program pasti melakukan aritmatika seperti pertambahan, pengurangan, pembagian, dan perkalian.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Arsip</title>
-      <link>https://santekno.com/archive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/archive/</guid>
-      <description></description>
     </item>
     
   </channel>

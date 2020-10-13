@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://santekno.com/about/</loc>
+    <lastmod>2020-10-12T16:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/cara-mengatasi-error-handling-pada-golang/</loc>
     <lastmod>2020-08-22T21:47:35+07:00</lastmod>
   </url>
@@ -20,6 +25,11 @@
   <url>
     <loc>https://santekno.com/perbedaan-monitor-crt-lcd-led-dan-plasma/</loc>
     <lastmod>2019-12-29T22:59:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/archive/</loc>
+    <lastmod>2019-12-29T22:50:00+00:00</lastmod>
   </url>
   
   <url>
@@ -293,10 +303,6 @@
   </url>
   
   <url>
-    <loc>https://santekno.com/archive/</loc>
-  </url>
-  
-  <url>
     <loc>https://santekno.com/tags/ascii/</loc>
     <lastmod>2019-05-05T12:00:00+07:00</lastmod>
     <priority>0</priority>
@@ -471,7 +477,7 @@
   
   <url>
     <loc>https://santekno.com/</loc>
-    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
+    <lastmod>2020-10-12T16:35:00+00:00</lastmod>
   </url>
   
   <url>
