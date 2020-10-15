@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://santekno.com/cara-setup-development-go-di-visual-studio-code/</loc>
+    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/about/</loc>
     <lastmod>2020-10-12T16:35:00+00:00</lastmod>
   </url>
@@ -338,6 +343,12 @@
   </url>
   
   <url>
+    <loc>https://santekno.com/tags/development/</loc>
+    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/tags/double-linked-list/</loc>
     <lastmod>2019-05-16T13:00:00+07:00</lastmod>
     <priority>0</priority>
@@ -346,6 +357,12 @@
   <url>
     <loc>https://santekno.com/tags/dvd/</loc>
     <lastmod>2019-10-06T11:52:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/tags/environment/</loc>
+    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -363,7 +380,7 @@
   
   <url>
     <loc>https://santekno.com/tags/golang/</loc>
-    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
+    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -477,12 +494,18 @@
   
   <url>
     <loc>https://santekno.com/</loc>
-    <lastmod>2020-10-12T16:35:00+00:00</lastmod>
+    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
   </url>
   
   <url>
     <loc>https://santekno.com/tags/serangan-karingan-komputer/</loc>
     <lastmod>2019-12-29T10:22:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/tags/setup/</loc>
+    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -524,13 +547,13 @@
   
   <url>
     <loc>https://santekno.com/tags/tutorial/</loc>
-    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
+    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://santekno.com/categories/tutorial/</loc>
-    <lastmod>2020-08-22T21:47:35+07:00</lastmod>
+    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,20 @@
     <description>Recent content on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Mon, 12 Oct 2020 16:35:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2020 14:09:42 +0700</lastBuildDate>
     
 	<atom:link href="https://santekno.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cara Setup Development Go Di Visual Studio Code</title>
+      <link>https://santekno.com/cara-setup-development-go-di-visual-studio-code/</link>
+      <pubDate>Thu, 15 Oct 2020 14:09:42 +0700</pubDate>
+      
+      <guid>https://santekno.com/cara-setup-development-go-di-visual-studio-code/</guid>
+      <description>Sejak saat mengenal Visual Studio Code yang Open Source, sejak saat itu juga Santekno mengerjakan suatu project atau istilahnya ngoding menggunakan IDE Visual Studio Code (VSCode). Disamping ringan pada saat penggunaannya juga banyak fitur-fitur tamhanan (plugin) yang bisa mendukung kita untuk koding.
+Nah, Santekno saat ini mau memberikan informasi seputar bagaimana cara melakukan development bahasa Go (Golang) menggunakan Visual Studio Code. Disamping itu kita harus bisa mempersiapkan beberapa kebutuhan environment agar saat kita ngoding itu lebih mudah dan nyaman.</description>
+    </item>
     
     <item>
       <title>Tentang Santekno: Tutorial Teknologi</title>

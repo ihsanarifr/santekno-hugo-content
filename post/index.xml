@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Cara Setup Development Go Di Visual Studio Code</title>
+      <link>https://santekno.com/cara-setup-development-go-di-visual-studio-code/</link>
+      <pubDate>Thu, 15 Oct 2020 14:09:42 +0700</pubDate>
+      
+      <guid>https://santekno.com/cara-setup-development-go-di-visual-studio-code/</guid>
+      <description>Sejak saat mengenal Visual Studio Code yang Open Source, sejak saat itu juga Santekno mengerjakan suatu project atau istilahnya ngoding menggunakan IDE Visual Studio Code (VSCode). Disamping ringan pada saat penggunaannya juga banyak fitur-fitur tamhanan (plugin) yang bisa mendukung kita untuk koding.
+Nah, Santekno saat ini mau memberikan informasi seputar bagaimana cara melakukan development bahasa Go (Golang) menggunakan Visual Studio Code. Disamping itu kita harus bisa mempersiapkan beberapa kebutuhan environment agar saat kita ngoding itu lebih mudah dan nyaman.</description>
+    </item>
+    
+    <item>
       <title>Cara Mengatasi Error Handling pada Golang</title>
       <link>https://santekno.com/cara-mengatasi-error-handling-pada-golang/</link>
       <pubDate>Sat, 22 Aug 2020 21:47:35 +0700</pubDate>

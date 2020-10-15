@@ -212,9 +212,14 @@ func main() {
 <p>Kode diatas kita menggunakan <code>defer</code> untuk memanggil fungsi <code>balikPesan()</code> yang kita simpan di awal sebelum kita mencetak tiap baris informasi seperti kode diatas. Seperti apakah hasil cetak kode diatas? Coba bisa ada yang bisa tebak?</p>
 
 <p>Seperti inilah ketika kode diatas dijalankan
-
-
-<img src="https://santekno.com/images/mencetak-defer-golang.png" title="hasil mencetak defer pada golang" width="100%"/>
+ 
+<p>
+  <img
+    src="https://santekno.com/images/mencetak-defer-golang.png"
+    title="hasil mencetak defer pada golang"
+    width="100%"
+  />
+</p>
 </p>
 
 <p>Meskipun dipanggil di paling atas pada <code>main()</code> tetapi fungsi <code>balikPesan()</code> tersebut dijalankan setelah baris-baris pada fungsi <code>main()</code> selesai. Maka fungsi <code>balikPesan()</code> tersebut dijalankan diakhir fungsi tersebut. Dan begitulah cara kerja dari <code>defer</code> pada golang.</p>
@@ -245,9 +250,14 @@ func main(){
 
 <p>Kode diatas kita memanggil fungsi <code>panic</code> di dalam fungsi <code>jalankanPanic()</code>. Setelah program dijalankan, maka akan berhenti secara tiba-tiba <code>terminated</code>. Bisa dilihat dari hasil program diatas seperti ini</p>
 
-
-
-<img src="https://santekno.com/images/mencetak-panic-golang.png" title="hasil mencetak panic pada golang" width="100%"/>
+ 
+<p>
+  <img
+    src="https://santekno.com/images/mencetak-panic-golang.png"
+    title="hasil mencetak panic pada golang"
+    width="100%"
+  />
+</p>
 
 
 <p>Program keluar pada baris ke-6 ketika menjalankan fungsi <code>panic</code> berjalan. Fungsi <code>panic</code> adalah cara lain untuk memberi tahu program tentang terjadi kesalahan dan menginstruksikan untuk mengakhiri dengan pesan kesalahan khusus.</p>
@@ -278,9 +288,14 @@ func main(){
 
 <p>Bagaimanakah hasil program diatas setelah dijalankan? Penasaran? Sesuai informasi yang disinggung diatas, hasilnya adalah fungsi dibawah <code>defer</code> akan dijalankan terlebih dahulu, mari kita lihat dibawah ini</p>
 
-
-
-<img src="https://santekno.com/images/mencetak-defer-panic-golang.png" title="hasil mencetak panic pada golang" width="100%"/>
+ 
+<p>
+  <img
+    src="https://santekno.com/images/mencetak-defer-panic-golang.png"
+    title="hasil mencetak panic pada golang"
+    width="100%"
+  />
+</p>
 
 
 <p>Pada baris ke-11, <code>panic</code> berjalan, maka fungsi <code>defer</code> akan dijalankan terlebih dahulu sebelum diberhentikan. Begitu <code>panic</code> muncul, maka akan mencari semua fungsi <code>defer</code> agar dijalankan sebelum diberhentikan.</p>
@@ -320,9 +335,14 @@ func main() {
 
 <p>Setelah dijalankan program diatas, maka hasilnya program tersebut akan memberikan pesan informasi <code>panic</code> tetapi program tetap berjalan sampai akhir tanpa program tersebut berhenti. Bisa dilihat dibawah ini</p>
 
-
-
-<img src="https://santekno.com/images/mencetak-defer-panic-recover.png" title="hasil mencetak panic, defer recovery pada golang" width="100%"/>
+ 
+<p>
+  <img
+    src="https://santekno.com/images/mencetak-defer-panic-recover.png"
+    title="hasil mencetak panic, defer recovery pada golang"
+    width="100%"
+  />
+</p>
 
 
 <h2 id="kesimpulan">Kesimpulan</h2>
@@ -338,6 +358,8 @@ func main() {
                
             </div>
             <div class="col-md-6">
+               
+                  <a class="next" href="https://santekno.com/cara-setup-development-go-di-visual-studio-code/"> Cara Setup Development Go Di Visual Studio Code -></a>
                
             </div>
          </div>
@@ -539,6 +561,21 @@ func main() {
       </div>
       <ul>
          
+         <a href="https://santekno.com/cara-setup-development-go-di-visual-studio-code/" class="list-group-item list-group-item-action" title="Cara Setup Development Go Di Visual Studio Code">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Setup Development Go Di Visual Studio Code" data-sizes="auto" width="70" height="70" loading="lazy">
+                  
+                  
+                  <h6 class="mb-1">Cara Setup Development Go Di Visual Studio Code</h6>
+                  <small class="text-secondary">2020-10-15 · 3 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
          <a href="https://santekno.com/cara-mengatasi-error-handling-pada-golang/" class="list-group-item list-group-item-action" title="Cara Mengatasi Error Handling pada Golang">
             <div class="row">
                <div class="col-12">
@@ -599,21 +636,6 @@ func main() {
             </div>
          </a>
          
-         <a href="https://santekno.com/bagian-bagian-dari-mouse-komputer/" class="list-group-item list-group-item-action" title="Bagian-bagian dari Mouse Komputer">
-            <div class="row">
-               <div class="col-12">
-                  
-                  
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/parts-mouse-thumbnail.png"
-                     alt="Bagian-bagian dari Mouse Komputer" data-sizes="auto" width="70" height="70" loading="lazy">
-                  
-                  
-                  <h6 class="mb-1">Bagian-bagian dari Mouse Komputer</h6>
-                  <small class="text-secondary">2019-12-29 · 2 minutes read</small>
-               </div>
-            </div>
-         </a>
-         
       </ul>
    </div>
 </div>
@@ -631,7 +653,7 @@ func main() {
       <a href="https://santekno.com/tags/tutorial" class="list-group-item list-group-item-action" title="tutorial">
          <div class="row">
             <div class="col-12">
-               <h6 class="mb-1">tutorial (13)</h6>
+               <h6 class="mb-1">tutorial (14)</h6>
             </div>
          </div>
       </a>
@@ -676,6 +698,14 @@ func main() {
          </div>
       </a>
       
+      <a href="https://santekno.com/tags/golang" class="list-group-item list-group-item-action" title="golang">
+         <div class="row">
+            <div class="col-12">
+               <h6 class="mb-1">golang (3)</h6>
+            </div>
+         </div>
+      </a>
+      
       <a href="https://santekno.com/tags/mouse" class="list-group-item list-group-item-action" title="mouse">
          <div class="row">
             <div class="col-12">
@@ -688,14 +718,6 @@ func main() {
          <div class="row">
             <div class="col-12">
                <h6 class="mb-1">stack (3)</h6>
-            </div>
-         </div>
-      </a>
-      
-      <a href="https://santekno.com/tags/ascii" class="list-group-item list-group-item-action" title="ascii">
-         <div class="row">
-            <div class="col-12">
-               <h6 class="mb-1">ascii (2)</h6>
             </div>
          </div>
       </a>
