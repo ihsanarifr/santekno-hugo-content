@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Studio Code on Santekno</title>
+    <link>https://santekno.com/tags/visual-studio-code/</link>
+    <description>Recent content in Visual Studio Code on Santekno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Tue, 20 Oct 2020 11:41:06 +0700</lastBuildDate>
+    
+	<atom:link href="https://santekno.com/tags/visual-studio-code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Melakukan Debug Golang Pada Vscode</title>
+      <link>https://santekno.com/cara-melakukan-debug-golang-pada-vscode/</link>
+      <pubDate>Tue, 20 Oct 2020 11:41:06 +0700</pubDate>
+      
+      <guid>https://santekno.com/cara-melakukan-debug-golang-pada-vscode/</guid>
+      <description>Mungkin Anda pasti pernah melihat aplikasi yang sudah live terdapat error atau aplikasi tersebut berhenti ditengah-tengah proses yang sedang kita jalankan. Tentunya hal ini menjadi tidak nyaman karena kita harus mengulang proses tersebut dari awal. Proses yang secara tiba-tiba berhenti itu biasanya dinamakan dengan bug. Bug sendiri adalah suatu error yang terjadi akibat suatu error yang terjadi akibat tidak sempurnyanya sebuah instruksi atau proses yang dijalankan. Penyebab bug itu banyak sekali faktornya, mungkin dari proses pembuatannya tidak sempurna, atau ketika menjalankan suatu proses yang membutuhkan sesuatu misalnya resource dan kebutuhan itu tidak dapat dipenuhi maka akan timbul bug.</description>
+    </item>
+    
+  </channel>
+</rss>

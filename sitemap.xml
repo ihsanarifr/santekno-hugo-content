@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://santekno.com/cara-melakukan-debug-golang-pada-vscode/</loc>
+    <lastmod>2020-10-20T11:41:06+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/cara-setup-development-go-di-visual-studio-code/</loc>
     <lastmod>2020-10-15T14:09:42+07:00</lastmod>
   </url>
@@ -337,6 +342,12 @@
   </url>
   
   <url>
+    <loc>https://santekno.com/tags/debug/</loc>
+    <lastmod>2020-10-20T11:41:06+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/tags/defer/</loc>
     <lastmod>2020-08-22T21:47:35+07:00</lastmod>
     <priority>0</priority>
@@ -380,7 +391,7 @@
   
   <url>
     <loc>https://santekno.com/tags/golang/</loc>
-    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
+    <lastmod>2020-10-20T11:41:06+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -494,7 +505,7 @@
   
   <url>
     <loc>https://santekno.com/</loc>
-    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
+    <lastmod>2020-10-20T11:41:06+07:00</lastmod>
   </url>
   
   <url>
@@ -553,7 +564,13 @@
   
   <url>
     <loc>https://santekno.com/categories/tutorial/</loc>
-    <lastmod>2020-10-15T14:09:42+07:00</lastmod>
+    <lastmod>2020-10-20T11:41:06+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/tags/visual-studio-code/</loc>
+    <lastmod>2020-10-20T11:41:06+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -565,7 +582,7 @@
   
   <url>
     <loc>https://santekno.com/tags/vscode/</loc>
-    <lastmod>2020-02-17T16:07:35+07:00</lastmod>
+    <lastmod>2020-10-20T11:41:06+07:00</lastmod>
     <priority>0</priority>
   </url>
   
