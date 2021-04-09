@@ -58,7 +58,7 @@ Baiklah, Santekno akan memberikan implementasi dari Double Linked List dengan me
       
       <guid>https://santekno.com/cara-menggunakan-single-linked-list-menggunakan-c-/</guid>
       <description>Linked List adalah salah satu bentuk struktur data, berisi kumpulan data (node) yang tersusun secara sekuensial, saling sambung menyambung, dinamis dan terbatas. Sedangkan Single Linked List adalah sebuah linked list yang menggunakan sebuah variabel pointer saja untuk menyimpan banyak data dengan metode linked list, suatu daftar isi yang saling berhubungan.
-Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan Single Linked List adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubun tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya.</description>
+Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan Single Linked List adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubung tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya.</description>
     </item>
     
   </channel>

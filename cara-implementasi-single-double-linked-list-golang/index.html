@@ -6,25 +6,28 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="theme-color" content="#2980b9" />
       <meta name="author" content="santekno.com">
-      <meta name="title" content="Cara Setup Development Go Di Visual Studio Code - Santekno" />
-      <meta name="description" content="Sejak saat mengenal Visual Studio Code yang Open Source, sejak saat itu juga Santekno mengerjakan suatu project atau istilahnya ngoding menggunakan IDE Visual Studio Code (VSCode). Disamping ringan pada saat penggunaannya juga banyak fitur-fitur tamhanan (plugin) yang bisa mendukung kita untuk koding.
-Nah, Santekno saat ini mau memberikan informasi seputar bagaimana cara melakukan development bahasa Go (Golang) menggunakan Visual Studio Code. Disamping itu kita harus bisa mempersiapkan beberapa kebutuhan environment agar saat kita ngoding itu lebih mudah dan nyaman.">
+      <meta name="title" content="Cara Implementasi Single Double Linked List Golang - Santekno" />
+      <meta name="description" content="Pengertian Dasar Jika kamu sudah pernah baca-baca soal Linked List bisa baca terlebih dahulu postingan Santekno sebelumnya  single linked list dan  double linked list
+Berbeda dengan sebelumnya implementasinya menggunakan bahasa C&#43;&#43;, sekarang kita menggunakan bahasa GO alias golang biasanya orang bilang. Sebetulnya tidak terlalu jauh dan ribet untuk mengaplikasikannya karena script dari golang lebih mudah dan ringkas.
+Single Linked List  Single Linked List kalau kita simpulkan hanya memiliki Next() Node saja.">
       
-      <meta name="keywords" content=", Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
+      
+      <meta name="keywords" content="golang, tutorial, single linked list, double linked list, Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
+      
       
 
       <meta name="robots" content="index, follow"/>
 
       
       
-      <link rel="canonical" href="https://santekno.com/cara-setup-development-go-di-visual-studio-code/" />
+      <link rel="canonical" href="https://santekno.com/cara-implementasi-single-double-linked-list-golang/" />
       
       
 
       
       <link rel="icon" type="image/png" href="https://santekno.com/images/logo.png" />
       
-      <title>Cara Setup Development Go Di Visual Studio Code - Santekno</title>
+      <title>Cara Implementasi Single Double Linked List Golang - Santekno</title>
       
       <link href="https://santekno.com/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://santekno.com/css/style.css" rel="stylesheet">
@@ -99,12 +102,12 @@ Nah, Santekno saat ini mau memberikan informasi seputar bagaimana cara melakukan
    <div class="singlepost">
       <div class="mb-3">
          <img src="https://santekno.com/img/avatar.jpg" class="rounded-circle" width="32" height="32" alt="author" loading="lazy">
-         <a class="align-middle text-dark" href="https://santekno.com/cara-setup-development-go-di-visual-studio-code/" target="_blank" rel="noopener"> Ihsan Arif</a>
+         <a class="align-middle text-dark" href="https://santekno.com/cara-implementasi-single-double-linked-list-golang/" target="_blank" rel="noopener"> Ihsan Arif</a>
          <small class="align-middle text-muted">
-            <time>October 15, 2020</time> | 3  minutes 
+            <time>April 9, 2021</time> | 1  minute 
          </small>
       </div>
-      <h1>Cara Setup Development Go Di Visual Studio Code</h1>
+      <h1>Cara Implementasi Single Double Linked List Golang</h1>
       <div class="postmeta">
          <ul>
             <li>
@@ -113,11 +116,9 @@ Nah, Santekno saat ini mau memberikan informasi seputar bagaimana cara melakukan
                
                   <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/tutorial">#tutorial</a></span>
                
-                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/development">#development</a></span>
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/single-linked-list">#single linked list</a></span>
                
-                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/environment">#environment</a></span>
-               
-                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/setup">#setup</a></span>
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/double-linked-list">#double linked list</a></span>
                
             </li>
          </ul>
@@ -132,124 +133,37 @@ Nah, Santekno saat ini mau memberikan informasi seputar bagaimana cara melakukan
          <p></p>
          
 
-<p>Sejak saat mengenal Visual Studio Code yang Open Source, sejak saat itu juga Santekno mengerjakan suatu project atau istilahnya <code>ngoding</code> menggunakan IDE Visual Studio Code (VSCode). Disamping ringan pada saat penggunaannya juga banyak fitur-fitur tamhanan (plugin) yang bisa mendukung kita untuk koding.</p>
+<h2 id="pengertian-dasar">Pengertian Dasar</h2>
 
-<p>Nah, Santekno saat ini mau memberikan informasi seputar bagaimana cara melakukan development bahasa Go (Golang) menggunakan Visual Studio Code. Disamping itu kita harus bisa mempersiapkan beberapa kebutuhan <code>environment</code> agar saat kita <code>ngoding</code> itu lebih mudah dan nyaman.</p>
+<p>Jika kamu sudah pernah baca-baca soal Linked List bisa baca terlebih dahulu postingan Santekno sebelumnya <strong>
 
-<p>Biasanya buat para programmer semakin banyak fitur yang dapat memudahkan semakin kita cepat juga mengerjakan suatu pekerjaan, seperti shortcut-shortcut yang dapat memudahkan pengerjaan lebih cepat hanya dengan menekan tombol pada keyboard saja, sampai fitur (plugin) autocomplete jika <code>code</code> yang akan kita ketik itu related dengan apa yang ingin kita implementasikan.</p>
+<a href="https://santekno.com/cara-membuat-single-linked-list-menggunakan-cpp" title="single linked list">single linked list</a></strong> dan <strong>
 
-<h2 id="pemasangan-extention-plugin">Pemasangan Extention (Plugin)</h2>
+<a href="https://santekno.com/cara-membuat-double-linked-list-menggunakan-cpp" title="double linked list">double linked list</a></strong></p>
 
-<p>Berikut ini cara-cara kita melakukan settingan visual Studio Code agar lebih mudah dalam pengerjaan :
-* Pastikan Go telah terinstall di laptop Anda
-* Pastikan Go Binary tersedia di PATH dan variabel GOPATH sudah disesuaikan
-* Pastikan juga laptop terhubung ke Internet karena kita akan menginsall plugin langsung dari Internet
-* Gunakan (Ctrl + Shift + x) untuk menampilkan opsi <em>Extenstion</em>
-* Ketik &ldquo;Go Lang&rdquo; di kolom pencarian dan nanti keluar list pilih *Go Extenstion&rdquo;
- 
-<p>
-  <img
-    src="https://santekno.com/images/extension-golang.png"
-    title="extension golang"
-    width="100%"
-  />
-</p>
+<p>Berbeda dengan sebelumnya implementasinya menggunakan bahasa C++, sekarang kita menggunakan bahasa <em>GO</em> alias golang biasanya orang bilang. Sebetulnya tidak terlalu jauh dan ribet untuk mengaplikasikannya karena script dari golang lebih mudah dan ringkas.</p>
 
-* Pilih yang paling atas dan tekan &ldquo;install&rdquo;
-* Setelah itu biasanya menyarankan untuk &ldquo;reload&rdquo; dan extention tersebut otomatis langsung aktif.</p>
+<h2 id="single-linked-list">Single Linked List</h2>
 
-<h2 id="preference-go-development">Preference Go Development</h2>
+<script type="application/javascript" src="//gist.github.com/ihsanarifr/8a8e478715608abd4c775d03fb51bc81.js"></script>
 
-<p>Jika Anda ingin mengubah preferensi apa pun <em>Go Tools</em> yang akan dipanggil oleh Visual Studio, Anda pilih saja Preferensi dari menu utama. Ini akan memunculkan pengaturan di editor dan Anda dapat melakukan konfigurasi Go seperti yang ditunjukkan di bawah ini:</p>
+<p><strong>Single Linked List</strong> kalau kita simpulkan hanya memiliki <code>Next()</code> Node saja. Ini adalah contoh simpel dari single linked list.</p>
 
- 
-<p>
-  <img
-    src="https://santekno.com/images/preference-golang.png"
-    title="preference golang"
-    width="100%"
-  />
-</p>
+<h2 id="double-linked-list">Double Linked List</h2>
 
+<script type="application/javascript" src="//gist.github.com/ihsanarifr/3c8bcb4b4d98884180ec035584de1ac9.js"></script>
 
-<p>Disini Anda bisa melakukan beberapa pengaturan, dari mulai <em>Auto Save, font size, tabing, exclude, color decoration</em> dan masih banyak lagi.</p>
-
-<h2 id="siap-untuk-coding-di-visual-studio-code">Siap untuk coding di Visual Studio Code</h2>
-
-<p>Sekarang mari kita memvalidasi editor Kode Visual Studio kita.
-Dengan asumsi bahwa Anda telah meluncurkan Visual Studio Code, langkah pertama yang harus dilakukan adalah menambahkan folder Project. Dengan asumsi bahwa Anda telah menyiapkan GOPATH untuk Go Projects, Anda dapat memilih folder tempat Anda akan menyimpan file proyek. Anda dapat mengambil proyek yang sudah ada, tetapi saya sarankan Anda membuat folder baru di folder sumber Anda.
-Di Visual Studio Editor, buka <code>File → Open…</code> Anda dapat memilih folder yang mengarah ke root aplikasi Anda.</p>
-
-<p>Buat file baru bernama main.go. Anda dapat melakukannya dengan mengklik ikon file baru seperti yang ditunjukkan di bawah ini:</p>
-
-<pre><code class="language-go">package main 
-
-import &quot;fmt&quot;
-
-func main() {
-    fmt.Println(&quot;Hello World)
-}
-</code></pre>
-
-<p>Saat menyimpan file, file akan diperiksa untuk waktu kompilasi dan beberapa hal lain seperti menambahkan <code>import</code> secara otomatis atau menghapusnya jika Anda tidak menggunakannya. Itu akan membuat <code>code</code> program kita cukup rapi.</p>
-
-<p>Anda mungkin melihat beberapa <code>package</code> atau <code>tools</code> yang Visual Studio akan meminta Anda untuk menginstal. Maka lakukan install saja agar bisa mendukung kebutuhan Anda saat melakukan coding. Misalkan jika Anda membuat beberapa kesalahan dasar dalam file Go dan Anda menyimpan file tersebut.</p>
-
- 
-<p>
-  <img
-    src="https://santekno.com/images/failed-golang.png"
-    title="kesalahan golang"
-    width="100%"
-  />
-</p>
-
-
-<p>Maka Anda akan melihat kesalahan seperti yang ditunjukkan di atas.</p>
-
-<h2 id="cara-menjalankan-go">Cara menjalankan Go</h2>
-
-<p>Sekarang mari kita lihat cara menjalankan aplikasi Go dari dalam editor Kode Visual Studio itu sendiri melalui Integrated Command Line (Terminal). Sekarang Anda dapat meluncurkan Terminal kapan saja melalui kombinasi tombol <code>Ctrl + j</code>.</p>
-
- 
-<p>
-  <img
-    src="https://santekno.com/images/terminal-run-golang.png"
-    title="menjalankan golang"
-    width="100%"
-  />
-</p>
-
-
-<p>Anda juga dapat mengaktifkannya dengan kombinasi ini. Sekarang Anda dapat menggunakan perintah Go standar untuk menjalankan aplikasi Anda. Misalkan jalankan seperti yang ditunjukkan di atas.</p>
-
-<h2 id="melakukan-integrasi-debugger">Melakukan Integrasi Debugger</h2>
-
-<p>Hal menarik lainnya adalah Integrasi Debugger dalam Visual Studio Code. Silakan dan instal <code>delve</code> terlebih dahulu. Setelah Anda memiliki pengaturan itu, Anda cukup pilih icon yg disebelah kiri tab dan klik di <code>Run and Debug</code>, tekan kursor sebelum nomor baris yang Anda inginkan untuk menempatkan breakpoint.</p>
-
- 
-<p>
-  <img
-    src="https://santekno.com/images/run-debug-golang.png"
-    title="menjalankan dan debugger golang"
-    width="100%"
-  />
-</p>
-
-
-<p>Selanjutnya proses berhenti di baris tempat Anda menempatkan breakpoint, Anda dapat memeriksa tumpukan, mengamati satu atau dua variabel dan bahkan memeriksa nilai variabel saat ini.</p>
+<p>Apa yang membedakan dari single dan double linked list? Yaitu di dalam <code>Double Linked List</code> node itu bisa tau sebelum dan setelah Node yang sedang dituju. sehingga kita tambahkan method <code>Prev()</code> agar node sebelumnya itu kita tahu alamat memory-nya.</p>
 
       </div>
       <div class="post-content">
          <div class="row">
             <div class="col-md-6">
                
-                  <a class="previous" href="https://santekno.com/cara-mengatasi-error-handling-pada-golang/">&lt;- Cara Mengatasi Error Handling pada Golang</a>
+                  <a class="previous" href="https://santekno.com/cara-melakukan-debug-golang-pada-vscode/">&lt;- Cara Melakukan Debug Golang Pada Vscode</a>
                
             </div>
             <div class="col-md-6">
-               
-                  <a class="next" href="https://santekno.com/cara-melakukan-debug-golang-pada-vscode/"> Cara Melakukan Debug Golang Pada Vscode -></a>
                
             </div>
          </div>
@@ -263,6 +177,21 @@ func main() {
       
       
       <ul>
+         
+            <a href="https://santekno.com/cara-setup-development-go-di-visual-studio-code/" class="list-group-item list-group-item-action" title="Cara Setup Development Go Di Visual Studio Code">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Setup Development Go Di Visual Studio Code" data-sizes="auto" width="70" height="70" loading="lazy">
+                  
+                  
+                  <h6 class="mb-1">Cara Setup Development Go Di Visual Studio Code</h6>
+                  <small class="text-secondary">2020-10-15 · 3 minutes read</small>
+               </div>
+            </div>
+         </a>
          
             <a href="https://santekno.com/cara-mengatasi-error-handling-pada-golang/" class="list-group-item list-group-item-action" title="Cara Mengatasi Error Handling pada Golang">
             <div class="row">
@@ -290,6 +219,21 @@ func main() {
                   
                   <h6 class="mb-1">VSCode Extension Yang Sering Digunakan Programmer Golang</h6>
                   <small class="text-secondary">2020-02-17 · 2 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+            <a href="https://santekno.com/cara-melakukan-debug-golang-pada-vscode/" class="list-group-item list-group-item-action" title="Cara Melakukan Debug Golang Pada Vscode">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Melakukan Debug Golang Pada Vscode" data-sizes="auto" width="70" height="70" loading="lazy">
+                  
+                  
+                  <h6 class="mb-1">Cara Melakukan Debug Golang Pada Vscode</h6>
+                  <small class="text-secondary">2020-10-20 · 7 minutes read</small>
                </div>
             </div>
          </a>
@@ -380,36 +324,6 @@ func main() {
                   
                   <h6 class="mb-1">Cara Mencari Akar dari Persamaan Kuadrat</h6>
                   <small class="text-secondary">2019-05-07 · 1 minutes read</small>
-               </div>
-            </div>
-         </a>
-         
-            <a href="https://santekno.com/cara-menentukan-angka-terbesar-dari-3-angka/" class="list-group-item list-group-item-action" title="Cara Menentukan Angka Terbesar dari 3 Angka">
-            <div class="row">
-               <div class="col-12">
-                  
-                  
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/c-programming-logo.png"
-                     alt="Cara Menentukan Angka Terbesar dari 3 Angka" data-sizes="auto" width="70" height="70" loading="lazy">
-                  
-                  
-                  <h6 class="mb-1">Cara Menentukan Angka Terbesar dari 3 Angka</h6>
-                  <small class="text-secondary">2019-05-06 · 2 minutes read</small>
-               </div>
-            </div>
-         </a>
-         
-            <a href="https://santekno.com/cara-menentukan-bilangan-ganjil-genap/" class="list-group-item list-group-item-action" title="Cara Menentukan Bilangan Ganjil Genap">
-            <div class="row">
-               <div class="col-12">
-                  
-                  
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/c-programming-logo.png"
-                     alt="Cara Menentukan Bilangan Ganjil Genap" data-sizes="auto" width="70" height="70" loading="lazy">
-                  
-                  
-                  <h6 class="mb-1">Cara Menentukan Bilangan Ganjil Genap</h6>
-                  <small class="text-secondary">2019-05-05 · 1 minutes read</small>
                </div>
             </div>
          </a>

@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Cara Implementasi Single Double Linked List Golang</title>
+      <link>https://santekno.com/cara-implementasi-single-double-linked-list-golang/</link>
+      <pubDate>Fri, 09 Apr 2021 12:58:48 +0700</pubDate>
+      
+      <guid>https://santekno.com/cara-implementasi-single-double-linked-list-golang/</guid>
+      <description>Pengertian Dasar Jika kamu sudah pernah baca-baca soal Linked List bisa baca terlebih dahulu postingan Santekno sebelumnya  single linked list dan  double linked list
+Berbeda dengan sebelumnya implementasinya menggunakan bahasa C++, sekarang kita menggunakan bahasa GO alias golang biasanya orang bilang. Sebetulnya tidak terlalu jauh dan ribet untuk mengaplikasikannya karena script dari golang lebih mudah dan ringkas.
+Single Linked List  Single Linked List kalau kita simpulkan hanya memiliki Next() Node saja.</description>
+    </item>
+    
+    <item>
       <title>Cara Melakukan Debug Golang Pada Vscode</title>
       <link>https://santekno.com/cara-melakukan-debug-golang-pada-vscode/</link>
       <pubDate>Tue, 20 Oct 2020 11:41:06 +0700</pubDate>
@@ -533,7 +544,7 @@ Baiklah, Santekno akan memberikan implementasi dari Double Linked List dengan me
       
       <guid>https://santekno.com/cara-menggunakan-single-linked-list-menggunakan-c-/</guid>
       <description>Linked List adalah salah satu bentuk struktur data, berisi kumpulan data (node) yang tersusun secara sekuensial, saling sambung menyambung, dinamis dan terbatas. Sedangkan Single Linked List adalah sebuah linked list yang menggunakan sebuah variabel pointer saja untuk menyimpan banyak data dengan metode linked list, suatu daftar isi yang saling berhubungan.
-Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan Single Linked List adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubun tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya.</description>
+Baiklah, Santekno akan memberikan implementasi dari Single Linked List dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan Single Linked List adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubung tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya.</description>
     </item>
     
     <item>
