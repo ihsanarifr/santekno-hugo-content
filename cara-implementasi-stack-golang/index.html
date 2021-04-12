@@ -6,12 +6,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="theme-color" content="#2980b9" />
       <meta name="author" content="santekno.com">
-      <meta name="title" content="Jenis-jenis Serangan pada Jaringan Komputer - Santekno" />
-      <meta name="description" content="Salam sobat blogger, Santekno akan menjelaskan berbagai macam dan jenis serangan yang ada pada jaringan komputer. Banyak sekali serangan yang dilakukan seorang hacker agar bisa menjebol suatu pertahanan dalam suatu jaringan LAN, MAN atau bahkan WAN.
-Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jaringan yang sudah kita buat, contohnya untuk sebuah perusahaan mempunyai data yang sangat rahasia dan tidak boleh data tersebut disebarluaskan di jaringan internet. Maka perlu pengamanan yang sangat ketat dari berbagai tahapan layer dalam jaringan komputer.">
+      <meta name="title" content="Cara Implementasi Stack Golang - Santekno" />
+      <meta name="description" content="Apa itu stack? Stack adalah salah satu yang biasa digunakan dalam pemrograman atau sistem penyimpanan komputer. Bagi programmer atau biasanya berkecimpung di dunia IT, pasti sudah familiar dengan istilah ini. Stack digunakan untuk mempermudah mengorganisasikan suatu data. Jadi sebenarnya apa sih Stack itu? Apa kelebihan dan kekurangan saat menggunakannya? Baik, Santekno akan menjelaskan kepada Anda lebih detail dan Santekno akan memberikan sample yang sangat mudah untuk mengimplementasikan stack.
+Pengertian dari Stack dikutip dari TechTerm, Stack adalah salah satu struktur data yang digunakan untuk menyimpan sekumpulan object ataupun variabel.">
       
       
-      <meta name="keywords" content="Network, serangan karingan komputer, Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
+      <meta name="keywords" content="golang, tutorial, stack, Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
       
       
 
@@ -19,14 +19,14 @@ Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jari
 
       
       
-      <link rel="canonical" href="https://santekno.com/jenis-jenis-serangan-pada-jaringan-komputer/" />
+      <link rel="canonical" href="https://santekno.com/cara-implementasi-stack-golang/" />
       
       
 
       
       <link rel="icon" type="image/png" href="https://santekno.com/images/logo.png" />
       
-      <title>Jenis-jenis Serangan pada Jaringan Komputer - Santekno</title>
+      <title>Cara Implementasi Stack Golang - Santekno</title>
       
       <link href="https://santekno.com/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://santekno.com/css/style.css" rel="stylesheet">
@@ -101,19 +101,21 @@ Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jari
    <div class="singlepost">
       <div class="mb-3">
          <img src="https://santekno.com/img/avatar.jpg" class="rounded-circle" width="32" height="32" alt="author" loading="lazy">
-         <a class="align-middle text-dark" href="https://santekno.com/jenis-jenis-serangan-pada-jaringan-komputer/" target="_blank" rel="noopener"> Ihsan Arif</a>
+         <a class="align-middle text-dark" href="https://santekno.com/cara-implementasi-stack-golang/" target="_blank" rel="noopener"> Ihsan Arif</a>
          <small class="align-middle text-muted">
-            <time>December 29, 2019</time> | 5  minutes 
+            <time>April 13, 2021</time> | 2  minutes 
          </small>
       </div>
-      <h1>Jenis-jenis Serangan pada Jaringan Komputer</h1>
+      <h1>Cara Implementasi Stack Golang</h1>
       <div class="postmeta">
          <ul>
             <li>
                
-                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/network">#Network</a></span>
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/golang">#golang</a></span>
                
-                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/serangan-karingan-komputer">#serangan karingan komputer</a></span>
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/tutorial">#tutorial</a></span>
+               
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/stack">#stack</a></span>
                
             </li>
          </ul>
@@ -122,93 +124,99 @@ Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jari
       <div class="post-content">
          
             
-               <img class="img-fluid" src="https://santekno.com/images/tutorial-jaringan-komputer.png" alt="" style="width:100%;">
+               <img class="img-fluid" src="https://santekno.com/images/tutorial-golang.png" alt="" style="width:100%;">
             
          
          <p></p>
          
 
-<p>Salam sobat blogger, Santekno akan menjelaskan berbagai macam dan jenis serangan yang ada pada jaringan komputer. Banyak sekali serangan yang dilakukan seorang hacker agar bisa menjebol suatu pertahanan dalam suatu jaringan LAN, MAN atau bahkan WAN.</p>
+<h2 id="apa-itu-stack">Apa itu stack?</h2>
 
-<p>Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jaringan yang sudah kita buat, contohnya untuk sebuah perusahaan mempunyai data yang sangat rahasia dan tidak boleh data tersebut disebarluaskan di jaringan internet. Maka perlu pengamanan yang sangat ketat dari berbagai tahapan layer dalam jaringan komputer.</p>
+<p><em>Stack</em> adalah salah satu yang biasa digunakan dalam pemrograman atau sistem penyimpanan komputer. Bagi <code>programmer</code> atau biasanya berkecimpung di dunia IT, pasti sudah familiar dengan istilah ini. Stack digunakan untuk mempermudah mengorganisasikan suatu data. Jadi sebenarnya apa sih Stack itu? Apa kelebihan dan kekurangan saat menggunakannya? Baik, Santekno akan menjelaskan kepada Anda lebih detail dan Santekno akan memberikan <code>sample</code> yang sangat mudah untuk mengimplementasikan stack.</p>
 
-<p><img border="0" src="https://2.bp.blogspot.com/-7AXvMVbLrPA/UpVfo82QRdI/AAAAAAAACnE/LOHU0-ski8w/s1600/serangan-jaringan-komputer.jpg" height="100%" width="100%" /></p>
+<p>Pengertian dari <strong>Stack</strong> dikutip dari <a href="https://techterms.com/definition/stack">TechTerm</a>, <strong>Stack</strong> adalah salah satu struktur data yang digunakan untuk menyimpan sekumpulan object ataupun variabel. Sesuai dengan namanya kita pasti memahami dan membayangkan data tersebut akan terlihat seperti tumpukan.</p>
 
-<p>Kita tahu bahwa berdasarkan OSI layer jaringan komputer terbagi menjadi 7 bagian diantaranya sebagai berikut Aplication, Presentation, Session, Transport, Network, Data Link, Physical. Di semua layer seharunya kita bisa mengamankan jaringan komputer tersebut, oleh karena itu Santekno akan menjelaskan beberapa serangan pada jaringan komputer berdasarkan OSI layer.</p>
+<p>Karakteristik <em>Stack</em> sendiri bersifat <strong>LIFO (last in first out)</strong>. Apa itu <strong>LIPO</strong>? Artinya, data yang terakhir masuk merupakan data yang akan keluar terlebih dahulu. Seperti halnya tumpukan pada umumnya, misalnya tumpukan buku, yang diatas atau yang terakhir masuk harus dikeluarkan terlebih dahulu untuk mendapatkan buku yang berada di tumpukan paling bawah.</p>
 
-<h2 id="osi-layer">OSI Layer</h2>
+<p>Sebagai contoh, kamu mempunyai buku matematika, fisika, kimia dan biologi, Buku fisika kamu masukkan terlebih dahulu, lalu buku selanjutnya kimia, biologi, dan matematika. Nah, untuk mendapatkan buku kimia, kamu harus mengeluarkan buku biologi dan matematika terlebih dahulu karena kedua buku tersebut posisinya paling atas karena yang terakhir masuk.</p>
 
-<p>Berikut adalah susunan model OSI dari layer paling atas (layer 7) sampai layer paling bawah (layer 1) beserta fungsi yang dijalankan :
-* <strong>Application</strong>   Menyediakan dukungan untuk aplikasi seperti FTP, Telnet, dan HTTP
-* <strong>Presentation</strong>  Enkripsi, SMB, ASCII, format data
-* <strong>Session</strong>   Flow control data, inisiasi dan terminasi koneksi
-* <strong>Transport</strong> Komunikasi end-to-end (aplikasi ke aplikasi), layanan TCP dan UDP.
-* <strong>Network</strong>   Routing (OSPF, dan lain-lain). IP addressing
-* <strong>Data</strong> Link Lan card, MAC address, pembentukan frame
-* <strong>Physical</strong>  Media transmisi seperti kabel UTP, wireless, maupun Fiber Optik</p>
+<p>Analogi ini seperti stack yang memiliki sifat <strong>LIPO</strong>. Data terakhir yang masuk harus keluar terlebih dahulu. Konsep ini pada umumnya digunakan untuk pemrograman dan mengorganisir penyimpanan komputer.</p>
 
-<h3 id="application-layer">Application Layer</h3>
-
-<p>Layer 7 (application) penyerangan interface yang digunakan oleh aplikasi/program/software untuk berkomunikas. Berikut adalah beberapa layanan dan protokol yang bisa dibilang “tidak aman” :
-* <strong>FTP</strong>, layanan TCP yang beroperasi pada port 20 dan 21. Port 20 digunakan untuk transfer data klien dan server, sedangkan port 21 digunakan untuk control dan pengiriman command antara klien dan FTP server. Serangan pada layanan ini bisa berupa eksploitasi kesalahan konfigurasi directory permission dan atau sniffing password yang berbentuk cleartext.</p>
+<h2 id="kelebihan-stack">Kelebihan Stack</h2>
 
 <ul>
-<li><p><strong>Telnet</strong>, layanan shell pada TCP yang beroperasi pada port 23. Telnet mengirimkan informasi yang kita ketikkan di klien kepada komputer lain. Telnet bisa diatur untuk koneksi secara anonymous dan bisa juga diatur agar menggunakan username dan password. Kelemahan telnet adalah semua data termasuk username dan password dikirim dalam bentuk cleartext.</p></li>
-
-<li><p><strong>SMTP</strong>, layanan TCP yang beroperasi pada port 25 dan berfungsi untuk menjalankan proses pertukaran email antar sistem network. Pesan yang dikirim melalui SMTP memiliki 2 bagian, address header dan pesan text. Semua jenis komputer dapat bertukar pesan email dengan SMTP. Dua jenis serangan SMTP yang cukup beresiko adalah spoofing dan spamming.</p></li>
-
-<li><p><strong>DNS</strong>, layanan ini berjalan pada port 53 dan berfungsi untuk melakukan address mapping. DNS mengkonversi Fully Qualified Domain Names (FQDNs) seperti www.google.com ke bentuk IP address dan sebaliknya. DNS menggunakan UDP untuk DNS query dan TCP untuk zone transfers. DNS rawan oleh serangan poisoning dan jika salah konfigurasi dapat disalahgunakan untuk melakukan zone full transfer.</p></li>
-
-<li><p><strong>TFTP</strong>, beroperasi pada port 69, merupakan versi FTP yang menggunakan UDP untuk mengurangi overhead dan reliability dengan menghilangkan proses session management dan autentikasi, hal ini menimbulkan resiko keamanan yang cukup tinggi. TFTP biasa digunakan untuk mengirim file-file konfigurasi router dan untuk mengkonfigurasi kabel modem. Orang yang melakukan hacking pada kabel modem biasa dikenal sebagai uncapper.</p></li>
-
-<li><p><strong>HTTP</strong>, layanan TCP yang beroperasi pada port 80 ini membuat web menjadi layanan paling populer saat ini. HTTP menggunakan protokol request response, dimana klien mengirimkan request kemudian server memberikan response. Serangan pada HTTP bisa ditujukan ke server, browser, atau script-script yang berjalan pada browser.</p></li>
-
-<li><p><strong>SNMP</strong>, layanan UDP yang beroperasi pada port 161 dan 162, SNMP didesain sebagai cara yang efisien dan murah untuk memonitor network. Protokol SNMP memungkinkan perangkat-perangkat jaringan yang berfungsi sebagai agent untuk mengumpulkan berbagai macam informasi dan mengirimkannya ke server management. Hal yang membuat SNMP kurang aman adalah proses pengiriman community string yang masih dalam bentuk clear-text. SNMP versi 3 merupakan versi terbaru dan menawarkan fitur enkripsi agar lebih aman.</p></li>
+<li>membantu mengelola data dengan metode <strong>LIFO</strong></li>
+<li>secara otomatis membersihkan objek</li>
+<li>tidak mudah rusak</li>
+<li>ukuran variabel tidak dapat diubah</li>
+<li>mengontrol memori secara mandiri</li>
 </ul>
 
-<h3 id="transport-layer">Transport Layer</h3>
-
-<p>Layer transport penuh dengan lubang keamanan karena merupakan tempat bagi UDP dan TCP. Karena UDP bersifat connectionless, mudah bagi hacker untuk melakukan serangan DoS (Denial of Service). Selain itu juga mudah untuk melakukan spoofing. Sedangkan TCP dapat dieksploitasi oleh hacker untuk mengidentifikasi berbagai macam layanan yang berjalan dan sistem operasi yang digunakan oleh target. Hal ini penting bagi hacker sebelum melakukan serangan.</p>
-
-<h3 id="network-layer">Network Layer</h3>
-
-<p>Pada layer ini terdapat IP dan ICMP. IPv4 tidak memiliki built-in fitur security, karenanya IPSec yang merupakan komponen built-in dikembangkan. Tanpa IPSec, IP dapat dengan mudah menjadi target bagi berbagai macam serangan. Sedangkan ICMP dapat menjadi target bagi serangan Smurf DoS.</p>
-
-<h3 id="data-link-layer">Data Link Layer</h3>
-
-<p>Konversi pengalamatan logik (IP) ke physical (MAC) harus dilakukan antara layer network dan layer data link. Protokol ARP digunakan untuk hal ini. Namun, ARP sering dimanfaatkan oleh hacker untuk melakukan ARP poisoning, sehingga hacker dapat mem-bypass switch dan monitor traffic. Selain itu, passive sniffing dapat menjadi metode bagus bagi hacker jika ia berada pada posisi yang strategis didalam network.</p>
-
-<h3 id="pyhsical-layer">Pyhsical Layer</h3>
-
-<p>Layer physical ini adalah layer yang paling mudah untuk “dibobol“. Logika sederhananya adalah jika seseorang mendapatkan akses secara fisik ke sebuah perangkat jaringan, tentunya dia juga bisa mendapatkan kendali penuh terhadap perangkat tersebut. Beberapa vendor perangkat jaringan juga menyediakan metode melakukan reset password untuk mendapatkan akses ke perangkat tersebut.</p>
-
-<h3 id="human-layer">Human Layer</h3>
-
-<p>Layer ini tidak termasuk dalam susunan Model OSI. Namun layer ini bisa kita tambahkan sebagai layer terpenting dalam desain dan implementasi jaringan. Begitu pula dalam hal keamanan, layer ini memiliki ancaman terbesar yang dikenal sebagai social engineering, karena targetnya adalah manusia (admin, dan lain-lain). Pada umumnya organisasi membelanjakan anggaran yang cukup besar dalam bidang kontrol dan teknis, namun sangat sedikit anggaran yang dikeluarkan untuk pendidikan/pelatihan proses dan prosedur keamanan bagi karyawannya. Hacker dapat menggunakan berbagai macam teknik untuk melakukan tipu muslihat pada karyawan.</p>
-
-<p>Ancaman lain pada layer ini adalah dumpster diving. Banyak perusahaan yang “membuang” berbagai macam hal yang terlihat tidak berguna tapi dapat dimanfaatkan oleh hacker sebagai alat untuk mengorek informasi tentang network internal. Misalnya, printout nama dan password, source code, memo, dan lain-lain.</p>
-
-<h2 id="osi-bekerja">OSI Bekerja</h2>
+<h2 id="kekurangan-stack">Kekurangan Stack</h2>
 
 <ul>
-<li>Informasi dikirim dengan cara dikirim mulai dari layer application turun sampai layer physical.</li>
-<li>Kemudian dikirimkan melewati media (kabel, wireless) sampai ke tujuan.</li>
-<li>Setelah sampai, informasi di proses naik dari layer physical sampai ke layer application.</li>
+<li>memori stack sangat terbatas</li>
+<li>ada kemungkinan stack akan meluap atau overflow jika terlalu banyak objek</li>
+<li>tidak memungkinkan akses acak, karena harus mengeluarkan tumpukan paling atas terlebih dahulu untuk mengakses tumpukan paling bawah</li>
 </ul>
 
-<p>sumber : <a href="https://net.comlabs.itb.ac.id/blog/?p=425">https://net.comlabs.itb.ac.id/blog/?p=425</a></p>
+<h2 id="metode-pada-implementasi-stack">Metode pada Implementasi Stack</h2>
+
+<p>Santekno saat ini mencontohkan atau mengimplementasikan menggunakan bahasa Go (Golang) dengan sampel yang lebih mudah. Disini kita contohkan dengan 2 method fungsi yang wajib ada dalam struktur data Stack. Jika Kamu ingin tahu juga cara implementasi menggunakan bahasa C++ bisa dilihat <strong>
+
+<a href="https://santekno.com/cara-membuat-stack-menggunakan-array-c-" title="disini">disini</a></strong></p>
+
+<p>Terlebih dahulu kita membuat <code>struct</code> yang digunakan untuk menyimpan data nantinya.</p>
+
+<pre><code class="language-go">type Stack struct {
+	items []int
+}
+</code></pre>
+
+<p><code>Push()</code>, berfungsi untuk memasukkan data</p>
+
+<pre><code class="language-go">func (s *Stack) Push(item int) {
+	s.items = append(s.items, item)
+}
+</code></pre>
+
+<p><code>Pop()</code>, berfungsi untuk mengambil data yang mana akan diambil pada data yg paling terakhir dimasukkan</p>
+
+<pre><code class="language-go">func (s *Stack) Pop() int {
+	left := len(s.items)
+
+	if left == 0 {
+		return -1
+	}
+
+	item, items := s.items[left-1], s.items[0:left-1]
+	s.items = items
+	return item
+}
+</code></pre>
+
+<h2 id="contoh-impelemntasi-stack">Contoh Impelemntasi Stack</h2>
+
+<script type="application/javascript" src="//gist.github.com/ihsanarifr/72bd400547ee118926f5b0ef61d0e547.js"></script>
+
+<pre><code class="language-bash">4
+3
+2
+1
+-1
+-1
+-1
+</code></pre>
 
       </div>
       <div class="post-content">
          <div class="row">
             <div class="col-md-6">
                
-                  <a class="previous" href="https://santekno.com/cara-konfigurasi-ospf-pada-router-cisco/">&lt;- Cara konfigurasi OSPF pada Router Cisco</a>
+                  <a class="previous" href="https://santekno.com/cara-implementasi-single-double-linked-list-golang/">&lt;- Cara Implementasi Single Double Linked List Golang</a>
                
             </div>
             <div class="col-md-6">
-               
-                  <a class="next" href="https://santekno.com/cara-membuat-ssh-server/"> Cara Membuat SSH Server -></a>
                
             </div>
          </div>
@@ -223,152 +231,152 @@ Serangan jaringan Komputer ini memang sangat membahayakan bagi keamanan dan jari
       
       <ul>
          
-            <a href="https://santekno.com/cara-konfigurasi-ospf-pada-router-cisco/" class="list-group-item list-group-item-action" title="Cara konfigurasi OSPF pada Router Cisco">
+            <a href="https://santekno.com/cara-implementasi-single-double-linked-list-golang/" class="list-group-item list-group-item-action" title="Cara Implementasi Single Double Linked List Golang">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-jaringan-komputer-thumbnail.png"
-                     alt="Cara konfigurasi OSPF pada Router Cisco" data-sizes="auto" width="70" height="70" loading="lazy">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Implementasi Single Double Linked List Golang" data-sizes="auto" width="70" height="70" loading="lazy">
                   
                   
-                  <h6 class="mb-1">Cara konfigurasi OSPF pada Router Cisco</h6>
-                  <small class="text-secondary">2019-12-29 · 1 minutes read</small>
+                  <h6 class="mb-1">Cara Implementasi Single Double Linked List Golang</h6>
+                  <small class="text-secondary">2021-04-09 · 1 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/pengertian-rip-routing-information/" class="list-group-item list-group-item-action" title="Pengertian Rip Routing Information">
+            <a href="https://santekno.com/cara-setup-development-go-di-visual-studio-code/" class="list-group-item list-group-item-action" title="Cara Setup Development Go Di Visual Studio Code">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-jaringan-komputer-thumbnail.png"
-                     alt="Pengertian Rip Routing Information" data-sizes="auto" width="70" height="70" loading="lazy">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Setup Development Go Di Visual Studio Code" data-sizes="auto" width="70" height="70" loading="lazy">
                   
                   
-                  <h6 class="mb-1">Pengertian Rip Routing Information</h6>
-                  <small class="text-secondary">2019-12-28 · 2 minutes read</small>
+                  <h6 class="mb-1">Cara Setup Development Go Di Visual Studio Code</h6>
+                  <small class="text-secondary">2020-10-15 · 3 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/cara-konfigurasi-rip-pada-router-cisco/" class="list-group-item list-group-item-action" title="Cara Konfigurasi RIP pada Router Cisco">
+            <a href="https://santekno.com/cara-mengatasi-error-handling-pada-golang/" class="list-group-item list-group-item-action" title="Cara Mengatasi Error Handling pada Golang">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-jaringan-komputer-thumbnail.png"
-                     alt="Cara Konfigurasi RIP pada Router Cisco" data-sizes="auto" width="70" height="70" loading="lazy">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Mengatasi Error Handling pada Golang" data-sizes="auto" width="70" height="70" loading="lazy">
                   
                   
-                  <h6 class="mb-1">Cara Konfigurasi RIP pada Router Cisco</h6>
-                  <small class="text-secondary">2019-12-28 · 2 minutes read</small>
+                  <h6 class="mb-1">Cara Mengatasi Error Handling pada Golang</h6>
+                  <small class="text-secondary">2020-08-22 · 5 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/cara-konfigurasi-eigrp-pada-router-cisco/" class="list-group-item list-group-item-action" title="Cara Konfigurasi EIGRP pada Router Cisco">
+            <a href="https://santekno.com/vscode-extension-yang-sering-digunakan-programmer-golang/" class="list-group-item list-group-item-action" title="VSCode Extension Yang Sering Digunakan Programmer Golang">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-jaringan-komputer-thumbnail.png"
-                     alt="Cara Konfigurasi EIGRP pada Router Cisco" data-sizes="auto" width="70" height="70" loading="lazy">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/extension-vscode-programmer-golang-thumbnail.png"
+                     alt="VSCode Extension Yang Sering Digunakan Programmer Golang" data-sizes="auto" width="70" height="70" loading="lazy">
                   
                   
-                  <h6 class="mb-1">Cara Konfigurasi EIGRP pada Router Cisco</h6>
-                  <small class="text-secondary">2019-12-28 · 2 minutes read</small>
+                  <h6 class="mb-1">VSCode Extension Yang Sering Digunakan Programmer Golang</h6>
+                  <small class="text-secondary">2020-02-17 · 2 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/bgp-border-gateway-protocol/" class="list-group-item list-group-item-action" title="BGP (Border Gateway Protocol)">
+            <a href="https://santekno.com/cara-membaut-stack-menggunakan-standar-template-library/" class="list-group-item list-group-item-action" title="Cara Membaut Stack Menggunakan Standar Template Library">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-jaringan-komputer-thumbnail.png"
-                     alt="BGP (Border Gateway Protocol)" data-sizes="auto" width="70" height="70" loading="lazy">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/cpp-programming-logo.png"
+                     alt="Cara Membaut Stack Menggunakan Standar Template Library" data-sizes="auto" width="70" height="70" loading="lazy">
                   
                   
-                  <h6 class="mb-1">BGP (Border Gateway Protocol)</h6>
-                  <small class="text-secondary">2019-12-28 · 6 minutes read</small>
+                  <h6 class="mb-1">Cara Membaut Stack Menggunakan Standar Template Library</h6>
+                  <small class="text-secondary">2019-05-16 · 1 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/eigrp-enhanced-interior-gateway-routing-protocol/" class="list-group-item list-group-item-action" title="EIGRP (Enhanced Interior Gateway Routing Protocol)">
+            <a href="https://santekno.com/cara-membuat-stack-menggunakan-double-linked-list/" class="list-group-item list-group-item-action" title="Cara Membuat Stack menggunakan Double Linked List">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-jaringan-komputer-thumbnail.png"
-                     alt="EIGRP (Enhanced Interior Gateway Routing Protocol)" data-sizes="auto" width="70" height="70" loading="lazy">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/cpp-programming-logo.png"
+                     alt="Cara Membuat Stack menggunakan Double Linked List" data-sizes="auto" width="70" height="70" loading="lazy">
                   
                   
-                  <h6 class="mb-1">EIGRP (Enhanced Interior Gateway Routing Protocol)</h6>
-                  <small class="text-secondary">2019-12-28 · 6 minutes read</small>
+                  <h6 class="mb-1">Cara Membuat Stack menggunakan Double Linked List</h6>
+                  <small class="text-secondary">2019-05-16 · 2 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/ospf-open-shortest-path-first/" class="list-group-item list-group-item-action" title="OSPF (Open Shortest Path First)">
+            <a href="https://santekno.com/cara-membuat-stack-menggunakan-array-c-/" class="list-group-item list-group-item-action" title="Cara Membuat Stack menggunakan Array C&#43;&#43;">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-jaringan-komputer-thumbnail.png"
-                     alt="OSPF (Open Shortest Path First)" data-sizes="auto" width="70" height="70" loading="lazy">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/cpp-programming-logo.png"
+                     alt="Cara Membuat Stack menggunakan Array C&#43;&#43;" data-sizes="auto" width="70" height="70" loading="lazy">
                   
                   
-                  <h6 class="mb-1">OSPF (Open Shortest Path First)</h6>
-                  <small class="text-secondary">2019-12-28 · 3 minutes read</small>
+                  <h6 class="mb-1">Cara Membuat Stack menggunakan Array C&#43;&#43;</h6>
+                  <small class="text-secondary">2019-05-16 · 2 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/igrp-interior-gateway-routing-protocol/" class="list-group-item list-group-item-action" title="IGRP (Interior Gateway Routing Protocol)">
+            <a href="https://santekno.com/cara-melakukan-debug-golang-pada-vscode/" class="list-group-item list-group-item-action" title="Cara Melakukan Debug Golang Pada Vscode">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-jaringan-komputer-thumbnail.png"
-                     alt="IGRP (Interior Gateway Routing Protocol)" data-sizes="auto" width="70" height="70" loading="lazy">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Melakukan Debug Golang Pada Vscode" data-sizes="auto" width="70" height="70" loading="lazy">
                   
                   
-                  <h6 class="mb-1">IGRP (Interior Gateway Routing Protocol)</h6>
-                  <small class="text-secondary">2019-12-28 · 2 minutes read</small>
+                  <h6 class="mb-1">Cara Melakukan Debug Golang Pada Vscode</h6>
+                  <small class="text-secondary">2020-10-20 · 7 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/pengertian-perbedaan-routing-static-dan-routing-dynamic/" class="list-group-item list-group-item-action" title="Pengertian, Perbedaan Routing Static dan Routing Dynamic">
+            <a href="https://santekno.com/cara-membuat-double-linked-list-menggunakan-c-/" class="list-group-item list-group-item-action" title="Cara Membuat Double Linked List menggunakan C&#43;&#43;">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-jaringan-komputer-thumbnail.png"
-                     alt="Pengertian, Perbedaan Routing Static dan Routing Dynamic" data-sizes="auto" width="70" height="70" loading="lazy">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/cpp-programming-logo.png"
+                     alt="Cara Membuat Double Linked List menggunakan C&#43;&#43;" data-sizes="auto" width="70" height="70" loading="lazy">
                   
                   
-                  <h6 class="mb-1">Pengertian, Perbedaan Routing Static dan Routing Dynamic</h6>
-                  <small class="text-secondary">2019-12-28 · 4 minutes read</small>
+                  <h6 class="mb-1">Cara Membuat Double Linked List menggunakan C&#43;&#43;</h6>
+                  <small class="text-secondary">2019-05-16 · 2 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/cara-konfigurasi-static-route-pada-router-cisco/" class="list-group-item list-group-item-action" title="Cara Konfigurasi Static Route pada Router Cisco">
+            <a href="https://santekno.com/cara-menggunakan-single-linked-list-menggunakan-c-/" class="list-group-item list-group-item-action" title="Cara Menggunakan Single Linked List Menggunakan C&#43;&#43;">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-jaringan-komputer-thumbnail.png"
-                     alt="Cara Konfigurasi Static Route pada Router Cisco" data-sizes="auto" width="70" height="70" loading="lazy">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/cpp-programming-logo.png"
+                     alt="Cara Menggunakan Single Linked List Menggunakan C&#43;&#43;" data-sizes="auto" width="70" height="70" loading="lazy">
                   
                   
-                  <h6 class="mb-1">Cara Konfigurasi Static Route pada Router Cisco</h6>
-                  <small class="text-secondary">2019-12-28 · 2 minutes read</small>
+                  <h6 class="mb-1">Cara Menggunakan Single Linked List Menggunakan C&#43;&#43;</h6>
+                  <small class="text-secondary">2019-05-16 · 2 minutes read</small>
                </div>
             </div>
          </a>
