@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://santekno.com/cara-implementasi-queue-antrian-golang/</loc>
+    <lastmod>2021-04-15T14:42:06+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/cara-menentukan-huruf-vokal-konsonan-golang/</loc>
+    <lastmod>2021-04-15T13:08:12+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/cara-implementasi-stack-golang/</loc>
     <lastmod>2021-04-13T05:20:04+07:00</lastmod>
   </url>
@@ -323,6 +333,12 @@
   </url>
   
   <url>
+    <loc>https://santekno.com/tags/antrian/</loc>
+    <lastmod>2021-04-15T14:42:06+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/tags/ascii/</loc>
     <lastmod>2019-05-05T12:00:00+07:00</lastmod>
     <priority>0</priority>
@@ -342,6 +358,12 @@
   <url>
     <loc>https://santekno.com/tags/cd/</loc>
     <lastmod>2019-10-06T11:52:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/tags/channel/</loc>
+    <lastmod>2021-04-15T14:42:06+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -401,7 +423,7 @@
   
   <url>
     <loc>https://santekno.com/tags/golang/</loc>
-    <lastmod>2021-04-13T05:20:04+07:00</lastmod>
+    <lastmod>2021-04-15T14:42:06+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -412,13 +434,13 @@
   </url>
   
   <url>
-    <loc>https://santekno.com/categories/hardware/</loc>
+    <loc>https://santekno.com/tags/hardware/</loc>
     <lastmod>2019-12-29T22:59:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://santekno.com/tags/hardware/</loc>
+    <loc>https://santekno.com/categories/hardware/</loc>
     <lastmod>2019-12-29T22:59:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -437,19 +459,19 @@
   
   <url>
     <loc>https://santekno.com/tags/konsonan/</loc>
-    <lastmod>2019-05-04T12:00:00+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://santekno.com/categories/linux/</loc>
-    <lastmod>2019-11-10T14:39:00+00:00</lastmod>
+    <lastmod>2021-04-15T13:08:12+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://santekno.com/tags/linux/</loc>
     <lastmod>2019-12-29T21:05:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://santekno.com/categories/linux/</loc>
+    <lastmod>2019-11-10T14:39:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -491,7 +513,7 @@
   
   <url>
     <loc>https://santekno.com/categories/pemrograman/</loc>
-    <lastmod>2021-04-13T05:20:04+07:00</lastmod>
+    <lastmod>2021-04-15T14:42:06+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -508,6 +530,12 @@
   </url>
   
   <url>
+    <loc>https://santekno.com/tags/queue/</loc>
+    <lastmod>2021-04-15T14:42:06+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://santekno.com/tags/recover/</loc>
     <lastmod>2020-08-22T21:47:35+07:00</lastmod>
     <priority>0</priority>
@@ -515,7 +543,7 @@
   
   <url>
     <loc>https://santekno.com/</loc>
-    <lastmod>2021-04-13T05:20:04+07:00</lastmod>
+    <lastmod>2021-04-15T14:42:06+07:00</lastmod>
   </url>
   
   <url>
@@ -556,7 +584,7 @@
   
   <url>
     <loc>https://santekno.com/tags/</loc>
-    <lastmod>2019-05-05T12:00:00+07:00</lastmod>
+    <lastmod>2021-04-15T14:42:06+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -573,14 +601,14 @@
   </url>
   
   <url>
-    <loc>https://santekno.com/categories/tutorial/</loc>
-    <lastmod>2020-10-20T11:41:06+07:00</lastmod>
+    <loc>https://santekno.com/tags/tutorial/</loc>
+    <lastmod>2021-04-15T14:42:06+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://santekno.com/tags/tutorial/</loc>
-    <lastmod>2021-04-13T05:20:04+07:00</lastmod>
+    <loc>https://santekno.com/categories/tutorial/</loc>
+    <lastmod>2020-10-20T11:41:06+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -592,7 +620,7 @@
   
   <url>
     <loc>https://santekno.com/tags/vokal/</loc>
-    <lastmod>2019-05-04T12:00:00+07:00</lastmod>
+    <lastmod>2021-04-15T13:08:12+07:00</lastmod>
     <priority>0</priority>
   </url>
   

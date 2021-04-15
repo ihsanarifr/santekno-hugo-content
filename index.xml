@@ -6,10 +6,30 @@
     <description>Recent content on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Tue, 13 Apr 2021 05:20:04 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 15 Apr 2021 14:42:06 +0700</lastBuildDate>
     
 	<atom:link href="https://santekno.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cara Implementasi Queue (Antrian) Golang</title>
+      <link>https://santekno.com/cara-implementasi-queue-antrian-golang/</link>
+      <pubDate>Thu, 15 Apr 2021 14:42:06 +0700</pubDate>
+      
+      <guid>https://santekno.com/cara-implementasi-queue-antrian-golang/</guid>
+      <description>Pengertian Dasar Queue atau sering kita tahu itu satu struktur data antrian dimana data yang kita masukkan akan diantrikan, dengan kata lain data yang pertama masuk akan keluar pertama juga. Biasanya kita sering tahu istrila FIFO (First In First Out).
+Menurut informasi yang Santekno dapat, Queue atau antrian adalah suatu kumpulan data yang penambahan elemennya hanya bisa dilakukan pada suatu ujung (disebut di sisi belakang atau rear), dan menghapus atau mengambil elemen dilakukan lewat ujung yang lain (disebut dengan istilah sisi depan atau front).</description>
+    </item>
+    
+    <item>
+      <title>Cara Menentukan Huruf Vokal Konsonan Golang</title>
+      <link>https://santekno.com/cara-menentukan-huruf-vokal-konsonan-golang/</link>
+      <pubDate>Thu, 15 Apr 2021 13:08:12 +0700</pubDate>
+      
+      <guid>https://santekno.com/cara-menentukan-huruf-vokal-konsonan-golang/</guid>
+      <description>Pendahuluan Menentukan vokal konsonan disini akan dibagi beberapa contoh, Nantinya kita akan lebih tahu proses mana saja yang akan dijalankan secara berurutan. Yang sudah kita tahu bahwa karakter vokal itu adalah a,i,u,e,o dan ini akan menjadi kondisi dalam program nantinya.
+Program menentukan vokal dan konsonan menggunakan if..else  a adalah vokal b adalah konsonan  Program menentukan vokal dan konsonan menggunakan switch case  e adalah vokal g adalah konsonan  Penjelasan Dalam program ini, pengguna diminta untuk memasukkan karakter yang disimpan dalam variabel c.</description>
+    </item>
     
     <item>
       <title>Cara Implementasi Stack Golang</title>

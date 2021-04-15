@@ -6,10 +6,20 @@
     <description>Recent content in Konsonan on Santekno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Sat, 04 May 2019 12:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 15 Apr 2021 13:08:12 +0700</lastBuildDate>
     
 	<atom:link href="https://santekno.com/tags/konsonan/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cara Menentukan Huruf Vokal Konsonan Golang</title>
+      <link>https://santekno.com/cara-menentukan-huruf-vokal-konsonan-golang/</link>
+      <pubDate>Thu, 15 Apr 2021 13:08:12 +0700</pubDate>
+      
+      <guid>https://santekno.com/cara-menentukan-huruf-vokal-konsonan-golang/</guid>
+      <description>Pendahuluan Menentukan vokal konsonan disini akan dibagi beberapa contoh, Nantinya kita akan lebih tahu proses mana saja yang akan dijalankan secara berurutan. Yang sudah kita tahu bahwa karakter vokal itu adalah a,i,u,e,o dan ini akan menjadi kondisi dalam program nantinya.
+Program menentukan vokal dan konsonan menggunakan if..else  a adalah vokal b adalah konsonan  Program menentukan vokal dan konsonan menggunakan switch case  e adalah vokal g adalah konsonan  Penjelasan Dalam program ini, pengguna diminta untuk memasukkan karakter yang disimpan dalam variabel c.</description>
+    </item>
     
     <item>
       <title>Cara Menentukan Huruf Vokal dan Konsonan</title>
