@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multiplexer on Santekno</title>
+    <link>https://santekno.com/tags/multiplexer/</link>
+    <description>Recent content in Multiplexer on Santekno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Mon, 19 Apr 2021 13:25:16 +0700</lastBuildDate>
+    
+	<atom:link href="https://santekno.com/tags/multiplexer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Implementasi Concurrency Pattern Fan In dan Fan Out Golang</title>
+      <link>https://santekno.com/cara-implementasi-concurrency-pattern-fan-in-dan-fan-out-golang/</link>
+      <pubDate>Mon, 19 Apr 2021 13:25:16 +0700</pubDate>
+      
+      <guid>https://santekno.com/cara-implementasi-concurrency-pattern-fan-in-dan-fan-out-golang/</guid>
+      <description>Channel dalam Go Membuat program bersamaan di Go memiliki pendekatan yang unik. Pendekatannya adalah berbagi memori dengan berkomunikasi, bukan berkomunikasi dengan berbagi memori yang tidak diizinkan di Go. Pendekatan ini dapat dilakukan dengan menggunakan channel yang dapat digunakan oleh goroutine untuk saling berkomunikasi.
+Untuk membuat channel di Go, bisa dilakukan dengan menggunakan fungsi make ().
+Perhatikan bahwa saat membuat channel ada tipe data tertentu yang perlu dilampirkan. Tipe ini bisa tipe apapun yang didukung oleh Golang.</description>
+    </item>
+    
+  </channel>
+</rss>

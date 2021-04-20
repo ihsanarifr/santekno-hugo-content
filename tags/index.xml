@@ -75,6 +75,15 @@
     </item>
     
     <item>
+      <title>Concurrency</title>
+      <link>https://santekno.com/tags/concurrency/</link>
+      <pubDate>Mon, 19 Apr 2021 13:25:16 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/concurrency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cpp Programming</title>
       <link>https://santekno.com/tags/cpp-programming/</link>
       <pubDate>Thu, 16 May 2019 13:06:00 +0700</pubDate>
@@ -156,9 +165,27 @@
     </item>
     
     <item>
+      <title>Fan In</title>
+      <link>https://santekno.com/tags/fan-in/</link>
+      <pubDate>Mon, 19 Apr 2021 13:25:16 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/fan-in/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fan Out</title>
+      <link>https://santekno.com/tags/fan-out/</link>
+      <pubDate>Mon, 19 Apr 2021 13:25:16 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/fan-out/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Golang</title>
       <link>https://santekno.com/tags/golang/</link>
-      <pubDate>Mon, 19 Apr 2021 11:33:03 +0700</pubDate>
+      <pubDate>Mon, 19 Apr 2021 13:25:16 +0700</pubDate>
       
       <guid>https://santekno.com/tags/golang/</guid>
       <description></description>
@@ -237,6 +264,15 @@
     </item>
     
     <item>
+      <title>Multiplexer</title>
+      <link>https://santekno.com/tags/multiplexer/</link>
+      <pubDate>Mon, 19 Apr 2021 13:25:16 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/multiplexer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Network</title>
       <link>https://santekno.com/tags/network/</link>
       <pubDate>Sun, 29 Dec 2019 22:30:00 +0000</pubDate>
@@ -260,6 +296,15 @@
       <pubDate>Sat, 22 Aug 2020 21:47:35 +0700</pubDate>
       
       <guid>https://santekno.com/tags/panic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pattern</title>
+      <link>https://santekno.com/tags/pattern/</link>
+      <pubDate>Mon, 19 Apr 2021 13:25:16 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/pattern/</guid>
       <description></description>
     </item>
     
@@ -374,7 +419,7 @@
     <item>
       <title>Tutorial</title>
       <link>https://santekno.com/tags/tutorial/</link>
-      <pubDate>Mon, 19 Apr 2021 11:33:03 +0700</pubDate>
+      <pubDate>Mon, 19 Apr 2021 13:25:16 +0700</pubDate>
       
       <guid>https://santekno.com/tags/tutorial/</guid>
       <description></description>
