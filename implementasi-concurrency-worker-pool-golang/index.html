@@ -6,11 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="theme-color" content="#2980b9" />
       <meta name="author" content="santekno.com">
-      <meta name="title" content="Cara Menentukan Bilangan Ganjil Genap - Santekno" />
-      <meta name="description" content="Bilangan ganjil atau genap pada program C dapat digunakan dengan proses kondisional, atau lebih jelasnya menggunakan sintak if .. else atau switch case. Berikut ini menentukan Bilangan Ganjil Genap dengan program yang sederhana.">
+      <meta name="title" content="Implementasi Concurrency Worker Pool Golang - Santekno" />
+      <meta name="description" content="Pengertian Dasar Worker pool adalah teknik manajemen goroutine dalam concurrent programming pada Go. Sejumlah worker dijalankan dan masing-masing memiliki tugas yang sama yaitu menyelesaikan sejumlah jobs. Dengan metode worker pool ini, maka penggunaan memory dan performansi program akan bisa optimal.
+Implementasi Program  output:
+&gt; Send Job: 0 -&gt; Send Job: 1 -&gt; Send Job: 2 -&gt; Send Job: 3 -&gt; Send Job: 4 -&gt; Send Job: 5 &lt;- receive job : 0 &lt;- receive job : 4 -&gt; Send Job: 6 -&gt; Send Job: 7 &lt;- receive job : 5 -&gt; Send Job: 8 &lt;- receive job : 2 &lt;- receive job : 3 -&gt; Send Job: 9 -&gt; Send Job: 10 &lt;- receive job : 1 &lt;- receive job : 9 ^Csignal: interrupt  Pembahasan Pada contoh program diatas kita akan melakukan cetak suatu nilai yang di-input.">
       
       
-      <meta name="keywords" content="tutorial, c-programming, ascii, Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
+      <meta name="keywords" content="golang, tutorial, concurrency, worker pool, Berbagi Seputar Android, Gadget, Hardware, Linux, Software, Networking, Programming, Sains Teknologi" />
       
       
 
@@ -18,14 +20,14 @@
 
       
       
-      <link rel="canonical" href="https://santekno.com/cara-menentukan-bilangan-ganjil-genap/" />
+      <link rel="canonical" href="https://santekno.com/implementasi-concurrency-worker-pool-golang/" />
       
       
 
       
       <link rel="icon" type="image/png" href="https://santekno.com/images/logo.png" />
       
-      <title>Cara Menentukan Bilangan Ganjil Genap - Santekno</title>
+      <title>Implementasi Concurrency Worker Pool Golang - Santekno</title>
       
       <link href="https://santekno.com/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://santekno.com/css/style.css" rel="stylesheet">
@@ -100,21 +102,23 @@
    <div class="singlepost">
       <div class="mb-3">
          <img src="https://santekno.com/img/avatar.jpg" class="rounded-circle" width="32" height="32" alt="author" loading="lazy">
-         <a class="align-middle text-dark" href="https://santekno.com/cara-menentukan-bilangan-ganjil-genap/" target="_blank" rel="noopener"> Ihsan Arif</a>
+         <a class="align-middle text-dark" href="https://santekno.com/implementasi-concurrency-worker-pool-golang/" target="_blank" rel="noopener"> Ihsan Arif</a>
          <small class="align-middle text-muted">
-            <time>May 5, 2019</time> | 1  minute 
+            <time>April 23, 2021</time> | 3  minutes 
          </small>
       </div>
-      <h1>Cara Menentukan Bilangan Ganjil Genap</h1>
+      <h1>Implementasi Concurrency Worker Pool Golang</h1>
       <div class="postmeta">
          <ul>
             <li>
                
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/golang">#golang</a></span>
+               
                   <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/tutorial">#tutorial</a></span>
                
-                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/c-programming">#c-programming</a></span>
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/concurrency">#concurrency</a></span>
                
-                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/ascii">#ascii</a></span>
+                  <span class="badge badge-success"> <a class="text-white" href="https://santekno.com/tags/worker-pool">#worker pool</a></span>
                
             </li>
          </ul>
@@ -123,55 +127,68 @@
       <div class="post-content">
          
             
-               <img class="img-fluid" src="https://santekno.com/images/c-programming.png" alt="" style="width:100%;" class="lazyload">
+               <img class="img-fluid" src="https://santekno.com/images/tutorial-golang.png" alt="" style="width:100%;" class="lazyload">
             
          
          <p></p>
-         <p>Bilangan ganjil atau genap pada program C dapat digunakan dengan proses kondisional, atau lebih jelasnya menggunakan sintak <code>if .. else</code> atau <code>switch case</code>. Berikut ini menentukan Bilangan Ganjil Genap dengan program yang sederhana.</p>
+         
 
-<h2 id="souce-code">Souce Code</h2>
+<h2 id="pengertian-dasar">Pengertian Dasar</h2>
 
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-int main(){
-   int num;
-   printf(&quot;Masukkan bilangan interger yang ingin dicek: &quot;);
-   scanf(&quot;%d&quot;,&amp;num);
-   if((num%2)==0)      /* Kondisi menggunakan if else*/
-         printf(&quot;%d adalah Genap.&quot;,num);
-   else
-         printf(&quot;%d adalah Ganjil.&quot;,num);
-   return 0;
-}
+<p><strong>Worker pool</strong> adalah teknik manajemen <strong>goroutine</strong> dalam concurrent programming pada Go. Sejumlah worker dijalankan dan masing-masing memiliki tugas yang sama yaitu menyelesaikan sejumlah <em>jobs</em>. Dengan metode <strong>worker pool</strong> ini, maka penggunaan memory dan performansi program akan bisa optimal.</p>
+
+<h2 id="implementasi-program">Implementasi Program</h2>
+
+<script type="application/javascript" src="//gist.github.com/ihsanarifr/213b25e081885aba7ee1ba07299d95a8.js"></script>
+
+<p>output:</p>
+
+<pre><code class="language-bash">&gt; Send Job: 0
+-&gt; Send Job: 1
+-&gt; Send Job: 2
+-&gt; Send Job: 3
+-&gt; Send Job: 4
+-&gt; Send Job: 5
+&lt;- receive job : 0
+&lt;- receive job : 4
+-&gt; Send Job: 6
+-&gt; Send Job: 7
+&lt;- receive job : 5
+-&gt; Send Job: 8
+&lt;- receive job : 2
+&lt;- receive job : 3
+-&gt; Send Job: 9
+-&gt; Send Job: 10
+&lt;- receive job : 1
+&lt;- receive job : 9
+^Csignal: interrupt
 </code></pre>
 
-<h2 id="output-1">Output 1</h2>
+<h2 id="pembahasan">Pembahasan</h2>
 
-<pre><code class="language-bash">Masukkan bilangan integer yang ingin dicek :
-25 adalah Ganjil
-</code></pre>
+<p>Pada contoh program diatas kita akan melakukan cetak suatu nilai yang di-<em>input</em>. Method <code>echoWorker</code> adalah fungsi yang nantinya akan mengambil nilai dari <em>input</em> lalu kita buat <em>sleep</em> beberapa <em>milisecond</em>, misalkan dalam waktu <em>sleep</em> tersebut kita seolah-olah melakukan proses yang lain.Sedangkan method <code>producer</code> memberikan input nilai ke dalam <code>channel</code> yang berurutan.</p>
 
-<h2 id="output-2">Output 2</h2>
+<p>Saat kita jalankan program tersebut kita harus inisialisasi terlebih dahulu <code>channel</code> <em>input</em> dan <em>output</em>-nya. kenapa kita menggunakan 2 variable? Jadi <code>in</code> digunakan untuk mengeset input yang nanti akan diproses di worker sedangkan <code>out</code> digunakan untuk menerima hasil dari proses <em>worker</em> tersebut agar diproses di tahap berikutnya.</p>
 
-<pre><code class="language-bash">Masukkan bilangan integer yang ingin dicek :
-16 adalah Genap
-</code></pre>
+<p>Langkah pertama siapkan <code>worker</code> menggunakan <code>goroutine</code>, jumlah worker sesuaikan dengan kebutuhan, dalam program diatas kita gunakan 5 workers yang nantinya akan berjalan. Pada saat kita execute <code>go producer(in)</code> maka channel <code>in</code> pun tiap waktu terus terisi dengan iterasi yang terus-menerus jika kita tidak memberhentikan program.</p>
 
-<h2 id="penjelasan">Penjelasan</h2>
+<p>Bisa kita lihat output dari program, karena pertama kali kita siapkan 5 workers, maka saat <code>in</code> di set data maka ke-5 worker itu pun berjalan bersamaan dengan proses (waktu) yang berbeda-beda. Nah kenapa yang pertama kali diterima atau dicetak adalah <strong>job 0</strong> dan <strong>job 4</strong>? Mungkin saja proses <strong>Job 0</strong> dan <strong>job 4</strong> memiliki waktu tunggu yang lebih kecil dibandingkan yang lain. Begitupun worker yang lain, siapa yang lebih dahulu selesai maka dia akan mengirim nilainya dan menampilkan nilainya secara langsung.</p>
 
-<p>Dalam program ini, pengguna diminta untuk memasukkan bilangan integer yang disimpan dalam variabel <code>num</code>. Kemudian, sisanya ditemukan saat nomor yang dibagi 2 dan diperiksa apakah sisanya adalah 0 atau tidak. Jika sisa adalah 0 maka, bilangan tersebut genap. Program ini menggunakan <code>if..else</code>.</p>
+<h2 id="kesimpulan">Kesimpulan</h2>
 
-<p>Selain program yang diatas bisa juga menggunakan operator kondisional [?] yang merupakan notasi singkat dari pernyataan <code>if .. else</code>.</p>
+<p><strong>Worker pool</strong> ini jenis <em>concurrent</em> yang mudah digunakan untuk melakukan proses data yang sangat banyak dengan proses yang cepat. Misalkan, kita akan memindahkan data dari CSV ke dalam <em>database</em>, dan <em>record</em>-nya itu bisa sampai berjuta-juta maka <strong>worker pool</strong> ini bisa jadi pilihan yang pas untuk memproses data seperti itu.</p>
+
+<p>Dengan proses yang cepat seperti itu, perlu diingat kita juga perlu mempertimbangkan jumlah <strong>worker</strong> yang sedang berjalan disesuaikan dengan kapasitas komputer/server yang nanti <strong>worker pool</strong> berjalan. Jangan sampai saat kita menjalankan program di komputer/server kita terjadi <code>hang</code> karena CPU sampai 100%.</p>
+
       </div>
       <div class="post-content">
          <div class="row">
             <div class="col-md-6">
                
-                  <a class="previous" href="https://santekno.com/cara-menentukan-huruf-vokal-dan-konsonan/">&lt;- Cara Menentukan Huruf Vokal dan Konsonan</a>
+                  <a class="previous" href="https://santekno.com/cara-implementasi-concurrency-pattern-fan-in-dan-fan-out-golang/">&lt;- Cara Implementasi Concurrency Pattern Fan In dan Fan Out Golang</a>
                
             </div>
             <div class="col-md-6">
-               
-                  <a class="next" href="https://santekno.com/cara-menentukan-angka-terbesar-dari-3-angka/"> Cara Menentukan Angka Terbesar dari 3 Angka -></a>
                
             </div>
          </div>
@@ -186,47 +203,152 @@ int main(){
       
       <ul>
          
-            <a href="https://santekno.com/cara-menampilkan-code-ascii/" class="list-group-item list-group-item-action" title="Cara Menampilkan Code ASCII">
+            <a href="https://santekno.com/cara-implementasi-concurrency-pattern-fan-in-dan-fan-out-golang/" class="list-group-item list-group-item-action" title="Cara Implementasi Concurrency Pattern Fan In dan Fan Out Golang">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/c-programming-logo.png"
-                     alt="Cara Menampilkan Code ASCII" data-sizes="auto" width="70" height="70"  class="lazyload">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Implementasi Concurrency Pattern Fan In dan Fan Out Golang" data-sizes="auto" width="70" height="70"  class="lazyload">
                   
                   
-                  <h6 class="mb-1">Cara Menampilkan Code ASCII</h6>
-                  <small class="text-secondary">2019-05-03 · 1 minutes read</small>
+                  <h6 class="mb-1">Cara Implementasi Concurrency Pattern Fan In dan Fan Out Golang</h6>
+                  <small class="text-secondary">2021-04-19 · 2 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/cara-menentukan-huruf-vokal-dan-konsonan/" class="list-group-item list-group-item-action" title="Cara Menentukan Huruf Vokal dan Konsonan">
+            <a href="https://santekno.com/cara-implementasi-binary-search-and-tree-golang/" class="list-group-item list-group-item-action" title="Cara Implementasi Binary Search and Tree Golang">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/c-programming-logo.png"
-                     alt="Cara Menentukan Huruf Vokal dan Konsonan" data-sizes="auto" width="70" height="70"  class="lazyload">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Implementasi Binary Search and Tree Golang" data-sizes="auto" width="70" height="70"  class="lazyload">
                   
                   
-                  <h6 class="mb-1">Cara Menentukan Huruf Vokal dan Konsonan</h6>
-                  <small class="text-secondary">2019-05-04 · 2 minutes read</small>
+                  <h6 class="mb-1">Cara Implementasi Binary Search and Tree Golang</h6>
+                  <small class="text-secondary">2021-04-19 · 2 minutes read</small>
                </div>
             </div>
          </a>
          
-            <a href="https://santekno.com/cara-pertambahan-dua-variabel/" class="list-group-item list-group-item-action" title="Cara Pertambahan dua variabel">
+            <a href="https://santekno.com/cara-implementasi-queue-antrian-golang/" class="list-group-item list-group-item-action" title="Cara Implementasi Queue (Antrian) Golang">
             <div class="row">
                <div class="col-12">
                   
                   
-                  <img class="rounded float-left mr-3" src="https://santekno.com/images/c-programming-logo.png"
-                     alt="Cara Pertambahan dua variabel" data-sizes="auto" width="70" height="70"  class="lazyload">
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Implementasi Queue (Antrian) Golang" data-sizes="auto" width="70" height="70"  class="lazyload">
                   
                   
-                  <h6 class="mb-1">Cara Pertambahan dua variabel</h6>
-                  <small class="text-secondary">2019-05-02 · 1 minutes read</small>
+                  <h6 class="mb-1">Cara Implementasi Queue (Antrian) Golang</h6>
+                  <small class="text-secondary">2021-04-15 · 1 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+            <a href="https://santekno.com/cara-menentukan-huruf-vokal-konsonan-golang/" class="list-group-item list-group-item-action" title="Cara Menentukan Huruf Vokal Konsonan Golang">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Menentukan Huruf Vokal Konsonan Golang" data-sizes="auto" width="70" height="70"  class="lazyload">
+                  
+                  
+                  <h6 class="mb-1">Cara Menentukan Huruf Vokal Konsonan Golang</h6>
+                  <small class="text-secondary">2021-04-15 · 1 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+            <a href="https://santekno.com/cara-implementasi-stack-golang/" class="list-group-item list-group-item-action" title="Cara Implementasi Stack Golang">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Implementasi Stack Golang" data-sizes="auto" width="70" height="70"  class="lazyload">
+                  
+                  
+                  <h6 class="mb-1">Cara Implementasi Stack Golang</h6>
+                  <small class="text-secondary">2021-04-13 · 2 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+            <a href="https://santekno.com/cara-implementasi-single-double-linked-list-golang/" class="list-group-item list-group-item-action" title="Cara Implementasi Single Double Linked List Golang">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Implementasi Single Double Linked List Golang" data-sizes="auto" width="70" height="70"  class="lazyload">
+                  
+                  
+                  <h6 class="mb-1">Cara Implementasi Single Double Linked List Golang</h6>
+                  <small class="text-secondary">2021-04-09 · 1 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+            <a href="https://santekno.com/cara-setup-development-go-di-visual-studio-code/" class="list-group-item list-group-item-action" title="Cara Setup Development Go Di Visual Studio Code">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Setup Development Go Di Visual Studio Code" data-sizes="auto" width="70" height="70"  class="lazyload">
+                  
+                  
+                  <h6 class="mb-1">Cara Setup Development Go Di Visual Studio Code</h6>
+                  <small class="text-secondary">2020-10-15 · 3 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+            <a href="https://santekno.com/cara-mengatasi-error-handling-pada-golang/" class="list-group-item list-group-item-action" title="Cara Mengatasi Error Handling pada Golang">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Mengatasi Error Handling pada Golang" data-sizes="auto" width="70" height="70"  class="lazyload">
+                  
+                  
+                  <h6 class="mb-1">Cara Mengatasi Error Handling pada Golang</h6>
+                  <small class="text-secondary">2020-08-22 · 5 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+            <a href="https://santekno.com/vscode-extension-yang-sering-digunakan-programmer-golang/" class="list-group-item list-group-item-action" title="VSCode Extension Yang Sering Digunakan Programmer Golang">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/extension-vscode-programmer-golang-thumbnail.png"
+                     alt="VSCode Extension Yang Sering Digunakan Programmer Golang" data-sizes="auto" width="70" height="70"  class="lazyload">
+                  
+                  
+                  <h6 class="mb-1">VSCode Extension Yang Sering Digunakan Programmer Golang</h6>
+                  <small class="text-secondary">2020-02-17 · 2 minutes read</small>
+               </div>
+            </div>
+         </a>
+         
+            <a href="https://santekno.com/cara-melakukan-debug-golang-pada-vscode/" class="list-group-item list-group-item-action" title="Cara Melakukan Debug Golang Pada Vscode">
+            <div class="row">
+               <div class="col-12">
+                  
+                  
+                  <img class="rounded float-left mr-3" src="https://santekno.com/images/tutorial-golang-thumbnail.png"
+                     alt="Cara Melakukan Debug Golang Pada Vscode" data-sizes="auto" width="70" height="70"  class="lazyload">
+                  
+                  
+                  <h6 class="mb-1">Cara Melakukan Debug Golang Pada Vscode</h6>
+                  <small class="text-secondary">2020-10-20 · 7 minutes read</small>
                </div>
             </div>
          </a>
