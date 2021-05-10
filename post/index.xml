@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Membuat Distibuted Search Engine Sederhana Menggunakan Worker Pool Pada Golang</title>
+      <link>https://santekno.com/membuat-distibuted-search-engine-sederhana-menggunakan-worker-pool-pada-golang/</link>
+      <pubDate>Fri, 23 Apr 2021 15:25:34 +0700</pubDate>
+      
+      <guid>https://santekno.com/membuat-distibuted-search-engine-sederhana-menggunakan-worker-pool-pada-golang/</guid>
+      <description>Pendahuluan Kamu tahu google adalah tempat kita mencari beberapa kata kunci yang dapat menghasilkan berbagai jutaan informasi yang kita dapat hanya dengan mengetik beberapa kata kunci dan dalam waktu kurang dari 1 detik kita sudah bisa mendapatkan berbagai informasi terkait kata kunci yang kita cari. Nah ini adalah contoh miniatur atau search engine versi sederhana bagaimana kita bisa mengimplementasikan worker pool menjadi suatu engine yang berguna untuk pencarian.
+Kamu sudah memahami bagaimana cara kerja Worker Pool?</description>
+    </item>
+    
+    <item>
       <title>Implementasi Concurrency Worker Pool Golang</title>
       <link>https://santekno.com/implementasi-concurrency-worker-pool-golang/</link>
       <pubDate>Fri, 23 Apr 2021 13:48:56 +0700</pubDate>
