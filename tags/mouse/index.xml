@@ -1,47 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Mouse on Santekno</title>
-    <link>https://santekno.com/tags/mouse/</link>
-    <description>Recent content in Mouse on Santekno</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>id</language>
-    <lastBuildDate>Sun, 29 Dec 2019 22:50:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://santekno.com/tags/mouse/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Bagian-bagian dari Mouse Komputer</title>
-      <link>https://santekno.com/bagian-bagian-dari-mouse-komputer/</link>
-      <pubDate>Sun, 29 Dec 2019 22:50:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/bagian-bagian-dari-mouse-komputer/</guid>
-      <description>Pada kesempatan kali ini Santekno akan membahas tentang Mouse Komputer, di sebelum-sebelumnya sudah di posting mengenai Mouse. Sejarah Mouse dan Pengertian Mouse secara luas sudah di dijelaskan dalam postingan sebelumnya. Dan sekarang Santekno akan membahas bagian-bagian dari Mouse tersebut.Bagian-bagian pada Mouse Ball
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mouse on Santekno</title><link>https://santekno.com/tags/mouse/</link><description>Recent content in Mouse on Santekno</description><generator>Hugo -- gohugo.io</generator><language>id</language><lastBuildDate>Sun, 29 Dec 2019 22:50:00 +0000</lastBuildDate><atom:link href="https://santekno.com/tags/mouse/index.xml" rel="self" type="application/rss+xml"/><item><title>Bagian-bagian dari Mouse Komputer</title><link>https://santekno.com/bagian-bagian-dari-mouse-komputer/</link><pubDate>Sun, 29 Dec 2019 22:50:00 +0000</pubDate><guid>https://santekno.com/bagian-bagian-dari-mouse-komputer/</guid><description>Pada kesempatan kali ini Santekno akan membahas tentang Mouse Komputer, di sebelum-sebelumnya sudah di posting mengenai Mouse. Sejarah Mouse dan Pengertian Mouse secara luas sudah di dijelaskan dalam postingan sebelumnya. Dan sekarang Santekno akan membahas bagian-bagian dari Mouse tersebut.Bagian-bagian pada Mouse Ball
 Bagian Atas
 Bagian Bawah
 Semua Bagian-bagian Mouse
 Ilustrasi Bagian Mouse
-Bagian-bagiannya sebagai berikut [sesuai dengan nomor pada gambar di atas] :  Tombol Klik kiri mouse Klik tengah tombol Tombol klik kanan mouse Kabel koneksi ke PS/2 socket di komputer IC (analog) mouse untuk menggerakkan mouse dan di lanjutkan ke sinyal digital untuk dikirim ke komputer X-axis pendeteksi ketika mouse akan di geser ke kanan dan kiri Y-axis pendeteksi ketika mouse akan di geser ke depan atau belakang Rubbur ball, bola yang akan menerima geseran dan menghasilkan sudut x dan y yang dikirimkan pada pendeteksi axisElectrolytic capacitor Resistors Bagian-bagian Mouse Optical  Bagian-bagian dari Mouse Optical diantaranya sebagai berikut :  LED (obscured by wheel).</description>
-    </item>
-    
-    <item>
-      <title>Sejarah Mouse Komputer</title>
-      <link>https://santekno.com/sejarah-mouse-komputer/</link>
-      <pubDate>Wed, 23 Oct 2019 06:07:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/sejarah-mouse-komputer/</guid>
-      <description>Penemuan Mouse Pertama Mouse pertama ditemukan oleh Douglas Engelbart dari Stanford Research Institute pada tahun 1963. Mouse adalah satu dari beberapa alat penunjuk (pointing device) yang dikembangkan untuk oN Line System (NLS) milik Engelbard. Selain mouse, yang pada mulanya disebut “bug”, juga dikembangkan beberapa alat pendeteksi gerakan tubuh yang lain, misalnya alat yang diletakkan di kepala untuk mendeteksi gerakan dagu. Karena kenyamanan dan kepraktisannya, mouse-lah yang dipilih. Mouse pertama berukuran besar, dan menggunakan dua buah roda yang saling tegak lurus untuk mendeteksi gerakan ke sumbu X dan sumbu Y.</description>
-    </item>
-    
-    <item>
-      <title>Pengertian dan fungsi Mouse Komputer</title>
-      <link>https://santekno.com/pengertian-dan-fungsi-mouse-komputer/</link>
-      <pubDate>Wed, 23 Oct 2019 04:50:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/pengertian-dan-fungsi-mouse-komputer/</guid>
-      <description>Pengertian Mouse Komputer Mouse adalah sebuah perangkat keras (hardware) yang terhubung ke komputer baik melalui kabel / nirkabel. Mengapa dinamakan mouse? jawabannya adalah karena bentuk awal dari piranti ini menyerupai tikus. Selain itu, kabel yang menghubungkan mouse dengan komputer bentuknya mirip dengan ekor tikus. Sebagai tambahan informasi bagi pengetahuan kita, komputer pertama yang dijual satu paket bersama dengan mouse adalah jenis Xerox Star yang diluncurkan pada tahun 1981. Walaupun saat ini keberadaan mouse sudah banyak tergantikan dengan perangkat touchpad dimana semua fungsi dari mouse bisa dilakukan dengan menggunakan touchpad ini, namun masih lebih banyak user yang lebih memilih menggunakan mouse daripada touchpad.</description>
-    </item>
-    
-  </channel>
-</rss>
+Bagian-bagiannya sebagai berikut [sesuai dengan nomor pada gambar di atas] : Tombol Klik kiri mouse Klik tengah tombol Tombol klik kanan mouse Kabel koneksi ke PS/2 socket di komputer IC (analog) mouse untuk menggerakkan mouse dan di lanjutkan ke sinyal digital untuk dikirim ke komputer X-axis pendeteksi ketika mouse akan di geser ke kanan dan kiri Y-axis pendeteksi ketika mouse akan di geser ke depan atau belakang Rubbur ball, bola yang akan menerima geseran dan menghasilkan sudut x dan y yang dikirimkan pada pendeteksi axisElectrolytic capacitor Resistors Bagian-bagian Mouse Optical Bagian-bagian dari Mouse Optical diantaranya sebagai berikut : LED (obscured by wheel).</description></item><item><title>Sejarah Mouse Komputer</title><link>https://santekno.com/sejarah-mouse-komputer/</link><pubDate>Wed, 23 Oct 2019 06:07:00 +0000</pubDate><guid>https://santekno.com/sejarah-mouse-komputer/</guid><description>Penemuan Mouse Pertama Mouse pertama ditemukan oleh Douglas Engelbart dari Stanford Research Institute pada tahun 1963. Mouse adalah satu dari beberapa alat penunjuk (pointing device) yang dikembangkan untuk oN Line System (NLS) milik Engelbard. Selain mouse, yang pada mulanya disebut “bug”, juga dikembangkan beberapa alat pendeteksi gerakan tubuh yang lain, misalnya alat yang diletakkan di kepala untuk mendeteksi gerakan dagu. Karena kenyamanan dan kepraktisannya, mouse-lah yang dipilih. Mouse pertama berukuran besar, dan menggunakan dua buah roda yang saling tegak lurus untuk mendeteksi gerakan ke sumbu X dan sumbu Y.</description></item><item><title>Pengertian dan fungsi Mouse Komputer</title><link>https://santekno.com/pengertian-dan-fungsi-mouse-komputer/</link><pubDate>Wed, 23 Oct 2019 04:50:00 +0000</pubDate><guid>https://santekno.com/pengertian-dan-fungsi-mouse-komputer/</guid><description>Pengertian Mouse Komputer Mouse adalah sebuah perangkat keras (hardware) yang terhubung ke komputer baik melalui kabel / nirkabel. Mengapa dinamakan mouse? jawabannya adalah karena bentuk awal dari piranti ini menyerupai tikus. Selain itu, kabel yang menghubungkan mouse dengan komputer bentuknya mirip dengan ekor tikus. Sebagai tambahan informasi bagi pengetahuan kita, komputer pertama yang dijual satu paket bersama dengan mouse adalah jenis Xerox Star yang diluncurkan pada tahun 1981. Walaupun saat ini keberadaan mouse sudah banyak tergantikan dengan perangkat touchpad dimana semua fungsi dari mouse bisa dilakukan dengan menggunakan touchpad ini, namun masih lebih banyak user yang lebih memilih menggunakan mouse daripada touchpad.</description></item></channel></rss>

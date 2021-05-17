@@ -1,36 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Double Linked List on Santekno</title>
-    <link>https://santekno.com/tags/double-linked-list/</link>
-    <description>Recent content in Double Linked List on Santekno</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>id</language>
-    <lastBuildDate>Fri, 09 Apr 2021 12:58:48 +0700</lastBuildDate>
-    
-	<atom:link href="https://santekno.com/tags/double-linked-list/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Cara Implementasi Single Double Linked List Golang</title>
-      <link>https://santekno.com/cara-implementasi-single-double-linked-list-golang/</link>
-      <pubDate>Fri, 09 Apr 2021 12:58:48 +0700</pubDate>
-      
-      <guid>https://santekno.com/cara-implementasi-single-double-linked-list-golang/</guid>
-      <description>Pengertian Dasar Jika kamu sudah pernah baca-baca soal Linked List bisa baca terlebih dahulu postingan Santekno sebelumnya  single linked list dan  double linked list
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Double Linked List on Santekno</title><link>https://santekno.com/tags/double-linked-list/</link><description>Recent content in Double Linked List on Santekno</description><generator>Hugo -- gohugo.io</generator><language>id</language><lastBuildDate>Fri, 09 Apr 2021 12:58:48 +0700</lastBuildDate><atom:link href="https://santekno.com/tags/double-linked-list/index.xml" rel="self" type="application/rss+xml"/><item><title>Cara Implementasi Single Double Linked List Golang</title><link>https://santekno.com/cara-implementasi-single-double-linked-list-golang/</link><pubDate>Fri, 09 Apr 2021 12:58:48 +0700</pubDate><guid>https://santekno.com/cara-implementasi-single-double-linked-list-golang/</guid><description>Pengertian Dasar Jika kamu sudah pernah baca-baca soal Linked List bisa baca terlebih dahulu postingan Santekno sebelumnya single linked list dan double linked list
 Berbeda dengan sebelumnya implementasinya menggunakan bahasa C++, sekarang kita menggunakan bahasa GO alias golang biasanya orang bilang. Sebetulnya tidak terlalu jauh dan ribet untuk mengaplikasikannya karena script dari golang lebih mudah dan ringkas.
-Single Linked List  Single Linked List kalau kita simpulkan hanya memiliki Next() Node saja.</description>
-    </item>
-    
-    <item>
-      <title>Cara Membuat Double Linked List menggunakan C&#43;&#43;</title>
-      <link>https://santekno.com/cara-membuat-double-linked-list-menggunakan-c-/</link>
-      <pubDate>Thu, 16 May 2019 13:00:00 +0700</pubDate>
-      
-      <guid>https://santekno.com/cara-membuat-double-linked-list-menggunakan-c-/</guid>
-      <description>Double Linked List adalah ebuah linked list yang menggunakan sebuah variabel pointer saja untuk menyimpan banyak data dengan metode linked list, suatu daftar isi yang saling berhubungan.
-Baiklah, Santekno akan memberikan implementasi dari Double Linked List dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan Double Linked List adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubung tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya.</description>
-    </item>
-    
-  </channel>
-</rss>
+Single Linked List Single Linked List kalau kita simpulkan hanya memiliki Next() Node saja.</description></item><item><title>Cara Membuat Double Linked List menggunakan C&#43;&#43;</title><link>https://santekno.com/cara-membuat-double-linked-list-menggunakan-c-/</link><pubDate>Thu, 16 May 2019 13:00:00 +0700</pubDate><guid>https://santekno.com/cara-membuat-double-linked-list-menggunakan-c-/</guid><description>Double Linked List adalah ebuah linked list yang menggunakan sebuah variabel pointer saja untuk menyimpan banyak data dengan metode linked list, suatu daftar isi yang saling berhubungan.
+Baiklah, Santekno akan memberikan implementasi dari Double Linked List dengan menggunakan bahasa C++. Hal yang paling penting dalam pembuatan Double Linked List adalah kita akan membuat suatu linked yang nantinya bisa saling terhubung sehingga agar bisa saling terhubung tersebut membutuhkan beberapa fungsi yang bisa mengoperasikannya seperti, insert depan, insert belakang, insert di tengah, delete, size, dan lain-lainnya.</description></item></channel></rss>

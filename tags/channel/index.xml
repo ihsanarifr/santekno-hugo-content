@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Channel on Santekno</title>
-    <link>https://santekno.com/tags/channel/</link>
-    <description>Recent content in Channel on Santekno</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>id</language>
-    <lastBuildDate>Thu, 15 Apr 2021 14:42:06 +0700</lastBuildDate>
-    
-	<atom:link href="https://santekno.com/tags/channel/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Cara Implementasi Queue (Antrian) Golang</title>
-      <link>https://santekno.com/cara-implementasi-queue-antrian-golang/</link>
-      <pubDate>Thu, 15 Apr 2021 14:42:06 +0700</pubDate>
-      
-      <guid>https://santekno.com/cara-implementasi-queue-antrian-golang/</guid>
-      <description>Pengertian Dasar Queue atau sering kita tahu itu satu struktur data antrian dimana data yang kita masukkan akan diantrikan, dengan kata lain data yang pertama masuk akan keluar pertama juga. Biasanya kita sering tahu istrila FIFO (First In First Out).
-Menurut informasi yang Santekno dapat, Queue atau antrian adalah suatu kumpulan data yang penambahan elemennya hanya bisa dilakukan pada suatu ujung (disebut di sisi belakang atau rear), dan menghapus atau mengambil elemen dilakukan lewat ujung yang lain (disebut dengan istilah sisi depan atau front).</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Channel on Santekno</title><link>https://santekno.com/tags/channel/</link><description>Recent content in Channel on Santekno</description><generator>Hugo -- gohugo.io</generator><language>id</language><lastBuildDate>Thu, 15 Apr 2021 14:42:06 +0700</lastBuildDate><atom:link href="https://santekno.com/tags/channel/index.xml" rel="self" type="application/rss+xml"/><item><title>Cara Implementasi Queue (Antrian) Golang</title><link>https://santekno.com/cara-implementasi-queue-antrian-golang/</link><pubDate>Thu, 15 Apr 2021 14:42:06 +0700</pubDate><guid>https://santekno.com/cara-implementasi-queue-antrian-golang/</guid><description>Pengertian Dasar Queue atau sering kita tahu itu satu struktur data antrian dimana data yang kita masukkan akan diantrikan, dengan kata lain data yang pertama masuk akan keluar pertama juga. Biasanya kita sering tahu istrila FIFO (First In First Out).
+Menurut informasi yang Santekno dapat, Queue atau antrian adalah suatu kumpulan data yang penambahan elemennya hanya bisa dilakukan pada suatu ujung (disebut di sisi belakang atau rear), dan menghapus atau mengambil elemen dilakukan lewat ujung yang lain (disebut dengan istilah sisi depan atau front).</description></item></channel></rss>

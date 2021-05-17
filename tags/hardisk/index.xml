@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hardisk on Santekno</title>
-    <link>https://santekno.com/tags/hardisk/</link>
-    <description>Recent content in Hardisk on Santekno</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>id</language>
-    <lastBuildDate>Sun, 13 Oct 2019 19:20:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://santekno.com/tags/hardisk/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Bagian-bagian Harddisk</title>
-      <link>https://santekno.com/bagian-bagian-harddisk/</link>
-      <pubDate>Sun, 13 Oct 2019 19:20:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/bagian-bagian-harddisk/</guid>
-      <description>Pada postingan kali ini saya ingin memberikan sedikit informasi tentang bagian-bagian dari harddisk komputer, Adapun beberapa bagian seperti di bawah ini:
-Boot Sector Merupakan sektor boot dari sebuah sektor harddisk, floppy disk, atau perangkat penyimpanan data yang sama yang berisi kode program untuk boot (biasanya, tapi tidak harus, sistem operasi) disimpan di bagian lain dari disk. Pada mesin IBM PC yang kompatibel BIOS memilih perangkat boot, maka salinan sektor pertama dari perangkat (yang mungkin suatu MBR, VBR atau kode yang dapat dieksekusi), untuk lokasi alamat 0x7C00.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hardisk on Santekno</title><link>https://santekno.com/tags/hardisk/</link><description>Recent content in Hardisk on Santekno</description><generator>Hugo -- gohugo.io</generator><language>id</language><lastBuildDate>Sun, 13 Oct 2019 19:20:00 +0000</lastBuildDate><atom:link href="https://santekno.com/tags/hardisk/index.xml" rel="self" type="application/rss+xml"/><item><title>Bagian-bagian Harddisk</title><link>https://santekno.com/bagian-bagian-harddisk/</link><pubDate>Sun, 13 Oct 2019 19:20:00 +0000</pubDate><guid>https://santekno.com/bagian-bagian-harddisk/</guid><description>Pada postingan kali ini saya ingin memberikan sedikit informasi tentang bagian-bagian dari harddisk komputer, Adapun beberapa bagian seperti di bawah ini:
+Boot Sector Merupakan sektor boot dari sebuah sektor harddisk, floppy disk, atau perangkat penyimpanan data yang sama yang berisi kode program untuk boot (biasanya, tapi tidak harus, sistem operasi) disimpan di bagian lain dari disk. Pada mesin IBM PC yang kompatibel BIOS memilih perangkat boot, maka salinan sektor pertama dari perangkat (yang mungkin suatu MBR, VBR atau kode yang dapat dieksekusi), untuk lokasi alamat 0x7C00.</description></item></channel></rss>

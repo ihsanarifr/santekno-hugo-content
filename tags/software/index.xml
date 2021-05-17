@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Software on Santekno</title>
-    <link>https://santekno.com/tags/software/</link>
-    <description>Recent content in Software on Santekno</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>id</language>
-    <lastBuildDate>Sun, 29 Dec 2019 23:08:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://santekno.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP</title>
-      <link>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</link>
-      <pubDate>Sun, 29 Dec 2019 23:08:00 +0000</pubDate>
-      
-      <guid>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</guid>
-      <description>Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan virtual server yang sangat terkenal di kalangan para programmer. Suatu virtual yang terdapat pada Xampp ini digunakan untuk para developer khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, phpmyadmin sebagai Database Server dan banyak lagi.
-Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah error yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada localhost.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software on Santekno</title><link>https://santekno.com/tags/software/</link><description>Recent content in Software on Santekno</description><generator>Hugo -- gohugo.io</generator><language>id</language><lastBuildDate>Sun, 29 Dec 2019 23:08:00 +0000</lastBuildDate><atom:link href="https://santekno.com/tags/software/index.xml" rel="self" type="application/rss+xml"/><item><title>Cara Mengatasi Apache Tidak Berjalan atau Running pada XAMPP</title><link>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</link><pubDate>Sun, 29 Dec 2019 23:08:00 +0000</pubDate><guid>https://santekno.com/cara-mengatasi-apache-tidak-berjalan-atau-running-pada-xampp/</guid><description>Salam sobat blogger. Xampp adalah aplikasi yang berguna sebagai pembuatan virtual server yang sangat terkenal di kalangan para programmer. Suatu virtual yang terdapat pada Xampp ini digunakan untuk para developer khususnya web agar seperti halnya di hosting. Karena dalam aplikasi Xampp ini terdapat Apache sebagai Web Server, phpmyadmin sebagai Database Server dan banyak lagi.
+Permasalah terjadi saat kita telah melakukan penginstalan Xampp dan setelah dibuka XAMPP Control terjadilah error yang tidak bisa dijalankanya Apache sehingga web yang sudah kita buat tidak bisa di buka pada localhost.</description></item></channel></rss>

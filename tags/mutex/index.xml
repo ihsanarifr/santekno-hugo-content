@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Mutex on Santekno</title>
-    <link>https://santekno.com/tags/mutex/</link>
-    <description>Recent content in Mutex on Santekno</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>id</language>
-    <lastBuildDate>Tue, 11 May 2021 19:40:42 +0700</lastBuildDate>
-    
-	<atom:link href="https://santekno.com/tags/mutex/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Cara Implementasi Singleton Design Pattern Golang</title>
-      <link>https://santekno.com/cara-implementasi-singleton-design-pattern-golang/</link>
-      <pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate>
-      
-      <guid>https://santekno.com/cara-implementasi-singleton-design-pattern-golang/</guid>
-      <description>Pengertian Dasar  Singleton is a software design standard. This standard guarantees the existence of only one instance of a class, while maintaining a global point of access to its object.
- Sesuai dengan quote yang diatas bahwa Singleton adalah desain standar perangkat lunak yang memberikan jaminan keberadaan hanya satu instance kelas, sambil mempertahankan titik akses global ke objeknya. Singleton adalah pola desain yang membatasi instantiation ke suatu objek, kita harus memastikan bahwa ini hanya terjadi sekali.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mutex on Santekno</title><link>https://santekno.com/tags/mutex/</link><description>Recent content in Mutex on Santekno</description><generator>Hugo -- gohugo.io</generator><language>id</language><lastBuildDate>Tue, 11 May 2021 19:40:42 +0700</lastBuildDate><atom:link href="https://santekno.com/tags/mutex/index.xml" rel="self" type="application/rss+xml"/><item><title>Cara Implementasi Singleton Design Pattern Golang</title><link>https://santekno.com/cara-implementasi-singleton-design-pattern-golang/</link><pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate><guid>https://santekno.com/cara-implementasi-singleton-design-pattern-golang/</guid><description>Pengertian Dasar Singleton is a software design standard. This standard guarantees the existence of only one instance of a class, while maintaining a global point of access to its object.
+Sesuai dengan quote yang diatas bahwa Singleton adalah desain standar perangkat lunak yang memberikan jaminan keberadaan hanya satu instance kelas, sambil mempertahankan titik akses global ke objeknya. Singleton adalah pola desain yang membatasi instantiation ke suatu objek, kita harus memastikan bahwa ini hanya terjadi sekali.</description></item></channel></rss>
