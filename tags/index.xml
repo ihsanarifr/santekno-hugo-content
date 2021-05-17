@@ -77,7 +77,7 @@
     <item>
       <title>Concurrency</title>
       <link>https://santekno.com/tags/concurrency/</link>
-      <pubDate>Fri, 23 Apr 2021 15:25:34 +0700</pubDate>
+      <pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate>
       
       <guid>https://santekno.com/tags/concurrency/</guid>
       <description></description>
@@ -194,7 +194,7 @@
     <item>
       <title>Golang</title>
       <link>https://santekno.com/tags/golang/</link>
-      <pubDate>Fri, 23 Apr 2021 15:25:34 +0700</pubDate>
+      <pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate>
       
       <guid>https://santekno.com/tags/golang/</guid>
       <description></description>
@@ -282,6 +282,24 @@
     </item>
     
     <item>
+      <title>Multithread</title>
+      <link>https://santekno.com/tags/multithread/</link>
+      <pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/multithread/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mutex</title>
+      <link>https://santekno.com/tags/mutex/</link>
+      <pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/mutex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Network</title>
       <link>https://santekno.com/tags/network/</link>
       <pubDate>Sun, 29 Dec 2019 22:30:00 +0000</pubDate>
@@ -311,7 +329,7 @@
     <item>
       <title>Pattern</title>
       <link>https://santekno.com/tags/pattern/</link>
-      <pubDate>Mon, 19 Apr 2021 13:25:16 +0700</pubDate>
+      <pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate>
       
       <guid>https://santekno.com/tags/pattern/</guid>
       <description></description>
@@ -381,6 +399,15 @@
     </item>
     
     <item>
+      <title>Singleton</title>
+      <link>https://santekno.com/tags/singleton/</link>
+      <pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/singleton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sistem Operasi</title>
       <link>https://santekno.com/tags/sistem-operasi/</link>
       <pubDate>Sun, 10 Nov 2019 14:39:00 +0000</pubDate>
@@ -408,6 +435,24 @@
     </item>
     
     <item>
+      <title>Sync</title>
+      <link>https://santekno.com/tags/sync/</link>
+      <pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/sync/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sync.once</title>
+      <link>https://santekno.com/tags/sync.once/</link>
+      <pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate>
+      
+      <guid>https://santekno.com/tags/sync.once/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Terbesar</title>
       <link>https://santekno.com/tags/terbesar/</link>
       <pubDate>Mon, 06 May 2019 12:00:00 +0700</pubDate>
@@ -428,7 +473,7 @@
     <item>
       <title>Tutorial</title>
       <link>https://santekno.com/tags/tutorial/</link>
-      <pubDate>Fri, 23 Apr 2021 15:25:34 +0700</pubDate>
+      <pubDate>Tue, 11 May 2021 19:40:42 +0700</pubDate>
       
       <guid>https://santekno.com/tags/tutorial/</guid>
       <description></description>
