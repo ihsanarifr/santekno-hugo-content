@@ -353,7 +353,7 @@ func MakeHTTPCall(url string) (*Response, error) {
 </code></pre><p>Nah lalu bagaimana caranya agar bisa kita buat unit test-nya?
 Ini biasnaya kita menggunakan <code>httptest</code> library standar-nya dari Golang yang nantinya seolah-olah bisa membuat API external dengan response yang disesuaikan.</p><p>Lebih lengkapnya yuk kita coba langkah-langkahnya sebagai berikut.
 * Arahkan kursor pada fungsi <code>MakeHTTPCall</code> lalu klik kanan dan pilih <code>Go: Generate Unit Tests For Function</code>, maka akan dilakukan generate code default unit test seperti ini.
-<code>go
+```go
 func TestMakeHTTPCall(t *testing.T) {
 type args struct {
 url string
@@ -370,58 +370,75 @@ for _, tt := range tests {
 t.Run(tt.name, func(t *testing.T) {
 got, err := MakeHTTPCall(tt.args.url)
 if (err != nil) != tt.wantErr {
-t.Errorf(&quot;MakeHTTPCall() error = %v, wantErr %v&quot;, err, tt.wantErr)
+t.Errorf(&ldquo;MakeHTTPCall() error = %v, wantErr %v&rdquo;, err, tt.wantErr)
 return
 }
 if !reflect.DeepEqual(got, tt.want) {
-t.Errorf(&quot;MakeHTTPCall() = %v, want %v&quot;, got, tt.want)
+t.Errorf(&ldquo;MakeHTTPCall() = %v, want %v&rdquo;, got, tt.want)
 }
 })
 }
-}</code></p><ul><li>Selanjutnya tambahkan di dalam struct <code>args</code> variable ini <code>server *httptest.Server</code> yang berfungsi untuk membuat mock data http external call.</li><li><p>Lalu dibawah sebelum pemanggilan <code>MakeHTTPCall</code> perlu ada yg diupdate seperti ini</p><pre><code class=language-go>defer tt.args.server.Close()
-var url string
-if tt.args.url == &quot;&quot; {
-    url = tt.args.server.URL
-}
-got, err := MakeHTTPCall(url)
-</code></pre><p>Info:</p><ul><li><code>defer tt.args.server.Close()</code> dimaksudkan agar tiap <code>NewServer</code> testing kita perlu close server-nya agar tidak bentrok.</li><li><code>var url string</code> ini digunakan untuk kondisi pengecekan url yang benar dan salah</li></ul></li><li><p>Terakhir kita tambahkan test case yang perlu kita butuhkan sesuai dengan code yang kita buat.</p><pre><code class=language-go>{
-    name: &quot;success call http&quot;,
-    args: args{
-        server: httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-            w.WriteHeader(http.StatusOK)
-            w.Write([]byte(`{&quot;id&quot;: 1, &quot;name&quot;: &quot;santekno&quot;, &quot;description&quot;: &quot;santekno jaya&quot;}`))
-        })),
+}</p><pre><code>
+* Selanjutnya tambahkan di dalam struct `args` variable ini `server *httptest.Server` yang berfungsi untuk membuat mock data http external call.
+* Lalu dibawah sebelum pemanggilan `MakeHTTPCall` perlu ada yg diupdate seperti ini
+    ```go
+    defer tt.args.server.Close()
+    var url string
+    if tt.args.url == &quot;&quot; {
+        url = tt.args.server.URL
+    }
+    got, err := MakeHTTPCall(url)
+    ```
+    Info:
+    * `defer tt.args.server.Close()` dimaksudkan agar tiap `NewServer` testing kita perlu close server-nya agar tidak bentrok.
+    * `var url string` ini digunakan untuk kondisi pengecekan url yang benar dan salah
+
+* Terakhir kita tambahkan test case yang perlu kita butuhkan sesuai dengan code yang kita buat.
+    ```go
+    {
+        name: &quot;success call http&quot;,
+        args: args{
+            server: httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+                w.WriteHeader(http.StatusOK)
+                w.Write([]byte(`{&quot;id&quot;: 1, &quot;name&quot;: &quot;santekno&quot;, &quot;description&quot;: &quot;santekno jaya&quot;}`))
+            })),
+        },
+        want: &amp;Response{
+            ID:          1,
+            Name:        &quot;santekno&quot;,
+            Description: &quot;santekno jaya&quot;,
+        },
+        wantErr: false,
     },
-    want: &amp;Response{
-        ID:          1,
-        Name:        &quot;santekno&quot;,
-        Description: &quot;santekno jaya&quot;,
+    {
+        name: &quot;failed call http when http 400&quot;,
+        args: args{
+            server: httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+                w.WriteHeader(http.StatusBadRequest)
+            })),
+        },
+        want:    nil,
+        wantErr: true,
     },
-    wantErr: false,
-},
-{
-    name: &quot;failed call http when http 400&quot;,
-    args: args{
-        server: httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-            w.WriteHeader(http.StatusBadRequest)
-        })),
+    {
+        name: &quot;failed url http call&quot;,
+        args: args{
+            url: &quot;localhost&quot;,
+            server: httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+                w.WriteHeader(http.StatusBadRequest)
+            })),
+        },
+        want:    nil,
+        wantErr: true,
     },
-    want:    nil,
-    wantErr: true,
-},
-{
-    name: &quot;failed url http call&quot;,
-    args: args{
-        url: &quot;localhost&quot;,
-        server: httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-            w.WriteHeader(http.StatusBadRequest)
-        })),
-    },
-    want:    nil,
-    wantErr: true,
-},
-</code></pre></li></ul><p>Semua sudah terisi tinggal kita coba jalankan apakah tiap test case tersebut sudah meng-cover semua code kita atau belum.</p><p>Ingin tahu lebih lengkap code unit test-nya?
-Ini nih kita informasikan lebih detail lagi yaa</p><pre><code class=language-go>func TestMakeHTTPCall(t *testing.T) {
+    ```
+
+Semua sudah terisi tinggal kita coba jalankan apakah tiap test case tersebut sudah meng-cover semua code kita atau belum.
+
+Ingin tahu lebih lengkap code unit test-nya?
+Ini nih kita informasikan lebih detail lagi yaa
+```go
+func TestMakeHTTPCall(t *testing.T) {
 	type args struct {
 		url    string
 		server *httptest.Server
